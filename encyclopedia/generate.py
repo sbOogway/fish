@@ -236,7 +236,7 @@ def build_index():
             "scientific_name": tax.get("scientific_name", ""),
             "family": family,
             "water_type": water.title() if water else None,
-            "path": f"/fish/{slug}.html",
+            "path": f"fish/{slug}.html",
         })
         if family:
             families.add(family)

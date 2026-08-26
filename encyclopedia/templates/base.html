@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} — Fishing Encyclopedia</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        :root {
+            --bg: #fafaf8;
+            --text: #1a1a1a;
+            --muted: #6b6b6b;
+            --accent: #2d6a4f;
+            --accent-light: #d8f3dc;
+            --border: #e0e0e0;
+            --card-bg: #ffffff;
+            --serif: 'Georgia', 'Times New Roman', serif;
+            --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+            --max-w: 900px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 17px; -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--serif);
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.75;
+            padding: 2rem 1.5rem;
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+        a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        a:hover { border-bottom-color: var(--accent); }
+
+        /* Header */
+        .page-header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .page-header .nav { font-family: var(--sans); font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--muted); }
+        .page-header h1 { font-family: var(--sans); font-size: 2.2rem; font-weight: 700; line-height: 1.2; }
+        .page-header .sci { font-style: italic; color: var(--muted); font-size: 1rem; }
+        .page-header .category-badge {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--accent);
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.5rem;
+        }
+
+        /* Hero image */
+        .hero {
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 450px;
+            object-fit: cover;
+        }
+        .hero .credit {
+            background: #f5f5f5;
+            padding: 0.4rem 0.8rem;
+            font-size: 0.75rem;
+            color: var(--muted);
+            font-family: var(--sans);
+        }
+
+        /* Map */
+        .map-section { margin: 2rem 0; }
+        .map-section h2 { font-family: var(--sans); font-size: 1.3rem; margin-bottom: 0.8rem; color: var(--accent); }
+        #map {
+            height: 420px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            z-index: 1;
+        }
+
+        /* Info grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .info-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+        .info-card h3 {
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 0.4rem;
+        }
+        .info-card .value {
+            font-family: var(--sans);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .info-card .detail {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-top: 0.2rem;
+        }
+
+        /* Body content */
+        .content { margin: 2rem 0; }
+        .content h2 { font-family: var(--sans); font-size: 1.4rem; color: var(--accent); margin: 2rem 0 0.8rem; }
+        .content h3 { font-family: var(--sans); font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+        .content p { margin-bottom: 1rem; }
+        .content ul, .content ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+        .content li { margin-bottom: 0.3rem; }
+        .content strong { font-weight: 600; }
+        .content blockquote {
+            border-left: 3px solid var(--accent);
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            background: var(--accent-light);
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+            color: var(--muted);
+        }
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        .content th, .content td {
+            text-align: left;
+            padding: 0.5rem 0.8rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .content th {
+            font-family: var(--sans);
+            font-weight: 600;
+            background: #f5f5f3;
+        }
+        .content code {
+            font-family: var(--mono);
+            font-size: 0.85em;
+            background: var(--accent-light);
+            padding: 0.15em 0.4em;
+            border-radius: 3px;
+        }
+
+        /* Footer */
+        .page-footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        /* Print */
+        @media print {
+            body { padding: 1cm; max-width: none; }
+            #map { display: none; }
+            .hero img { max-height: 300px; }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .page-header h1 { font-size: 1.6rem; }
+            #map { height: 300px; }
+            .info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="nav">
+            <a href="../../">Fishing Encyclopedia</a> /
+            {% if breadcrumb_category %}<a href="../">{{ breadcrumb_category }}</a> /{% endif %}
+            {{ title }}
+        </div>
+        <h1>{{ title }}</h1>
+        {% if scientific_name %}<div class="sci">{{ scientific_name }}</div>{% endif %}
+        {% if category %}<span class="category-badge">{{ category }}</span>{% endif %}
+    </header>
+
+    {% if image %}
+    <figure class="hero">
+        <img src="{{ image.url }}" alt="{{ image.alt }}" loading="lazy">
+        {% if image.credit %}<figcaption class="credit">{{ image.credit }}{% if image.credit_url %} — <a href="{{ image.credit_url }}" target="_blank">source</a>{% endif %}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+
+    {% if info_cards %}
+    <div class="info-grid">
+        {% for card in info_cards %}
+        <div class="info-card">
+            <h3>{{ card.label }}</h3>
+            <div class="value">{{ card.value }}</div>
+            {% if card.detail %}<div class="detail">{{ card.detail }}</div>{% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if distribution and distribution.regions %}
+    <section class="map-section">
+        <h2>Distribution Map</h2>
+        <div id="map"></div>
+    </section>
+    {% endif %}
+
+    <article class="content">
+        {{ body_html | safe }}
+    </article>
+
+    <footer class="page-footer">
+        <p>Fishing Encyclopedia — Generated from <a href="{{ source_path }}">{{ source_file }}</a></p>
+    </footer>
+
+    {% if distribution and distribution.regions %}
+    <script>
+        (function() {
+            var map = L.map('map', { scrollWheelZoom: false }).setView([48, 20], 4);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                maxZoom: 18
+            }).addTo(map);
+
+            var regions = {{ distribution | tojson }};
+            var markers = [];
+            var bounds = [];
+
+            regions.forEach(function(region) {
+                region.coordinates.forEach(function(coord) {
+                    var marker = L.circleMarker([coord.lat, coord.lng], {
+                        radius: 8,
+                        fillColor: '#2d6a4f',
+                        color: '#1b4332',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.7
+                    }).addTo(map);
+
+                    marker.bindPopup(
+                        '<strong>' + coord.label + '</strong><br>' +
+                        '<em>' + region.name + '</em><br>' +
+                        '<small>' + region.description + '</small>'
+                    );
+
+                    markers.push(marker);
+                    bounds.push([coord.lat, coord.lng]);
+                });
+            });
+
+            if (bounds.length > 0) {
+                map.fitBounds(bounds, { padding: [30, 30], maxZoom: 6 });
+            }
+        })();
+    </script>
+    {% endif %}
+
+</body>
+</html>

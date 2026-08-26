@@ -1,73 +1,46 @@
 ---
 id: zander
 slug: zander
-scientific_name: "Sander lucioperca"
-aliases:
-  - pike-perch
-  - sander
-  - zандер
-category: freshwater
-image:
-  url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Zander_%28Sander_lucioperca%29.jpg/1280px-Zander_%28Sander_lucioperca%29.jpg"
-  alt: "Zander (Sander lucioperca) full body photo"
-  credit: "Wikimedia Commons — CC BY-SA 3.0"
-  credit_url: "https://commons.wikimedia.org/wiki/File:Zander_(Sander_lucioperca).jpg"
 
 taxonomy:
-  family: Percidae
-  order: Perciformes
   class: Actinopterygii
+  order: Perciformes
+  family: Percidae
+  genus: Sander
+  species: lucioperca
+  scientific_name: "Sander lucioperca"
+  common_name: Zander
+  aliases: ["Pike-perch", "Sander"]
+
+sources:
+  fishbase_id: 360
+  fishfyi_slug: zander
+  wikidata_id: Q146641
 
 physical:
   max_length_cm: 130
-  typical_length_cm: "50–70"
+  typical_length_cm: "50-70"
   max_weight_kg: 20
-  typical_weight_kg: "2–5"
-  lifespan_years: "15–20"
+  typical_weight_kg: "2-5"
+  lifespan_years: "15-20"
   color: "Grey-green to dark olive back, white/silver flanks, dark vertical bars"
   body_shape: "Elongated, perch-like with pointed snout"
-  distinguishing:
-    - Two separate dorsal fins (spiny and soft)
-    - Large canine teeth in both jaws
-    - Dark vertical bars on flanks (fades with age)
-    - Glass-like reflective eyes (tapetum lucidum)
+  distinguishing_features:
+    - "Two separate dorsal fins (spiny and soft-rayed)"
+    - "Large canine teeth in both jaws"
+    - "Dark vertical bars on flanks (fades with age)"
+    - "Glass-like reflective eyes (tapetum lucidum)"
 
 habitat:
-  water_types:
-    - river
-    - lake
-    - reservoir
-    - canal
-  depth_range_m: "1–30"
-  preferred_depth_m: "5–15"
-  substrate:
-    - sand
-    - gravel
-    - muddy
-  water_temperature:
-    optimal_celsius: "18–23"
-    range_celsius: "2–28"
+  water_types: [river, lake, reservoir, canal]
+  depth_range_m: "1-30"
+  preferred_depth_m: "5-15"
+  substrate: [sand, gravel, muddy]
+  temperature:
+    optimal_celsius: "18-23"
+    range_celsius: "2-28"
   oxygen_needs: "Moderate — tolerates lower oxygen than most percids"
   clarity_preference: "Murky to moderately clear"
-
-behavior:
-  feeding:
-    type: "Carnivore / Piscivore"
-    diet:
-      - small fish (roach, rudd, bleak, perch fry)
-      - invertebrates (when young)
-      - crustaceans
-    peak_feeding_times:
-      - dawn
-      - dusk
-      - night
-    hunting_style: "Ambush predator — lies in wait near structure, strikes with speed"
-  schooling: "Solitary or small groups"
-  spawning:
-    season: "March–May"
-    temperature_celsius: "8–12"
-    behavior: "Male builds nest on hard substrate, guards eggs"
-    eggs_per_kg: "100,000–300,000"
 
 distribution:
   native: true
@@ -105,43 +78,49 @@ distribution:
       description: "UK and Ireland (introduced in 19th century)"
       coordinates:
         - { lat: 52.2, lng: 0.1, label: "Cambridgeshire Fens, UK" }
-        - { lat: 51.5, lng: -0.1, label: "London, UK" }
     - name: "Introduced — Southern Europe"
       description: "France, Italy, Spain (introduced)"
       coordinates:
         - { lat: 48.9, lng: 2.3, label: "Paris, France" }
         - { lat: 41.9, lng: 12.5, label: "Rome, Italy" }
-        - { lat: 40.4, lng: -3.7, label: "Madrid, Spain" }
     - name: "Introduced — Asia"
       description: "China (introduced in 1950s)"
       coordinates:
         - { lat: 31.2, lng: 121.5, label: "Shanghai, China" }
 
-regulations:
-  notes: "Varies widely by country and region. Some areas require permits; others have seasonal closures during spawning."
-  check_local: true
+behavior:
+  feeding:
+    type: Carnivore
+    diet: ["small fish (roach, rudd, bleak, perch fry)", "crustaceans", "invertebrates"]
+    peak_times: [dawn, dusk, night]
+    hunting_style: "Ambush predator — lies in wait near structure, strikes with speed"
+  schooling: "Solitary or small groups"
+  spawning:
+    season: "March-May"
+    temperature_celsius: "8-12"
+    behavior: "Male builds nest on hard substrate, guards eggs"
 
-fishing:
-  techniques:
-    - spinning
-    - ledgering
-    - float_fishing
-    - trolling
-  best_months: "Year-round, best April–November"
+angling:
+  fight_rating: 6
+  difficulty: Intermediate
+  best_bait: ["soft plastics", "jigs", "live baitfish", "small hard baits"]
+  techniques: [spinning, ledgering, float_fishing, trolling]
+  best_months: "April-November"
   peak_periods:
-    - "Pre-spawn (March–April): aggressive feeding"
-    - "Post-spawn (June–July): feeding to recover"
-    - "Autumn (September–November): feeding before winter"
-  difficulty: "Intermediate"
-  fight_quality: "Strong, determined fights with headshakes"
+    - "Pre-spawn (March-April): aggressive feeding"
+    - "Post-spawn (June-July): feeding to recover"
+    - "Autumn (September-November): feeding before winter"
+  season_months: [4, 5, 6, 7, 8, 9, 10, 11]
 
-related_species:
-  - { name: "European perch", scientific: "Perca fluviatilis", relation: "Same family (Percidae)" }
-  - { name: "Walleye", scientific: "Sander vitreus", relation: "North American relative" }
-  - { name: "Baltic perch", scientific: "Perca fluviatilis", relation: "Same family" }
+image:
+  url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Zander_%28Sander_lucioperca%29.jpg/1280px-Zander_%28Sander_lucioperca%29.jpg"
+  alt: "Zander (Sander lucioperca) full body photo"
+  credit: "Wikimedia Commons — CC BY-SA 3.0"
+  credit_url: "https://commons.wikimedia.org/wiki/File:Zander_(Sander_lucioperca).jpg"
+
+conservation:
+  status: LC
 ---
-
-# Zander (*Sander lucioperca*)
 
 The zander is a freshwater predatory fish of the perch family, prized by anglers across Europe for its fighting ability and the challenge it presents. Often called "pike-perch" due to its perch-like body and pike-like teeth, it is one of the most popular coarse fishing targets in continental Europe.
 
@@ -178,7 +157,3 @@ Zander are targeted using spinning, ledgering, float fishing, and trolling. They
 ## Regulations
 
 Fishing regulations for zander vary widely by country and region. Some areas require specific permits; others enforce seasonal closures during spawning. Always check local rules before fishing.
-
----
-
-*This profile is part of the [Fishing Encyclopedia](../). For learning resources on catching zander, see [Zander Spinning — Learning Track](../../fresh-water/spinning/zander/).*

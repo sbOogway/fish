@@ -1,0 +1,122 @@
+# Fish Profile Schema
+
+Canonical YAML frontmatter format for `encyclopedia/data/fish/{family}/{genus}/{species}.md`.
+
+## Schema
+
+```yaml
+---
+# === IDENTITY (required) ===
+id: zander                          # kebab-case slug (from FishRadar or generated)
+slug: zander                        # URL slug
+
+# === TAXONOMY (from FishBase/FishFYI) ===
+taxonomy:
+  class: Actinopterygii
+  order: Perciformes
+  family: Percidae
+  genus: Sander
+  species: lucioperca
+  scientific_name: "Sander lucioperca"
+  common_name: Zander
+  aliases: ["Pike-perch", "Sander"] # from FishRadar
+
+# === SOURCES (required) ===
+sources:
+  fishbase_id: 360                  # cross-reference IDs
+  fishfyi_slug: zander
+  wikidata_id: Q146641
+  worms_id: 151308
+
+# === PHYSICAL (from FishBase + FishFYI) ===
+physical:
+  max_length_cm: 130
+  typical_length_cm: "50-70"
+  max_weight_kg: 20
+  typical_weight_kg: "2-5"
+  lifespan_years: "15-20"
+  color: "Greenish-gray to olive, 8-10 dark bars"
+  body_shape: "Elongated, perch-like"
+  distinguishing_features:
+    - "Two separate dorsal fins"
+    - "Large canine teeth"
+    - "Glass-like eyes (tapetum lucidum)"
+
+# === HABITAT (from FishBase + FishFYI) ===
+habitat:
+  water_types: [freshwater, brackish]
+  depth_range_m: "2-30"
+  preferred_depth_m: "5-15"
+  substrate: [sand, gravel, muddy]
+  temperature:
+    optimal_celsius: "18-23"
+    range_celsius: "2-28"
+  oxygen_needs: "Moderate"
+  clarity_preference: "Murky to moderate"
+  geographic_range: "Native to northern/central Europe and western Asia"
+
+# === DISTRIBUTION (from FishBase — coordinates for Leaflet) ===
+distribution:
+  native: true
+  regions:
+    - name: "Western Europe"
+      coordinates:
+        - { lat: 52.1, lng: 5.3, label: "Netherlands" }
+        - { lat: 52.5, lng: 13.4, label: "Berlin, Germany" }
+
+# === BEHAVIOR (from FishBase) ===
+behavior:
+  feeding:
+    type: Carnivore
+    diet: ["small fish", "crustaceans", "invertebrates"]
+    peak_times: [dawn, dusk, night]
+    hunting_style: "Ambush predator"
+  schooling: "Solitary or small groups"
+  spawning:
+    season: "March-May"
+    temperature_celsius: "8-12"
+    behavior: "Male builds nest, guards eggs"
+
+# === ANGLING (from FishFYI + FishRadar) ===
+angling:
+  fight_rating: 6                   # 1-10 from FishFYI
+  difficulty: Intermediate
+  best_bait: ["soft plastics", "jigs", "live baitfish"]
+  techniques: [spinning, ledgering, float_fishing, trolling]  # curated
+  best_months: "April-November"
+  peak_periods:
+    - "Pre-spawn (March-April)"
+    - "Autumn (September-November)"
+  season_months: [4,5,6,7,8,9,10,11]  # from FishRadar
+
+# === IMAGE ===
+image:
+  url: "https://upload.wikimedia.org/..."  # from FishFYI (Wikimedia Commons)
+  credit: "Wikimedia Commons — CC BY-SA"
+  credit_url: "https://commons.wikimedia.org/wiki/..."
+
+# === CONSERVATION ===
+conservation:
+  status: LC                        # IUCN status from FishFYI
+---
+```
+
+## Source Authority
+
+| Field group | Authoritative source | Fallback |
+|-------------|---------------------|----------|
+| Taxonomy | FishBase | FishFYI |
+| Physical | FishFYI (has more complete data) | FishBase |
+| Habitat | FishBase | FishFYI |
+| Distribution coords | FishBase | FishRadar (latRange) |
+| Behavior | FishBase | — |
+| Angling | FishFYI | Manual curation |
+| Seasonality | FishRadar | FishFYI seasons endpoint |
+| Image | FishFYI (Wikimedia Commons URL) | Placeholder |
+| Conservation | FishFYI (IUCN) | FishRadar |
+
+## Required vs Optional
+
+- **Required**: `id`, `taxonomy`, `sources`, `image`
+- **Recommended**: `physical`, `habitat`, `distribution`, `angling`
+- **Optional**: `behavior`, `conservation`

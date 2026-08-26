@@ -157,7 +157,7 @@ def build_html(meta, body_html, source_file):
     return template.render(**context)
 
 
-def process_file(md_path, out_dir):
+def process_file(md_path):
     """Process a single markdown file into HTML."""
     text = md_path.read_text(encoding="utf-8")
     meta, body = parse_frontmatter(text)
@@ -169,9 +169,7 @@ def process_file(md_path, out_dir):
 
     html = build_html(meta, body_html, source_file)
 
-    # Preserve taxonomy path: fish/family/genus/species.html
-    out_file = out_dir / f"{slug}.html"
-    out_file.parent.mkdir(parents=True, exist_ok=True)
+    out_file = OUT_DIR / f"{slug}.html"
     out_file.write_text(html, encoding="utf-8")
     print(f"  ✓ {rel_path} → {out_file.relative_to(ROOT)}")
     return out_file
@@ -193,21 +191,15 @@ def find_md_files(data_dir, specific=None):
 def build_all(specific=None):
     """Build all or specific encyclopedia entries."""
     print("Fishing Encyclopedia — Building...\n")
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
     count = 0
 
-    for category_dir in sorted(DATA_DIR.iterdir()):
-        if not category_dir.is_dir():
-            continue
-
-        out_category = OUT_DIR / category_dir.name
-        out_category.mkdir(parents=True, exist_ok=True)
-
-        for md_file in find_md_files(category_dir, specific):
-            try:
-                process_file(md_file, out_category)
-                count += 1
-            except Exception as e:
-                print(f"  ✗ {md_file.name}: {e}")
+    for md_file in find_md_files(DATA_DIR, specific):
+        try:
+            process_file(md_file)
+            count += 1
+        except Exception as e:
+            print(f"  ✗ {md_file.name}: {e}")
 
     print(f"\nDone — {count} pages generated in {OUT_DIR.relative_to(ROOT)}/")
 
@@ -236,7 +228,7 @@ def build_index():
             "scientific_name": tax.get("scientific_name", ""),
             "family": family,
             "water_type": water.title() if water else None,
-            "path": f"fish/{slug}.html",
+            "path": f"{slug}.html",
         })
         if family:
             families.add(family)

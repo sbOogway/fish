@@ -1,32 +1,39 @@
-# Fishing Learning Workspace
+# Fishing Encyclopedia
 
-A modular, stateful workspace for learning fishing. Each track is organized by:
+A public fishing encyclopedia combining scientific data (FishBase, FishFYI) with angling knowledge. Each species page features taxonomy, distribution maps, habitat, behavior, and fishing techniques.
+
+## Structure
 
 ```
-water-type/
-  technique/
-    fish/
-      MISSION.md
-      RESOURCES.md
-      lessons/
-      reference/
-      learning-records/
+encyclopedia/
+├── data/
+│   ├── fish/{family}/{genus}/{species}.md   ← species profiles
+│   ├── techniques/*.md                       ← fishing methods
+│   └── gear/*.md                             ← equipment reference
+├── templates/                                ← Jinja2 HTML templates
+├── generate.py                               ← MD → HTML pipeline
+└── out/                                      ← generated HTML
 ```
 
-## Current Tracks
+URLs follow taxonomy: `/fish/percidae/sander/zander/`
 
-| Track | Path | Status |
-|-------|------|--------|
-| Zander — Spinning (Fresh Water) | `fresh-water/spinning/zander/` | Active |
+## Data Sources
 
-## Adding a New Track
+| Source | Provides | Access |
+|--------|----------|--------|
+| [FishBase API](https://fishbase.org) | Taxonomy, biology, ecology, distribution | Free REST API |
+| [FishFYI API](https://fishfyi.com/developers/) | Fishing methods, fight rating, bait, seasons | Free REST API |
+| [FishRadar catalog](https://github.com/linkanlabs-ctrl/fishing-species-catalog) | Season months, conservation, aliases | CC BY 4.0 JSON |
 
-1. Create the directory: `{water-type}/{technique}/{fish}/`
-2. Add `MISSION.md`, `RESOURCES.md`, and the standard subdirectories
-3. Lessons and reference docs link to `../../assets/base-style.css` for consistent styling
+## Quick Start
 
-## Shared Files
+```bash
+pip install pyyaml markdown-it-py jinja2
+python3 encyclopedia/generate.py
+open encyclopedia/out/fish/percidae/sander/zander.html
+```
 
-- `GLOSSARY.md` — Terms shared across all tracks
-- `NOTES.md` — Teacher scratchpad
-- `assets/base-style.css` — Shared lesson stylesheet
+## Agent Configuration
+
+See `AGENTS.md` for agent skills configuration.
+See `docs/agents/` for issue tracker, triage labels, and domain docs.

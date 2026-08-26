@@ -1,1 +1,4 @@
 encyclopedia/out/
+.venv/
+.agents/
+skills-lock.json

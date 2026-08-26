@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks:
+      - id: validate-fish
+        name: Validate Fish Profiles
+        entry: python3 encyclopedia/validate.py
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]
+
+      - id: build-encyclopedia
+        name: Build Encyclopedia
+        entry: python3 encyclopedia/generate.py
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]

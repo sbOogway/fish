@@ -230,44 +230,23 @@ def build_index():
         tax = meta.get("taxonomy", {})
         family = tax.get("family", "")
         water = meta.get("habitat", {}).get("water_types", [None])[0] if meta.get("habitat", {}).get("water_types") else None
-        rel = md_file.relative_to(DATA_DIR / "fish")
         slug = md_file.stem
-        # URL: /fish/{family}/{genus}/{species}.html
-        parts = list(rel.parent.parts) + [f"{slug}.html"]
         species_list.append({
             "common_name": tax.get("common_name", slug.replace("-", " ").title()),
             "scientific_name": tax.get("scientific_name", ""),
             "family": family,
             "water_type": water.title() if water else None,
-            "path": "/fish/" + "/".join(parts),
+            "path": f"/fish/{slug}.html",
         })
         if family:
             families.add(family)
 
     families = sorted(families)
 
-    techniques = []
-    for md_file in sorted((DATA_DIR / "techniques").glob("*.md")):
-        text = md_file.read_text(encoding="utf-8")
-        meta, _ = parse_frontmatter(text)
-        techniques.append({
-            "name": meta.get("name", md_file.stem.replace("-", " ").title()),
-            "path": f"/techniques/{md_file.stem}.html",
-        })
-
-    gear = []
-    for md_file in sorted((DATA_DIR / "gear").glob("*.md")):
-        text = md_file.read_text(encoding="utf-8")
-        meta, _ = parse_frontmatter(text)
-        gear.append({
-            "name": meta.get("name", md_file.stem.replace("-", " ").title()),
-            "path": f"/gear/{md_file.stem}.html",
-        })
-
-    html = template.render(species_list=species_list, families=families, techniques=techniques, gear=gear)
+    html = template.render(species_list=species_list, families=families)
     out_file = OUT_DIR / "index.html"
     out_file.write_text(html, encoding="utf-8")
-    print(f"  ✓ index.html ({len(species_list)} species, {len(techniques)} techniques, {len(gear)} gear)")
+    print(f"  ✓ index.html ({len(species_list)} species)")
     return out_file
 
 

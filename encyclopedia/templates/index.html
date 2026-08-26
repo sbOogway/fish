@@ -65,18 +65,6 @@
 
     <div class="no-results" id="no-results" style="display:none">No species match your search.</div>
 
-    <div class="sections">
-        <h2>Also explore</h2>
-        <ul>
-            {% for tech in techniques %}
-            <li><a href="{{ tech.path }}">{{ tech.name }}</a></li>
-            {% endfor %}
-            {% for g in gear %}
-            <li><a href="{{ g.path }}">{{ g.name }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
-
     <script>
         const search = document.getElementById('search');
         const grid = document.getElementById('grid');

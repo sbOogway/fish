@@ -5,7 +5,7 @@ Converts Markdown + YAML frontmatter files into HTML pages with interactive maps
 
 Usage:
     python3 generate.py                    # Build all
-    python3 generate.py fish/zander        # Build one
+    python3 generate.py fish/percidae/sander/zander  # Build one
     python3 generate.py --watch            # Watch mode (rebuild on change)
 """
 
@@ -73,7 +73,7 @@ def build_info_cards(meta):
             "detail": f"Depth: {hab.get('depth_range_m', '?')} m"
         })
 
-    temp = hab.get("water_temperature", {})
+    temp = hab.get("temperature", {})
     if temp.get("optimal_celsius"):
         cards.append({
             "label": "Water Temp",
@@ -86,14 +86,20 @@ def build_info_cards(meta):
         cards.append({
             "label": "Diet",
             "value": behav["feeding"]["type"],
-            "detail": ", ".join(behav["feeding"].get("peak_feeding_times", []))
+            "detail": ", ".join(behav["feeding"].get("peak_times", []))
         })
 
-    fish = meta.get("fishing", {})
-    if fish.get("difficulty"):
+    angling = meta.get("angling", {})
+    if angling.get("difficulty"):
         cards.append({
             "label": "Difficulty",
-            "value": fish["difficulty"],
+            "value": angling["difficulty"],
+            "detail": None
+        })
+    if angling.get("fight_rating"):
+        cards.append({
+            "label": "Fight Rating",
+            "value": f"{angling['fight_rating']}/10",
             "detail": None
         })
 
@@ -114,26 +120,32 @@ def get_distribution_for_template(meta):
     return result
 
 
+def get_taxonomy_breadcrumb(meta):
+    """Build taxonomy breadcrumb from taxonomy fields."""
+    tax = meta.get("taxonomy", {})
+    parts = []
+    for key in ["class", "order", "family", "genus"]:
+        if tax.get(key):
+            parts.append(tax[key])
+    return " > ".join(parts) if parts else None
+
+
 def build_html(meta, body_html, source_file):
     """Render the complete HTML page from metadata and body."""
     from jinja2 import Environment, FileSystemLoader
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
     template = env.get_template("base.html")
 
-    title = meta.get("id", "").replace("-", " ").title()
-    if meta.get("scientific_name"):
-        title = meta["id"].replace("-", " ").title()
-
-    breadcrumb = None
-    cat = meta.get("category", "")
-    if cat:
-        breadcrumb = cat.replace("-", " ").title()
+    tax = meta.get("taxonomy", {})
+    title = tax.get("common_name") or meta.get("id", "").replace("-", " ").title()
+    scientific = tax.get("scientific_name")
 
     context = {
         "title": title,
-        "scientific_name": meta.get("scientific_name"),
-        "category": cat,
-        "breadcrumb_category": breadcrumb,
+        "scientific_name": scientific,
+        "category": tax.get("family", ""),
+        "breadcrumb_category": tax.get("family", "").title(),
+        "taxonomy_breadcrumb": get_taxonomy_breadcrumb(meta),
         "image": meta.get("image"),
         "info_cards": build_info_cards(meta),
         "distribution": get_distribution_for_template(meta),
@@ -157,11 +169,25 @@ def process_file(md_path, out_dir):
 
     html = build_html(meta, body_html, source_file)
 
+    # Preserve taxonomy path: fish/family/genus/species.html
     out_file = out_dir / f"{slug}.html"
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(html, encoding="utf-8")
     print(f"  ✓ {rel_path} → {out_file.relative_to(ROOT)}")
     return out_file
+
+
+def find_md_files(data_dir, specific=None):
+    """Find all markdown files in the data directory, supporting taxonomy paths."""
+    files = []
+    for md_file in sorted(data_dir.rglob("*.md")):
+        # Skip schema and non-species files
+        if md_file.name.startswith("_") or md_file.name == "fish-profile-schema.yaml":
+            continue
+        if specific and specific not in str(md_file.relative_to(data_dir)):
+            continue
+        files.append(md_file)
+    return files
 
 
 def build_all(specific=None):
@@ -176,9 +202,7 @@ def build_all(specific=None):
         out_category = OUT_DIR / category_dir.name
         out_category.mkdir(parents=True, exist_ok=True)
 
-        for md_file in sorted(category_dir.glob("*.md")):
-            if specific and specific not in str(md_file.relative_to(DATA_DIR)):
-                continue
+        for md_file in find_md_files(category_dir, specific):
             try:
                 process_file(md_file, out_category)
                 count += 1
@@ -194,11 +218,15 @@ def watch_mode():
     seen = {}
     while True:
         for md_file in DATA_DIR.rglob("*.md"):
+            if md_file.name.startswith("_"):
+                continue
             mtime = md_file.stat().st_mtime
             if md_file not in seen or seen[md_file] != mtime:
                 seen[md_file] = mtime
                 try:
-                    process_file(md_file, OUT_DIR / md_file.parent.name)
+                    rel = md_file.relative_to(DATA_DIR)
+                    out_dir = OUT_DIR / rel.parent
+                    process_file(md_file, out_dir)
                 except Exception as e:
                     print(f"  ✗ {md_file.name}: {e}")
         time.sleep(1)

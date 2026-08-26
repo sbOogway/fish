@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zander — Fishing Encyclopedia</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        :root {
+            --bg: #fafaf8;
+            --text: #1a1a1a;
+            --muted: #6b6b6b;
+            --accent: #2d6a4f;
+            --accent-light: #d8f3dc;
+            --border: #e0e0e0;
+            --card-bg: #ffffff;
+            --serif: 'Georgia', 'Times New Roman', serif;
+            --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+            --max-w: 900px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 17px; -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--serif);
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.75;
+            padding: 2rem 1.5rem;
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+        a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        a:hover { border-bottom-color: var(--accent); }
+
+        /* Header */
+        .page-header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .page-header .nav { font-family: var(--sans); font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--muted); }
+        .page-header h1 { font-family: var(--sans); font-size: 2.2rem; font-weight: 700; line-height: 1.2; }
+        .page-header .sci { font-style: italic; color: var(--muted); font-size: 1rem; }
+        .page-header .category-badge {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--accent);
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.5rem;
+        }
+
+        /* Hero image */
+        .hero {
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 450px;
+            object-fit: cover;
+        }
+        .hero .credit {
+            background: #f5f5f5;
+            padding: 0.4rem 0.8rem;
+            font-size: 0.75rem;
+            color: var(--muted);
+            font-family: var(--sans);
+        }
+
+        /* Map */
+        .map-section { margin: 2rem 0; }
+        .map-section h2 { font-family: var(--sans); font-size: 1.3rem; margin-bottom: 0.8rem; color: var(--accent); }
+        #map {
+            height: 420px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            z-index: 1;
+        }
+
+        /* Info grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .info-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+        .info-card h3 {
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 0.4rem;
+        }
+        .info-card .value {
+            font-family: var(--sans);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .info-card .detail {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-top: 0.2rem;
+        }
+
+        /* Body content */
+        .content { margin: 2rem 0; }
+        .content h2 { font-family: var(--sans); font-size: 1.4rem; color: var(--accent); margin: 2rem 0 0.8rem; }
+        .content h3 { font-family: var(--sans); font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+        .content p { margin-bottom: 1rem; }
+        .content ul, .content ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+        .content li { margin-bottom: 0.3rem; }
+        .content strong { font-weight: 600; }
+        .content blockquote {
+            border-left: 3px solid var(--accent);
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            background: var(--accent-light);
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+            color: var(--muted);
+        }
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        .content th, .content td {
+            text-align: left;
+            padding: 0.5rem 0.8rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .content th {
+            font-family: var(--sans);
+            font-weight: 600;
+            background: #f5f5f3;
+        }
+        .content code {
+            font-family: var(--mono);
+            font-size: 0.85em;
+            background: var(--accent-light);
+            padding: 0.15em 0.4em;
+            border-radius: 3px;
+        }
+
+        /* Footer */
+        .page-footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        /* Print */
+        @media print {
+            body { padding: 1cm; max-width: none; }
+            #map { display: none; }
+            .hero img { max-height: 300px; }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .page-header h1 { font-size: 1.6rem; }
+            #map { height: 300px; }
+            .info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="nav">
+            <a href="../../">Fishing Encyclopedia</a> /
+            <a href="../">Percidae</a> /
+            Zander
+        </div>
+        <h1>Zander</h1>
+        
+        <span class="category-badge">Percidae</span>
+    </header>
+
+    
+    <figure class="hero">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Zander_%28Sander_lucioperca%29.jpg/1280px-Zander_%28Sander_lucioperca%29.jpg" alt="Zander (Sander lucioperca) full body photo" loading="lazy">
+        <figcaption class="credit">Wikimedia Commons — CC BY-SA 3.0 — <a href="https://commons.wikimedia.org/wiki/File:Zander_(Sander_lucioperca).jpg" target="_blank">source</a></figcaption>
+    </figure>
+    
+
+    
+    <div class="info-grid">
+        
+        <div class="info-card">
+            <h3>Size</h3>
+            <div class="value">50–70 cm</div>
+            <div class="detail">Max: 130 cm</div>
+        </div>
+        
+        <div class="info-card">
+            <h3>Weight</h3>
+            <div class="value">2–5 kg</div>
+            <div class="detail">Max: 20 kg</div>
+        </div>
+        
+        <div class="info-card">
+            <h3>Lifespan</h3>
+            <div class="value">15–20 years</div>
+            
+        </div>
+        
+        <div class="info-card">
+            <h3>Water Types</h3>
+            <div class="value">River, Lake, Reservoir, Canal</div>
+            <div class="detail">Depth: 1–30 m</div>
+        </div>
+        
+        <div class="info-card">
+            <h3>Diet</h3>
+            <div class="value">Carnivore / Piscivore</div>
+            
+        </div>
+        
+    </div>
+    
+
+    
+
+    <article class="content">
+        <h1>Zander (<em>Sander lucioperca</em>)</h1>
+<p>The zander is a freshwater predatory fish of the perch family, prized by anglers across Europe for its fighting ability and the challenge it presents. Often called &quot;pike-perch&quot; due to its perch-like body and pike-like teeth, it is one of the most popular coarse fishing targets in continental Europe.</p>
+<h2>Physical Characteristics</h2>
+<p>Zander have an elongated, perch-like body with a pointed snout and two distinct dorsal fins — the first spiny, the second soft-rayed. Their most striking feature is their large, glassy eyes, adapted for low-light hunting. Adults typically reach 50–70 cm, with trophy specimens exceeding 100 cm and 10 kg.</p>
+<p>Young zander display dark vertical bars on their flanks (similar to perch), which fade as the fish matures. The back is grey-green to olive, fading to silver-white on the belly.</p>
+<h2>Habitat &amp; Distribution</h2>
+<p>Zander are found across Europe and western/central Asia. They were introduced to the British Isles in the 19th century and have since spread through many river systems and lakes. They thrive in large, slow-moving rivers, reservoirs, and lakes with sandy or muddy substrates.</p>
+<p>They prefer moderate depths (5–15 m) and tolerate murky water better than most percids, thanks to their enhanced low-light vision. Water temperature range is broad (2–28°C), with optimal activity at 18–23°C.</p>
+<h2>Behavior</h2>
+<p>Zander are <strong>ambush predators</strong>, typically lying in wait near submerged structure (weed beds, fallen trees, drop-offs) and striking with a short, powerful burst. They feed primarily at dawn, dusk, and through the night — their large eyes give them a significant advantage in low light.</p>
+<p>Their diet consists mainly of small fish (roach, rudd, bleak, perch fry), shifting to crustaceans and invertebrates as juveniles. They are solitary or found in small groups, rarely schooling.</p>
+<h2>Spawning</h2>
+<p>Spawning occurs in spring (March–May) when water temperatures reach 8–12°C. Males build nests on hard substrates (gravel, stones, roots) and guard the eggs fiercely. A single female can release 100,000–300,000 eggs.</p>
+<h2>Fishing for Zander</h2>
+<p>Zander are targeted using spinning, ledgering, float fishing, and trolling. They fight hard with determined headshakes and can be finicky biters, making them a rewarding challenge.</p>
+<p><strong>Best periods:</strong> April–November, with peaks during pre-spawn (March–April) and autumn (September–November). Night fishing is particularly effective.</p>
+<p><strong>Difficulty:</strong> Intermediate — requires patience, good water-reading skills, and sensitivity to detect subtle bites.</p>
+<h2>Regulations</h2>
+<p>Fishing regulations for zander vary widely by country and region. Some areas require specific permits; others enforce seasonal closures during spawning. Always check local rules before fishing.</p>
+<hr />
+<p><em>This profile is part of the <a href="../">Fishing Encyclopedia</a>. For learning resources on catching zander, see <a href="../../fresh-water/spinning/zander/">Zander Spinning — Learning Track</a>.</em></p>
+
+    </article>
+
+    <footer class="page-footer">
+        <p>Fishing Encyclopedia — Generated from <a href="../../../encyclopedia/data/fish/percidae/sander/zander.md">fish/percidae/sander/zander.md</a></p>
+    </footer>
+
+    
+
+</body>
+</html>

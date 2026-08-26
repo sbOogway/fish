@@ -221,12 +221,15 @@ def build_index():
     template = env.get_template("index.html")
 
     species_list = []
+    families = set()
     for md_file in sorted(DATA_DIR.rglob("fish/*/*/*.md")):
         if md_file.name.startswith("_"):
             continue
         text = md_file.read_text(encoding="utf-8")
         meta, _ = parse_frontmatter(text)
         tax = meta.get("taxonomy", {})
+        family = tax.get("family", "")
+        water = meta.get("habitat", {}).get("water_types", [None])[0] if meta.get("habitat", {}).get("water_types") else None
         rel = md_file.relative_to(DATA_DIR / "fish")
         slug = md_file.stem
         # URL: /fish/{family}/{genus}/{species}.html
@@ -234,8 +237,14 @@ def build_index():
         species_list.append({
             "common_name": tax.get("common_name", slug.replace("-", " ").title()),
             "scientific_name": tax.get("scientific_name", ""),
+            "family": family,
+            "water_type": water.title() if water else None,
             "path": "/fish/" + "/".join(parts),
         })
+        if family:
+            families.add(family)
+
+    families = sorted(families)
 
     techniques = []
     for md_file in sorted((DATA_DIR / "techniques").glob("*.md")):
@@ -255,7 +264,7 @@ def build_index():
             "path": f"/gear/{md_file.stem}.html",
         })
 
-    html = template.render(species_list=species_list, techniques=techniques, gear=gear)
+    html = template.render(species_list=species_list, families=families, techniques=techniques, gear=gear)
     out_file = OUT_DIR / "index.html"
     out_file.write_text(html, encoding="utf-8")
     print(f"  ✓ index.html ({len(species_list)} species, {len(techniques)} techniques, {len(gear)} gear)")

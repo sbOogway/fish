@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wels catfish — Fishing Encyclopedia</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        :root {
+            --bg: #fff;
+            --text: #111;
+            --muted: #666;
+            --border: #ddd;
+            --serif: 'Georgia', 'Times New Roman', serif;
+            --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+            --max-w: 720px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 17px; -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--serif);
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.75;
+            padding: 3rem 1.5rem;
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+        a { color: var(--text); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 2px; }
+        a:hover { text-decoration-color: var(--text); }
+
+        /* Header */
+        .page-header { margin-bottom: 2rem; }
+        .page-header .nav { font-family: var(--sans); font-size: 0.8rem; margin-bottom: 0.4rem; color: var(--muted); }
+        .page-header .nav a { text-decoration: none; color: var(--muted); }
+        .page-header .nav a:hover { color: var(--text); text-decoration: none; }
+        .page-header h1 { font-family: var(--sans); font-size: 1.8rem; font-weight: 600; line-height: 1.2; }
+        .page-header .sci { font-style: italic; color: var(--muted); font-size: 0.95rem; margin-top: 0.2rem; }
+
+        /* Hero image */
+        .hero { margin: 1.5rem 0; }
+        .hero img { width: 100%; height: auto; display: block; max-height: 400px; object-fit: cover; }
+        .hero .credit { font-size: 0.75rem; color: var(--muted); font-family: var(--sans); margin-top: 0.3rem; }
+        .hero .credit a { text-decoration: none; }
+
+        /* Inline stats */
+        .stats {
+            font-family: var(--sans);
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin: 1rem 0 1.5rem;
+            line-height: 1.6;
+        }
+        .stats .sep { margin: 0 0.4rem; opacity: 0.4; }
+
+        /* Map */
+        .map-section { margin: 2rem 0; }
+        .map-section h2 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+        #map { height: 380px; border: 1px solid var(--border); z-index: 1; }
+
+        /* Body content */
+        .content { margin: 2rem 0; }
+        .content h2 { font-family: var(--sans); font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.6rem; text-transform: uppercase; letter-spacing: 0.03em; }
+        .content h3 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin: 1.5rem 0 0.4rem; }
+        .content p { margin-bottom: 1rem; }
+        .content ul, .content ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+        .content li { margin-bottom: 0.2rem; }
+        .content strong { font-weight: 600; }
+        .content blockquote { border-left: 2px solid var(--border); padding: 0.4rem 1rem; margin: 1rem 0; color: var(--muted); font-style: italic; }
+        .content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+        .content th, .content td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); }
+        .content th { font-family: var(--sans); font-weight: 600; font-size: 0.85rem; }
+        .content code { font-family: var(--mono); font-size: 0.85em; background: #f5f5f5; padding: 0.1em 0.3em; }
+
+        /* Footer */
+        .page-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-family: var(--sans); font-size: 0.75rem; color: var(--muted); }
+        .page-footer a { text-decoration: none; color: var(--muted); }
+
+        @media print { body { padding: 1cm; max-width: none; } #map { display: none; } }
+        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } .page-header h1 { font-size: 1.4rem; } #map { height: 280px; } }
+    </style>
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="nav">
+            <a href="/">Encyclopedia</a>
+        </div>
+        <h1>Wels catfish</h1>
+        <div class="sci">Silurus glanis</div>
+    </header>
+
+    
+    <figure class="hero">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Silurus_glanis_02.jpg" alt="Wels catfish (Silurus glanis) full body photo" loading="lazy">
+        <figcaption class="credit">Wikimedia Commons — Dieter Florian, CC BY-SA 3.0 — <a href="https://commons.wikimedia.org/wiki/File:Silurus_glanis_02.jpg" target="_blank">source</a></figcaption>
+    </figure>
+    
+
+    
+    <div class="stats">100-200 cm (max 300) <span class='sep'>·</span> 10-50 kg (max 130) <span class='sep'>·</span> 30-50 years <span class='sep'>·</span> Hard <span class='sep'>·</span> Fight 10/10 <span class='sep'>·</span> 18-26°C</div>
+    
+
+    
+
+    <article class="content">
+        <p>The wels catfish is the largest freshwater fish in Europe and one of the biggest freshwater fish in the world. Reaching over 2 metres and more than 100 kg, it is the ultimate trophy for many anglers — a powerful, ancient-looking predator that prowls the deeps of Europe's largest rivers and lakes.</p>
+<h2>Physical Characteristics</h2>
+<p>The wels catfish is a long, scaleless fish with a flattened, tapering body and an enormous, broad, flat head. It has two long barbels on the upper jaw and four shorter ones on the lower, used to detect prey in dark, turbid water. A long, low anal fin runs along much of the underside, giving it an eel-like swimming motion.</p>
+<p>Colouring ranges from dark grey to brown-black above with occasional mottling, fading to a paler belly. Typical adult catches are 100–200 cm and 10–50 kg, with the largest fish reaching 250 cm and over 100 kg.</p>
+<h2>Habitat &amp; Distribution</h2>
+<p>The wels is native to the Danube, Volga, and Dnieper river systems of central and eastern Europe, and the surrounding basins. It has been widely introduced across western Europe — France, Spain, the Netherlands, and the UK — where it thrives in large, warm rivers and big lakes.</p>
+<p>It favours deep, slow water with muddy or silty bottoms, submerged trees, and deep holes, and tolerates low oxygen levels that would kill most other fish. It is most comfortable in warm water around 18–26°C.</p>
+<h2>Behavior</h2>
+<p>The wels catfish is an opportunistic ambush predator that feeds mainly at dusk and through the night. It uses its sensitive barbels and a highly developed lateral line to locate prey in the dark, then sucks it in with a powerful gape. Its diet is extraordinarily broad: fish, crayfish, frogs, and even water birds and small mammals.</p>
+<p>By day it lies in deep holes, under banks, or amid submerged structure, becoming active hunters when darkness falls. During winter it becomes sluggish and almost stops feeding entirely.</p>
+<h2>Spawning</h2>
+<p>Spawning occurs in late spring (May–July) when water temperatures reach 18–24°C. The pair prepares a shallow, weedy depression or nest, typically in a snaggy or root-filled backwater. The male guards the eggs and, after hatching, the fry until they disperse.</p>
+<h2>Fishing for Wels Catfish</h2>
+<p>Catching a wels catfish is a serious undertaking. They are caught on large baits — big deadbaits, livebaits, boilies, and big lures — usually fished on strong tackle from the riverbed or deep holes. Because they feed mainly at night, long dusk-to-dawn sessions with heavy rods and bite alarms are the norm.</p>
+<p>The fight of a large wels is extraordinary: heavy, powerful pulls and long runs that can test the strongest tackle. A big catfish is a true prize, and handling one safely requires care, adequate tackle, and a good unhooking mat.</p>
+<p><strong>Best periods:</strong> May–October, with summer nights the prime time. Spring and early autumn offer good daylight fishing as the water temperature changes.</p>
+<p><strong>Difficulty:</strong> Hard — these are heavy, powerful fish that demand strong tackle, patience, and often night sessions.</p>
+
+    </article>
+
+    <footer class="page-footer">
+        <p>Generated from <a href="encyclopedia/data/fish/siluridae/silurus/wels-catfish.md">fish/siluridae/silurus/wels-catfish.md</a></p>
+    </footer>
+
+    
+
+</body>
+</html>

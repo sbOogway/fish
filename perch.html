@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European perch — Fishing Encyclopedia</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        :root {
+            --bg: #fff;
+            --text: #111;
+            --muted: #666;
+            --border: #ddd;
+            --serif: 'Georgia', 'Times New Roman', serif;
+            --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+            --max-w: 720px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 17px; -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--serif);
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.75;
+            padding: 3rem 1.5rem;
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+        a { color: var(--text); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 2px; }
+        a:hover { text-decoration-color: var(--text); }
+
+        /* Header */
+        .page-header { margin-bottom: 2rem; }
+        .page-header .nav { font-family: var(--sans); font-size: 0.8rem; margin-bottom: 0.4rem; color: var(--muted); }
+        .page-header .nav a { text-decoration: none; color: var(--muted); }
+        .page-header .nav a:hover { color: var(--text); text-decoration: none; }
+        .page-header h1 { font-family: var(--sans); font-size: 1.8rem; font-weight: 600; line-height: 1.2; }
+        .page-header .sci { font-style: italic; color: var(--muted); font-size: 0.95rem; margin-top: 0.2rem; }
+
+        /* Hero image */
+        .hero { margin: 1.5rem 0; }
+        .hero img { width: 100%; height: auto; display: block; max-height: 400px; object-fit: cover; }
+        .hero .credit { font-size: 0.75rem; color: var(--muted); font-family: var(--sans); margin-top: 0.3rem; }
+        .hero .credit a { text-decoration: none; }
+
+        /* Inline stats */
+        .stats {
+            font-family: var(--sans);
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin: 1rem 0 1.5rem;
+            line-height: 1.6;
+        }
+        .stats .sep { margin: 0 0.4rem; opacity: 0.4; }
+
+        /* Map */
+        .map-section { margin: 2rem 0; }
+        .map-section h2 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+        #map { height: 380px; border: 1px solid var(--border); z-index: 1; }
+
+        /* Body content */
+        .content { margin: 2rem 0; }
+        .content h2 { font-family: var(--sans); font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.6rem; text-transform: uppercase; letter-spacing: 0.03em; }
+        .content h3 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin: 1.5rem 0 0.4rem; }
+        .content p { margin-bottom: 1rem; }
+        .content ul, .content ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+        .content li { margin-bottom: 0.2rem; }
+        .content strong { font-weight: 600; }
+        .content blockquote { border-left: 2px solid var(--border); padding: 0.4rem 1rem; margin: 1rem 0; color: var(--muted); font-style: italic; }
+        .content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+        .content th, .content td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); }
+        .content th { font-family: var(--sans); font-weight: 600; font-size: 0.85rem; }
+        .content code { font-family: var(--mono); font-size: 0.85em; background: #f5f5f5; padding: 0.1em 0.3em; }
+
+        /* Footer */
+        .page-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-family: var(--sans); font-size: 0.75rem; color: var(--muted); }
+        .page-footer a { text-decoration: none; color: var(--muted); }
+
+        @media print { body { padding: 1cm; max-width: none; } #map { display: none; } }
+        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } .page-header h1 { font-size: 1.4rem; } #map { height: 280px; } }
+    </style>
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="nav">
+            <a href="/">Encyclopedia</a>
+        </div>
+        <h1>European perch</h1>
+        <div class="sci">Perca fluviatilis</div>
+    </header>
+
+    
+    <figure class="hero">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Perca_fluviatilis_2008_G1.jpg" alt="European perch (Perca fluviatilis) full body photo" loading="lazy">
+        <figcaption class="credit">Wikimedia Commons — George Chernilevsky, Public domain — <a href="https://commons.wikimedia.org/wiki/File:Perca_fluviatilis_2008_G1.jpg" target="_blank">source</a></figcaption>
+    </figure>
+    
+
+    
+    <div class="stats">25-45 cm (max 60) <span class='sep'>·</span> 0.5-1.5 kg (max 4) <span class='sep'>·</span> 10-15 years <span class='sep'>·</span> Easy <span class='sep'>·</span> Fight 5/10 <span class='sep'>·</span> 12-20°C</div>
+    
+
+    
+
+    <article class="content">
+        <p>The European perch is a widely distributed freshwater predator found across Europe and northern Asia. Its distinctive vertical bars and red fins make it one of the most recognisable fishes in European waters, and its willingness to take a bait makes it a favourite for anglers of all levels.</p>
+<h2>Physical Characteristics</h2>
+<p>Perch have a stout, deep body with a distinctive humped back. The first dorsal fin is spiny and the second soft-rayed. The flanks carry 5–9 dark vertical bars over a greenish-olive to golden background, fading to a yellow-white belly. The pelvic and anal fins are a vivid orange-red.</p>
+<p>Typically they reach 25–45 cm, though specimens over 60 cm and 4 kg are occasionally caught in large northern lakes.</p>
+<h2>Habitat &amp; Distribution</h2>
+<p>Perch are found throughout Europe and northern Asia, from the British Isles to Siberia. They tolerate a wide range of habitats, from large lakes and slow rivers to brackish coastal waters. They prefer well-oxygenated water with clear visibility and abundant structure or vegetation.</p>
+<p>They are tolerant of a broad temperature range (2–28°C) but are most active and feed most readily in moderate temperatures around 12–20°C.</p>
+<h2>Behavior</h2>
+<p>Perch are pursuit predators that typically hunt in shoals, herding small fish and invertebrates into dense groups before striking. Unlike ambush predators, they actively chase their prey. Juveniles feed mainly on zooplankton and invertebrates, shifting to a fish-based diet as they grow.</p>
+<p>They are most active at dawn and dusk, when they move into shallow water to feed. In winter they often gather in deep water and become less active.</p>
+<h2>Spawning</h2>
+<p>Spawning takes place in early spring (February–June depending on latitude) when water temperatures reach 7–14°C. Females deposit ribbon-like masses of eggs over submerged vegetation, branches, or sunken debris. The eggs are adhesive and hang in accordion-like folds until they hatch.</p>
+<h2>Fishing for Perch</h2>
+<p>Perch are a classic fish for anglers, both for novices learning float fishing and for seasoned predator anglers using lures. They readily take worms, small spinners, and jigs. Their ferocious feeding and schooling behaviour can provide fast, exciting sport in shoals of small fish, while larger specimens live more solitary lives.</p>
+<p>They fight with strong, dogged runs and are very sensitive to bite indication — the strike must be quick.</p>
+<p><strong>Best periods:</strong> March–November, with peaks in spring and autumn. In summer seek cooler, deeper water or fish early and late in the day.</p>
+<p><strong>Difficulty:</strong> Easy — excellent for beginners, though big specimens demand more skill.</p>
+
+    </article>
+
+    <footer class="page-footer">
+        <p>Generated from <a href="encyclopedia/data/fish/percidae/perca/perch.md">fish/percidae/perca/perch.md</a></p>
+    </footer>
+
+    
+
+</body>
+</html>

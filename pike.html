@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northern pike — Fishing Encyclopedia</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        :root {
+            --bg: #fff;
+            --text: #111;
+            --muted: #666;
+            --border: #ddd;
+            --serif: 'Georgia', 'Times New Roman', serif;
+            --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+            --max-w: 720px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 17px; -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--serif);
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.75;
+            padding: 3rem 1.5rem;
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+        a { color: var(--text); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 2px; }
+        a:hover { text-decoration-color: var(--text); }
+
+        /* Header */
+        .page-header { margin-bottom: 2rem; }
+        .page-header .nav { font-family: var(--sans); font-size: 0.8rem; margin-bottom: 0.4rem; color: var(--muted); }
+        .page-header .nav a { text-decoration: none; color: var(--muted); }
+        .page-header .nav a:hover { color: var(--text); text-decoration: none; }
+        .page-header h1 { font-family: var(--sans); font-size: 1.8rem; font-weight: 600; line-height: 1.2; }
+        .page-header .sci { font-style: italic; color: var(--muted); font-size: 0.95rem; margin-top: 0.2rem; }
+
+        /* Hero image */
+        .hero { margin: 1.5rem 0; }
+        .hero img { width: 100%; height: auto; display: block; max-height: 400px; object-fit: cover; }
+        .hero .credit { font-size: 0.75rem; color: var(--muted); font-family: var(--sans); margin-top: 0.3rem; }
+        .hero .credit a { text-decoration: none; }
+
+        /* Inline stats */
+        .stats {
+            font-family: var(--sans);
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin: 1rem 0 1.5rem;
+            line-height: 1.6;
+        }
+        .stats .sep { margin: 0 0.4rem; opacity: 0.4; }
+
+        /* Map */
+        .map-section { margin: 2rem 0; }
+        .map-section h2 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+        #map { height: 380px; border: 1px solid var(--border); z-index: 1; }
+
+        /* Body content */
+        .content { margin: 2rem 0; }
+        .content h2 { font-family: var(--sans); font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.6rem; text-transform: uppercase; letter-spacing: 0.03em; }
+        .content h3 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin: 1.5rem 0 0.4rem; }
+        .content p { margin-bottom: 1rem; }
+        .content ul, .content ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+        .content li { margin-bottom: 0.2rem; }
+        .content strong { font-weight: 600; }
+        .content blockquote { border-left: 2px solid var(--border); padding: 0.4rem 1rem; margin: 1rem 0; color: var(--muted); font-style: italic; }
+        .content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+        .content th, .content td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); }
+        .content th { font-family: var(--sans); font-weight: 600; font-size: 0.85rem; }
+        .content code { font-family: var(--mono); font-size: 0.85em; background: #f5f5f5; padding: 0.1em 0.3em; }
+
+        /* Footer */
+        .page-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-family: var(--sans); font-size: 0.75rem; color: var(--muted); }
+        .page-footer a { text-decoration: none; color: var(--muted); }
+
+        @media print { body { padding: 1cm; max-width: none; } #map { display: none; } }
+        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } .page-header h1 { font-size: 1.4rem; } #map { height: 280px; } }
+    </style>
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="nav">
+            <a href="/">Encyclopedia</a>
+        </div>
+        <h1>Northern pike</h1>
+        <div class="sci">Esox lucius</div>
+    </header>
+
+    
+    <figure class="hero">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Esox_lucius_2021_G1.jpg" alt="Northern pike (Esox lucius) full body photo" loading="lazy">
+        <figcaption class="credit">Wikimedia Commons — George Chernilevsky, CC BY-SA 4.0 — <a href="https://commons.wikimedia.org/wiki/File:Esox_lucius_2021_G1.jpg" target="_blank">source</a></figcaption>
+    </figure>
+    
+
+    
+    <div class="stats">50-90 cm (max 150) <span class='sep'>·</span> 2-8 kg (max 30) <span class='sep'>·</span> 10-20 years <span class='sep'>·</span> Intermediate <span class='sep'>·</span> Fight 8/10 <span class='sep'>·</span> 10-20°C</div>
+    
+
+    
+
+    <article class="content">
+        <p>The northern pike is a powerful, voracious freshwater predator found throughout the northern hemisphere. Its long, cylindrical body, flattened duck-bill snout, and mouth full of sharp teeth make it instantly recognisable — and among anglers it is one of the most sought-after game fish, prized for its explosive takes and spectacular fights.</p>
+<h2>Physical Characteristics</h2>
+<p>Pike have a long, streamlined, cylindrical body with the dorsal and anal fins set far back near the tail, giving them sudden bursts of acceleration. The head is broad and flattened with a distinctive duck-bill snout and a large mouth filled with sharp, backward-pointing teeth.</p>
+<p>The body colouring features pale, bean-shaped spots on a green to grey background, fading to a yellow-white belly. This camo pattern hides them superbly among weed beds. Typical adults run 50–90 cm, but specimens over 120 cm and 20 kg are the stuff of angling legend.</p>
+<h2>Habitat &amp; Distribution</h2>
+<p>Pike are found right across the northern hemisphere — throughout Europe, northern Asia, and North America. They favour slow-flowing rivers, lakes, and canals with abundant weed, reeds, and submerged structure where they can ambush prey.</p>
+<p>They are most comfortable in well-vegetated water and prefer moderate temperatures around 10–20°C. In summer they retreat to deeper, cooler water or the shade of dense weed.</p>
+<h2>Behavior</h2>
+<p>The pike is an ambush predator: it lies motionless in weed or near structure, then launches a short, explosive strike at passing prey. Its diet is broad — fish, frogs, and even ducklings and small mammals. Feeding occurs mainly at dawn and dusk, though pike can be caught through the day, especially in cooler conditions.</p>
+<p>Pike are solitary, fiercely territorial fish. The largest specimens are old, slow-growing, and highly wary.</p>
+<h2>Spawning</h2>
+<p>Pike spawn very early in the year (February–May) in shallow, flooded, weedy shallows where the water has just warmed to 4–10°C, often before the ice has fully gone. Eggs are scattered over submerged vegetation and hatched fry are self-sufficient from hatching, feeding first on zooplankton.</p>
+<h2>Fishing for Pike</h2>
+<p>Pike are a premier predator-fishing target. They are caught using spinners, spoons, crankbaits, jerkbaits, and trolled lures, as well as deadbaits and livebaits fished on the bottom or under a float. Their take can be explosive, and once hooked they fight with powerful, lunging runs and spectacular leaps.</p>
+<p>A wire trace is essential — their sharp teeth will cut through ordinary line instantly. Handling must be careful; use a landing net and unhook them with proper pike tools to protect both the fish and the angler.</p>
+<p><strong>Best periods:</strong> March–November, with peaks soon after spawning and again in autumn. Cold-water fishing can also be productive.</p>
+<p><strong>Difficulty:</strong> Intermediate — locating fish and striking at the right moment is the challenge, not the fight itself.</p>
+
+    </article>
+
+    <footer class="page-footer">
+        <p>Generated from <a href="encyclopedia/data/fish/esocidae/esox/pike.md">fish/esocidae/esox/pike.md</a></p>
+    </footer>
+
+    
+
+</body>
+</html>

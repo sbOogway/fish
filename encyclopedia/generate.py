@@ -74,16 +74,24 @@ def build_stats(meta):
 
 
 def get_distribution_for_template(meta):
-    """Extract distribution regions for the Leaflet map."""
+    """Extract distribution data for the Leaflet map.
+
+    Prefers real occurrence points (FishBase) as a density scatter; falls back
+    to named regions when no points are available.
+    """
     dist = meta.get("distribution", {})
-    regions = dist.get("regions", [])
-    result = []
-    for r in regions:
-        result.append({
+    points = dist.get("points", [])
+    regions = []
+    for r in dist.get("regions", []):
+        regions.append({
             "name": r["name"],
             "description": r.get("description", ""),
-            "coordinates": r.get("coordinates", [])
+            "coordinates": [{"lat": c.get("lat"), "lng": c.get("lng"),
+                             "label": c.get("label", "")} for c in r.get("coordinates", [])]
         })
+    result = {"points": points, "regions": regions, "source": dist.get("source")}
+    if not points and not regions:
+        return None
     return result
 
 

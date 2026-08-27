@@ -16,12 +16,21 @@ taxonomy:
   - Trucha de arroyo
   - Bachsaibling
 sources:
+  fishbase_id: 246
   fishradar_id: brook-trout
   wikidata_id: Q723654
+physical:
+  max_length_cm: 86
+  typical_length_cm: '26'
+  max_weight_kg: 8.0
+  lifespan_years: '24'
 habitat:
+  depth_range_m: 15-27
+  body_ecology: benthopelagic
   water_types:
   - freshwater
-  _comment: 'TODO: enrich from FishBase (depth, substrate, temperature)'
+  - brackish
+  - saltwater
 angling:
   best_months: Apr, May, Jun, Sep, Oct, Nov
   season_months:
@@ -31,22 +40,450 @@ angling:
   - 9
   - 10
   - 11
-  _comment: 'TODO: enrich from FishBase/FishFYI (bait, techniques, difficulty)'
 distribution:
   native: true
-  regions:
-  - name: Northern range
-    description: Northern extent of the species' range
-    coordinates:
-    - lat: 65
-      lng: 0
-      label: Northern limit
-  - name: Southern range
-    description: Southern extent of the species' range
-    coordinates:
-    - lat: 38
-      lng: 0
-      label: Southern limit
+  points:
+  - - -10.033
+    - -77.2
+  - - 37.005
+    - -79.481
+  - - 40.243
+    - -79.238
+  - - 42.167
+    - -85.183
+  - - 45.377
+    - -87.378
+  - - 48.183
+    - -64.967
+  - - 49.05
+    - -117.3
+  - - 49.067
+    - -88.283
+  - - 49.167
+    - -117.183
+  - - 49.2
+    - -122.417
+  - - 49.233
+    - -115.233
+  - - 49.25
+    - -115.233
+  - - 49.4
+    - -115.883
+  - - 49.433
+    - -115.9
+  - - 49.583
+    - -117.0
+  - - 49.833
+    - -88.5
+  - - 50.983
+    - -118.167
+  - - 52.367
+    - -117.783
+  - - 52.95
+    - -91.333
+  - - 53.55
+    - -117.933
+  - - 56.033
+    - 13.184
+  - - 56.367
+    - -92.383
+  - - 57.19
+    - 15.027
+  - - 57.389
+    - 13.846
+  - - 57.528
+    - 14.097
+  - - 57.549
+    - 14.123
+  - - 57.564
+    - 14.433
+  - - 57.581
+    - 14.475
+  - - 57.591
+    - 13.124
+  - - 57.614
+    - 13.563
+  - - 57.645
+    - 15.209
+  - - 57.655
+    - 13.401
+  - - 57.668
+    - 12.588
+  - - 57.673
+    - 12.562
+  - - 57.72
+    - 14.41
+  - - 57.727
+    - 13.34
+  - - 57.743
+    - 14.175
+  - - 57.746
+    - 14.18
+  - - 57.788
+    - 13.908
+  - - 57.808
+    - 13.549
+  - - 57.838
+    - 13.331
+  - - 57.849
+    - 13.434
+  - - 57.959
+    - 12.286
+  - - 57.994
+    - 14.026
+  - - 58.015
+    - 12.528
+  - - 58.047
+    - 14.163
+  - - 58.124
+    - 11.956
+  - - 58.229
+    - 14.238
+  - - 58.314
+    - 13.65
+  - - 58.318
+    - 13.61
+  - - 58.332
+    - 13.643
+  - - 58.704
+    - 16.338
+  - - 58.885
+    - 11.946
+  - - 58.937
+    - 12.273
+  - - 59.035
+    - 12.331
+  - - 59.389
+    - 18.018
+  - - 59.415
+    - 12.117
+  - - 59.525
+    - 12.316
+  - - 59.643
+    - 18.628
+  - - 59.875
+    - 14.587
+  - - 59.92
+    - 14.618
+  - - 59.956
+    - 14.478
+  - - 59.963
+    - 14.476
+  - - 59.967
+    - 14.473
+  - - 60.01
+    - 14.436
+  - - 60.056
+    - 15.911
+  - - 60.082
+    - 14.562
+  - - 60.111
+    - 14.971
+  - - 60.147
+    - 17.563
+  - - 60.234
+    - 16.129
+  - - 60.312
+    - 13.891
+  - - 60.552
+    - 15.615
+  - - 60.571
+    - 15.602
+  - - 60.615
+    - 15.43
+  - - 60.634
+    - 15.402
+  - - 60.647
+    - 13.926
+  - - 60.679
+    - 13.822
+  - - 60.699
+    - 16.368
+  - - 60.708
+    - 14.558
+  - - 60.719
+    - 13.471
+  - - 60.748
+    - 14.618
+  - - 60.767
+    - 16.249
+  - - 60.781
+    - 16.619
+  - - 60.799
+    - 15.704
+  - - 60.826
+    - 12.82
+  - - 60.914
+    - 14.206
+  - - 60.924
+    - 14.201
+  - - 60.928
+    - 14.767
+  - - 60.935
+    - 15.665
+  - - 60.945
+    - 15.63
+  - - 60.948
+    - 14.465
+  - - 60.956
+    - 14.481
+  - - 60.971
+    - 14.376
+  - - 60.977
+    - 15.069
+  - - 60.995
+    - 14.282
+  - - 61.003
+    - 14.314
+  - - 61.008
+    - 13.289
+  - - 61.012
+    - 14.39
+  - - 61.048
+    - 13.195
+  - - 61.052
+    - 14.255
+  - - 61.071
+    - 13.716
+  - - 61.078
+    - 13.115
+  - - 61.107
+    - 16.016
+  - - 61.12
+    - 14.228
+  - - 61.125
+    - 14.041
+  - - 61.137
+    - 14.548
+  - - 61.17
+    - 13.476
+  - - 61.189
+    - 16.666
+  - - 61.198
+    - 15.903
+  - - 61.211
+    - 14.878
+  - - 61.22
+    - 14.366
+  - - 61.234
+    - 14.601
+  - - 61.242
+    - 15.935
+  - - 61.26
+    - 15.894
+  - - 61.269
+    - 14.23
+  - - 61.273
+    - 15.885
+  - - 61.277
+    - 14.546
+  - - 61.285
+    - 13.904
+  - - 61.289
+    - 14.21
+  - - 61.293
+    - 15.94
+  - - 61.295
+    - 14.197
+  - - 61.298
+    - 14.534
+  - - 61.299
+    - 14.537
+  - - 61.301
+    - 14.54
+  - - 61.302
+    - 14.542
+  - - 61.305
+    - 13.896
+  - - 61.319
+    - 13.918
+  - - 61.327
+    - 13.876
+  - - 61.328
+    - 13.876
+  - - 61.33
+    - 13.919
+  - - 61.336
+    - 15.671
+  - - 61.337
+    - 14.927
+  - - 61.345
+    - 14.899
+  - - 61.361
+    - 13.899
+  - - 61.367
+    - 13.607
+  - - 61.381
+    - 13.794
+  - - 61.382
+    - 13.615
+  - - 61.386
+    - 14.432
+  - - 61.389
+    - 13.876
+  - - 61.392
+    - 14.016
+  - - 61.397
+    - 13.916
+  - - 61.402
+    - 13.015
+  - - 61.404
+    - 14.409
+  - - 61.407
+    - 14.4
+  - - 61.409
+    - 13.059
+  - - 61.413
+    - 14.396
+  - - 61.415
+    - 13.985
+  - - 61.42
+    - 13.972
+  - - 61.422
+    - 14.372
+  - - 61.425
+    - 14.356
+  - - 61.427
+    - 14.361
+  - - 61.432
+    - 14.354
+  - - 61.434
+    - 13.954
+  - - 61.441
+    - 13.935
+  - - 61.446
+    - 13.935
+  - - 61.45
+    - 13.876
+  - - 61.452
+    - 13.926
+  - - 61.454
+    - 13.88
+  - - 61.455
+    - 13.914
+  - - 61.456
+    - 13.895
+  - - 61.456
+    - 13.9
+  - - 61.458
+    - 13.837
+  - - 61.459
+    - 13.826
+  - - 61.466
+    - 14.456
+  - - 61.467
+    - 16.174
+  - - 61.476
+    - 13.909
+  - - 61.484
+    - 13.907
+  - - 61.491
+    - 13.893
+  - - 61.493
+    - 13.87
+  - - 61.494
+    - 13.883
+  - - 61.494
+    - 14.085
+  - - 61.514
+    - 16.064
+  - - 61.519
+    - 16.073
+  - - 61.527
+    - 16.047
+  - - 61.535
+    - 13.817
+  - - 61.547
+    - 14.57
+  - - 61.549
+    - 15.891
+  - - 61.564
+    - 13.97
+  - - 61.58
+    - 13.965
+  - - 61.598
+    - 13.948
+  - - 61.602
+    - 13.775
+  - - 61.688
+    - 16.505
+  - - 61.829
+    - 13.954
+  - - 61.841
+    - 13.131
+  - - 61.862
+    - 16.228
+  - - 61.952
+    - 16.168
+  - - 61.969
+    - 16.477
+  - - 62.006
+    - 16.269
+  - - 62.02
+    - 16.232
+  - - 62.211
+    - 13.361
+  - - 62.236
+    - 13.37
+  - - 62.475
+    - 13.888
+  - - 62.512
+    - 17.703
+  - - 62.552
+    - 17.865
+  - - 62.582
+    - 16.843
+  - - 62.838
+    - 14.264
+  - - 63.083
+    - 13.748
+  - - 63.127
+    - 18.262
+  - - 63.184
+    - 17.417
+  - - 63.291
+    - 13.626
+  - - 63.312
+    - 12.748
+  - - 63.358
+    - 17.441
+  - - 63.669
+    - 19.224
+  - - 63.692
+    - 18.183
+  - - 63.727
+    - 17.727
+  - - 63.827
+    - 19.628
+  - - 64.004
+    - 19.685
+  - - 64.17
+    - 20.346
+  - - 64.341
+    - 19.601
+  - - 64.43
+    - 16.313
+  - - 64.522
+    - 16.048
+  - - 64.654
+    - 15.671
+  - - 64.667
+    - 20.351
+  - - 64.752
+    - 20.486
+  - - 64.831
+    - 20.852
+  - - 64.948
+    - 20.888
+  - - 64.971
+    - 20.831
+  - - 65.054
+    - 20.042
+  - - 65.753
+    - 15.511
+  - - 65.811
+    - 16.917
+  source: FishBase occurrence records
 conservation:
   status: LC
 image:
@@ -59,12 +496,9 @@ image:
 The brook trout is a species of freshwater fish in the char genus Salvelinus of the salmon family Salmonidae native to Eastern North America in the United States and Canada. Two ecological forms of brook trout have been recognized by the US Forest Service. One ecological form is long-lived potamodromous populations in Lake Superior known as coaster trout or coasters. The second ecological form is the short-living predaceous anadromous populations which are found in northern lakes and coastal rivers from Long Island to Hudson Bay, which are referred to as salters. In parts of its range, it is also known as the eastern brook trout, speckled trout, brook char, squaretail, brookie, or mud trout, among others. Adult coaster brook trout are capable of reaching sizes over 2 feet in length and weigh up to 6.8 kg (15 lb), whereas adult salters average between 6 and 15 inches in length and weigh between 0.5 and 2.3 kg. The brook trout is characterized by its distinctive olive-green body with yellow and blue-rimmed red spots, white and black edged orange fins, and dorsal vermiculation. The diet of the brook trout is restrictive to the season and location of the fish, but will typically consist of terrestrial and aquatic insects, fry, crustaceans, zooplankton, and worms.
 
 ## Habitat
-Brook Trout is a freshwater species. It is targeted across much of its range, with fishing conditions varying by season and locality.
+Brook Trout is a freshwater, brackish, saltwater species. Typically found at depths of 15-27 metres.
 
 ## Seasonality
 Its most productive fishing months in the Northern Hemisphere are typically Apr, May, Jun, Sep, Oct, Nov, though exact timing depends on local climate and water temperature.
 
-## Conservation
-Always observe local regulations. Handle fish carefully, use appropriate tackle, and promptly release protected or out-of-season specimens.
-
-<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata; enrich fields marked TODO -->
+<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

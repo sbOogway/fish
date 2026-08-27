@@ -18,12 +18,18 @@ taxonomy:
   - Schwertfisch
   - Mekajiki
 sources:
+  fishbase_id: 226
   fishradar_id: swordfish
   wikidata_id: Q164327
+physical:
+  max_length_cm: 455
+  typical_length_cm: '300'
+  max_weight_kg: 650.0
 habitat:
+  depth_range_m: 0-2878
+  body_ecology: pelagic-oceanic
   water_types:
   - saltwater
-  _comment: 'TODO: enrich from FishBase (depth, substrate, temperature)'
 angling:
   best_months: May, Jun, Jul, Aug, Sep
   season_months:
@@ -32,22 +38,450 @@ angling:
   - 7
   - 8
   - 9
-  _comment: 'TODO: enrich from FishBase/FishFYI (bait, techniques, difficulty)'
 distribution:
   native: true
-  regions:
-  - name: Northern range
-    description: Northern extent of the species' range
-    coordinates:
-    - lat: 52
-      lng: 0
-      label: Northern limit
-  - name: Southern range
-    description: Southern extent of the species' range
-    coordinates:
-    - lat: 25
-      lng: 0
-      label: Southern limit
+  points:
+  - - -63.75
+    - -53.75
+  - - -48.75
+    - -173.75
+  - - -48.75
+    - -33.75
+  - - -48.75
+    - 33.75
+  - - -48.75
+    - 58.75
+  - - -48.75
+    - 88.75
+  - - -48.75
+    - 168.75
+  - - -43.75
+    - -168.75
+  - - -43.75
+    - -133.75
+  - - -43.75
+    - -53.75
+  - - -43.75
+    - -23.75
+  - - -43.75
+    - 3.75
+  - - -43.75
+    - 33.75
+  - - -43.75
+    - 58.75
+  - - -43.75
+    - 83.75
+  - - -43.75
+    - 158.75
+  - - -38.75
+    - -178.75
+  - - -38.75
+    - -148.75
+  - - -38.75
+    - -123.75
+  - - -38.75
+    - -93.75
+  - - -38.75
+    - -48.75
+  - - -38.75
+    - -23.75
+  - - -38.75
+    - 8.75
+  - - -38.75
+    - 33.75
+  - - -38.75
+    - 63.75
+  - - -38.75
+    - 88.75
+  - - -38.75
+    - 113.75
+  - - -38.75
+    - 153.75
+  - - -38.75
+    - 178.75
+  - - -33.75
+    - -173.75
+  - - -33.75
+    - -148.75
+  - - -33.75
+    - -118.75
+  - - -33.75
+    - -93.75
+  - - -33.75
+    - -53.75
+  - - -33.75
+    - -23.75
+  - - -33.75
+    - 3.75
+  - - -33.75
+    - 33.75
+  - - -33.75
+    - 58.75
+  - - -33.75
+    - 88.75
+  - - -33.75
+    - 113.75
+  - - -33.75
+    - 158.75
+  - - -32.399
+    - -45.924
+  - - -32.022
+    - -45.303
+  - - -31.89
+    - -45.856
+  - - -31.495
+    - -43.73
+  - - -31.236
+    - -44.705
+  - - -31.169
+    - -44.609
+  - - -31.037
+    - -45.682
+  - - -30.458
+    - -44.59
+  - - -30.259
+    - -44.507
+  - - -29.944
+    - -44.437
+  - - -29.908
+    - -44.396
+  - - -28.815
+    - -43.571
+  - - -28.75
+    - -163.75
+  - - -28.75
+    - -138.75
+  - - -28.75
+    - -108.75
+  - - -28.75
+    - -83.75
+  - - -28.75
+    - -33.75
+  - - -28.75
+    - -8.75
+  - - -28.75
+    - 18.75
+  - - -28.75
+    - 58.75
+  - - -28.75
+    - 83.75
+  - - -28.75
+    - 113.75
+  - - -28.75
+    - 173.75
+  - - -28.354
+    - -43.62
+  - - -23.75
+    - -168.75
+  - - -23.75
+    - -143.75
+  - - -23.75
+    - -113.75
+  - - -23.75
+    - -88.75
+  - - -23.75
+    - -38.75
+  - - -23.75
+    - -13.75
+  - - -23.75
+    - 18.75
+  - - -23.75
+    - 53.75
+  - - -23.75
+    - 78.75
+  - - -23.75
+    - 108.75
+  - - -23.75
+    - 163.75
+  - - -18.75
+    - -178.75
+  - - -18.75
+    - -153.75
+  - - -18.75
+    - -128.75
+  - - -18.75
+    - -98.75
+  - - -18.75
+    - -73.75
+  - - -18.75
+    - -13.75
+  - - -18.75
+    - 13.75
+  - - -18.75
+    - 58.75
+  - - -18.75
+    - 83.75
+  - - -18.75
+    - 108.75
+  - - -18.75
+    - 158.75
+  - - -13.75
+    - -178.75
+  - - -13.75
+    - -148.75
+  - - -13.75
+    - -123.75
+  - - -13.75
+    - -93.75
+  - - -13.75
+    - -33.75
+  - - -13.75
+    - -8.75
+  - - -13.75
+    - 43.75
+  - - -13.75
+    - 63.75
+  - - -13.75
+    - 93.75
+  - - -13.75
+    - 118.75
+  - - -13.75
+    - 143.75
+  - - -13.75
+    - 168.75
+  - - -8.75
+    - -173.75
+  - - -8.75
+    - -143.75
+  - - -8.75
+    - -118.75
+  - - -8.75
+    - -88.75
+  - - -8.75
+    - -23.75
+  - - -8.75
+    - 3.75
+  - - -8.75
+    - 53.75
+  - - -8.75
+    - 78.75
+  - - -8.75
+    - 103.75
+  - - -8.75
+    - 128.75
+  - - -8.75
+    - 158.75
+  - - -6.25
+    - 56.25
+  - - -3.75
+    - -158.75
+  - - -3.75
+    - -128.75
+  - - -3.75
+    - -103.75
+  - - -3.75
+    - -48.75
+  - - -3.75
+    - -23.75
+  - - -3.75
+    - 8.75
+  - - -3.75
+    - 48.75
+  - - -3.75
+    - 73.75
+  - - -3.75
+    - 103.75
+  - - -3.75
+    - 138.75
+  - - -3.75
+    - 168.75
+  - - -1.017
+    - 90.883
+  - - 3.75
+    - -168.75
+  - - 3.75
+    - -138.75
+  - - 3.75
+    - -113.75
+  - - 3.75
+    - -83.75
+  - - 3.75
+    - -38.75
+  - - 3.75
+    - -8.75
+  - - 3.75
+    - 43.75
+  - - 3.75
+    - 68.75
+  - - 3.75
+    - 98.75
+  - - 3.75
+    - 128.75
+  - - 3.75
+    - 158.75
+  - - 7.573
+    - -78.184
+  - - 8.75
+    - -153.75
+  - - 8.75
+    - -128.75
+  - - 8.75
+    - -103.75
+  - - 8.75
+    - -63.75
+  - - 8.75
+    - -38.75
+  - - 8.75
+    - -8.75
+  - - 8.75
+    - 68.75
+  - - 8.75
+    - 98.75
+  - - 8.75
+    - 128.75
+  - - 8.75
+    - 153.75
+  - - 9.185
+    - -71.174
+  - - 13.75
+    - -158.75
+  - - 13.75
+    - -128.75
+  - - 13.75
+    - -103.75
+  - - 13.75
+    - -78.75
+  - - 13.75
+    - -48.75
+  - - 13.75
+    - -23.75
+  - - 13.75
+    - 63.75
+  - - 13.75
+    - 88.75
+  - - 13.75
+    - 123.75
+  - - 13.75
+    - 148.75
+  - - 13.75
+    - 173.75
+  - - 18.75
+    - -163.75
+  - - 18.75
+    - -138.75
+  - - 18.75
+    - -108.75
+  - - 18.75
+    - -83.75
+  - - 18.75
+    - -53.75
+  - - 18.75
+    - -28.75
+  - - 18.75
+    - 63.75
+  - - 18.75
+    - 93.75
+  - - 18.75
+    - 123.75
+  - - 18.75
+    - 153.75
+  - - 18.75
+    - 178.75
+  - - 23.75
+    - -173.75
+  - - 23.75
+    - -148.75
+  - - 23.75
+    - -123.75
+  - - 23.75
+    - -88.75
+  - - 23.75
+    - -63.75
+  - - 23.75
+    - -33.75
+  - - 23.75
+    - 43.75
+  - - 23.75
+    - 118.75
+  - - 23.75
+    - 148.75
+  - - 23.75
+    - 173.75
+  - - 25.791
+    - -80.126
+  - - 28.75
+    - -178.75
+  - - 28.75
+    - -148.75
+  - - 28.75
+    - -123.75
+  - - 28.75
+    - -93.75
+  - - 28.75
+    - -63.75
+  - - 28.75
+    - -38.75
+  - - 28.75
+    - 123.75
+  - - 28.75
+    - 148.75
+  - - 28.75
+    - 178.75
+  - - 33.75
+    - -178.75
+  - - 33.75
+    - -153.75
+  - - 33.75
+    - -123.75
+  - - 33.75
+    - -73.75
+  - - 33.75
+    - -43.75
+  - - 33.75
+    - -18.75
+  - - 33.75
+    - 28.75
+  - - 33.75
+    - 138.75
+  - - 33.75
+    - 163.75
+  - - 38.75
+    - -168.75
+  - - 38.75
+    - -143.75
+  - - 38.75
+    - -68.75
+  - - 38.75
+    - -43.75
+  - - 38.75
+    - -18.75
+  - - 38.75
+    - 13.75
+  - - 38.75
+    - 133.75
+  - - 38.75
+    - 163.75
+  - - 41.283
+    - -70.099
+  - - 43.75
+    - -153.75
+  - - 43.75
+    - -73.75
+  - - 43.75
+    - -48.75
+  - - 43.75
+    - -18.75
+  - - 43.75
+    - 8.75
+  - - 43.75
+    - 158.75
+  - - 48.75
+    - -178.75
+  - - 48.75
+    - -148.75
+  - - 48.75
+    - -43.75
+  - - 48.75
+    - -18.75
+  - - 48.75
+    - 153.75
+  - - 53.75
+    - -43.75
+  - - 53.75
+    - -13.75
+  - - 58.75
+    - -28.75
+  source: FishBase occurrence records
 conservation:
   status: LC
 image:
@@ -60,12 +494,9 @@ image:
 The swordfish, also known as the broadbill in some countries, are large, highly migratory predatory fish characterized by a long, flat, sword-like, pointed bill. They are the sole member of the family Xiphiidae. They are a popular sport fish of the billfish category. Swordfish are elongated, round-bodied, and lose all teeth and scales by adulthood. These fish are found widely in tropical and temperate parts of the Atlantic, Pacific, and Indian Oceans, and can typically be found from near the surface to a depth of 550 m (1,800 ft), and exceptionally up to depths of 2,878 m (9,442 ft). They commonly reach 3 m (10 ft) in length, and the maximum reported is 4.55 m in length and 650 kg (1,430 lb) in weight.
 
 ## Habitat
-Swordfish is a saltwater (sea and brackish water) species. It is targeted across much of its range, with fishing conditions varying by season and locality.
+Swordfish is a saltwater species. Typically found at depths of 0-2878 metres.
 
 ## Seasonality
 Its most productive fishing months in the Northern Hemisphere are typically May, Jun, Jul, Aug, Sep, though exact timing depends on local climate and water temperature.
 
-## Conservation
-Always observe local regulations. Handle fish carefully, use appropriate tackle, and promptly release protected or out-of-season specimens.
-
-<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata; enrich fields marked TODO -->
+<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

@@ -16,12 +16,21 @@ taxonomy:
   - Saumon kéta
   - Salmón keta
 sources:
+  fishbase_id: 241
   fishradar_id: chum-salmon
   wikidata_id: Q475211
+physical:
+  max_length_cm: 100
+  typical_length_cm: '58'
+  max_weight_kg: 18.1
+  lifespan_years: '7'
 habitat:
+  depth_range_m: 0-250
+  body_ecology: benthopelagic
   water_types:
+  - freshwater
+  - brackish
   - saltwater
-  _comment: 'TODO: enrich from FishBase (depth, substrate, temperature)'
 angling:
   best_months: Jun, Jul, Aug, Sep
   season_months:
@@ -29,22 +38,272 @@ angling:
   - 7
   - 8
   - 9
-  _comment: 'TODO: enrich from FishBase/FishFYI (bait, techniques, difficulty)'
 distribution:
   native: true
-  regions:
-  - name: Northern range
-    description: Northern extent of the species' range
-    coordinates:
-    - lat: 65
-      lng: 0
-      label: Northern limit
-  - name: Southern range
-    description: Southern extent of the species' range
-    coordinates:
-    - lat: 40
-      lng: 0
-      label: Southern limit
+  points:
+  - - 42.0
+    - -123.5
+  - - 44.02
+    - 144.259
+  - - 45.496
+    - -123.865
+  - - 45.75
+    - -124.0
+  - - 46.979
+    - -123.481
+  - - 48.238
+    - -122.377
+  - - 48.383
+    - -123.7
+  - - 48.387
+    - -122.367
+  - - 48.433
+    - -124.45
+  - - 48.8
+    - -123.183
+  - - 48.8
+    - -123.167
+  - - 48.833
+    - -123.133
+  - - 48.833
+    - -122.15
+  - - 48.85
+    - -125.217
+  - - 48.852
+    - -125.165
+  - - 48.855
+    - -125.168
+  - - 49.047
+    - -121.992
+  - - 49.067
+    - -122.967
+  - - 49.067
+    - -121.967
+  - - 49.117
+    - -123.2
+  - - 49.167
+    - -122.45
+  - - 49.168
+    - -122.408
+  - - 49.217
+    - -122.25
+  - - 49.233
+    - -121.983
+  - - 49.25
+    - -123.25
+  - - 49.267
+    - -125.417
+  - - 49.267
+    - -123.2
+  - - 49.273
+    - -121.94
+  - - 49.283
+    - -123.233
+  - - 49.3
+    - -123.317
+  - - 49.333
+    - -123.35
+  - - 49.383
+    - -121.433
+  - - 49.4
+    - -122.417
+  - - 49.5
+    - -122.517
+  - - 49.75
+    - -124.767
+  - - 49.8
+    - -124.817
+  - - 50.017
+    - -125.25
+  - - 51.5
+    - -127.75
+  - - 52.0
+    - -160.833
+  - - 52.117
+    - -127.133
+  - - 52.717
+    - -131.733
+  - - 52.783
+    - -132.05
+  - - 52.8
+    - -131.967
+  - - 52.817
+    - -132.25
+  - - 52.833
+    - -131.867
+  - - 52.85
+    - -132.217
+  - - 52.85
+    - -131.867
+  - - 52.883
+    - -131.9
+  - - 53.783
+    - -128.5
+  - - 53.933
+    - -131.95
+  - - 54.117
+    - -165.157
+  - - 54.515
+    - -128.565
+  - - 55.017
+    - -131.367
+  - - 55.333
+    - -162.8
+  - - 55.342
+    - -131.646
+  - - 55.461
+    - -132.692
+  - - 55.633
+    - -131.967
+  - - 55.933
+    - -129.967
+  - - 56.383
+    - -134.642
+  - - 56.392
+    - -134.642
+  - - 56.951
+    - -134.948
+  - - 57.0
+    - -135.5
+  - - 57.029
+    - -134.556
+  - - 57.471
+    - -152.247
+  - - 57.571
+    - -154.461
+  - - 57.783
+    - -152.415
+  - - 58.199
+    - -136.355
+  - - 58.208
+    - -134.175
+  - - 58.298
+    - -134.418
+  - - 58.333
+    - -134.467
+  - - 58.55
+    - -155.833
+  - - 58.583
+    - -133.6
+  - - 58.867
+    - -161.733
+  - - 59.333
+    - -160.251
+  - - 59.746
+    - -161.931
+  - - 59.75
+    - -154.833
+  - - 59.935
+    - -156.427
+  - - 60.233
+    - -147.25
+  - - 60.317
+    - -136.333
+  - - 60.583
+    - -152.6
+  - - 60.6
+    - -146.25
+  - - 60.617
+    - -146.633
+  - - 60.625
+    - -145.633
+  - - 60.633
+    - -146.65
+  - - 60.667
+    - -146.683
+  - - 60.667
+    - -146.3
+  - - 60.667
+    - -146.25
+  - - 60.683
+    - -146.7
+  - - 60.683
+    - -146.267
+  - - 60.683
+    - -146.083
+  - - 60.7
+    - -146.717
+  - - 60.7
+    - -135.05
+  - - 60.708
+    - -161.908
+  - - 60.717
+    - -146.733
+  - - 60.717
+    - -146.208
+  - - 60.717
+    - -146.15
+  - - 60.717
+    - -146.117
+  - - 60.722
+    - -146.208
+  - - 60.733
+    - -146.75
+  - - 60.75
+    - -147.0
+  - - 60.75
+    - -146.767
+  - - 60.75
+    - -146.05
+  - - 60.767
+    - -146.783
+  - - 60.783
+    - -146.083
+  - - 60.933
+    - -149.15
+  - - 61.05
+    - -151.067
+  - - 61.067
+    - -147.9
+  - - 61.167
+    - -149.867
+  - - 61.533
+    - -166.083
+  - - 61.567
+    - -139.583
+  - - 61.7
+    - -146.717
+  - - 61.767
+    - -146.783
+  - - 61.867
+    - -151.414
+  - - 61.906
+    - -150.909
+  - - 62.05
+    - -145.433
+  - - 62.325
+    - -150.12
+  - - 62.5
+    - -144.65
+  - - 63.091
+    - -144.785
+  - - 63.112
+    - -163.379
+  - - 63.87
+    - -160.785
+  - - 63.908
+    - -149.441
+  - - 64.15
+    - -165.167
+  - - 65.15
+    - -165.217
+  - - 65.2
+    - -147.267
+  - - 65.425
+    - -165.782
+  - - 65.592
+    - -167.523
+  - - 65.933
+    - -145.517
+  - - 66.483
+    - -117.483
+  - - 66.773
+    - -156.044
+  - - 67.0
+    - -162.5
+  - - 68.133
+    - -151.75
+  source: FishBase occurrence records
 conservation:
   status: LC
 image:
@@ -57,12 +316,9 @@ image:
 The chum salmon, also known as dog salmon or keta salmon, is a species of anadromous salmonid fish from the genus Oncorhynchus native to the coastal rivers of the North Pacific and the Beringian Arctic. The English name "chum salmon" comes from the Chinook Jargon term tsəm, meaning "spotted" or "marked"; while keta in the scientific name comes from Russian, which in turn comes from the Evenki language of Eastern Siberia.
 
 ## Habitat
-Chum Salmon is a saltwater (sea and brackish water) species. It is targeted across much of its range, with fishing conditions varying by season and locality.
+Chum Salmon is a freshwater, brackish, saltwater species. Typically found at depths of 0-250 metres.
 
 ## Seasonality
 Its most productive fishing months in the Northern Hemisphere are typically Jun, Jul, Aug, Sep, though exact timing depends on local climate and water temperature.
 
-## Conservation
-Always observe local regulations. Handle fish carefully, use appropriate tackle, and promptly release protected or out-of-season specimens.
-
-<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata; enrich fields marked TODO -->
+<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

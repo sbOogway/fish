@@ -15,12 +15,20 @@ taxonomy:
   - Tintorera
   - Great blue shark
 sources:
+  fishbase_id: 898
   fishradar_id: blue-shark
   wikidata_id: Q26337
+physical:
+  max_length_cm: 400
+  typical_length_cm: '335'
+  max_weight_kg: 205.9
+  lifespan_years: '20'
 habitat:
+  depth_range_m: 0-1082
+  body_ecology: pelagic-oceanic
   water_types:
+  - brackish
   - saltwater
-  _comment: 'TODO: enrich from FishBase (depth, substrate, temperature)'
 angling:
   best_months: May, Jun, Jul, Aug, Sep, Oct
   season_months:
@@ -30,28 +38,414 @@ angling:
   - 8
   - 9
   - 10
-  _comment: 'TODO: enrich from FishBase/FishFYI (bait, techniques, difficulty)'
 distribution:
   native: true
-  regions:
-  - name: Northern range
-    description: Northern extent of the species' range
-    coordinates:
-    - lat: 60
-      lng: 0
-      label: Northern limit
-  - name: Southern range
-    description: Southern extent of the species' range
-    coordinates:
-    - lat: -50
-      lng: 0
-      label: Southern limit
-  - name: Equatorial range
-    description: Tropical extent of the species' range
-    coordinates:
-    - lat: 0
-      lng: 0
-      label: Equator
+  points:
+  - - -42.333
+    - 173.5
+  - - -42.0
+    - 147.0
+  - - -37.983
+    - 177.0
+  - - -37.5
+    - 177.5
+  - - -37.5
+    - 178.5
+  - - -37.25
+    - 176.25
+  - - -36.417
+    - 150.05
+  - - -36.233
+    - -54.383
+  - - -35.983
+    - -54.4
+  - - -35.6
+    - 174.533
+  - - -35.567
+    - 174.5
+  - - -35.181
+    - 174.199
+  - - -35.0
+    - 174.0
+  - - -34.983
+    - -29.183
+  - - -34.75
+    - 151.0
+  - - -34.433
+    - 150.883
+  - - -34.317
+    - -31.35
+  - - -34.067
+    - 151.133
+  - - -34.0
+    - 151.25
+  - - -33.883
+    - 151.217
+  - - -33.117
+    - -48.883
+  - - -33.083
+    - 151.617
+  - - -32.539
+    - -46.591
+  - - -32.399
+    - -45.924
+  - - -32.13
+    - -43.256
+  - - -32.078
+    - -43.209
+  - - -32.07
+    - -43.321
+  - - -32.056
+    - -43.239
+  - - -32.022
+    - -45.303
+  - - -31.999
+    - -43.88
+  - - -31.972
+    - -45.154
+  - - -31.967
+    - -45.547
+  - - -31.965
+    - -45.668
+  - - -31.938
+    - -46.196
+  - - -31.89
+    - -45.856
+  - - -31.876
+    - -43.569
+  - - -31.816
+    - -46.362
+  - - -31.776
+    - -46.164
+  - - -31.683
+    - -46.207
+  - - -31.495
+    - -43.73
+  - - -31.379
+    - -45.334
+  - - -31.323
+    - -44.425
+  - - -31.316
+    - -44.097
+  - - -31.304
+    - -44.544
+  - - -31.24
+    - -44.393
+  - - -31.236
+    - -44.705
+  - - -31.223
+    - -45.432
+  - - -31.214
+    - -44.371
+  - - -31.211
+    - -44.68
+  - - -31.194
+    - -44.164
+  - - -31.169
+    - -44.609
+  - - -31.167
+    - -31.167
+  - - -31.154
+    - -45.269
+  - - -31.082
+    - -45.882
+  - - -31.082
+    - -45.749
+  - - -31.064
+    - -43.998
+  - - -31.037
+    - -45.682
+  - - -31.017
+    - -47.65
+  - - -31.017
+    - -29.967
+  - - -31.001
+    - -44.576
+  - - -30.992
+    - -45.712
+  - - -30.985
+    - -45.681
+  - - -30.95
+    - -47.483
+  - - -30.783
+    - -47.45
+  - - -30.717
+    - -46.167
+  - - -30.637
+    - -44.316
+  - - -30.561
+    - -44.622
+  - - -30.458
+    - -44.59
+  - - -30.433
+    - -47.517
+  - - -30.339
+    - -44.271
+  - - -30.315
+    - -44.281
+  - - -30.299
+    - -44.636
+  - - -30.283
+    - -44.103
+  - - -30.259
+    - -44.507
+  - - -30.254
+    - -44.391
+  - - -30.203
+    - -44.196
+  - - -29.961
+    - -44.354
+  - - -29.961
+    - -44.325
+  - - -29.96
+    - -43.942
+  - - -29.944
+    - -44.437
+  - - -29.932
+    - -44.15
+  - - -29.931
+    - -44.352
+  - - -29.928
+    - -44.282
+  - - -29.919
+    - -44.227
+  - - -29.908
+    - -44.396
+  - - -29.882
+    - -44.357
+  - - -29.608
+    - -43.764
+  - - -29.15
+    - -46.017
+  - - -29.09
+    - -47.915
+  - - -28.95
+    - -46.283
+  - - -28.898
+    - -43.789
+  - - -28.89
+    - -43.623
+  - - -28.815
+    - -43.571
+  - - -28.791
+    - -43.581
+  - - -28.77
+    - -43.562
+  - - -28.705
+    - -43.592
+  - - -28.683
+    - -43.577
+  - - -28.601
+    - -43.576
+  - - -28.431
+    - -43.532
+  - - -28.354
+    - -43.62
+  - - -28.283
+    - -46.633
+  - - -28.25
+    - -46.9
+  - - -28.21
+    - -43.531
+  - - -28.183
+    - -46.817
+  - - -28.183
+    - 14.5
+  - - -28.083
+    - -45.45
+  - - -27.3
+    - 14.15
+  - - -25.484
+    - -41.521
+  - - -25.409
+    - -42.486
+  - - -20.45
+    - 57.317
+  - - -17.55
+    - 11.517
+  - - -5.8
+    - 12.083
+  - - -4.933
+    - 11.9
+  - - -4.533
+    - 11.617
+  - - -3.967
+    - 11.05
+  - - -3.45
+    - 10.617
+  - - -3.033
+    - 10.2
+  - - -2.533
+    - 9.683
+  - - -1.933
+    - 9.217
+  - - -1.033
+    - 8.967
+  - - -0.75
+    - 90.15
+  - - -0.685
+    - 8.683
+  - - -0.233
+    - 9.233
+  - - 0.417
+    - 9.25
+  - - 1.185
+    - 9.285
+  - - 1.817
+    - 9.683
+  - - 2.483
+    - 9.718
+  - - 3.15
+    - 9.8
+  - - 3.717
+    - 9.433
+  - - 4.067
+    - 5.467
+  - - 4.15
+    - 6.035
+  - - 4.2
+    - 8.851
+  - - 4.233
+    - 6.083
+  - - 4.3
+    - -7.8
+  - - 4.3
+    - 7.55
+  - - 4.4
+    - 8.233
+  - - 4.517
+    - -7.017
+  - - 4.6
+    - -8.417
+  - - 4.718
+    - -6.567
+  - - 4.733
+    - -2.133
+  - - 4.9
+    - -1.7
+  - - 4.933
+    - -9.0
+  - - 4.95
+    - -5.968
+  - - 4.95
+    - -2.733
+  - - 5.033
+    - 5.135
+  - - 5.05
+    - -9.735
+  - - 5.067
+    - 0.217
+  - - 5.083
+    - -5.3
+  - - 5.1
+    - -3.367
+  - - 5.1
+    - -1.067
+  - - 5.133
+    - -4.65
+  - - 5.217
+    - -4.083
+  - - 5.383
+    - -0.417
+  - - 5.85
+    - 1.0
+  - - 5.933
+    - -10.15
+  - - 5.935
+    - 4.801
+  - - 6.017
+    - 1.517
+  - - 6.3
+    - -10.818
+  - - 6.3
+    - 2.2
+  - - 6.317
+    - 4.283
+  - - 6.35
+    - 2.9
+  - - 6.4
+    - 3.617
+  - - 6.7
+    - -11.367
+  - - 7.117
+    - -11.951
+  - - 7.367
+    - -12.635
+  - - 7.585
+    - -13.283
+  - - 7.968
+    - -13.85
+  - - 8.95
+    - -13.8
+  - - 9.6
+    - -14.217
+  - - 10.083
+    - -14.683
+  - - 10.2
+    - -15.583
+  - - 10.533
+    - -16.25
+  - - 10.983
+    - -16.733
+  - - 11.75
+    - -16.067
+  - - 12.017
+    - -17.083
+  - - 17.617
+    - -101.633
+  - - 19.25
+    - -160.817
+  - - 23.85
+    - -17.083
+  - - 24.183
+    - -110.3
+  - - 25.5
+    - -114.25
+  - - 28.3
+    - -15.8
+  - - 28.317
+    - -16.317
+  - - 28.333
+    - -16.833
+  - - 32.033
+    - -32.0
+  - - 34.0
+    - -119.5
+  - - 34.072
+    - -119.746
+  - - 37.217
+    - -74.517
+  - - 38.25
+    - -75.0
+  - - 38.8
+    - -72.967
+  - - 39.753
+    - -74.223
+  - - 40.7
+    - -72.92
+  - - 41.0
+    - -71.75
+  - - 41.0
+    - -71.5
+  - - 41.283
+    - -70.099
+  - - 41.389
+    - -71.52
+  - - 41.417
+    - -70.616
+  - - 41.5
+    - -71.0
+  - - 41.636
+    - -70.934
+  - - 41.682
+    - -69.96
+  - - 42.656
+    - -70.62
+  - - 51.783
+    - -6.05
+  - - 52.0
+    - -130.5
+  source: FishBase occurrence records
 conservation:
   status: LC
 image:
@@ -64,12 +458,9 @@ image:
 The blue shark, also known as the great blue shark, is a species of requiem shark in the family Carcharhinidae which inhabits deep waters in the world's temperate and tropical oceans. It is the only living species of genus Prionace. An extinct species, P. clarki, is known from teeth from California of the Late Pliocene. Averaging around 3.1 m (10 ft) and preferring cooler waters, the blue shark migrates long distances, such as from New England to South America. It is listed as Near Threatened by the IUCN.
 
 ## Habitat
-Blue Shark is a saltwater (sea and brackish water) species. It is targeted across much of its range, with fishing conditions varying by season and locality.
+Blue Shark is a brackish, saltwater species. Typically found at depths of 0-1082 metres.
 
 ## Seasonality
 Its most productive fishing months in the Northern Hemisphere are typically May, Jun, Jul, Aug, Sep, Oct, though exact timing depends on local climate and water temperature.
 
-## Conservation
-Always observe local regulations. Handle fish carefully, use appropriate tackle, and promptly release protected or out-of-season specimens.
-
-<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata; enrich fields marked TODO -->
+<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

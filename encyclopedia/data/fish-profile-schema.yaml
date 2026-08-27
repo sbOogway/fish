@@ -55,14 +55,15 @@ habitat:
   clarity_preference: "Murky to moderate"
   geographic_range: "Native to northern/central Europe and western Asia"
 
-# === DISTRIBUTION (from FishBase — coordinates for Leaflet) ===
+# === DISTRIBUTION (from FishBase occurrence records — real points for Leaflet) ===
+# Auto-generated pages embed real observation/museum coordinates as a density
+# scatter. An empty/absent `points` means the map is omitted (no fabricated map).
 distribution:
   native: true
-  regions:
-    - name: "Western Europe"
-      coordinates:
-        - { lat: 52.1, lng: 5.3, label: "Netherlands" }
-        - { lat: 52.5, lng: 13.4, label: "Berlin, Germany" }
+  source: "FishBase occurrence records"
+  points:
+    - [52.1, -3.1]   # [lat, lng] pairs, downsampled to <=220
+    - [54.3, -0.9]
 
 # === BEHAVIOR (from FishBase) ===
 behavior:
@@ -105,15 +106,19 @@ conservation:
 
 | Field group | Authoritative source | Fallback |
 |-------------|---------------------|----------|
-| Taxonomy | FishBase | FishFYI |
-| Physical | FishFYI (has more complete data) | FishBase |
-| Habitat | FishBase | FishFYI |
-| Distribution coords | FishBase | FishRadar (latRange) |
+| Taxonomy | FishBase / Wikidata | FishRadar |
+| Physical | FishBase (`species` table) | — |
+| Habitat | FishBase (`species` table) | FishRadar (`environment`) |
+| Distribution points | FishBase (`occurrence` table) | None (map omitted) |
 | Behavior | FishBase | — |
-| Angling | FishFYI | Manual curation |
-| Seasonality | FishRadar | FishFYI seasons endpoint |
-| Image | FishFYI (Wikimedia Commons URL) | Placeholder |
-| Conservation | FishFYI (IUCN) | FishRadar |
+| Angling | Manually curated | FishRadar (`seasonMonths`) |
+| Seasonality | FishRadar | — |
+| Image | Wikipedia (Wikimedia Commons URL) | — |
+| Conservation | FishRadar | — |
+
+> Note: fishbase.org's API is Cloudflare-challenged; FishBase data is pulled from
+> the Source Cooperative parquet mirror (see `docs/adr/0002-species-data-pipeline.md`
+> and `encyclopedia/fishbase.py`).
 
 ## Required vs Optional
 

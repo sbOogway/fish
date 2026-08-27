@@ -15,12 +15,20 @@ taxonomy:
   - Pompano
   - Carangue pompano
 sources:
+  fishbase_id: 1010
   fishradar_id: permit
   wikidata_id: Q972376
+physical:
+  max_length_cm: 122
+  typical_length_cm: '94'
+  max_weight_kg: 36.0
+  lifespan_years: '23'
 habitat:
+  depth_range_m: 0-36
+  body_ecology: reef-associated
   water_types:
+  - brackish
   - saltwater
-  _comment: 'TODO: enrich from FishBase (depth, substrate, temperature)'
 angling:
   best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct
   season_months:
@@ -32,28 +40,232 @@ angling:
   - 8
   - 9
   - 10
-  _comment: 'TODO: enrich from FishBase/FishFYI (bait, techniques, difficulty)'
 distribution:
   native: true
-  regions:
-  - name: Northern range
-    description: Northern extent of the species' range
-    coordinates:
-    - lat: 30
-      lng: 0
-      label: Northern limit
-  - name: Southern range
-    description: Southern extent of the species' range
-    coordinates:
-    - lat: -27
-      lng: 0
-      label: Southern limit
-  - name: Equatorial range
-    description: Tropical extent of the species' range
-    coordinates:
-    - lat: 0
-      lng: 0
-      label: Equator
+  points:
+  - - -23.0
+    - -42.0
+  - - -6.0
+    - 12.4
+  - - -5.917
+    - 12.35
+  - - -5.8
+    - 12.083
+  - - -4.933
+    - 11.9
+  - - -4.533
+    - 11.617
+  - - -4.467
+    - 11.7
+  - - -3.967
+    - 11.05
+  - - -3.45
+    - 10.617
+  - - -3.033
+    - 10.2
+  - - -2.533
+    - 9.683
+  - - -1.933
+    - 9.217
+  - - -1.033
+    - 8.967
+  - - -0.867
+    - -44.25
+  - - -0.685
+    - 8.683
+  - - -0.233
+    - 9.233
+  - - 0.417
+    - 9.25
+  - - 1.185
+    - 9.285
+  - - 1.817
+    - 9.683
+  - - 2.483
+    - 9.718
+  - - 3.15
+    - 9.8
+  - - 3.717
+    - 9.433
+  - - 4.067
+    - 5.467
+  - - 4.15
+    - 6.035
+  - - 4.2
+    - 8.851
+  - - 4.233
+    - 6.083
+  - - 4.3
+    - -7.8
+  - - 4.3
+    - 7.55
+  - - 4.4
+    - 8.233
+  - - 4.517
+    - -7.017
+  - - 4.6
+    - -8.417
+  - - 4.718
+    - -6.567
+  - - 4.733
+    - -2.133
+  - - 4.9
+    - -1.7
+  - - 4.933
+    - -9.0
+  - - 4.95
+    - -5.968
+  - - 4.95
+    - -2.733
+  - - 5.033
+    - 5.135
+  - - 5.05
+    - -9.735
+  - - 5.067
+    - 0.217
+  - - 5.083
+    - -5.3
+  - - 5.1
+    - -3.367
+  - - 5.1
+    - -1.067
+  - - 5.133
+    - -4.65
+  - - 5.217
+    - -4.083
+  - - 5.317
+    - -4.033
+  - - 5.333
+    - -4.117
+  - - 5.383
+    - -0.417
+  - - 5.85
+    - 1.0
+  - - 5.933
+    - -10.15
+  - - 5.935
+    - 4.801
+  - - 5.983
+    - -9.983
+  - - 6.017
+    - 1.517
+  - - 6.3
+    - -10.818
+  - - 6.3
+    - 2.2
+  - - 6.317
+    - 4.283
+  - - 6.35
+    - 2.9
+  - - 6.4
+    - 3.617
+  - - 6.467
+    - 2.417
+  - - 6.7
+    - -11.367
+  - - 6.717
+    - -11.0
+  - - 6.767
+    - -11.2
+  - - 7.117
+    - -11.951
+  - - 7.367
+    - -12.635
+  - - 7.585
+    - -13.283
+  - - 7.968
+    - -13.85
+  - - 8.417
+    - -13.133
+  - - 8.95
+    - -13.8
+  - - 9.367
+    - -79.967
+  - - 9.6
+    - -14.217
+  - - 10.083
+    - -14.683
+  - - 10.2
+    - -15.583
+  - - 10.533
+    - -16.25
+  - - 10.983
+    - -16.733
+  - - 11.0
+    - -74.192
+  - - 11.75
+    - -16.067
+  - - 12.017
+    - -17.083
+  - - 15.749
+    - -88.628
+  - - 17.25
+    - -88.75
+  - - 18.0
+    - -91.862
+  - - 18.15
+    - -97.133
+  - - 18.772
+    - -91.542
+  - - 19.225
+    - -90.854
+  - - 19.595
+    - -155.983
+  - - 21.667
+    - -82.833
+  - - 24.5
+    - -82.0
+  - - 24.55
+    - -81.773
+  - - 24.615
+    - -81.536
+  - - 24.63
+    - -82.92
+  - - 24.672
+    - -81.338
+  - - 24.716
+    - -81.092
+  - - 24.75
+    - -83.0
+  - - 24.919
+    - -80.629
+  - - 25.641
+    - -80.21
+  - - 25.758
+    - -79.279
+  - - 25.766
+    - -80.127
+  - - 25.791
+    - -80.126
+  - - 25.934
+    - -81.735
+  - - 26.121
+    - -80.103
+  - - 26.142
+    - -81.795
+  - - 26.613
+    - -80.035
+  - - 26.706
+    - -80.031
+  - - 26.75
+    - -82.25
+  - - 27.47
+    - -80.293
+  - - 27.5
+    - -82.75
+  - - 27.762
+    - -82.545
+  - - 27.925
+    - -81.795
+  - - 32.65
+    - -79.967
+  - - 32.75
+    - -79.9
+  - - 32.817
+    - -79.717
+  - - 33.417
+    - -76.967
+  source: FishBase occurrence records
 conservation:
   status: LC
 image:
@@ -66,12 +278,9 @@ image:
 The permit is a game fish of the western Atlantic Ocean belonging to the family Trachinotidae. Adults feed on crabs, shrimp, and smaller fish.
 
 ## Habitat
-Permit is a saltwater (sea and brackish water) species. It is targeted across much of its range, with fishing conditions varying by season and locality.
+Permit is a brackish, saltwater species. Typically found at depths of 0-36 metres.
 
 ## Seasonality
 Its most productive fishing months in the Northern Hemisphere are typically Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, though exact timing depends on local climate and water temperature.
 
-## Conservation
-Always observe local regulations. Handle fish carefully, use appropriate tackle, and promptly release protected or out-of-season specimens.
-
-<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata; enrich fields marked TODO -->
+<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

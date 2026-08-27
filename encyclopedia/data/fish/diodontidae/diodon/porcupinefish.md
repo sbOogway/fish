@@ -14,12 +14,18 @@ taxonomy:
   - Spot-fin Porcupinefish
   - Pez puerco espín
 sources:
+  fishbase_id: 1022
   fishradar_id: porcupinefish
   wikidata_id: Q1328265
+physical:
+  max_length_cm: 91
+  typical_length_cm: '40'
+  max_weight_kg: 2.8
 habitat:
+  depth_range_m: 2-50
+  body_ecology: reef-associated
   water_types:
   - saltwater
-  _comment: 'TODO: enrich from FishBase (depth, substrate, temperature)'
 angling:
   best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
   season_months:
@@ -35,28 +41,238 @@ angling:
   - 10
   - 11
   - 12
-  _comment: 'TODO: enrich from FishBase/FishFYI (bait, techniques, difficulty)'
 distribution:
   native: true
-  regions:
-  - name: Northern range
-    description: Northern extent of the species' range
-    coordinates:
-    - lat: 35
-      lng: 0
-      label: Northern limit
-  - name: Southern range
-    description: Southern extent of the species' range
-    coordinates:
-    - lat: -35
-      lng: 0
-      label: Southern limit
-  - name: Equatorial range
-    description: Tropical extent of the species' range
-    coordinates:
-    - lat: 0
-      lng: 0
-      label: Equator
+  points:
+  - - -24.5
+    - -46.0
+  - - -23.083
+    - -44.333
+  - - -23.0
+    - -42.0
+  - - -20.667
+    - -40.367
+  - - -20.5
+    - -29.333
+  - - -9.9
+    - -27.183
+  - - -5.8
+    - 12.083
+  - - -5.167
+    - 150.367
+  - - -4.933
+    - 11.9
+  - - -4.533
+    - 11.617
+  - - -3.967
+    - 11.05
+  - - -3.85
+    - -32.433
+  - - -3.833
+    - -33.817
+  - - -3.45
+    - 10.617
+  - - -3.033
+    - 10.2
+  - - -2.533
+    - 9.683
+  - - -1.933
+    - 9.217
+  - - -1.033
+    - 8.967
+  - - -0.867
+    - -44.25
+  - - -0.685
+    - 8.683
+  - - -0.233
+    - 9.233
+  - - 0.417
+    - 9.25
+  - - 1.185
+    - 9.285
+  - - 1.817
+    - 9.683
+  - - 2.483
+    - 9.718
+  - - 3.15
+    - 9.8
+  - - 3.717
+    - 9.433
+  - - 4.067
+    - 5.467
+  - - 4.15
+    - 6.035
+  - - 4.2
+    - 8.851
+  - - 4.233
+    - 6.083
+  - - 4.3
+    - -7.8
+  - - 4.3
+    - 7.55
+  - - 4.4
+    - 8.233
+  - - 4.517
+    - -7.017
+  - - 4.6
+    - -8.417
+  - - 4.718
+    - -6.567
+  - - 4.733
+    - -2.133
+  - - 4.9
+    - -1.7
+  - - 4.933
+    - -9.0
+  - - 4.95
+    - -5.968
+  - - 4.95
+    - -2.733
+  - - 5.033
+    - 5.135
+  - - 5.05
+    - -9.735
+  - - 5.067
+    - 0.217
+  - - 5.083
+    - -5.3
+  - - 5.1
+    - -3.367
+  - - 5.1
+    - -1.067
+  - - 5.133
+    - -4.65
+  - - 5.217
+    - -4.083
+  - - 5.383
+    - -0.417
+  - - 5.85
+    - 1.0
+  - - 5.933
+    - -10.15
+  - - 5.935
+    - 4.801
+  - - 6.017
+    - 1.517
+  - - 6.3
+    - -10.818
+  - - 6.3
+    - 2.2
+  - - 6.317
+    - 4.283
+  - - 6.35
+    - 2.9
+  - - 6.4
+    - 3.617
+  - - 6.7
+    - -11.367
+  - - 7.117
+    - -11.951
+  - - 7.367
+    - -12.635
+  - - 7.513
+    - -13.102
+  - - 7.585
+    - -13.283
+  - - 7.827
+    - -13.85
+  - - 7.93
+    - -13.993
+  - - 7.968
+    - -13.85
+  - - 8.025
+    - -13.983
+  - - 8.083
+    - -14.097
+  - - 8.122
+    - -14.115
+  - - 8.133
+    - -13.347
+  - - 8.408
+    - -13.525
+  - - 8.425
+    - -13.475
+  - - 8.427
+    - -13.475
+  - - 8.428
+    - -13.478
+  - - 8.43
+    - -13.478
+  - - 8.433
+    - -13.477
+  - - 8.438
+    - -13.483
+  - - 8.51
+    - -13.997
+  - - 8.583
+    - -13.867
+  - - 8.603
+    - -13.533
+  - - 8.883
+    - -14.022
+  - - 8.933
+    - -79.567
+  - - 8.95
+    - -13.8
+  - - 9.5
+    - -14.833
+  - - 9.6
+    - -14.217
+  - - 9.733
+    - -79.65
+  - - 9.758
+    - -84.899
+  - - 10.083
+    - -14.683
+  - - 10.2
+    - -15.583
+  - - 10.533
+    - -16.25
+  - - 10.983
+    - -16.733
+  - - 11.75
+    - -16.067
+  - - 12.017
+    - -17.083
+  - - 12.167
+    - 43.467
+  - - 14.767
+    - 120.25
+  - - 15.993
+    - 40.0
+  - - 17.683
+    - -101.65
+  - - 18.367
+    - -114.733
+  - - 19.062
+    - -104.32
+  - - 19.55
+    - -105.567
+  - - 21.0
+    - -157.0
+  - - 21.934
+    - 38.865
+  - - 22.057
+    - 38.767
+  - - 22.8
+    - -109.883
+  - - 23.864
+    - 37.888
+  - - 24.133
+    - -110.35
+  - - 24.183
+    - -110.3
+  - - 24.354
+    - -110.288
+  - - 24.617
+    - -111.867
+  - - 26.937
+    - -80.068
+  - - 27.25
+    - 33.817
+  - - 27.6
+    - -86.567
+  source: FishBase occurrence records
 conservation:
   status: LC
 image:
@@ -69,12 +285,9 @@ image:
 The spot-fin porcupinefish, also known as the spotted porcupinefish, black-spotted porcupinefish or simply porcupinefish, is a member of the family Diodontidae.
 
 ## Habitat
-Porcupinefish is a saltwater (sea and brackish water) species. It is targeted across much of its range, with fishing conditions varying by season and locality.
+Porcupinefish is a saltwater species. Typically found at depths of 2-50 metres.
 
 ## Seasonality
 Its most productive fishing months in the Northern Hemisphere are typically Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec, though exact timing depends on local climate and water temperature.
 
-## Conservation
-Always observe local regulations. Handle fish carefully, use appropriate tackle, and promptly release protected or out-of-season specimens.
-
-<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata; enrich fields marked TODO -->
+<!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

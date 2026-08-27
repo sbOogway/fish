@@ -104,6 +104,11 @@
     
 
     
+    <section class="map-section">
+        <h2>Distribution</h2>
+        <div id="map"></div>
+    </section>
+    
 
     <article class="content">
         <p>The wels catfish is the largest freshwater fish in Europe and one of the biggest freshwater fish in the world. Reaching over 2 metres and more than 100 kg, it is the ultimate trophy for many anglers — a powerful, ancient-looking predator that prowls the deeps of Europe's largest rivers and lakes.</p>
@@ -130,6 +135,31 @@
         <p>Generated from <a href="encyclopedia/data/fish/siluridae/silurus/wels-catfish.md">fish/siluridae/silurus/wels-catfish.md</a></p>
     </footer>
 
+    
+    <script>
+        (function() {
+            var map = L.map('map', { scrollWheelZoom: false }).setView([48, 20], 4);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                maxZoom: 18
+            }).addTo(map);
+            var regions = [{"coordinates": [{"label": "Belgrade, Serbia", "lat": 44.8, "lng": 20.5}, {"label": "Bucharest, Romania", "lat": 44.4, "lng": 26.1}], "description": "Danube and tributaries, Balkans, Romania", "name": "Danube Basin"}, {"coordinates": [{"label": "Budapest, Hungary", "lat": 47.5, "lng": 19.0}, {"label": "Vienna, Austria", "lat": 48.2, "lng": 16.3}], "description": "Germany, Hungary, Austria", "name": "Central Europe"}, {"coordinates": [{"label": "Moscow, Russia", "lat": 55.8, "lng": 37.6}, {"label": "Kyiv, Ukraine", "lat": 50.4, "lng": 30.5}], "description": "Russia, Ukraine, Belarus", "name": "Eastern Europe"}, {"coordinates": [{"label": "Ebro River, Spain", "lat": 41.6, "lng": -0.9}, {"label": "Paris, France", "lat": 48.9, "lng": 2.3}], "description": "France, Spain, Netherlands, UK", "name": "Introduced \u2014 Western Europe"}];
+            var bounds = [];
+            regions.forEach(function(region) {
+                region.coordinates.forEach(function(coord) {
+                    L.circleMarker([coord.lat, coord.lng], {
+                        radius: 6, fillColor: '#111', color: '#111', weight: 1, opacity: 1, fillOpacity: 0.6
+                    }).addTo(map).bindPopup(
+                        '<strong>' + coord.label + '</strong><br>' +
+                        '<em>' + region.name + '</em><br>' +
+                        '<small>' + region.description + '</small>'
+                    );
+                    bounds.push([coord.lat, coord.lng]);
+                });
+            });
+            if (bounds.length > 0) map.fitBounds(bounds, { padding: [30, 30], maxZoom: 6 });
+        })();
+    </script>
     
 
 </body>

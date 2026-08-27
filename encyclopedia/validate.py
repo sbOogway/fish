@@ -34,7 +34,9 @@ def validate_file(path):
             errors.append(f"{path}: missing required field '{field}'")
     tax = meta.get("taxonomy", {})
     if tax.get("family") and tax.get("genus") and tax.get("species"):
-        expected_dir = DATA_DIR / tax["family"].lower() / tax["genus"].lower()
+        def kebab(s):
+            return s.lower().replace(" ", "-")
+        expected_dir = DATA_DIR / kebab(tax["family"]) / kebab(tax["genus"])
         if expected_dir not in path.parents:
             errors.append(f"{path}: expected path {expected_dir}/...")
     return errors

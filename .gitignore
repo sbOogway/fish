@@ -1,4 +1,5 @@
 encyclopedia/out/
+__pycache__/
 .venv/
 .agents/
 skills-lock.json

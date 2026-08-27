@@ -103,7 +103,7 @@
     <div class="stats">{{ stats | safe }}</div>
     {% endif %}
 
-    {% if distribution and distribution.regions %}
+    {% if distribution %}
     <section class="map-section">
         <h2>Distribution</h2>
         <div id="map"></div>
@@ -118,7 +118,7 @@
         <p>Generated from <a href="{{ source_path }}">{{ source_file }}</a></p>
     </footer>
 
-    {% if distribution and distribution.regions %}
+    {% if distribution %}
     <script>
         (function() {
             var map = L.map('map', { scrollWheelZoom: false }).setView([48, 20], 4);

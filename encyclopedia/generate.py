@@ -177,29 +177,22 @@ def build_index():
     template = env.get_template("index.html")
 
     species_list = []
-    families = set()
     for md_file in sorted(DATA_DIR.rglob("fish/*/*/*.md")):
         if md_file.name.startswith("_"):
             continue
         text = md_file.read_text(encoding="utf-8")
         meta, _ = parse_frontmatter(text)
         tax = meta.get("taxonomy", {})
-        family = tax.get("family", "")
         water = meta.get("habitat", {}).get("water_types", [None])[0] if meta.get("habitat", {}).get("water_types") else None
         slug = md_file.stem
         species_list.append({
             "common_name": tax.get("common_name", slug.replace("-", " ").title()),
             "scientific_name": tax.get("scientific_name", ""),
-            "family": family,
             "water_type": water.title() if water else None,
             "path": f"{slug}.html",
         })
-        if family:
-            families.add(family)
 
-    families = sorted(families)
-
-    html = template.render(species_list=species_list, families=families)
+    html = template.render(species_list=species_list)
     out_file = OUT_DIR / "index.html"
     out_file.write_text(html, encoding="utf-8")
     print(f"  ✓ index.html ({len(species_list)} species)")

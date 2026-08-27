@@ -59,6 +59,7 @@
         .map-section { margin: 2rem 0; }
         .map-section h2 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
         #map { height: 380px; border: 1px solid var(--border); z-index: 1; }
+        .map-note { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; }
 
         /* Body content */
         .content { margin: 2rem 0; }
@@ -107,6 +108,7 @@
     <section class="map-section">
         <h2>Distribution</h2>
         <div id="map"></div>
+        
     </section>
     
 
@@ -137,26 +139,46 @@
     
     <script>
         (function() {
-            var map = L.map('map', { scrollWheelZoom: false }).setView([48, 20], 4);
+            var map = L.map('map', { scrollWheelZoom: false });
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                 maxZoom: 18
             }).addTo(map);
-            var regions = [{"coordinates": [{"label": "Netherlands", "lat": 52.1, "lng": 5.3}, {"label": "Berlin, Germany", "lat": 52.5, "lng": 13.4}, {"label": "Copenhagen, Denmark", "lat": 55.7, "lng": 12.6}], "description": "Netherlands, Germany, Denmark", "name": "Western Europe"}, {"coordinates": [{"label": "Warsaw, Poland", "lat": 52.2, "lng": 21.0}, {"label": "Prague, Czech Republic", "lat": 50.1, "lng": 14.4}, {"label": "Budapest, Hungary", "lat": 47.5, "lng": 19.0}], "description": "Poland, Czech Republic, Hungary, Austria", "name": "Central Europe"}, {"coordinates": [{"label": "Bucharest, Romania", "lat": 44.4, "lng": 26.1}, {"label": "Sofia, Bulgaria", "lat": 42.7, "lng": 23.3}, {"label": "Belgrade, Serbia", "lat": 44.8, "lng": 20.5}], "description": "Romania, Bulgaria, Serbia, Croatia", "name": "Eastern Europe"}, {"coordinates": [{"label": "Stockholm, Sweden", "lat": 59.3, "lng": 18.1}, {"label": "Helsinki, Finland", "lat": 60.2, "lng": 24.9}, {"label": "Tallinn, Estonia", "lat": 59.4, "lng": 24.7}], "description": "Sweden, Finland, Estonia, Latvia, Lithuania", "name": "Scandinavia \u0026 Baltics"}, {"coordinates": [{"label": "Moscow, Russia", "lat": 55.8, "lng": 37.6}, {"label": "Astana, Kazakhstan", "lat": 51.1, "lng": 71.4}], "description": "Russia, Kazakhstan, Uzbekistan, Turkmenistan", "name": "Russia \u0026 Central Asia"}, {"coordinates": [{"label": "Cambridgeshire Fens, UK", "lat": 52.2, "lng": 0.1}], "description": "UK and Ireland (introduced in 19th century)", "name": "Introduced \u2014 British Isles"}, {"coordinates": [{"label": "Paris, France", "lat": 48.9, "lng": 2.3}, {"label": "Rome, Italy", "lat": 41.9, "lng": 12.5}], "description": "France, Italy, Spain (introduced)", "name": "Introduced \u2014 Southern Europe"}, {"coordinates": [{"label": "Shanghai, China", "lat": 31.2, "lng": 121.5}], "description": "China (introduced in 1950s)", "name": "Introduced \u2014 Asia"}];
+
+            var dist = {"points": [], "regions": [{"coordinates": [{"label": "Netherlands", "lat": 52.1, "lng": 5.3}, {"label": "Berlin, Germany", "lat": 52.5, "lng": 13.4}, {"label": "Copenhagen, Denmark", "lat": 55.7, "lng": 12.6}], "description": "Netherlands, Germany, Denmark", "name": "Western Europe"}, {"coordinates": [{"label": "Warsaw, Poland", "lat": 52.2, "lng": 21.0}, {"label": "Prague, Czech Republic", "lat": 50.1, "lng": 14.4}, {"label": "Budapest, Hungary", "lat": 47.5, "lng": 19.0}], "description": "Poland, Czech Republic, Hungary, Austria", "name": "Central Europe"}, {"coordinates": [{"label": "Bucharest, Romania", "lat": 44.4, "lng": 26.1}, {"label": "Sofia, Bulgaria", "lat": 42.7, "lng": 23.3}, {"label": "Belgrade, Serbia", "lat": 44.8, "lng": 20.5}], "description": "Romania, Bulgaria, Serbia, Croatia", "name": "Eastern Europe"}, {"coordinates": [{"label": "Stockholm, Sweden", "lat": 59.3, "lng": 18.1}, {"label": "Helsinki, Finland", "lat": 60.2, "lng": 24.9}, {"label": "Tallinn, Estonia", "lat": 59.4, "lng": 24.7}], "description": "Sweden, Finland, Estonia, Latvia, Lithuania", "name": "Scandinavia \u0026 Baltics"}, {"coordinates": [{"label": "Moscow, Russia", "lat": 55.8, "lng": 37.6}, {"label": "Astana, Kazakhstan", "lat": 51.1, "lng": 71.4}], "description": "Russia, Kazakhstan, Uzbekistan, Turkmenistan", "name": "Russia \u0026 Central Asia"}, {"coordinates": [{"label": "Cambridgeshire Fens, UK", "lat": 52.2, "lng": 0.1}], "description": "UK and Ireland (introduced in 19th century)", "name": "Introduced \u2014 British Isles"}, {"coordinates": [{"label": "Paris, France", "lat": 48.9, "lng": 2.3}, {"label": "Rome, Italy", "lat": 41.9, "lng": 12.5}], "description": "France, Italy, Spain (introduced)", "name": "Introduced \u2014 Southern Europe"}, {"coordinates": [{"label": "Shanghai, China", "lat": 31.2, "lng": 121.5}], "description": "China (introduced in 1950s)", "name": "Introduced \u2014 Asia"}], "source": null};
             var bounds = [];
-            regions.forEach(function(region) {
-                region.coordinates.forEach(function(coord) {
-                    L.circleMarker([coord.lat, coord.lng], {
-                        radius: 6, fillColor: '#111', color: '#111', weight: 1, opacity: 1, fillOpacity: 0.6
-                    }).addTo(map).bindPopup(
-                        '<strong>' + coord.label + '</strong><br>' +
-                        '<em>' + region.name + '</em><br>' +
-                        '<small>' + region.description + '</small>'
-                    );
-                    bounds.push([coord.lat, coord.lng]);
+            var pts = dist.points || [];
+
+            if (pts.length > 0) {
+                // Real occurrence records => density scatter of observed locations.
+                pts.forEach(function(p) {
+                    L.circleMarker([p[0], p[1]], {
+                        radius: 3, fillColor: '#b23a22', color: '#b23a22',
+                        weight: 0.5, fillOpacity: 0.55
+                    }).addTo(map);
+                    bounds.push([p[0], p[1]]);
                 });
-            });
-            if (bounds.length > 0) map.fitBounds(bounds, { padding: [30, 30], maxZoom: 6 });
+            } else {
+                // Fallback: named regions (should rarely be reached).
+                (dist.regions || []).forEach(function(region) {
+                    region.coordinates.forEach(function(coord) {
+                        L.circleMarker([coord.lat, coord.lng], {
+                            radius: 6, fillColor: '#111', color: '#111', weight: 1,
+                            fillOpacity: 0.6
+                        }).addTo(map).bindPopup(
+                            '<strong>' + coord.label + '</strong><br>' +
+                            '<em>' + region.name + '</em>'
+                        );
+                        bounds.push([coord.lat, coord.lng]);
+                    });
+                });
+            }
+
+            if (bounds.length > 0) {
+                map.fitBounds(bounds, { padding: [20, 20] });
+            } else {
+                map.setView([20, 0], 2);
+            }
         })();
     </script>
     

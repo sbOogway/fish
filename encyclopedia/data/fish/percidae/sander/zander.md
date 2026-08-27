@@ -113,10 +113,10 @@ angling:
   season_months: [4, 5, 6, 7, 8, 9, 10, 11]
 
 image:
-  url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Zander_%28Sander_lucioperca%29.jpg/1280px-Zander_%28Sander_lucioperca%29.jpg"
+  url: "https://upload.wikimedia.org/wikipedia/commons/2/28/Hal_-_Sander_lucioperca_-_1.jpg"
   alt: "Zander (Sander lucioperca) full body photo"
-  credit: "Wikimedia Commons — CC BY-SA 3.0"
-  credit_url: "https://commons.wikimedia.org/wiki/File:Zander_(Sander_lucioperca).jpg"
+  credit: "Wikimedia Commons — Emőke Dénes, CC BY-SA 4.0"
+  credit_url: "https://commons.wikimedia.org/wiki/File:Hal_-_Sander_lucioperca_-_1.jpg"
 
 conservation:
   status: LC

@@ -46,20 +46,6 @@
         .search-box:focus { border-bottom-color: var(--text); }
         .search-box::placeholder { color: var(--muted); }
 
-        .filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.8rem; }
-        .filter-btn {
-            padding: 0.25rem 0.6rem;
-            border: 1px solid var(--border);
-            border-radius: 2px;
-            background: transparent;
-            font-family: var(--sans);
-            font-size: 0.75rem;
-            cursor: pointer;
-            color: var(--muted);
-            transition: all 0.15s;
-        }
-        .filter-btn:hover, .filter-btn.active { border-color: var(--text); color: var(--text); }
-
         .count { font-family: var(--sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 1rem; }
 
         .species-list { list-style: none; }
@@ -73,8 +59,6 @@
             gap: 1rem;
         }
         .species-item .name { font-family: var(--sans); font-weight: 500; font-size: 0.95rem; }
-        .species-item .sci { font-style: italic; color: var(--muted); font-size: 0.85rem; }
-        .species-item .family { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
 
         .no-results { text-align: center; color: var(--muted); padding: 2rem 0; font-family: var(--sans); font-size: 0.9rem; }
 
@@ -85,45 +69,35 @@
 <body>
     <header>
         <h1>Fishpedia</h1>
-        <p>Fishing species — data from FishBase, FishFYI, and FishRadar</p>
     </header>
 
     <div class="controls">
         <input type="text" class="search-box" id="search" placeholder="Search..." autocomplete="off">
-        <div class="filters">
-            
-            <button class="filter-btn" data-family="Esocidae">Esocidae</button>
-            
-            <button class="filter-btn" data-family="Percidae">Percidae</button>
-            
-            <button class="filter-btn" data-family="Siluridae">Siluridae</button>
-            
-        </div>
     </div>
 
     <div class="count" id="count">4 species</div>
 
     <ul class="species-list" id="list">
         
-        <li class="species-item" data-family="Esocidae" data-name="northern pike">
+        <li class="species-item" data-name="northern pike">
             <a href="pike.html">
                 <span class="name">Northern pike</span>
             </a>
         </li>
         
-        <li class="species-item" data-family="Percidae" data-name="european perch">
+        <li class="species-item" data-name="european perch">
             <a href="perch.html">
                 <span class="name">European perch</span>
             </a>
         </li>
         
-        <li class="species-item" data-family="Percidae" data-name="zander">
+        <li class="species-item" data-name="zander">
             <a href="zander.html">
                 <span class="name">Zander</span>
             </a>
         </li>
         
-        <li class="species-item" data-family="Siluridae" data-name="wels catfish">
+        <li class="species-item" data-name="wels catfish">
             <a href="wels-catfish.html">
                 <span class="name">Wels catfish</span>
             </a>
@@ -139,16 +113,13 @@
         var count = document.getElementById('count');
         var noResults = document.getElementById('no-results');
         var items = Array.from(list.querySelectorAll('.species-item'));
-        var btns = document.querySelectorAll('.filter-btn');
-        var activeFamily = null;
 
         function applyFilters() {
             var q = search.value.toLowerCase().trim();
             var visible = 0;
             items.forEach(function(item) {
                 var matchSearch = !q || item.dataset.name.includes(q);
-                var matchFamily = !activeFamily || item.dataset.family === activeFamily;
-                var show = matchSearch && matchFamily;
+                var show = matchSearch;
                 item.style.display = show ? '' : 'none';
                 if (show) visible++;
             });
@@ -157,20 +128,6 @@
         }
 
         search.addEventListener('input', applyFilters);
-        btns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                var family = btn.dataset.family;
-                if (activeFamily === family) {
-                    activeFamily = null;
-                    btn.classList.remove('active');
-                } else {
-                    btns.forEach(function(b) { b.classList.remove('active'); });
-                    activeFamily = family;
-                    btn.classList.add('active');
-                }
-                applyFilters();
-            });
-        });
     </script>
 </body>
 </html>

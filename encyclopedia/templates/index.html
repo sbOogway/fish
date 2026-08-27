@@ -4,86 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fishing Encyclopedia</title>
-    <link rel="stylesheet" href="assets/base-style.css">
     <style>
-        body { max-width: 1200px; padding-top: var(--spacing-lg); }
-        header { text-align: center; margin-bottom: var(--spacing-lg); }
-        header h1 { border-bottom: none; font-size: 2.4rem; }
-        header p { color: var(--color-muted); font-size: 1rem; }
-        .controls { display: flex; gap: var(--spacing-md); margin-bottom: var(--spacing-lg); flex-wrap: wrap; }
-        .search-box { flex: 1; min-width: 200px; padding: 0.6rem 1rem; font-size: 1rem; border: 1px solid var(--color-border); border-radius: 6px; font-family: var(--font-sans); }
-        .search-box:focus { outline: none; border-color: var(--color-accent); }
-        .filter-btn { padding: 0.5rem 1rem; border: 1px solid var(--color-border); border-radius: 6px; background: var(--color-card-bg); font-family: var(--font-sans); font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }
-        .filter-btn:hover, .filter-btn.active { border-color: var(--color-accent); background: var(--color-accent-light); color: var(--color-accent); }
-        .species-count { font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-muted); margin-bottom: var(--spacing-md); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--spacing-md); }
-        .species-card { background: var(--color-card-bg); border: 1px solid var(--color-border); border-radius: 8px; padding: var(--spacing-md); transition: border-color 0.2s, box-shadow 0.2s; }
-        .species-card:hover { border-color: var(--color-accent); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-        .species-card a { display: block; text-decoration: none; color: inherit; }
-        .species-card .common-name { font-family: var(--font-sans); font-weight: 600; font-size: 1.05rem; color: var(--color-text); margin-bottom: 0.2rem; }
-        .species-card .scientific-name { font-style: italic; color: var(--color-muted); font-size: 0.9rem; margin-bottom: var(--spacing-sm); display: block; }
-        .species-card .meta { display: flex; gap: var(--spacing-sm); flex-wrap: wrap; }
-        .species-card .tag { font-family: var(--font-sans); font-size: 0.75rem; padding: 0.15rem 0.5rem; border-radius: 3px; background: var(--color-accent-light); color: var(--color-accent); }
-        .no-results { text-align: center; color: var(--color-muted); padding: var(--spacing-xl); font-family: var(--font-sans); }
-        .sections { margin-top: var(--spacing-xl); }
-        .sections h2 { font-size: 1.2rem; }
-        .sections ul { list-style: none; padding: 0; display: flex; gap: var(--spacing-md); flex-wrap: wrap; }
-        .sections li a { font-family: var(--font-sans); font-size: 0.9rem; }
+        :root {
+            --bg: #fff;
+            --text: #111;
+            --muted: #666;
+            --border: #ddd;
+            --serif: 'Georgia', 'Times New Roman', serif;
+            --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --max-w: 720px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 17px; -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--serif);
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.75;
+            padding: 3rem 1.5rem;
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+        a { color: var(--text); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 2px; }
+        a:hover { text-decoration-color: var(--text); }
+
+        header { margin-bottom: 2rem; }
+        header h1 { font-family: var(--sans); font-size: 1.8rem; font-weight: 600; line-height: 1.2; }
+        header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+
+        .controls { margin-bottom: 1.5rem; }
+        .search-box {
+            width: 100%;
+            padding: 0.5rem 0;
+            font-size: 1rem;
+            font-family: var(--sans);
+            border: none;
+            border-bottom: 1px solid var(--border);
+            background: transparent;
+            outline: none;
+        }
+        .search-box:focus { border-bottom-color: var(--text); }
+        .search-box::placeholder { color: var(--muted); }
+
+        .filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.8rem; }
+        .filter-btn {
+            padding: 0.25rem 0.6rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            background: transparent;
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            cursor: pointer;
+            color: var(--muted);
+            transition: all 0.15s;
+        }
+        .filter-btn:hover, .filter-btn.active { border-color: var(--text); color: var(--text); }
+
+        .count { font-family: var(--sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 1rem; }
+
+        .species-list { list-style: none; }
+        .species-item { border-bottom: 1px solid var(--border); }
+        .species-item a {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.6rem 0;
+            text-decoration: none;
+            gap: 1rem;
+        }
+        .species-item .name { font-family: var(--sans); font-weight: 500; font-size: 0.95rem; }
+        .species-item .sci { font-style: italic; color: var(--muted); font-size: 0.85rem; }
+        .species-item .family { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
+
+        .no-results { text-align: center; color: var(--muted); padding: 2rem 0; font-family: var(--sans); font-size: 0.9rem; }
+
+        @media print { body { padding: 1cm; max-width: none; } }
+        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } header h1 { font-size: 1.4rem; } }
     </style>
 </head>
 <body>
     <header>
-        <h1>Fishing Encyclopedia</h1>
-        <p>196 sport-fishing species — data from FishBase, FishFYI, and FishRadar</p>
+        <h1>Encyclopedia</h1>
+        <p>Fishing species — data from FishBase, FishFYI, and FishRadar</p>
     </header>
 
     <div class="controls">
-        <input type="text" class="search-box" id="search" placeholder="Search species..." autocomplete="off">
-        {% for family in families %}
-        <button class="filter-btn" data-family="{{ family }}">{{ family }}</button>
-        {% endfor %}
-    </div>
-
-    <div class="species-count" id="count">{{ species_list|length }} species</div>
-
-    <div class="grid" id="grid">
-        {% for species in species_list %}
-        <div class="species-card" data-family="{{ species.family }}" data-name="{{ species.common_name|lower }} {{ species.scientific_name|lower }}">
-            <a href="{{ species.path }}">
-                <span class="common-name">{{ species.common_name }}</span>
-                <span class="scientific-name">{{ species.scientific_name }}</span>
-                <div class="meta">
-                    <span class="tag">{{ species.family }}</span>
-                    {% if species.water_type %}
-                    <span class="tag">{{ species.water_type }}</span>
-                    {% endif %}
-                </div>
-            </a>
+        <input type="text" class="search-box" id="search" placeholder="Search..." autocomplete="off">
+        <div class="filters">
+            {% for family in families %}
+            <button class="filter-btn" data-family="{{ family }}">{{ family }}</button>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
-    <div class="no-results" id="no-results" style="display:none">No species match your search.</div>
+    <div class="count" id="count">{{ species_list|length }} species</div>
+
+    <ul class="species-list" id="list">
+        {% for species in species_list %}
+        <li class="species-item" data-family="{{ species.family }}" data-name="{{ species.common_name|lower }} {{ species.scientific_name|lower }}">
+            <a href="{{ species.path }}">
+                <span>
+                    <span class="name">{{ species.common_name }}</span>
+                    <span class="sci">{{ species.scientific_name }}</span>
+                </span>
+                <span class="family">{{ species.family }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <div class="no-results" id="no-results" style="display:none">No results.</div>
 
     <script>
-        const search = document.getElementById('search');
-        const grid = document.getElementById('grid');
-        const count = document.getElementById('count');
-        const noResults = document.getElementById('no-results');
-        const cards = Array.from(grid.querySelectorAll('.species-card'));
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        let activeFamily = null;
+        var search = document.getElementById('search');
+        var list = document.getElementById('list');
+        var count = document.getElementById('count');
+        var noResults = document.getElementById('no-results');
+        var items = Array.from(list.querySelectorAll('.species-item'));
+        var btns = document.querySelectorAll('.filter-btn');
+        var activeFamily = null;
 
         function applyFilters() {
-            const q = search.value.toLowerCase().trim();
-            let visible = 0;
-            cards.forEach(card => {
-                const name = card.dataset.name;
-                const family = card.dataset.family;
-                const matchSearch = !q || name.includes(q);
-                const matchFamily = !activeFamily || family === activeFamily;
-                const show = matchSearch && matchFamily;
-                card.style.display = show ? '' : 'none';
+            var q = search.value.toLowerCase().trim();
+            var visible = 0;
+            items.forEach(function(item) {
+                var matchSearch = !q || item.dataset.name.includes(q);
+                var matchFamily = !activeFamily || item.dataset.family === activeFamily;
+                var show = matchSearch && matchFamily;
+                item.style.display = show ? '' : 'none';
                 if (show) visible++;
             });
             count.textContent = visible + ' species';
@@ -91,15 +139,14 @@
         }
 
         search.addEventListener('input', applyFilters);
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const family = btn.dataset.family;
+        btns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var family = btn.dataset.family;
                 if (activeFamily === family) {
                     activeFamily = null;
                     btn.classList.remove('active');
                 } else {
-                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btns.forEach(function(b) { b.classList.remove('active'); });
                     activeFamily = family;
                     btn.classList.add('active');
                 }

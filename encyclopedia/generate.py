@@ -42,68 +42,35 @@ def render_markdown(md_text):
     return md.render(md_text)
 
 
-def build_info_cards(meta):
-    """Extract key stats into display cards for the template."""
-    cards = []
+def build_stats(meta):
+    """Build a single line of key stats for the template."""
+    parts = []
     phys = meta.get("physical", {})
     if phys.get("typical_length_cm"):
-        cards.append({
-            "label": "Size",
-            "value": f"{phys['typical_length_cm']} cm",
-            "detail": f"Max: {phys.get('max_length_cm', '?')} cm"
-        })
+        s = f"{phys['typical_length_cm']} cm"
+        if phys.get("max_length_cm"):
+            s += f" (max {phys['max_length_cm']})"
+        parts.append(s)
     if phys.get("typical_weight_kg"):
-        cards.append({
-            "label": "Weight",
-            "value": f"{phys['typical_weight_kg']} kg",
-            "detail": f"Max: {phys.get('max_weight_kg', '?')} kg"
-        })
+        s = f"{phys['typical_weight_kg']} kg"
+        if phys.get("max_weight_kg"):
+            s += f" (max {phys['max_weight_kg']})"
+        parts.append(s)
     if phys.get("lifespan_years"):
-        cards.append({
-            "label": "Lifespan",
-            "value": f"{phys['lifespan_years']} years",
-            "detail": None
-        })
-
-    hab = meta.get("habitat", {})
-    if hab.get("water_types"):
-        cards.append({
-            "label": "Water Types",
-            "value": ", ".join(hab["water_types"]).title(),
-            "detail": f"Depth: {hab.get('depth_range_m', '?')} m"
-        })
-
-    temp = hab.get("temperature", {})
-    if temp.get("optimal_celsius"):
-        cards.append({
-            "label": "Water Temp",
-            "value": f"{temp['optimal_celsius']}°C",
-            "detail": f"Range: {temp.get('range_celsius', '?')}°C"
-        })
-
-    behav = meta.get("behavior", {})
-    if behav.get("feeding", {}).get("type"):
-        cards.append({
-            "label": "Diet",
-            "value": behav["feeding"]["type"],
-            "detail": ", ".join(behav["feeding"].get("peak_times", []))
-        })
+        parts.append(f"{phys['lifespan_years']} years")
 
     angling = meta.get("angling", {})
     if angling.get("difficulty"):
-        cards.append({
-            "label": "Difficulty",
-            "value": angling["difficulty"],
-            "detail": None
-        })
+        parts.append(angling["difficulty"])
     if angling.get("fight_rating"):
-        cards.append({
-            "label": "Fight Rating",
-            "value": f"{angling['fight_rating']}/10",
-            "detail": None
-        })
+        parts.append(f"Fight {angling['fight_rating']}/10")
 
-    return cards
+    hab = meta.get("habitat", {})
+    temp = hab.get("temperature", {})
+    if temp.get("optimal_celsius"):
+        parts.append(f"{temp['optimal_celsius']}°C")
+
+    return " <span class='sep'>·</span> ".join(parts) if parts else None
 
 
 def get_distribution_for_template(meta):
@@ -143,15 +110,12 @@ def build_html(meta, body_html, source_file):
     context = {
         "title": title,
         "scientific_name": scientific,
-        "category": tax.get("family", ""),
-        "breadcrumb_category": tax.get("family", "").title(),
-        "taxonomy_breadcrumb": get_taxonomy_breadcrumb(meta),
         "image": meta.get("image"),
-        "info_cards": build_info_cards(meta),
+        "stats": build_stats(meta),
         "distribution": get_distribution_for_template(meta),
         "body_html": body_html,
         "source_file": source_file,
-        "source_path": f"../../../encyclopedia/data/{source_file}",
+        "source_path": f"encyclopedia/data/{source_file}",
     }
 
     return template.render(**context)

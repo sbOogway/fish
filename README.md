@@ -1,4 +1,4 @@
-# Fishing Encyclopedia
+# Fishpedia
 
 A public fishing encyclopedia combining scientific data (FishBase, FishFYI) with angling knowledge. Each species page features taxonomy, distribution maps, habitat, behavior, and fishing techniques.
 

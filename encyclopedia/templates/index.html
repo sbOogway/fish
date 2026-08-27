@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fishing Encyclopedia</title>
+    <title>Fishpedia</title>
     <style>
         :root {
             --bg: #fff;
@@ -84,7 +84,7 @@
 </head>
 <body>
     <header>
-        <h1>Encyclopedia</h1>
+        <h1>Fishpedia</h1>
         <p>Fishing species — data from FishBase, FishFYI, and FishRadar</p>
     </header>
 
@@ -101,13 +101,9 @@
 
     <ul class="species-list" id="list">
         {% for species in species_list %}
-        <li class="species-item" data-family="{{ species.family }}" data-name="{{ species.common_name|lower }} {{ species.scientific_name|lower }}">
+        <li class="species-item" data-family="{{ species.family }}" data-name="{{ species.common_name|lower }}">
             <a href="{{ species.path }}">
-                <span>
-                    <span class="name">{{ species.common_name }}</span>
-                    <span class="sci">{{ species.scientific_name }}</span>
-                </span>
-                <span class="family">{{ species.family }}</span>
+                <span class="name">{{ species.common_name }}</span>
             </a>
         </li>
         {% endfor %}

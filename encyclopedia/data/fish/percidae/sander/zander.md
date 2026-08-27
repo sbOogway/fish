@@ -146,14 +146,10 @@ Their diet consists mainly of small fish (roach, rudd, bleak, perch fry), shifti
 
 Spawning occurs in spring (March–May) when water temperatures reach 8–12°C. Males build nests on hard substrates (gravel, stones, roots) and guard the eggs fiercely. A single female can release 100,000–300,000 eggs.
 
-## Fishing for Zander
+## Fishing
 
-Zander are targeted using spinning, ledgering, float fishing, and trolling. They fight hard with determined headshakes and can be finicky biters, making them a rewarding challenge.
+These fish are targeted using spinning, ledgering, float fishing, and trolling. They fight hard with determined headshakes and can be finicky biters, making them a rewarding challenge.
 
 **Best periods:** April–November, with peaks during pre-spawn (March–April) and autumn (September–November). Night fishing is particularly effective.
 
 **Difficulty:** Intermediate — requires patience, good water-reading skills, and sensitivity to detect subtle bites.
-
-## Regulations
-
-Fishing regulations for zander vary widely by country and region. Some areas require specific permits; others enforce seasonal closures during spawning. Always check local rules before fishing.

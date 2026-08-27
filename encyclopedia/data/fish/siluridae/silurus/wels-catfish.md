@@ -123,9 +123,9 @@ By day it lies in deep holes, under banks, or amid submerged structure, becoming
 
 Spawning occurs in late spring (May–July) when water temperatures reach 18–24°C. The pair prepares a shallow, weedy depression or nest, typically in a snaggy or root-filled backwater. The male guards the eggs and, after hatching, the fry until they disperse.
 
-## Fishing for Wels Catfish
+## Fishing
 
-Catching a wels catfish is a serious undertaking. They are caught on large baits — big deadbaits, livebaits, boilies, and big lures — usually fished on strong tackle from the riverbed or deep holes. Because they feed mainly at night, long dusk-to-dawn sessions with heavy rods and bite alarms are the norm.
+Catching one of these giants is a serious undertaking. They are caught on large baits — big deadbaits, livebaits, boilies, and big lures — usually fished on strong tackle from the riverbed or deep holes. Because they feed mainly at night, long dusk-to-dawn sessions with heavy rods and bite alarms are the norm.
 
 The fight of a large wels is extraordinary: heavy, powerful pulls and long runs that can test the strongest tackle. A big catfish is a true prize, and handling one safely requires care, adequate tackle, and a good unhooking mat.
 

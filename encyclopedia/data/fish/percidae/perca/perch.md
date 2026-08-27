@@ -123,9 +123,9 @@ They are most active at dawn and dusk, when they move into shallow water to feed
 
 Spawning takes place in early spring (February–June depending on latitude) when water temperatures reach 7–14°C. Females deposit ribbon-like masses of eggs over submerged vegetation, branches, or sunken debris. The eggs are adhesive and hang in accordion-like folds until they hatch.
 
-## Fishing for Perch
+## Fishing
 
-Perch are a classic fish for anglers, both for novices learning float fishing and for seasoned predator anglers using lures. They readily take worms, small spinners, and jigs. Their ferocious feeding and schooling behaviour can provide fast, exciting sport in shoals of small fish, while larger specimens live more solitary lives.
+A classic target for anglers, both for novices learning float fishing and for seasoned predator anglers using lures. These fish readily take worms, small spinners, and jigs. Their ferocious feeding and schooling behaviour can provide fast, exciting sport in shoals of small fish, while larger specimens live more solitary lives.
 
 They fight with strong, dogged runs and are very sensitive to bite indication — the strike must be quick.
 

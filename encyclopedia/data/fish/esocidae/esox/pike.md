@@ -123,11 +123,11 @@ Pike are solitary, fiercely territorial fish. The largest specimens are old, slo
 
 Pike spawn very early in the year (February–May) in shallow, flooded, weedy shallows where the water has just warmed to 4–10°C, often before the ice has fully gone. Eggs are scattered over submerged vegetation and hatched fry are self-sufficient from hatching, feeding first on zooplankton.
 
-## Fishing for Pike
+## Fishing
 
-Pike are a premier predator-fishing target. They are caught using spinners, spoons, crankbaits, jerkbaits, and trolled lures, as well as deadbaits and livebaits fished on the bottom or under a float. Their take can be explosive, and once hooked they fight with powerful, lunging runs and spectacular leaps.
+A premier predator-fishing target, caught using spinners, spoons, crankbaits, jerkbaits, and trolled lures, as well as deadbaits and livebaits fished on the bottom or under a float. The take can be explosive, and once hooked the fish fight with powerful, lunging runs and spectacular leaps.
 
-A wire trace is essential — their sharp teeth will cut through ordinary line instantly. Handling must be careful; use a landing net and unhook them with proper pike tools to protect both the fish and the angler.
+A wire trace is essential — a pike's sharp teeth will cut through ordinary line instantly. Handling must be careful; use a landing net and unhook the fish with proper tools to protect both it and the angler.
 
 **Best periods:** March–November, with peaks soon after spawning and again in autumn. Cold-water fishing can also be productive.
 

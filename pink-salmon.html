@@ -10,8 +10,8 @@
         :root {
             --bg: #fff;
             --text: #111;
-            --muted: #666;
-            --border: #ddd;
+            --muted: #555;
+            --border: #e3e3e3;
             --serif: 'Georgia', 'Times New Roman', serif;
             --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
@@ -32,7 +32,7 @@
         a:hover { text-decoration-color: var(--text); }
 
         /* Header */
-        .page-header { margin-bottom: 2rem; }
+        .page-header { margin-bottom: 1.5rem; }
         .page-header .nav { font-family: var(--sans); font-size: 0.8rem; margin-bottom: 0.4rem; color: var(--muted); }
         .page-header .nav a { text-decoration: none; color: var(--muted); }
         .page-header .nav a:hover { color: var(--text); text-decoration: none; }
@@ -40,23 +40,33 @@
         .page-header .sci { font-style: italic; color: var(--muted); font-size: 0.95rem; margin-top: 0.2rem; }
 
         /* Hero image */
-        .hero { margin: 1.5rem 0; }
-        .hero img { width: 100%; height: auto; display: block; max-height: 400px; object-fit: cover; }
+        .hero { margin: 0 0 1.5rem; }
+        .hero img { width: 100%; height: auto; display: block; max-height: 420px; object-fit: cover; }
         .hero .credit { font-size: 0.75rem; color: var(--muted); font-family: var(--sans); margin-top: 0.3rem; }
         .hero .credit a { text-decoration: none; }
 
-        /* Inline stats */
-        .stats {
+        /* Fact sheet */
+        .fact-sheet {
+            margin: 0 0 1.5rem;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .fact-sheet .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.35rem 0;
+            border-bottom: 1px solid var(--border);
             font-family: var(--sans);
             font-size: 0.85rem;
-            color: var(--muted);
-            margin: 1rem 0 1.5rem;
-            line-height: 1.6;
+            line-height: 1.4;
         }
-        .stats .sep { margin: 0 0.4rem; opacity: 0.4; }
+        .fact-sheet .row:last-child { border-bottom: none; }
+        .fact-sheet .label { color: var(--muted); }
+        .fact-sheet .value { text-align: right; font-weight: 500; }
 
         /* Map */
-        .map-section { margin: 2rem 0; }
+        .map-section { margin: 0 0 2rem; }
         .map-section h2 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
         #map { height: 380px; border: 1px solid var(--border); z-index: 1; }
         .map-note { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; }
@@ -76,11 +86,12 @@
         .content code { font-family: var(--mono); font-size: 0.85em; background: #f5f5f5; padding: 0.1em 0.3em; }
 
         /* Footer */
-        .page-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-family: var(--sans); font-size: 0.75rem; color: var(--muted); }
+        .page-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-family: var(--sans); font-size: 0.75rem; color: var(--muted); line-height: 1.7; }
         .page-footer a { text-decoration: none; color: var(--muted); }
+        .page-footer a:hover { color: var(--text); }
 
         @media print { body { padding: 1cm; max-width: none; } #map { display: none; } }
-        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } .page-header h1 { font-size: 1.4rem; } #map { height: 280px; } }
+        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } .page-header h1 { font-size: 1.4rem; } #map { height: 280px; } .fact-sheet .row { flex-direction: column; gap: 0; } .fact-sheet .value { text-align: left; } }
     </style>
 </head>
 <body>
@@ -101,28 +112,112 @@
     
 
     
-    <div class="stats">50 cm (max 76) <span class='sep'>·</span> 3 years</div>
+    <section class="fact-sheet">
+        
+        <div class="row">
+            <span class="label">Scientific name</span>
+            <span class="value">Oncorhynchus gorbuscha</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Family</span>
+            <span class="value">Salmonidae</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Water</span>
+            <span class="value">Freshwater, Brackish, Saltwater</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Typical/max length</span>
+            <span class="value">50 cm (max 76)</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Weight</span>
+            <span class="value">7.0 kg</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Lifespan</span>
+            <span class="value">3 years</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Depth range</span>
+            <span class="value">0-250 m</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">IUCN status</span>
+            <span class="value">LC</span>
+        </div>
+        
+    </section>
     
 
     
     <section class="map-section">
         <h2>Distribution</h2>
         <div id="map"></div>
-        <p class="map-note">FishBase occurrence records</p>
+        <p class="map-note">Pink Salmon inhabits Freshwater, Brackish, Saltwater waters. Map shows fishbase occurrence records.</p>
     </section>
     
 
     <article class="content">
-        <p>Pink salmon or humpback salmon is a species of euryhaline ray-finned fish in the family Salmonidae. It is the type species of the genus Oncorhynchus, and is the smallest and most abundant of the seven officially recognized species of salmon. The species' scientific name is based on the Russian common name for this species gorbúša (горбуша), which literally means humpie.</p>
-<h2>Habitat</h2>
-<p>Pink Salmon is a freshwater, brackish, saltwater species. Typically found at depths of 0-250 metres.</p>
-<h2>Seasonality</h2>
-<p>Its most productive fishing months in the Northern Hemisphere are typically Jun, Jul, Aug, Sep, though exact timing depends on local climate and water temperature.</p>
+        
+        <section>
+            <h2>Description</h2>
+            <p>Pink salmon or humpback salmon is a species of euryhaline ray-finned fish in the family Salmonidae. It is the type species of the genus Oncorhynchus, and is the smallest and most abundant of the seven officially recognized species of salmon. The species' scientific name is based on the Russian common name for this species gorbúša (горбуша), which literally means humpie.</p>
+
+        </section>
+        
+        <section>
+            <h2>Size</h2>
+            <p>Typical length is 50 cm, with a maximum recorded length of 76 cm.</p>
+
+        </section>
+        
+        <section>
+            <h2>Weight</h2>
+            <p>Maximum recorded weight is 7.0 kg.</p>
+
+        </section>
+        
+        <section>
+            <h2>Age</h2>
+            <p>Lifespan is around 3 years.</p>
+<p>Sexual maturity is reached at about 2 years of age.</p>
+
+        </section>
+        
+        <section>
+            <h2>Biology</h2>
+            <p>Adults develop secondary sexual characteristics during their upstream migration , which occurs any time from June to late September, depending on location . Male develop a humpback, an enlarged head and large teeth on both jaws that form a pronounced hooked type . The upstream run seems to be triggered by high water . Female builds the redd by lying on one side and using its tail, it displaces silt and light gravel to produce a deep trough. Male spends most of the time driving off intruding males. When the redd is completed, the female drops into it, followed immediately by the male. They open their mouths, vibrate and release eggs and sperm. In some cases, several males spawn with a single female. The eggs are then covered as the female digs a new redd at the upstream edge of the previous one. Adults live up to a few weeks after spawning before they die . Reported to die 10-20 days after spawning . About 1200-1800 eggs are laid. After hatching and the yellow egg yolk is absorbed, if the hatchling doesn't have a parr mark they go to the ocean and come again to the same birthplace stream the next year during spring after growing for 16-18 months. Survival rates are low, at 1-25% (taken from a Canadian river) . Reproductive strategy: synchronous ovarian organization, determinate fecundity .
+Spawning occurs mainly in Jul, Aug, Sep, Oct, Nov. Fecundity ranges from 57-1,800 eggs.
+Its diet consists mainly of Amphipods, Benth. copepods, Bony fish, Cladocerans, Copepods, Euphausiids, Fish eggs &amp; larvae, Gastropods, Insects, Isopods, Mysids, Ostracods, Polychaetes and squids/cuttlefish.
+It may be targeted by predators such as Alepisaurus ferox, Anotopterus nikparini, Balaenoptera acutorostrata, Cottus aleuticus, Cottus asper, Lamna ditropis, Lethenteron camtschaticum, Megalocottus platycephalus, Oncorhynchus clarki, Oncorhynchus kisutch, Oncorhynchus mykiss, Osmerus mordax dentex, Platichthys stellatus, Salvelinus leucomaenis leucomaenis, Salvelinus malma malma, Unidentified squawfish. and unidentified mergansers.</p>
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->
+        </section>
+        
+        <section>
+            <h2>Seasonality</h2>
+            <p>Its most productive fishing months in the Northern Hemisphere are typically Jun, Jul, Aug, Sep, though exact timing depends on local climate and water temperature.</p>
+
+        </section>
+        
+        <section>
+            <h2>Conservation</h2>
+            <p>IUCN conservation status: <strong>LC</strong>.</p>
+
+        </section>
+        
     </article>
 
     <footer class="page-footer">
-        <p>Generated from <a href="encyclopedia/data/fish/salmonidae/oncorhynchus/pink-salmon.md">fish/salmonidae/oncorhynchus/pink-salmon.md</a></p>
+        <p>Source: <a href="encyclopedia/data/fish/salmonidae/oncorhynchus/pink-salmon.md">fish/salmonidae/oncorhynchus/pink-salmon.md</a></p>
+        <p>Data by <a href="https://www.fishbase.se/" target="_blank">FishBase</a>, <a href="https://en.wikipedia.org/" target="_blank">Wikipedia</a> and FishRadar.</p>
     </footer>
 
     

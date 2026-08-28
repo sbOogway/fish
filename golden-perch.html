@@ -10,8 +10,8 @@
         :root {
             --bg: #fff;
             --text: #111;
-            --muted: #666;
-            --border: #ddd;
+            --muted: #555;
+            --border: #e3e3e3;
             --serif: 'Georgia', 'Times New Roman', serif;
             --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
@@ -32,7 +32,7 @@
         a:hover { text-decoration-color: var(--text); }
 
         /* Header */
-        .page-header { margin-bottom: 2rem; }
+        .page-header { margin-bottom: 1.5rem; }
         .page-header .nav { font-family: var(--sans); font-size: 0.8rem; margin-bottom: 0.4rem; color: var(--muted); }
         .page-header .nav a { text-decoration: none; color: var(--muted); }
         .page-header .nav a:hover { color: var(--text); text-decoration: none; }
@@ -40,23 +40,33 @@
         .page-header .sci { font-style: italic; color: var(--muted); font-size: 0.95rem; margin-top: 0.2rem; }
 
         /* Hero image */
-        .hero { margin: 1.5rem 0; }
-        .hero img { width: 100%; height: auto; display: block; max-height: 400px; object-fit: cover; }
+        .hero { margin: 0 0 1.5rem; }
+        .hero img { width: 100%; height: auto; display: block; max-height: 420px; object-fit: cover; }
         .hero .credit { font-size: 0.75rem; color: var(--muted); font-family: var(--sans); margin-top: 0.3rem; }
         .hero .credit a { text-decoration: none; }
 
-        /* Inline stats */
-        .stats {
+        /* Fact sheet */
+        .fact-sheet {
+            margin: 0 0 1.5rem;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .fact-sheet .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.35rem 0;
+            border-bottom: 1px solid var(--border);
             font-family: var(--sans);
             font-size: 0.85rem;
-            color: var(--muted);
-            margin: 1rem 0 1.5rem;
-            line-height: 1.6;
+            line-height: 1.4;
         }
-        .stats .sep { margin: 0 0.4rem; opacity: 0.4; }
+        .fact-sheet .row:last-child { border-bottom: none; }
+        .fact-sheet .label { color: var(--muted); }
+        .fact-sheet .value { text-align: right; font-weight: 500; }
 
         /* Map */
-        .map-section { margin: 2rem 0; }
+        .map-section { margin: 0 0 2rem; }
         .map-section h2 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
         #map { height: 380px; border: 1px solid var(--border); z-index: 1; }
         .map-note { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; }
@@ -76,11 +86,12 @@
         .content code { font-family: var(--mono); font-size: 0.85em; background: #f5f5f5; padding: 0.1em 0.3em; }
 
         /* Footer */
-        .page-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-family: var(--sans); font-size: 0.75rem; color: var(--muted); }
+        .page-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-family: var(--sans); font-size: 0.75rem; color: var(--muted); line-height: 1.7; }
         .page-footer a { text-decoration: none; color: var(--muted); }
+        .page-footer a:hover { color: var(--text); }
 
         @media print { body { padding: 1cm; max-width: none; } #map { display: none; } }
-        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } .page-header h1 { font-size: 1.4rem; } #map { height: 280px; } }
+        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } .page-header h1 { font-size: 1.4rem; } #map { height: 280px; } .fact-sheet .row { flex-direction: column; gap: 0; } .fact-sheet .value { text-align: left; } }
     </style>
 </head>
 <body>
@@ -101,22 +112,106 @@
     
 
     
-    <div class="stats">45 cm (max 76) <span class='sep'>·</span> 20 years</div>
+    <section class="fact-sheet">
+        
+        <div class="row">
+            <span class="label">Scientific name</span>
+            <span class="value">Macquaria ambigua</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Family</span>
+            <span class="value">Percichthyidae</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Water</span>
+            <span class="value">Freshwater</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Typical/max length</span>
+            <span class="value">45 cm (max 76)</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Weight</span>
+            <span class="value">24.0 kg</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Lifespan</span>
+            <span class="value">20 years</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Depth range</span>
+            <span class="value">10-10 m</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">IUCN status</span>
+            <span class="value">LC</span>
+        </div>
+        
+    </section>
     
 
     
 
     <article class="content">
-        <p>The golden perch is a medium-sized, yellow or gold-coloured species of Australian freshwater fish found primarily in the Murray-Darling River system. A subspecies is found in the Lake Eyre-Cooper Creek system, and another subspecies, suspected to be ancestral to all other populations, is found in the Fitzroy River system in Queensland. Other common names for golden perch are &quot;goldens&quot;, &quot;yellowbelly&quot; and &quot;callop&quot;, the last generally used only in South Australia.</p>
-<h2>Habitat</h2>
-<p>Golden Perch is a freshwater species. Typically found at depths of 10-10 metres.</p>
-<h2>Seasonality</h2>
-<p>Its most productive fishing months in the Northern Hemisphere are typically Jan, Feb, Mar, Oct, Nov, Dec, though exact timing depends on local climate and water temperature.</p>
+        
+        <section>
+            <h2>Description</h2>
+            <p>The golden perch is a medium-sized, yellow or gold-coloured species of Australian freshwater fish found primarily in the Murray-Darling River system. A subspecies is found in the Lake Eyre-Cooper Creek system, and another subspecies, suspected to be ancestral to all other populations, is found in the Fitzroy River system in Queensland. Other common names for golden perch are &quot;goldens&quot;, &quot;yellowbelly&quot; and &quot;callop&quot;, the last generally used only in South Australia.</p>
+
+        </section>
+        
+        <section>
+            <h2>Size</h2>
+            <p>Typical length is 45 cm, with a maximum recorded length of 76 cm.</p>
+
+        </section>
+        
+        <section>
+            <h2>Weight</h2>
+            <p>Maximum recorded weight is 24.0 kg.</p>
+
+        </section>
+        
+        <section>
+            <h2>Age</h2>
+            <p>Lifespan is around 20 years.</p>
+<p>Sexual maturity is reached at about 4.5 years of age.</p>
+
+        </section>
+        
+        <section>
+            <h2>Biology</h2>
+            <p>Under favourable conditions female golden perch are capable of spawning more than once a season . However, without suitable environmental cues they may fail to breed in season, with the eggs being resorbed . Spawning period is from early spring to late autumn . They commonly spawn at night .
+Spawning occurs mainly in Jan, Feb, Mar, Apr, May, Sep, Oct, Nov, Dec. Fecundity ranges from 500,000 eggs.
+Its diet consists mainly of Bony fish, Insects, Lobsters and shrimps &amp; prawns.
+It may be targeted by predators such as Maccullochella peelii peelii, Perca fluviatilis and Phalacrocorax sp..</p>
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->
+        </section>
+        
+        <section>
+            <h2>Seasonality</h2>
+            <p>Its most productive fishing months in the Northern Hemisphere are typically Jan, Feb, Mar, Oct, Nov, Dec, though exact timing depends on local climate and water temperature.</p>
+
+        </section>
+        
+        <section>
+            <h2>Conservation</h2>
+            <p>IUCN conservation status: <strong>LC</strong>.</p>
+
+        </section>
+        
     </article>
 
     <footer class="page-footer">
-        <p>Generated from <a href="encyclopedia/data/fish/percichthyidae/macquaria/golden-perch.md">fish/percichthyidae/macquaria/golden-perch.md</a></p>
+        <p>Source: <a href="encyclopedia/data/fish/percichthyidae/macquaria/golden-perch.md">fish/percichthyidae/macquaria/golden-perch.md</a></p>
+        <p>Data by <a href="https://www.fishbase.se/" target="_blank">FishBase</a>, <a href="https://en.wikipedia.org/" target="_blank">Wikipedia</a> and FishRadar.</p>
     </footer>
 
     

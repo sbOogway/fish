@@ -10,8 +10,8 @@
         :root {
             --bg: #fff;
             --text: #111;
-            --muted: #666;
-            --border: #ddd;
+            --muted: #555;
+            --border: #e3e3e3;
             --serif: 'Georgia', 'Times New Roman', serif;
             --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
@@ -32,7 +32,7 @@
         a:hover { text-decoration-color: var(--text); }
 
         /* Header */
-        .page-header { margin-bottom: 2rem; }
+        .page-header { margin-bottom: 1.5rem; }
         .page-header .nav { font-family: var(--sans); font-size: 0.8rem; margin-bottom: 0.4rem; color: var(--muted); }
         .page-header .nav a { text-decoration: none; color: var(--muted); }
         .page-header .nav a:hover { color: var(--text); text-decoration: none; }
@@ -40,23 +40,33 @@
         .page-header .sci { font-style: italic; color: var(--muted); font-size: 0.95rem; margin-top: 0.2rem; }
 
         /* Hero image */
-        .hero { margin: 1.5rem 0; }
-        .hero img { width: 100%; height: auto; display: block; max-height: 400px; object-fit: cover; }
+        .hero { margin: 0 0 1.5rem; }
+        .hero img { width: 100%; height: auto; display: block; max-height: 420px; object-fit: cover; }
         .hero .credit { font-size: 0.75rem; color: var(--muted); font-family: var(--sans); margin-top: 0.3rem; }
         .hero .credit a { text-decoration: none; }
 
-        /* Inline stats */
-        .stats {
+        /* Fact sheet */
+        .fact-sheet {
+            margin: 0 0 1.5rem;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .fact-sheet .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.35rem 0;
+            border-bottom: 1px solid var(--border);
             font-family: var(--sans);
             font-size: 0.85rem;
-            color: var(--muted);
-            margin: 1rem 0 1.5rem;
-            line-height: 1.6;
+            line-height: 1.4;
         }
-        .stats .sep { margin: 0 0.4rem; opacity: 0.4; }
+        .fact-sheet .row:last-child { border-bottom: none; }
+        .fact-sheet .label { color: var(--muted); }
+        .fact-sheet .value { text-align: right; font-weight: 500; }
 
         /* Map */
-        .map-section { margin: 2rem 0; }
+        .map-section { margin: 0 0 2rem; }
         .map-section h2 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
         #map { height: 380px; border: 1px solid var(--border); z-index: 1; }
         .map-note { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; }
@@ -76,11 +86,12 @@
         .content code { font-family: var(--mono); font-size: 0.85em; background: #f5f5f5; padding: 0.1em 0.3em; }
 
         /* Footer */
-        .page-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-family: var(--sans); font-size: 0.75rem; color: var(--muted); }
+        .page-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-family: var(--sans); font-size: 0.75rem; color: var(--muted); line-height: 1.7; }
         .page-footer a { text-decoration: none; color: var(--muted); }
+        .page-footer a:hover { color: var(--text); }
 
         @media print { body { padding: 1cm; max-width: none; } #map { display: none; } }
-        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } .page-header h1 { font-size: 1.4rem; } #map { height: 280px; } }
+        @media (max-width: 600px) { body { padding: 1.5rem 1rem; } .page-header h1 { font-size: 1.4rem; } #map { height: 280px; } .fact-sheet .row { flex-direction: column; gap: 0; } .fact-sheet .value { text-align: left; } }
     </style>
 </head>
 <body>
@@ -101,28 +112,112 @@
     
 
     
-    <div class="stats">25 cm (max 60) <span class='sep'>·</span> 22 years</div>
+    <section class="fact-sheet">
+        
+        <div class="row">
+            <span class="label">Scientific name</span>
+            <span class="value">Perca fluviatilis</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Family</span>
+            <span class="value">Percidae</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Water</span>
+            <span class="value">Freshwater, Brackish</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Typical/max length</span>
+            <span class="value">25 cm (max 60)</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Weight</span>
+            <span class="value">4.8 kg</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Lifespan</span>
+            <span class="value">22 years</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">Depth range</span>
+            <span class="value">1-30 m</span>
+        </div>
+        
+        <div class="row">
+            <span class="label">IUCN status</span>
+            <span class="value">LC</span>
+        </div>
+        
+    </section>
     
 
     
     <section class="map-section">
         <h2>Distribution</h2>
         <div id="map"></div>
-        <p class="map-note">FishBase occurrence records</p>
+        <p class="map-note">European Perch inhabits Freshwater, Brackish waters. Map shows fishbase occurrence records.</p>
     </section>
     
 
     <article class="content">
-        <p>The European perch, also known as the common perch, redfin perch, big-scaled redfin, English perch, Euro perch, Eurasian perch, Eurasian river perch, Hatch, poor man's rockfish or in Anglophone parts of Europe, simply the perch, is a predatory freshwater fish native to Europe and North Asia. It is the type species of the genus Perca.</p>
-<h2>Habitat</h2>
-<p>European Perch is a freshwater, brackish species. Typically found at depths of 1-30 metres.</p>
-<h2>Seasonality</h2>
-<p>Its most productive fishing months in the Northern Hemisphere are typically Mar, Apr, May, Jun, Sep, Oct, Nov, though exact timing depends on local climate and water temperature.</p>
+        
+        <section>
+            <h2>Description</h2>
+            <p>The European perch, also known as the common perch, redfin perch, big-scaled redfin, English perch, Euro perch, Eurasian perch, Eurasian river perch, Hatch, poor man's rockfish or in Anglophone parts of Europe, simply the perch, is a predatory freshwater fish native to Europe and North Asia. It is the type species of the genus Perca.</p>
+
+        </section>
+        
+        <section>
+            <h2>Size</h2>
+            <p>Typical length is 25 cm, with a maximum recorded length of 60 cm.</p>
+
+        </section>
+        
+        <section>
+            <h2>Weight</h2>
+            <p>Maximum recorded weight is 4.8 kg.</p>
+
+        </section>
+        
+        <section>
+            <h2>Age</h2>
+            <p>Lifespan is around 22 years.</p>
+<p>Sexual maturity is reached at about 2.5 years of age.</p>
+
+        </section>
+        
+        <section>
+            <h2>Biology</h2>
+            <p>During breeding, males arrive at the spawning area ahead of the females. One or two of these males chases a ripe female as soon as it arrives in the area (polyandry) . The queue of males maybe longer composed of about 15 to 25 individuals, but only two prod their snouts against the female's belly . After rounds of curved course through the interlacing branches near the surface , males fertilize the egg ribbon as the female lays them over weeds or other submerged objects . Eggs grouped in long white ribbons (up to 1 m) are found over submerged objects . Eggs hatch in about 8 to 16 days at normal temperatures . Males mature at 2-3 years and females at 4 years. Spawning, in the Northern hemisphere, happens in spring in waters with temperatures between 7-8°C. Eggs are laid in sticky strings becoming fixed to aquatic plants and rocks. Incubation lasts about 1- 8 days at 1- 3°. Egg size 2.0-2.5mm, larval length at hatching 5mm.
+Spawning occurs mainly in Mar, Apr, May, Jun. Fecundity ranges from 1,698-47,580 eggs.
+Its diet consists mainly of Amphipods, Bony fish, Cladocerans, Copepods, Crabs, Fish eggs &amp; larvae, Insects, Isopods, Mysids, Non-annelids and shrimps &amp; prawns.
+It may be targeted by predators such as Anguilla anguilla, Esox lucius, Lota lota, Lutra lutra, Perca fluviatilis, Salmo trutta trutta, Sander lucioperca and Silurus glanis.</p>
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->
+        </section>
+        
+        <section>
+            <h2>Seasonality</h2>
+            <p>Its most productive fishing months in the Northern Hemisphere are typically Mar, Apr, May, Jun, Sep, Oct, Nov, though exact timing depends on local climate and water temperature.</p>
+
+        </section>
+        
+        <section>
+            <h2>Conservation</h2>
+            <p>IUCN conservation status: <strong>LC</strong>.</p>
+
+        </section>
+        
     </article>
 
     <footer class="page-footer">
-        <p>Generated from <a href="encyclopedia/data/fish/percidae/perca/european-perch.md">fish/percidae/perca/european-perch.md</a></p>
+        <p>Source: <a href="encyclopedia/data/fish/percidae/perca/european-perch.md">fish/percidae/perca/european-perch.md</a></p>
+        <p>Data by <a href="https://www.fishbase.se/" target="_blank">FishBase</a>, <a href="https://en.wikipedia.org/" target="_blank">Wikipedia</a> and FishRadar.</p>
     </footer>
 
     

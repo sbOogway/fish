@@ -28,6 +28,23 @@ sources:
   wikidata_id: Q146641
   worms_id: 151308
 
+# === DESCRIPTION (from Wikipedia lead) ===
+description: "The zander, sander or pikeperch, is a species of ray-finned fish..."
+
+# === BIOLOGY (from FishBase `reproduc`/`spawning`/`fecundity`/`maturity`/`fooditems`/`predats`) ===
+# All keys optional; absent = no data for that facet. Non-fish species have
+# no FishBase record and therefore no `biology` block at all.
+biology:
+  reproduction: "The spawning places are over gravel in moving water..."  # AddInfos narrative, (Ref. N) stripped
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: paternal
+  spawning_months: [3, 4, 5, 6]     # dominant spawning season (1-12)
+  fecundity: "54,300-1,307,436 eggs"
+  age_maturity: "4 years"
+  diet: ["Bony fish", "Insects", "Copepods"]
+  predators: ["Esox lucius", "Perca fluviatilis"]
+
 # === PHYSICAL (from FishBase + FishFYI) ===
 physical:
   max_length_cm: 130
@@ -107,7 +124,9 @@ conservation:
 | Field group | Authoritative source | Fallback |
 |-------------|---------------------|----------|
 | Taxonomy | FishBase / Wikidata | FishRadar |
+| Description | Wikipedia | — |
 | Physical | FishBase (`species` table) | — |
+| Biology | FishBase (`reproduc`/`spawning`/`fecundity`/`maturity`/`fooditems`/`predats`) | — |
 | Habitat | FishBase (`species` table) | FishRadar (`environment`) |
 | Distribution points | FishBase (`occurrence` table) | None (map omitted) |
 | Behavior | FishBase | — |
@@ -122,6 +141,6 @@ conservation:
 
 ## Required vs Optional
 
-- **Required**: `id`, `taxonomy`, `sources`, `image`
-- **Recommended**: `physical`, `habitat`, `distribution`, `angling`
-- **Optional**: `behavior`, `conservation`
+- **Required**: `id`, `taxonomy`, `sources`, `image`, `description`
+- **Recommended**: `physical`, `biology`, `habitat`, `distribution`, `angling`
+- **Optional**: `conservation`

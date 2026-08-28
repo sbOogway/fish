@@ -32,6 +32,97 @@ habitat:
   water_types:
   - brackish
   - saltwater
+biology:
+  reproduction: Spawning occurs in winter and beginning of spring, where big schools are formed. Spawning
+    sites are in offshore waters, at or near the bottom, in 50-200 m depth and 0-12 °C (preferred range
+    0-6°C) . May form spawning aggregations in the water column when bottom temperatures are unsuitable
+    . Different spawning areas may be used in subsequent years . Embryo development lasts about 14 days
+    (at 6°C) and larval phase lasts about 3 months(at 8°C). Fecundity ranges from 2.5 million eggs in
+    a 5 kg female to a record of 9 million eggs in a 34 kg female. Reported number of batches spawned
+    in an experiment is 8 - 22 . Sex ratio is nearly 50%, with slight predominance of females. Classified
+    as a determinate multiple spawner . Older and larger cod had been found to produce larger eggs with
+    neutral buoyancy at lower salinities. This can be crucial to egg and larval survival . Larvae are
+    pelagic up to 2.5 months before settling on the bottom . In the Baltic, spawning cumulates in March
+    at depths below 20 m near the bottom. The nursery areas are in the inner coastal zone. Recruitment
+    to the fished stock starts below 2 years and peaks at about 3 years of age .
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: none
+  spawning_months:
+  - 3
+  - 4
+  - 5
+  fecundity: 285,000-9,000,000 eggs
+  age_maturity: 6 years
+  diet:
+  - Amphipods
+  - Ascidians
+  - Benth. copepods
+  - Benthic algae/weeds
+  - Bivalves
+  - Bony fish
+  - Cladocerans
+  - Copepods
+  - Crabs
+  - Euphausiids
+  - Fish eggs & larvae
+  - Gastropods
+  - Green algae
+  - Insects
+  - Isopods
+  - Jellyfish/hydroids
+  - Lobsters
+  - Mysids
+  - Non-annelids
+  - Octopi
+  - Polychaetes
+  - Sea cucumbers
+  - Sea stars/brittle stars
+  - Sea urchins
+  - Shrimps & prawns
+  - Sponges
+  - Squids/cuttlefish
+  predators:
+  - Anarhichas lupus
+  - Apristurus laurussonii
+  - Balaenoptera acutorostrata
+  - Chelidonichthys gurnardus
+  - Clupea harengus
+  - Cystophora cristata
+  - Delphinapterus leucas
+  - Eledone cirrhosa
+  - Etmopterus spinax
+  - Fulmarus glacialis
+  - Gadus morhua
+  - Halichoerus grypus
+  - Hippoglossoides platessoides
+  - Hippoglossus hippoglossus
+  - Lophius piscatorius
+  - Mergus merganser
+  - Merlangius merlangus
+  - Micromesistius poutassou
+  - Molva molva
+  - Morus bassanus
+  - Myxine glutinosa
+  - Petromyzon marinus
+  - Phoca groenlandica
+  - Phoca vitulina
+  - Phocoena phocoena
+  - Pollachius virens
+  - Pomatomus saltatrix
+  - Psetta maxima
+  - Pusa hispida
+  - Raja radiata
+  - Reinhardtius hippoglossoides
+  - Scomber scombrus
+  - Sebastes fasciatus
+  - Sebastes mentella
+  - Somniosus microcephalus
+  - Sprattus sprattus
+  - Squalus acanthias
+  - Thunnus thynnus
+  - Tursiops truncatus
+  - Xiphias gladius
 angling:
   best_months: Jan, Feb, Mar, Oct, Nov, Dec
   season_months:
@@ -487,6 +578,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: The Atlantic cod is a fish of the family Gadidae, widely consumed by humans. It is also commercially
+  known as cod or codling.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/7/77/Atlantic_Cod%2C_Atlantischer_Kabeljau_%28Gadus_morhua%29.jpg
   alt: Atlantic Cod (Gadus morhua)
@@ -494,12 +587,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Atlantic_cod
 ---
 
+## Description
 The Atlantic cod is a fish of the family Gadidae, widely consumed by humans. It is also commercially known as cod or codling.
 
-## Habitat
-Atlantic Cod is a brackish, saltwater species. Typically found at depths of 0-600 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically Jan, Feb, Mar, Oct, Nov, Dec, though exact timing depends on local climate and water temperature.
+## Biology
+Spawning occurs in winter and beginning of spring, where big schools are formed. Spawning sites are in offshore waters, at or near the bottom, in 50-200 m depth and 0-12 °C (preferred range 0-6°C) . May form spawning aggregations in the water column when bottom temperatures are unsuitable . Different spawning areas may be used in subsequent years . Embryo development lasts about 14 days (at 6°C) and larval phase lasts about 3 months(at 8°C). Fecundity ranges from 2.5 million eggs in a 5 kg female to a record of 9 million eggs in a 34 kg female. Reported number of batches spawned in an experiment is 8 - 22 . Sex ratio is nearly 50%, with slight predominance of females. Classified as a determinate multiple spawner . Older and larger cod had been found to produce larger eggs with neutral buoyancy at lower salinities. This can be crucial to egg and larval survival . Larvae are pelagic up to 2.5 months before settling on the bottom . In the Baltic, spawning cumulates in March at depths below 20 m near the bottom. The nursery areas are in the inner coastal zone. Recruitment to the fished stock starts below 2 years and peaks at about 3 years of age .
+Spawning occurs mainly in Mar, Apr, May. Fecundity ranges from 285,000-9,000,000 eggs.
+Its diet consists mainly of Amphipods, Ascidians, Benth. copepods, Benthic algae/weeds, Bivalves, Bony fish, Cladocerans, Copepods, Crabs, Euphausiids, Fish eggs & larvae, Gastropods, Green algae, Insects, Isopods, Jellyfish/hydroids, Lobsters, Mysids, Non-annelids, Octopi, Polychaetes, Sea cucumbers, Sea stars/brittle stars, Sea urchins, Shrimps & prawns, Sponges and squids/cuttlefish.
+It may be targeted by predators such as Anarhichas lupus, Apristurus laurussonii, Balaenoptera acutorostrata, Chelidonichthys gurnardus, Clupea harengus, Cystophora cristata, Delphinapterus leucas, Eledone cirrhosa, Etmopterus spinax, Fulmarus glacialis, Gadus morhua, Halichoerus grypus, Hippoglossoides platessoides, Hippoglossus hippoglossus, Lophius piscatorius, Mergus merganser, Merlangius merlangus, Micromesistius poutassou, Molva molva, Morus bassanus, Myxine glutinosa, Petromyzon marinus, Phoca groenlandica, Phoca vitulina, Phocoena phocoena, Pollachius virens, Pomatomus saltatrix, Psetta maxima, Pusa hispida, Raja radiata, Reinhardtius hippoglossoides, Scomber scombrus, Sebastes fasciatus, Sebastes mentella, Somniosus microcephalus, Sprattus sprattus, Squalus acanthias, Thunnus thynnus, Tursiops truncatus and Xiphias gladius.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

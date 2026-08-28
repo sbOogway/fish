@@ -31,6 +31,37 @@ habitat:
   - freshwater
   - brackish
   - saltwater
+biology:
+  reproduction: Courtship begins with a male attempting to drive a female toward suitable spawning gravel.
+    A receptive female chooses a spot and digs a redd. While the female is digging, the male continues
+    courtship activity, darting alongside the female and quivering, swimming over and under her and rubbing
+    her with his fins; most of the time however, is spent driving off other males. When the redd is completed,
+    the pair enter the nest and deposit eggs and milt. After spawning the female covers the eggs by sweeping
+    small pebbles at the downstream edge of the redd upstream. Once the eggs are completely covered, she
+    moves to the upstream end of the redd and begins digging a new redd .
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: none
+  spawning_months:
+  - 8
+  - 9
+  - 10
+  - 11
+  fecundity: 88-5,000 eggs
+  age_maturity: 2.5 years
+  diet:
+  - Amphipods
+  - Bivalves
+  - Bony fish
+  - Cladocerans
+  - Fish eggs & larvae
+  - Gastropods
+  - Insects
+  - Salamanders/newts
+  - Toads/frogs
+  predators:
+  - Delphinapterus leucas
+  - Ichthyomyzon castaneus
 angling:
   best_months: Apr, May, Jun, Sep, Oct, Nov
   season_months:
@@ -486,6 +517,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: The brook trout is a species of freshwater fish in the char genus Salvelinus of the salmon
+  family Salmonidae native to Eastern North America in the United States and Canada. Two ecological forms
+  of brook trout have been recognized by the US Forest Service. One ecological form is long-lived potamodromous
+  populations in Lake Superior known as coaster trout or coasters. The second ecological form is the short-living
+  predaceous anadromous populations which are found in northern lakes and coastal rivers from Long Island
+  to Hudson Bay, which are referred to as salters. In parts of its range, it is also known as the eastern
+  brook trout, speckled trout, brook char, squaretail, brookie, or mud trout, among others. Adult coaster
+  brook trout are capable of reaching sizes over 2 feet in length and weigh up to 6.8 kg (15 lb), whereas
+  adult salters average between 6 and 15 inches in length and weigh between 0.5 and 2.3 kg. The brook
+  trout is characterized by its distinctive olive-green body with yellow and blue-rimmed red spots, white
+  and black edged orange fins, and dorsal vermiculation. The diet of the brook trout is restrictive to
+  the season and location of the fish, but will typically consist of terrestrial and aquatic insects,
+  fry, crustaceans, zooplankton, and worms.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/e/ee/Brook_trout_in_water.jpg
   alt: Brook Trout (Salvelinus fontinalis)
@@ -493,12 +537,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Brook_trout
 ---
 
+## Description
 The brook trout is a species of freshwater fish in the char genus Salvelinus of the salmon family Salmonidae native to Eastern North America in the United States and Canada. Two ecological forms of brook trout have been recognized by the US Forest Service. One ecological form is long-lived potamodromous populations in Lake Superior known as coaster trout or coasters. The second ecological form is the short-living predaceous anadromous populations which are found in northern lakes and coastal rivers from Long Island to Hudson Bay, which are referred to as salters. In parts of its range, it is also known as the eastern brook trout, speckled trout, brook char, squaretail, brookie, or mud trout, among others. Adult coaster brook trout are capable of reaching sizes over 2 feet in length and weigh up to 6.8 kg (15 lb), whereas adult salters average between 6 and 15 inches in length and weigh between 0.5 and 2.3 kg. The brook trout is characterized by its distinctive olive-green body with yellow and blue-rimmed red spots, white and black edged orange fins, and dorsal vermiculation. The diet of the brook trout is restrictive to the season and location of the fish, but will typically consist of terrestrial and aquatic insects, fry, crustaceans, zooplankton, and worms.
 
-## Habitat
-Brook Trout is a freshwater, brackish, saltwater species. Typically found at depths of 15-27 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically Apr, May, Jun, Sep, Oct, Nov, though exact timing depends on local climate and water temperature.
+## Biology
+Courtship begins with a male attempting to drive a female toward suitable spawning gravel. A receptive female chooses a spot and digs a redd. While the female is digging, the male continues courtship activity, darting alongside the female and quivering, swimming over and under her and rubbing her with his fins; most of the time however, is spent driving off other males. When the redd is completed, the pair enter the nest and deposit eggs and milt. After spawning the female covers the eggs by sweeping small pebbles at the downstream edge of the redd upstream. Once the eggs are completely covered, she moves to the upstream end of the redd and begins digging a new redd .
+Spawning occurs mainly in Aug, Sep, Oct, Nov. Fecundity ranges from 88-5,000 eggs.
+Its diet consists mainly of Amphipods, Bivalves, Bony fish, Cladocerans, Fish eggs & larvae, Gastropods, Insects, Salamanders/newts and toads/frogs.
+It may be targeted by predators such as Delphinapterus leucas and Ichthyomyzon castaneus.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

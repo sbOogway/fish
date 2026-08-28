@@ -30,6 +30,55 @@ habitat:
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
+biology:
+  reproduction: In the Atlantic Ocean, spawning occurs in the upper water layer at depths between 0 and
+    75 m, at temperatures around 23°C, and salinity of 33.8 to 37.4 ppt. The distribution of larval broadbill
+    swordfish in the Pacific Ocean indicates that spawning occurs mainly in waters with a temperature
+    of 24°C or more. Spawning appears to occur in all seasons in equatorial waters, but is restricted
+    to spring and summer at higher latitudes . Fertilisation in broadbill swordfish is external and pairing
+    of solitary males and females is thought to occur when spawning . Broadbill swordfish are reported
+    to spawn in the upper layers of the water column, from the surface to a depth of 75 m . Estimates
+    of egg numbers vary considerably, from 1 million to 16 million in 168,000 g female and 29 million
+    in a 272,000 g female .
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: none
+  spawning_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  fecundity: 1,000,000-29,000,000 eggs
+  age_maturity: 5.5 years
+  diet:
+  - Bony fish
+  - Jellyfish/hydroids
+  - Octopi
+  - Squids/cuttlefish
+  predators:
+  - Coryphaena hippurus
+  - Istiophorus platypterus
+  - Isurus oxyrinchus
+  - Isurus paucus
+  - Makaira indica
+  - Makaira nigricans
+  - Orcinus orca
+  - Petromyzon marinus
+  - Physeter catodon
+  - Physeter macrocephalus
+  - Prionace glauca
+  - Tetrapturus angustirostris
+  - Tetrapturus audax
+  - Thunnus albacares
+  - Thunnus obesus
 angling:
   best_months: May, Jun, Jul, Aug, Sep
   season_months:
@@ -484,6 +533,13 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: The swordfish, also known as the broadbill in some countries, are large, highly migratory
+  predatory fish characterized by a long, flat, sword-like, pointed bill. They are the sole member of
+  the family Xiphiidae. They are a popular sport fish of the billfish category. Swordfish are elongated,
+  round-bodied, and lose all teeth and scales by adulthood. These fish are found widely in tropical and
+  temperate parts of the Atlantic, Pacific, and Indian Oceans, and can typically be found from near the
+  surface to a depth of 550 m (1,800 ft), and exceptionally up to depths of 2,878 m (9,442 ft). They commonly
+  reach 3 m (10 ft) in length, and the maximum reported is 4.55 m in length and 650 kg (1,430 lb) in weight.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Xiphias_gladius_Linnaeus%2C_1758_2599925021.jpg
   alt: Swordfish (Xiphias gladius)
@@ -491,12 +547,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Swordfish
 ---
 
+## Description
 The swordfish, also known as the broadbill in some countries, are large, highly migratory predatory fish characterized by a long, flat, sword-like, pointed bill. They are the sole member of the family Xiphiidae. They are a popular sport fish of the billfish category. Swordfish are elongated, round-bodied, and lose all teeth and scales by adulthood. These fish are found widely in tropical and temperate parts of the Atlantic, Pacific, and Indian Oceans, and can typically be found from near the surface to a depth of 550 m (1,800 ft), and exceptionally up to depths of 2,878 m (9,442 ft). They commonly reach 3 m (10 ft) in length, and the maximum reported is 4.55 m in length and 650 kg (1,430 lb) in weight.
 
-## Habitat
-Swordfish is a saltwater species. Typically found at depths of 0-2878 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically May, Jun, Jul, Aug, Sep, though exact timing depends on local climate and water temperature.
+## Biology
+In the Atlantic Ocean, spawning occurs in the upper water layer at depths between 0 and 75 m, at temperatures around 23°C, and salinity of 33.8 to 37.4 ppt. The distribution of larval broadbill swordfish in the Pacific Ocean indicates that spawning occurs mainly in waters with a temperature of 24°C or more. Spawning appears to occur in all seasons in equatorial waters, but is restricted to spring and summer at higher latitudes . Fertilisation in broadbill swordfish is external and pairing of solitary males and females is thought to occur when spawning . Broadbill swordfish are reported to spawn in the upper layers of the water column, from the surface to a depth of 75 m . Estimates of egg numbers vary considerably, from 1 million to 16 million in 168,000 g female and 29 million in a 272,000 g female .
+Spawning occurs mainly in Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec. Fecundity ranges from 1,000,000-29,000,000 eggs.
+Its diet consists mainly of Bony fish, Jellyfish/hydroids, Octopi and squids/cuttlefish.
+It may be targeted by predators such as Coryphaena hippurus, Istiophorus platypterus, Isurus oxyrinchus, Isurus paucus, Makaira indica, Makaira nigricans, Orcinus orca, Petromyzon marinus, Physeter catodon, Physeter macrocephalus, Prionace glauca, Tetrapturus angustirostris, Tetrapturus audax, Thunnus albacares and Thunnus obesus.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

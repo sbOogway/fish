@@ -31,6 +31,53 @@ habitat:
   - freshwater
   - brackish
   - saltwater
+biology:
+  reproduction: 'Adults migrate up to 4,827 km upstream to spawn . Migration from the sea begins in December
+    so that the the first fish are near river mouths by spring . Once a female selects a spot, she begins
+    to dig a nest, driving away other females during the period of nest building. The female is attended
+    by a larger, dominant male and several smaller males who drive away other males. While the female
+    digs the nest, the male courts her by coming to rest beside her and quivering; by swimming about over
+    her, touching her dorsal fin with his body and fins; and occasionally nudging her side gently with
+    his snout . Upon completion of the nest, the female drops into it and is immediately joined by the
+    dominant male. The fish open their mouths, vibrate, and eggs and sperm are released. At this point
+    smaller males may dart into the nest and release sperm. The female then quickly moves to the upstrem
+    edge of the nest and begins to dig. The eggs are covered and a new nest is made. The whole process
+    is repeated until the female releases all her eggs, which may take several days. The male then leaves
+    the female and may mate with another female. The female guards the nest for as long as she can. Spent
+    adults usually die a few days after spawning. . Reproductive strategy: synchronous ovarian organization,
+    determinate fecundity .'
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: maternal
+  spawning_months:
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  fecundity: 4,242-13,619 eggs
+  age_maturity: 4 years
+  diet:
+  - Amphipods
+  - Bony fish
+  - Crabs
+  - Euphausiids
+  - Insects
+  - Squids/cuttlefish
+  predators:
+  - Lethenteron camtschaticum
+  - Megalocottus platycephalus
+  - Micropterus salmoides
+  - Morone saxatilis
+  - Oncorhynchus clarki
+  - Oncorhynchus kisutch
+  - Oncorhynchus mykiss
+  - Orcinus orca
+  - Phoca vitulina
+  - Ptychocheilus oregonensis
+  - Salvelinus malma malma
+  - Sander vitreus
+  - Somniosus pacificus
 angling:
   best_months: May, Jun, Jul, Aug, Sep
   season_months:
@@ -389,6 +436,10 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: The Chinook salmon is the largest and most valuable species of Pacific salmon. Its common
+  name is derived from the Chinookan peoples. Other vernacular names for the species include king salmon,
+  quinnat salmon, tsumen, spring salmon, blackmouth, and tyee salmon. The scientific species name is based
+  on the Russian common name chavycha (чавыча).
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/d/d8/Chinook_Salmon_Adult_Male.jpg
   alt: Chinook Salmon (Oncorhynchus tshawytscha)
@@ -396,12 +447,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Chinook_salmon
 ---
 
+## Description
 The Chinook salmon is the largest and most valuable species of Pacific salmon. Its common name is derived from the Chinookan peoples. Other vernacular names for the species include king salmon, quinnat salmon, tsumen, spring salmon, blackmouth, and tyee salmon. The scientific species name is based on the Russian common name chavycha (чавыча).
 
-## Habitat
-Chinook Salmon is a freshwater, brackish, saltwater species. Typically found at depths of 0-375 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically May, Jun, Jul, Aug, Sep, though exact timing depends on local climate and water temperature.
+## Biology
+Adults migrate up to 4,827 km upstream to spawn . Migration from the sea begins in December so that the the first fish are near river mouths by spring . Once a female selects a spot, she begins to dig a nest, driving away other females during the period of nest building. The female is attended by a larger, dominant male and several smaller males who drive away other males. While the female digs the nest, the male courts her by coming to rest beside her and quivering; by swimming about over her, touching her dorsal fin with his body and fins; and occasionally nudging her side gently with his snout . Upon completion of the nest, the female drops into it and is immediately joined by the dominant male. The fish open their mouths, vibrate, and eggs and sperm are released. At this point smaller males may dart into the nest and release sperm. The female then quickly moves to the upstrem edge of the nest and begins to dig. The eggs are covered and a new nest is made. The whole process is repeated until the female releases all her eggs, which may take several days. The male then leaves the female and may mate with another female. The female guards the nest for as long as she can. Spent adults usually die a few days after spawning. . Reproductive strategy: synchronous ovarian organization, determinate fecundity .
+Spawning occurs mainly in Jul, Aug, Sep, Oct, Nov. Fecundity ranges from 4,242-13,619 eggs.
+Its diet consists mainly of Amphipods, Bony fish, Crabs, Euphausiids, Insects and squids/cuttlefish.
+It may be targeted by predators such as Lethenteron camtschaticum, Megalocottus platycephalus, Micropterus salmoides, Morone saxatilis, Oncorhynchus clarki, Oncorhynchus kisutch, Oncorhynchus mykiss, Orcinus orca, Phoca vitulina, Ptychocheilus oregonensis, Salvelinus malma malma, Sander vitreus and Somniosus pacificus.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

@@ -29,6 +29,63 @@ habitat:
   water_types:
   - freshwater
   - brackish
+biology:
+  reproduction: Sexual maturity is reached at 3-6 months depending on temperature, reaching about 30 g.
+    Reproduction occurs only when temperatures are over 20°C. Several yearly spawnings every 30 days.
+    Females incubate eggs inside their mouths (approximately for a week) where larvae hatch and remain
+    until the vitellus is reabsorved. Egg size 1.5 mm, larval length at hatching 4 mm. Spawns in firm
+    sand in water from 0.6 to 2 m deep of lakes and inshore waters . Males set up and defend territory
+    which are visited by the females. Courtship lasts several hours. A single male probably fertilises
+    the eggs of more than one female . Eggs are shed in batches in shallow nest and fertilized by male.
+    Each batch of eggs is picked up into oral cavity by female. Females solely involved in broodcare.
+    Female carries up to 200 eggs in her mouth where the larvae hatch and remain until after the yolk-sac
+    is absorbed.
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: maternal
+  spawning_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  fecundity: 22-1,500 eggs
+  age_maturity: 1.5 years
+  diet:
+  - Benthic algae/weeds
+  - Blue-green algae
+  - Cladocerans
+  - Copepods
+  - Debris
+  - Diatoms
+  - Dinoflagellates
+  - Green algae
+  - Insects
+  - Non-annelids
+  - Periphyton
+  - Terrestrial plants
+  predators:
+  - Anhinga rufa
+  - Ardeola ralloides
+  - Bagrus
+  - Casmerodius albus
+  - Cichla ocellaris
+  - Clarias
+  - Clarias gariepinus
+  - Crocodylus niloticus
+  - Darter
+  - Elops hawaiensis
+  - Haliaeetus vocifer
+  - Lates niloticus
+  - Pelecanus onocrotalus
+  - Pelecanus rufescens
 angling:
   best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
   season_months:
@@ -212,6 +269,13 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: The Nile tilapia is a species of tilapia, a cichlid occurring naturally in parts of Africa
+  and the Levant, though numerous introduced populations exist outside its natural range. This current
+  wide range is caused by its high commercial value as a food fish, where it is marketed as mango fish,
+  nilotica, or boulti, along with many other names, both local and foreign. Due to its value, the Nile
+  tilapia is widely aquacultured across the world due to its hardiness and a mode of reproduction conducive
+  to mass rearing, namely mouthbrooding, and various attempts have been made to increase production yields,
+  including hybridization with other tilapias.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/3/3f/Til%C3%A1pia_ou_Sarotherodon_niloticus_2.jpg
   alt: Nile Tilapia (Oreochromis niloticus)
@@ -219,12 +283,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Nile_tilapia
 ---
 
+## Description
 The Nile tilapia is a species of tilapia, a cichlid occurring naturally in parts of Africa and the Levant, though numerous introduced populations exist outside its natural range. This current wide range is caused by its high commercial value as a food fish, where it is marketed as mango fish, nilotica, or boulti, along with many other names, both local and foreign. Due to its value, the Nile tilapia is widely aquacultured across the world due to its hardiness and a mode of reproduction conducive to mass rearing, namely mouthbrooding, and various attempts have been made to increase production yields, including hybridization with other tilapias.
 
-## Habitat
-Nile Tilapia is a freshwater, brackish species. Typically found at depths of 0-20 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec, though exact timing depends on local climate and water temperature.
+## Biology
+Sexual maturity is reached at 3-6 months depending on temperature, reaching about 30 g. Reproduction occurs only when temperatures are over 20°C. Several yearly spawnings every 30 days. Females incubate eggs inside their mouths (approximately for a week) where larvae hatch and remain until the vitellus is reabsorved. Egg size 1.5 mm, larval length at hatching 4 mm. Spawns in firm sand in water from 0.6 to 2 m deep of lakes and inshore waters . Males set up and defend territory which are visited by the females. Courtship lasts several hours. A single male probably fertilises the eggs of more than one female . Eggs are shed in batches in shallow nest and fertilized by male. Each batch of eggs is picked up into oral cavity by female. Females solely involved in broodcare. Female carries up to 200 eggs in her mouth where the larvae hatch and remain until after the yolk-sac is absorbed.
+Spawning occurs mainly in Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec. Fecundity ranges from 22-1,500 eggs.
+Its diet consists mainly of Benthic algae/weeds, Blue-green algae, Cladocerans, Copepods, Debris, Diatoms, Dinoflagellates, Green algae, Insects, Non-annelids, Periphyton and terrestrial plants.
+It may be targeted by predators such as Anhinga rufa, Ardeola ralloides, Bagrus, Casmerodius albus, Cichla ocellaris, Clarias, Clarias gariepinus, Crocodylus niloticus, Darter, Elops hawaiensis, Haliaeetus vocifer, Lates niloticus, Pelecanus onocrotalus and Pelecanus rufescens.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

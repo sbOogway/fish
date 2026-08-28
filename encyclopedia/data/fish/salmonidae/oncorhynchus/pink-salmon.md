@@ -31,6 +31,65 @@ habitat:
   - freshwater
   - brackish
   - saltwater
+biology:
+  reproduction: 'Adults develop secondary sexual characteristics during their upstream migration , which
+    occurs any time from June to late September, depending on location . Male develop a humpback, an enlarged
+    head and large teeth on both jaws that form a pronounced hooked type . The upstream run seems to be
+    triggered by high water . Female builds the redd by lying on one side and using its tail, it displaces
+    silt and light gravel to produce a deep trough. Male spends most of the time driving off intruding
+    males. When the redd is completed, the female drops into it, followed immediately by the male. They
+    open their mouths, vibrate and release eggs and sperm. In some cases, several males spawn with a single
+    female. The eggs are then covered as the female digs a new redd at the upstream edge of the previous
+    one. Adults live up to a few weeks after spawning before they die . Reported to die 10-20 days after
+    spawning . About 1200-1800 eggs are laid. After hatching and the yellow egg yolk is absorbed, if the
+    hatchling doesn''t have a parr mark they go to the ocean and come again to the same birthplace stream
+    the next year during spring after growing for 16-18 months. Survival rates are low, at 1-25% (taken
+    from a Canadian river) . Reproductive strategy: synchronous ovarian organization, determinate fecundity
+    .'
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: maternal
+  spawning_months:
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  fecundity: 57-1,800 eggs
+  age_maturity: 2 years
+  diet:
+  - Amphipods
+  - Benth. copepods
+  - Bony fish
+  - Cladocerans
+  - Copepods
+  - Euphausiids
+  - Fish eggs & larvae
+  - Gastropods
+  - Insects
+  - Isopods
+  - Mysids
+  - Ostracods
+  - Polychaetes
+  - Squids/cuttlefish
+  predators:
+  - Alepisaurus ferox
+  - Anotopterus nikparini
+  - Balaenoptera acutorostrata
+  - Cottus aleuticus
+  - Cottus asper
+  - Lamna ditropis
+  - Lethenteron camtschaticum
+  - Megalocottus platycephalus
+  - Oncorhynchus clarki
+  - Oncorhynchus kisutch
+  - Oncorhynchus mykiss
+  - Osmerus mordax dentex
+  - Platichthys stellatus
+  - Salvelinus leucomaenis leucomaenis
+  - Salvelinus malma malma
+  - Unidentified squawfish.
+  - unidentified mergansers
 angling:
   best_months: Jun, Jul, Aug, Sep
   season_months:
@@ -240,6 +299,10 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: Pink salmon or humpback salmon is a species of euryhaline ray-finned fish in the family Salmonidae.
+  It is the type species of the genus Oncorhynchus, and is the smallest and most abundant of the seven
+  officially recognized species of salmon. The species' scientific name is based on the Russian common
+  name for this species gorbúša (горбуша), which literally means humpie.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Humpback_Salmon_Adult_Male.jpg
   alt: Pink Salmon (Oncorhynchus gorbuscha)
@@ -247,12 +310,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Pink_salmon
 ---
 
+## Description
 Pink salmon or humpback salmon is a species of euryhaline ray-finned fish in the family Salmonidae. It is the type species of the genus Oncorhynchus, and is the smallest and most abundant of the seven officially recognized species of salmon. The species' scientific name is based on the Russian common name for this species gorbúša (горбуша), which literally means humpie.
 
-## Habitat
-Pink Salmon is a freshwater, brackish, saltwater species. Typically found at depths of 0-250 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically Jun, Jul, Aug, Sep, though exact timing depends on local climate and water temperature.
+## Biology
+Adults develop secondary sexual characteristics during their upstream migration , which occurs any time from June to late September, depending on location . Male develop a humpback, an enlarged head and large teeth on both jaws that form a pronounced hooked type . The upstream run seems to be triggered by high water . Female builds the redd by lying on one side and using its tail, it displaces silt and light gravel to produce a deep trough. Male spends most of the time driving off intruding males. When the redd is completed, the female drops into it, followed immediately by the male. They open their mouths, vibrate and release eggs and sperm. In some cases, several males spawn with a single female. The eggs are then covered as the female digs a new redd at the upstream edge of the previous one. Adults live up to a few weeks after spawning before they die . Reported to die 10-20 days after spawning . About 1200-1800 eggs are laid. After hatching and the yellow egg yolk is absorbed, if the hatchling doesn't have a parr mark they go to the ocean and come again to the same birthplace stream the next year during spring after growing for 16-18 months. Survival rates are low, at 1-25% (taken from a Canadian river) . Reproductive strategy: synchronous ovarian organization, determinate fecundity .
+Spawning occurs mainly in Jul, Aug, Sep, Oct, Nov. Fecundity ranges from 57-1,800 eggs.
+Its diet consists mainly of Amphipods, Benth. copepods, Bony fish, Cladocerans, Copepods, Euphausiids, Fish eggs & larvae, Gastropods, Insects, Isopods, Mysids, Ostracods, Polychaetes and squids/cuttlefish.
+It may be targeted by predators such as Alepisaurus ferox, Anotopterus nikparini, Balaenoptera acutorostrata, Cottus aleuticus, Cottus asper, Lamna ditropis, Lethenteron camtschaticum, Megalocottus platycephalus, Oncorhynchus clarki, Oncorhynchus kisutch, Oncorhynchus mykiss, Osmerus mordax dentex, Platichthys stellatus, Salvelinus leucomaenis leucomaenis, Salvelinus malma malma, Unidentified squawfish. and unidentified mergansers.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

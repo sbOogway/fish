@@ -30,6 +30,106 @@ habitat:
   water_types:
   - brackish
   - saltwater
+biology:
+  reproduction: 'The herring matures between 2-9 years . Herring populations are known to use traditional
+    spawning grounds, many of which are along shallow coastal areas (15-40 m depth) or on offshore banks
+    down to 200 m . Spawning usually occurs on gravel or rock bottoms, with the exception of Baltic populations
+    which show a preference for shallow (less than 10 m depth) seaweed beds . Each population spawns only
+    once a year over a relatively short time period . At least one population is spawning in any one month
+    of the year, each having a different spawning time and place. The herring is a demersal spawner that
+    releases a ribbon of sticky eggs that sink to the sea bed and adhere to the substrate. The eggs released
+    by a spawning population may be several layers thick which may deprive eggs in the bottom layers of
+    oxygen, causing egg mortality . Although higher fecundities were reported earlier (e.g. Ref. 74523),
+    fecundity now ranges from 10,000-60,000 eggs . Hatching may take up to 3 weeks, depending on temperature
+    . Larvae are pelagic and drift with the current. Note: it is impossible to summarize briefly the wide
+    range of spawning strategies of Atlantic herring; the best reviews are those of Svetovidov for the
+    Eastern Atlantic Ocean and Hildebrand for the Western Atlantic Ocean.'
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: none
+  spawning_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
+  fecundity: 10,000-65,403 eggs
+  age_maturity: 3 years
+  diet:
+  - Amphipods
+  - Bivalves
+  - Bony fish
+  - Carcasses
+  - Cladocerans
+  - Copepods
+  - Diatoms
+  - Euphausiids
+  - Fish eggs & larvae
+  - Gastropods
+  - Isopods
+  - Mysids
+  - Non-annelids
+  - Ostracods
+  - Polychaetes
+  - Shrimps & prawns
+  - Squids/cuttlefish
+  predators:
+  - Amblyraja hyperborea
+  - Amblyraja radiata
+  - Centropristis striata
+  - Centroscyllium fabricii
+  - Chelidonichthys gurnardus
+  - Clangula hyemalis
+  - Clupea harengus
+  - Cystophora cristata
+  - Delphinapterus leucas
+  - Eledone cirrhosa
+  - Esox lucius
+  - Etmopterus princeps
+  - Gadus macrocephalus
+  - Gadus morhua
+  - Gasterosteus aculeatus
+  - Gonatus fabricii
+  - Halichoerus grypus
+  - Hippoglossoides platessoides
+  - Illex illecebrosus
+  - Lethenteron camtschaticum
+  - Loligo forbesi
+  - Lophius americanus
+  - Lophius piscatorius
+  - Lycodes frigidus
+  - Mergus merganser
+  - Merlangius merlangus
+  - Merluccius bilinearis
+  - Merluccius merluccius
+  - Merluccius productus
+  - Micromesistius poutassou
+  - Morus bassanus
+  - Myoxocephalus octodecemspinosus
+  - Myoxocephalus scorpius
+  - Myxine glutinosa
+  - Orcinus orca
+  - Pelecus cultratus
+  - Phoca groenlandica
+  - Phoca vitulina
+  - Phocoena phocoena
+  - Pomatomus saltatrix
+  - Prionace glauca
+  - Raja clavata
+  - Reinhardtius hippoglossoides
+  - Rissa tridactyla
+  - Salmo salar
+  - Sander lucioperca
+  - Sebastes maliger
+  - Sebastes nigrocinctus
+  - Sebastes ruberrimus
+  - Sphyrna lewini
+  - Squalus acanthias
+  - Trisopterus minutus
+  - Xiphias gladius
+  - tunas
 angling:
   best_months: Jan, Feb, Mar, Sep, Oct, Nov, Dec
   season_months:
@@ -486,6 +586,11 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: Atlantic herring is a herring in the family Clupeidae. It is one of the most abundant fish
+  species in the world. Atlantic herrings can be found on both sides of the northern Atlantic Ocean, congregating
+  in large schools. They can grow up to 45 centimetres (18 in) in length and weigh up to 1.1 kilograms
+  (2.4 lb). They feed on copepods, krill and small fish, while their natural predators are seals, whales,
+  cod and other larger fish.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/0/04/Clupea_harengus.png
   alt: Atlantic Herring (Clupea harengus)
@@ -493,12 +598,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Atlantic_herring
 ---
 
+## Description
 Atlantic herring is a herring in the family Clupeidae. It is one of the most abundant fish species in the world. Atlantic herrings can be found on both sides of the northern Atlantic Ocean, congregating in large schools. They can grow up to 45 centimetres (18 in) in length and weigh up to 1.1 kilograms (2.4 lb). They feed on copepods, krill and small fish, while their natural predators are seals, whales, cod and other larger fish.
 
-## Habitat
-Atlantic Herring is a brackish, saltwater species. Typically found at depths of 0-364 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically Jan, Feb, Mar, Sep, Oct, Nov, Dec, though exact timing depends on local climate and water temperature.
+## Biology
+The herring matures between 2-9 years . Herring populations are known to use traditional spawning grounds, many of which are along shallow coastal areas (15-40 m depth) or on offshore banks down to 200 m . Spawning usually occurs on gravel or rock bottoms, with the exception of Baltic populations which show a preference for shallow (less than 10 m depth) seaweed beds . Each population spawns only once a year over a relatively short time period . At least one population is spawning in any one month of the year, each having a different spawning time and place. The herring is a demersal spawner that releases a ribbon of sticky eggs that sink to the sea bed and adhere to the substrate. The eggs released by a spawning population may be several layers thick which may deprive eggs in the bottom layers of oxygen, causing egg mortality . Although higher fecundities were reported earlier (e.g. Ref. 74523), fecundity now ranges from 10,000-60,000 eggs . Hatching may take up to 3 weeks, depending on temperature . Larvae are pelagic and drift with the current. Note: it is impossible to summarize briefly the wide range of spawning strategies of Atlantic herring; the best reviews are those of Svetovidov for the Eastern Atlantic Ocean and Hildebrand for the Western Atlantic Ocean.
+Spawning occurs mainly in Mar, Apr, May, Jun, Sep, Oct, Nov. Fecundity ranges from 10,000-65,403 eggs.
+Its diet consists mainly of Amphipods, Bivalves, Bony fish, Carcasses, Cladocerans, Copepods, Diatoms, Euphausiids, Fish eggs & larvae, Gastropods, Isopods, Mysids, Non-annelids, Ostracods, Polychaetes, Shrimps & prawns and squids/cuttlefish.
+It may be targeted by predators such as Amblyraja hyperborea, Amblyraja radiata, Centropristis striata, Centroscyllium fabricii, Chelidonichthys gurnardus, Clangula hyemalis, Clupea harengus, Cystophora cristata, Delphinapterus leucas, Eledone cirrhosa, Esox lucius, Etmopterus princeps, Gadus macrocephalus, Gadus morhua, Gasterosteus aculeatus, Gonatus fabricii, Halichoerus grypus, Hippoglossoides platessoides, Illex illecebrosus, Lethenteron camtschaticum, Loligo forbesi, Lophius americanus, Lophius piscatorius, Lycodes frigidus, Mergus merganser, Merlangius merlangus, Merluccius bilinearis, Merluccius merluccius, Merluccius productus, Micromesistius poutassou, Morus bassanus, Myoxocephalus octodecemspinosus, Myoxocephalus scorpius, Myxine glutinosa, Orcinus orca, Pelecus cultratus, Phoca groenlandica, Phoca vitulina, Phocoena phocoena, Pomatomus saltatrix, Prionace glauca, Raja clavata, Reinhardtius hippoglossoides, Rissa tridactyla, Salmo salar, Sander lucioperca, Sebastes maliger, Sebastes nigrocinctus, Sebastes ruberrimus, Sphyrna lewini, Squalus acanthias, Trisopterus minutus, Xiphias gladius and tunas.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

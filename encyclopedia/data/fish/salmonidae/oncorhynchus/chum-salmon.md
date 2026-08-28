@@ -31,6 +31,60 @@ habitat:
   - freshwater
   - brackish
   - saltwater
+biology:
+  reproduction: 'Enters freshwater during advanced stage of sexual development and spawning occurs almost
+    immediately . Spawning occurs at depths of ~3 meters, current speeds of ~20cm/sec. near the head waters
+    over sand and pebbles at 4-11° C water temperature. At spawning time the female excavates a hole of
+    around 1 meter diameter and 50 cm depth before spawning can occur . Nest building is done by the female
+    by lying on one side and lashing its tail to displace the sand and silt on the river bed. The pair
+    then settles in the nest, mouths gape, and with rapid vibration of the pair, eggs and milt are released.
+    The female then covers the nest. Males are aggressive and may spawn with different females; females
+    likewise may spawn with other males and therefore builds different nests. Adults die after a week
+    . A fish spawns 700-7,000 eggs in two to three egg releases. Eggs are ~300-3,500 per spawn. Egg size
+    is ~6.7 mm, water temp. is 8-10°C at 60 days before hatching. Larva size is around 16 mm. Come springtime
+    the juveniles go to the ocean and come back 3-4 years later to their exact birthplace. This fish reaches
+    maturity in 2-4 years. Larvae are found around the spawning site, Juveniles are found around the coast.
+    Juveniles migrate to the ocean at ~27-45 mm during February at water temperatures around 4° C . Reproductive
+    strategy: synchronous ovarian organization, determinate fecundity .'
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: maternal
+  spawning_months:
+  - 9
+  - 10
+  - 11
+  fecundity: 2,400-3,100 eggs
+  age_maturity: 3.5 years
+  diet:
+  - Amphipods
+  - Benth. copepods
+  - Bony fish
+  - Copepods
+  - Diatoms
+  - Euphausiids
+  - Fish eggs & larvae
+  - Insects
+  - Isopods
+  - Jellyfish/hydroids
+  - Mysids
+  - Non-annelids
+  - Ostracods
+  - Squids/cuttlefish
+  predators:
+  - Anotopterus pharao
+  - Cottus aleuticus
+  - Cottus asper
+  - Larus crassirostris
+  - Larus schistisagus
+  - Lethenteron camtschaticum
+  - Oncorhynchus clarki
+  - Oncorhynchus kisutch
+  - Oncorhynchus mykiss
+  - Orcinus orca
+  - Platichthys stellatus
+  - Salvelinus malma malma
+  - Tribolodon hakonensis
+  - unidentified squawfish
 angling:
   best_months: Jun, Jul, Aug, Sep
   season_months:
@@ -306,6 +360,11 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: The chum salmon, also known as dog salmon or keta salmon, is a species of anadromous salmonid
+  fish from the genus Oncorhynchus native to the coastal rivers of the North Pacific and the Beringian
+  Arctic. The English name "chum salmon" comes from the Chinook Jargon term tsəm, meaning "spotted" or
+  "marked"; while keta in the scientific name comes from Russian, which in turn comes from the Evenki
+  language of Eastern Siberia.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/7/71/Dog_Salmon_Breeding_Male.jpg
   alt: Chum Salmon (Oncorhynchus keta)
@@ -313,12 +372,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Chum_salmon
 ---
 
+## Description
 The chum salmon, also known as dog salmon or keta salmon, is a species of anadromous salmonid fish from the genus Oncorhynchus native to the coastal rivers of the North Pacific and the Beringian Arctic. The English name "chum salmon" comes from the Chinook Jargon term tsəm, meaning "spotted" or "marked"; while keta in the scientific name comes from Russian, which in turn comes from the Evenki language of Eastern Siberia.
 
-## Habitat
-Chum Salmon is a freshwater, brackish, saltwater species. Typically found at depths of 0-250 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically Jun, Jul, Aug, Sep, though exact timing depends on local climate and water temperature.
+## Biology
+Enters freshwater during advanced stage of sexual development and spawning occurs almost immediately . Spawning occurs at depths of ~3 meters, current speeds of ~20cm/sec. near the head waters over sand and pebbles at 4-11° C water temperature. At spawning time the female excavates a hole of around 1 meter diameter and 50 cm depth before spawning can occur . Nest building is done by the female by lying on one side and lashing its tail to displace the sand and silt on the river bed. The pair then settles in the nest, mouths gape, and with rapid vibration of the pair, eggs and milt are released. The female then covers the nest. Males are aggressive and may spawn with different females; females likewise may spawn with other males and therefore builds different nests. Adults die after a week . A fish spawns 700-7,000 eggs in two to three egg releases. Eggs are ~300-3,500 per spawn. Egg size is ~6.7 mm, water temp. is 8-10°C at 60 days before hatching. Larva size is around 16 mm. Come springtime the juveniles go to the ocean and come back 3-4 years later to their exact birthplace. This fish reaches maturity in 2-4 years. Larvae are found around the spawning site, Juveniles are found around the coast. Juveniles migrate to the ocean at ~27-45 mm during February at water temperatures around 4° C . Reproductive strategy: synchronous ovarian organization, determinate fecundity .
+Spawning occurs mainly in Sep, Oct, Nov. Fecundity ranges from 2,400-3,100 eggs.
+Its diet consists mainly of Amphipods, Benth. copepods, Bony fish, Copepods, Diatoms, Euphausiids, Fish eggs & larvae, Insects, Isopods, Jellyfish/hydroids, Mysids, Non-annelids, Ostracods and squids/cuttlefish.
+It may be targeted by predators such as Anotopterus pharao, Cottus aleuticus, Cottus asper, Larus crassirostris, Larus schistisagus, Lethenteron camtschaticum, Oncorhynchus clarki, Oncorhynchus kisutch, Oncorhynchus mykiss, Orcinus orca, Platichthys stellatus, Salvelinus malma malma, Tribolodon hakonensis and unidentified squawfish.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

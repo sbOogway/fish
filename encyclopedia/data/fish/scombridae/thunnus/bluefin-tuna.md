@@ -33,6 +33,54 @@ habitat:
   water_types:
   - brackish
   - saltwater
+biology:
+  reproduction: Oviparous batch spawner, with an inter-spawning interval of 1-2 days in the Mediterranean
+    Sea . Females larger than 205 cm fork length are estimated to have a mean fecundity of 30-60 and 13-15
+    million eggs, in the western and eastern Atlantic respectively (Ref. 40805, Ref. 88871). Spawning
+    occurs when sea surface temperatures are between 22.6-27.5 ºC and 22.5-25.5 ºC in the Gulf of Mexico
+    and Mediterranean Sea respectively (88868). Spawning occurs between June and August in the Mediterranean
+    Sea . Eggs are released directly to the water column and hatch after 2 days . At 24°C, embryo development
+    lasts about 32 hours and larval stages about 30 days. Egg size 1.0 mm, larval length at hatching 2.8
+    mm. Spawning grounds are mainly known from the Gulf of Mexico and the Mediterranean Sea, but the presence
+    of mature individuals and larvae far from these areas (e.g. Bahamas and central North Atlantic Ocean)
+    suggest that other spawning grounds may also be utilized (Ref. 88873, Ref. 88874, Ref. 88872). Appears
+    to display homing behaviour with (western-tagged individuals migrating back to specific spawning sites
+    either in the Gulf of Mexico or the Mediterranean Sea) (Ref. 88872, Ref. 88870). Fidelity to natal
+    areas seem to occur once individuals reach maturity, i.e. after returning to either the western or
+    eastern spawning grounds .
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: none
+  spawning_months:
+  - 6
+  fecundity: 1,170,000-60,300,000 eggs
+  age_maturity: 4.5 years
+  diet:
+  - Amphipods
+  - Bony fish
+  - Cladocerans
+  - Copepods
+  - Crabs
+  - Euphausiids
+  - Fish eggs & larvae
+  - Jellyfish/hydroids
+  - Lobsters
+  - Mysids
+  - Octopi
+  - Shrimps & prawns
+  - Sponges
+  - Squids/cuttlefish
+  - Stomatopods
+  predators:
+  - Acanthocybium solandri
+  - Anous stolidus
+  - Carcharodon carcharias
+  - Globicephala melaena
+  - Isurus paucus
+  - Orcinus orca
+  - Prionace glauca
+  - Sterna fuscata
+  - blackfish
 angling:
   best_months: May, Jun, Jul, Aug, Sep, Oct
   season_months:
@@ -488,6 +536,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: PERMIT-REQUIRED
+description: The Atlantic bluefin tuna is a species of tuna in the family Scombridae. It is variously
+  known as the northern bluefin tuna, giant bluefin tuna, and formerly as the tunny.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/1/18/Bluefin-big.jpg
   alt: Atlantic Bluefin Tuna (Thunnus thynnus)
@@ -495,12 +545,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna
 ---
 
+## Description
 The Atlantic bluefin tuna is a species of tuna in the family Scombridae. It is variously known as the northern bluefin tuna, giant bluefin tuna, and formerly as the tunny.
 
-## Habitat
-Atlantic Bluefin Tuna is a brackish, saltwater species. Typically found at depths of 0-985 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically May, Jun, Jul, Aug, Sep, Oct, though exact timing depends on local climate and water temperature.
+## Biology
+Oviparous batch spawner, with an inter-spawning interval of 1-2 days in the Mediterranean Sea . Females larger than 205 cm fork length are estimated to have a mean fecundity of 30-60 and 13-15 million eggs, in the western and eastern Atlantic respectively (Ref. 40805, Ref. 88871). Spawning occurs when sea surface temperatures are between 22.6-27.5 ºC and 22.5-25.5 ºC in the Gulf of Mexico and Mediterranean Sea respectively (88868). Spawning occurs between June and August in the Mediterranean Sea . Eggs are released directly to the water column and hatch after 2 days . At 24°C, embryo development lasts about 32 hours and larval stages about 30 days. Egg size 1.0 mm, larval length at hatching 2.8 mm. Spawning grounds are mainly known from the Gulf of Mexico and the Mediterranean Sea, but the presence of mature individuals and larvae far from these areas (e.g. Bahamas and central North Atlantic Ocean) suggest that other spawning grounds may also be utilized (Ref. 88873, Ref. 88874, Ref. 88872). Appears to display homing behaviour with (western-tagged individuals migrating back to specific spawning sites either in the Gulf of Mexico or the Mediterranean Sea) (Ref. 88872, Ref. 88870). Fidelity to natal areas seem to occur once individuals reach maturity, i.e. after returning to either the western or eastern spawning grounds .
+Spawning occurs mainly in Jun. Fecundity ranges from 1,170,000-60,300,000 eggs.
+Its diet consists mainly of Amphipods, Bony fish, Cladocerans, Copepods, Crabs, Euphausiids, Fish eggs & larvae, Jellyfish/hydroids, Lobsters, Mysids, Octopi, Shrimps & prawns, Sponges, Squids/cuttlefish and stomatopods.
+It may be targeted by predators such as Acanthocybium solandri, Anous stolidus, Carcharodon carcharias, Globicephala melaena, Isurus paucus, Orcinus orca, Prionace glauca, Sterna fuscata and blackfish.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

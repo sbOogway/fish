@@ -32,6 +32,77 @@ habitat:
   - freshwater
   - brackish
   - saltwater
+biology:
+  reproduction: At the onset of sexual maturity this species is known to return from the ocean to the
+    river where it was born, and even to its specific natal site . Lacustrine populations move to tributaries
+    . Spawning migration into freshwater lasts from June to November. Spawns at 6-10°C in gravel river
+    areas far upstream with moderate to fast-flowing, well-oxygenated waters and a succession of riffles
+    and pools . The female selects a site where the gravel is of the right size and of sufficient depth
+    (0.1 to 0.3 m) and water depth is around 0.5-3 m . The female digs a depression ("redd") by turning
+    on her side and flexing her body up and down, without touching the stones . This species spawns in
+    pairs. The male guards and defends the female against other males . A female releases between 8,000-25,000
+    eggs during a spawning season ; 500 to 2000 per kg . Fertilized eggs sink into the redd and are covered
+    with a layer of gravel (0.1-0.3 m) usually by the male . Females are also observed to cover the eggs.
+    Individual spawning is completed in 2-3 days after a female digging several redds and spawning with
+    several males. Period of spawning lasts for 1-2 weeks. Most males die after spawning, while 10-40%
+    of females may survive and return to the sea in autumn or overwinter in rivers, feed one summer, and
+    migrate again. They may spawn in the year following the first reproduction or may remain at sea for
+    18 months before returning once more to the river. Of the returning females, about 0.3-6 % spawn a
+    second time and very few spawn a third or fourth time. In short rivers with presumably less exhaustive
+    upstream migration, up to 34% of returning individuals spawn a second time; some individuals may spawn
+    for up to six seasons . Eggs hatch in spring, usually after 70-160 days . Upon hatching, alevins (i.e.
+    newly-hatched young up to 1 month) are negatively phototactic and move deeper into the gravel . As
+    their yolk sac is absorbed, the fry emerge from the bottom and move to shallow riffles just downstream
+    of their redd . Mortality of young individuals during the first months may range from 14-61 % . Parr
+    (i.e. juveniles) may remain in freshwater environments for 1-7 years (depending on temperature and
+    feeding conditions) but most stay for 2-3 years. Parr undergo morphological and physiological changes
+    called smoltification which prepares them for life in the sea. At the southern end of their range,
+    many reach a length of 12-15 cm, transform into smolts and are ready for migration in spring of the
+    first year after hatching . At the northern end of the range they may take 5-6 years to reach smolt
+    stage . Smolts move towards estuaries, the continental shelf and eventually the open ocean . The Atlantic
+    salmon matures between 3-7 years . After 1-4 years at sea, it migrates back to the upper reaches of
+    its natal river to spawn . It has an acute sense of smell and it is suggested that it imprints a sequence
+    of odours while inhabiting rivers and during its smolt run. It presumably reverses this sequence to
+    return to its natal site . Several studies have shown that smolt runs are strongly correlated to increasing
+    water temperature and water flow during spring . There is little evidence of natural spawning by land-locked
+    populations of Atlantic salmon in Australia, and populations are maintained by stocking .
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: none
+  spawning_months:
+  - 10
+  - 11
+  - 12
+  fecundity: 6,419-14,499 eggs
+  age_maturity: 4.5 years
+  diet:
+  - Amphipods
+  - Bony fish
+  - Carcasses
+  - Cladocerans
+  - Euphausiids
+  - Insects
+  - Isopods
+  - Ostracods
+  - Polychaetes
+  - Shrimps & prawns
+  - Squids/cuttlefish
+  predators:
+  - Delphinapterus leucas
+  - Esox lucius
+  - Gadus morhua
+  - Halichoerus grypus
+  - Lethenteron camtschaticum
+  - Lutra lutra
+  - Mergus merganser
+  - Morus bassanus
+  - Petromyzon marinus
+  - Phoca vitulina
+  - Salmo trutta trutta
+  - Salvelinus fontinalis
+  - Thymallus thymallus
+  - Tursiops truncatus
+  - Uria aalge
 angling:
   best_months: May, Jun, Jul, Aug, Sep, Oct
   season_months:
@@ -487,6 +558,11 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: NO-RETENTION
+description: The Atlantic salmon is a species of ray-finned fish in the family Salmonidae. It is the third
+  largest of the Salmonidae, behind Siberian taimen and Pacific Chinook salmon, growing up to 1 m (3.3 ft)
+  in length. Atlantic salmon are found in the northern Atlantic Ocean and in rivers that flow into it.
+  Most populations are anadromous, hatching in streams and rivers but moving out to sea as they grow where
+  they mature, after which the adults seasonally move upstream again to spawn.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/8/82/Wst_atlantischer_lachs_stoer_001.jpg
   alt: Atlantic Salmon (Salmo salar)
@@ -494,12 +570,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Atlantic_salmon
 ---
 
+## Description
 The Atlantic salmon is a species of ray-finned fish in the family Salmonidae. It is the third largest of the Salmonidae, behind Siberian taimen and Pacific Chinook salmon, growing up to 1 m (3.3 ft) in length. Atlantic salmon are found in the northern Atlantic Ocean and in rivers that flow into it. Most populations are anadromous, hatching in streams and rivers but moving out to sea as they grow where they mature, after which the adults seasonally move upstream again to spawn.
 
-## Habitat
-Atlantic Salmon is a freshwater, brackish, saltwater species. Typically found at depths of 0-210 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically May, Jun, Jul, Aug, Sep, Oct, though exact timing depends on local climate and water temperature.
+## Biology
+At the onset of sexual maturity this species is known to return from the ocean to the river where it was born, and even to its specific natal site . Lacustrine populations move to tributaries . Spawning migration into freshwater lasts from June to November. Spawns at 6-10°C in gravel river areas far upstream with moderate to fast-flowing, well-oxygenated waters and a succession of riffles and pools . The female selects a site where the gravel is of the right size and of sufficient depth (0.1 to 0.3 m) and water depth is around 0.5-3 m . The female digs a depression ("redd") by turning on her side and flexing her body up and down, without touching the stones . This species spawns in pairs. The male guards and defends the female against other males . A female releases between 8,000-25,000 eggs during a spawning season ; 500 to 2000 per kg . Fertilized eggs sink into the redd and are covered with a layer of gravel (0.1-0.3 m) usually by the male . Females are also observed to cover the eggs. Individual spawning is completed in 2-3 days after a female digging several redds and spawning with several males. Period of spawning lasts for 1-2 weeks. Most males die after spawning, while 10-40% of females may survive and return to the sea in autumn or overwinter in rivers, feed one summer, and migrate again. They may spawn in the year following the first reproduction or may remain at sea for 18 months before returning once more to the river. Of the returning females, about 0.3-6 % spawn a second time and very few spawn a third or fourth time. In short rivers with presumably less exhaustive upstream migration, up to 34% of returning individuals spawn a second time; some individuals may spawn for up to six seasons . Eggs hatch in spring, usually after 70-160 days . Upon hatching, alevins (i.e. newly-hatched young up to 1 month) are negatively phototactic and move deeper into the gravel . As their yolk sac is absorbed, the fry emerge from the bottom and move to shallow riffles just downstream of their redd . Mortality of young individuals during the first months may range from 14-61 % . Parr (i.e. juveniles) may remain in freshwater environments for 1-7 years (depending on temperature and feeding conditions) but most stay for 2-3 years. Parr undergo morphological and physiological changes called smoltification which prepares them for life in the sea. At the southern end of their range, many reach a length of 12-15 cm, transform into smolts and are ready for migration in spring of the first year after hatching . At the northern end of the range they may take 5-6 years to reach smolt stage . Smolts move towards estuaries, the continental shelf and eventually the open ocean . The Atlantic salmon matures between 3-7 years . After 1-4 years at sea, it migrates back to the upper reaches of its natal river to spawn . It has an acute sense of smell and it is suggested that it imprints a sequence of odours while inhabiting rivers and during its smolt run. It presumably reverses this sequence to return to its natal site . Several studies have shown that smolt runs are strongly correlated to increasing water temperature and water flow during spring . There is little evidence of natural spawning by land-locked populations of Atlantic salmon in Australia, and populations are maintained by stocking .
+Spawning occurs mainly in Oct, Nov, Dec. Fecundity ranges from 6,419-14,499 eggs.
+Its diet consists mainly of Amphipods, Bony fish, Carcasses, Cladocerans, Euphausiids, Insects, Isopods, Ostracods, Polychaetes, Shrimps & prawns and squids/cuttlefish.
+It may be targeted by predators such as Delphinapterus leucas, Esox lucius, Gadus morhua, Halichoerus grypus, Lethenteron camtschaticum, Lutra lutra, Mergus merganser, Morus bassanus, Petromyzon marinus, Phoca vitulina, Salmo trutta trutta, Salvelinus fontinalis, Thymallus thymallus, Tursiops truncatus and Uria aalge.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

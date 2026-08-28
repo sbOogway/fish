@@ -29,7 +29,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from encyclopedia.fishbase import FishBase, build_fishbase_enrichment
+from encyclopedia.fishbase import FishBase, build_fishbase_enrichment, build_biology
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "encyclopedia" / "data"
@@ -173,9 +173,11 @@ def build_profile(species, summary, tax, fb):
     fish_class = "Cephalopoda" if family in CEPHALOPOD_FAMILIES else (tax.get("class") or "Actinopterygii")
     conservation = CONSERVATION.get(species.get("conservationStatus"), "LC")
 
-    # FishBase enrichment (physical, habitat, real distribution points).
+    # FishBase enrichment (physical, habitat, biology, real distribution points).
     fbname = FISHBASE_ALIASES.get(sci.lower(), sci)
     fb_enc = build_fishbase_enrichment(fb, fbname)
+    spec_code = (fb.species_row(fbname) or {}).get("SpecCode")
+    biology = build_biology(fb, spec_code)
 
     water_types = (fb_enc["habitat"].get("water_types")
                    or (["saltwater"] if water == "saltwater" else ["freshwater"]))
@@ -213,6 +215,7 @@ def build_profile(species, summary, tax, fb):
         },
         "physical": dict(fb_enc["physical"]),
         "habitat": habitat,
+        "biology": biology,
         "angling": {
             "best_months": months_list(season),
             "season_months": season,
@@ -221,7 +224,9 @@ def build_profile(species, summary, tax, fb):
         "conservation": {"status": conservation},
     }
 
-    body = build_body(common, sci, habitat, season, (summary or {}).get("extract"))
+    extract = (summary or {}).get("extract") or ""
+    meta["description"] = extract.strip()
+    body = build_body(common, sci, extract, biology)
 
     if summary and summary.get("originalimage"):
         image_url = summary["originalimage"]["source"].split("?")[0]
@@ -244,22 +249,58 @@ def months_list(months):
     return names or "year-round"
 
 
-def build_body(common, sci, habitat, season, extract):
-    water_types = habitat.get("water_types") or []
-    label = ", ".join(water_types) if water_types else "aquatic"
-    depth = habitat.get("depth_range_m")
-    depth_txt = f" Typically found at depths of {depth} metres." if depth else ""
-    season_text = months_list(season)
+def build_body(common, sci, extract, biology):
+    """Generate the prose portion of a profile markdown body.
+
+    Sections are ordered to match the page anatomy; the Distribution block and
+    fact-driven sections (Size/Weight/Age/Seasonality/Conservation) are
+    rendered from frontmatter by the generator, so only Description and Biology
+    carry prose here. Empty sections are omitted entirely.
+    """
     lines = []
     if extract:
-        lines.append(extract.strip())
-        lines.append("")
-    lines.append("## Habitat")
-    lines.append(f"{common} is a {label} species.{depth_txt}")
-    lines.append("")
-    lines.append("## Seasonality")
-    lines.append(f"Its most productive fishing months in the Northern Hemisphere are typically {season_text}, though exact timing depends on local climate and water temperature.")
-    return "\n".join(lines)
+        lines += ["## Description", extract.strip(), ""]
+    if biology:
+        bio = build_biology_prose(common, biology)
+        if bio:
+            lines += ["## Biology", *bio, ""]
+    return "\n".join(lines).strip()
+
+
+def build_biology_prose(common, biology):
+    """Merge FishBase biology into prose paragraphs for the Biology section."""
+    paras = []
+    repro = biology.get("reproduction")
+    if repro:
+        paras.append(repro)
+
+    facts = []
+    months = biology.get("spawning_months")
+    if months:
+        facts.append(f"Spawning occurs mainly in {months_list(months)}.")
+    fec = biology.get("fecundity")
+    if fec:
+        facts.append(f"Fecundity ranges from {fec}.")
+    if facts:
+        paras.append(" ".join(facts))
+
+    diet = biology.get("diet")
+    if diet:
+        paras.append(f"Its diet consists mainly of {join_list(diet)}.")
+    predators = biology.get("predators")
+    if predators:
+        paras.append(f"It may be targeted by predators such as {join_list(predators, sci=True)}.")
+    return paras
+
+
+def join_list(items, sci=False):
+    if not items:
+        return ""
+    if len(items) == 1:
+        return items[0] if sci else items[0].lower()
+    head = ", ".join(items[:-1])
+    last = items[-1] if sci else items[-1].lower()
+    return f"{head} and {last}"
 
 
 def layout_slug(scientific):

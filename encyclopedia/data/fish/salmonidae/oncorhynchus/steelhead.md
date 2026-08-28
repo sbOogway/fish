@@ -28,6 +28,59 @@ habitat:
   - freshwater
   - brackish
   - saltwater
+biology:
+  reproduction: 'Reported not to establish breeding populations if the peak emergence of fry corresponds
+    to flood season and cold summer temperatures and if temperature does not fall below 13° C . Males
+    mature generally at 2 years and females at 3. Spawning happens from November until May in the Northern
+    hemisphere and from August to November on the Southern hemisphere. The size of the eggs depends on
+    the size of the female. In captivity spawning is fostered by abdominal massage. Egg size 3-6 mm, fry
+    length after hatching 12-20 mm. Hatchlings are well developed and equipped with a large yolk sac.
+    The female finds a spot and digs a pit. While digging, an attendant male courts her or is busy driving
+    away other males. As soon as the pit is completed, the female drops into it and is immediately followed
+    by the male. The pair is side by side, they open their mouth, quiver and release egg and sperm. Females
+    produce from 700 to 4,000 eggs per spawning event . At this point, a subordinate male moves in and
+    releases sperm into the nest. The female quickly moves to the upstream edge of the nest and starts
+    digging a new pit, covering the eggs. The whole process is repeated for several days until the female
+    deposits all her eggs . Young fish move downstream at night, shortly after emergence . Reproductive
+    strategy: synchronous ovarian organization, determinate fecundity .'
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: none
+  spawning_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 10
+  - 11
+  - 12
+  fecundity: 200-12,749 eggs
+  age_maturity: 4 years
+  diet:
+  - Amphipods
+  - Benthic algae/weeds
+  - Bony fish
+  - Cladocerans
+  - Debris
+  - Fish eggs & larvae
+  - Gastropods
+  - Insects
+  - Isopods
+  - Lobsters
+  - Non-annelids
+  - Shrimps & prawns
+  - Squids/cuttlefish
+  predators:
+  - Dolomedes sp.
+  - Ichthyomyzon castaneus
+  - Lethenteron camtschaticum
+  - Micropterus salmoides
+  - Orcinus orca
+  - Petromyzon marinus
+  - Phoca vitulina
+  - Ptychocheilus grandis
+  - Ptychocheilus oregonensis
 angling:
   best_months: Jan, Feb, Mar, Sep, Oct, Nov, Dec
   season_months:
@@ -396,6 +449,10 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: The rainbow trout is a species of trout native to cold-water tributaries of the Pacific Ocean
+  in North America and Asia. The steelhead is an anadromous (sea-run) form of the coastal rainbow trout
+  (O. m. irideus) or Columbia River redband trout (O. m. gairdneri) that usually returns to freshwater
+  to spawn after living two to three years in the ocean.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg
   alt: Steelhead (Oncorhynchus mykiss)
@@ -403,12 +460,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Rainbow_trout
 ---
 
+## Description
 The rainbow trout is a species of trout native to cold-water tributaries of the Pacific Ocean in North America and Asia. The steelhead is an anadromous (sea-run) form of the coastal rainbow trout (O. m. irideus) or Columbia River redband trout (O. m. gairdneri) that usually returns to freshwater to spawn after living two to three years in the ocean.
 
-## Habitat
-Steelhead is a freshwater, brackish, saltwater species. Typically found at depths of 0-200 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically Jan, Feb, Mar, Sep, Oct, Nov, Dec, though exact timing depends on local climate and water temperature.
+## Biology
+Reported not to establish breeding populations if the peak emergence of fry corresponds to flood season and cold summer temperatures and if temperature does not fall below 13° C . Males mature generally at 2 years and females at 3. Spawning happens from November until May in the Northern hemisphere and from August to November on the Southern hemisphere. The size of the eggs depends on the size of the female. In captivity spawning is fostered by abdominal massage. Egg size 3-6 mm, fry length after hatching 12-20 mm. Hatchlings are well developed and equipped with a large yolk sac. The female finds a spot and digs a pit. While digging, an attendant male courts her or is busy driving away other males. As soon as the pit is completed, the female drops into it and is immediately followed by the male. The pair is side by side, they open their mouth, quiver and release egg and sperm. Females produce from 700 to 4,000 eggs per spawning event . At this point, a subordinate male moves in and releases sperm into the nest. The female quickly moves to the upstream edge of the nest and starts digging a new pit, covering the eggs. The whole process is repeated for several days until the female deposits all her eggs . Young fish move downstream at night, shortly after emergence . Reproductive strategy: synchronous ovarian organization, determinate fecundity .
+Spawning occurs mainly in Jan, Feb, Mar, Apr, May, Oct, Nov, Dec. Fecundity ranges from 200-12,749 eggs.
+Its diet consists mainly of Amphipods, Benthic algae/weeds, Bony fish, Cladocerans, Debris, Fish eggs & larvae, Gastropods, Insects, Isopods, Lobsters, Non-annelids, Shrimps & prawns and squids/cuttlefish.
+It may be targeted by predators such as Dolomedes sp., Ichthyomyzon castaneus, Lethenteron camtschaticum, Micropterus salmoides, Orcinus orca, Petromyzon marinus, Phoca vitulina, Ptychocheilus grandis and Ptychocheilus oregonensis.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

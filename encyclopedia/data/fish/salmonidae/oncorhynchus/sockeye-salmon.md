@@ -31,6 +31,54 @@ habitat:
   - freshwater
   - brackish
   - saltwater
+biology:
+  reproduction: 'Adult sockeyes return to natal streams to spawn. This occurs during summer and fall and
+    as late as December in the southern part of the range. The female selects a site, usually with gravel
+    bottom, and digs a nest. During nest building, the female is attended by a dominant male and a few
+    subordinate males. At this stage, females tend to be aggressive toward other females and subordinate
+    males; males are aggressive toward other males. Between digging acts, the female will rest over the
+    pit while the dominant male courts her. Once the nest is completed, the female enters the nest, followed
+    immediately by the dominant male who comes close beside her. Their mouths gape, and the pair vibrates
+    to release eggs and sperm. One or more subordinate males may come to the other side of the female
+    and join in the spawning. The female then moves to the upstream edge of the nest and digs again, covering
+    the old nest, at the same time creating a new one just upstream from the previous one. A female normally
+    needs 3 to 5 days to deposit all her eggs and utilizes 3 to 5 nests for this purpose. She may spawn
+    with several dominant males. A male may breed with several females. All adult sockeye die after spawning
+    . Reproductive strategy: synchronous ovarian organization, determinate fecundity .'
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: maternal
+  spawning_months:
+  - 1
+  - 2
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  fecundity: 300-4,300 eggs
+  age_maturity: 2 years
+  diet:
+  - Amphipods
+  - Bony fish
+  - Cladocerans
+  - Copepods
+  - Euphausiids
+  - Insects
+  - Ostracods
+  - Squids/cuttlefish
+  predators:
+  - Anotopterus pharao
+  - Coregonus clupeaformis
+  - Lethenteron camtschaticum
+  - Oncorhynchus clarki
+  - Oncorhynchus kisutch
+  - Oncorhynchus mykiss
+  - Phoca vitulina
+  - Salvelinus alpinus
+  - Salvelinus malma malma
+  - unidentified squawfish
 angling:
   best_months: Jun, Jul, Aug, Sep
   season_months:
@@ -382,6 +430,13 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: The sockeye salmon, also called red salmon, kokanee salmon, blueback salmon, or simply sockeye,
+  is an anadromous species of salmon found in the Northern Pacific Ocean and rivers discharging into it.
+  This species is a Pacific salmon that is primarily red in hue during spawning. They can grow up to 84 cm
+  in length and weigh 2.3 to 7 kg (5–15 lb). Juveniles remain in freshwater until they are ready to migrate
+  to the ocean, over distances of up to 1,600 km (1,000 mi). Their diet consists primarily of zooplankton.
+  Sockeye salmon are semelparous, dying after they spawn. Some populations, referred to as kokanee, do
+  not migrate to the ocean and live their entire lives in fresh water.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/7/76/Sockeye_salmon_swimming_right.jpg
   alt: Sockeye Salmon (Oncorhynchus nerka)
@@ -389,12 +444,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Sockeye_salmon
 ---
 
+## Description
 The sockeye salmon, also called red salmon, kokanee salmon, blueback salmon, or simply sockeye, is an anadromous species of salmon found in the Northern Pacific Ocean and rivers discharging into it. This species is a Pacific salmon that is primarily red in hue during spawning. They can grow up to 84 cm in length and weigh 2.3 to 7 kg (5–15 lb). Juveniles remain in freshwater until they are ready to migrate to the ocean, over distances of up to 1,600 km (1,000 mi). Their diet consists primarily of zooplankton. Sockeye salmon are semelparous, dying after they spawn. Some populations, referred to as kokanee, do not migrate to the ocean and live their entire lives in fresh water.
 
-## Habitat
-Sockeye Salmon is a freshwater, brackish, saltwater species. Typically found at depths of 0-250 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically Jun, Jul, Aug, Sep, though exact timing depends on local climate and water temperature.
+## Biology
+Adult sockeyes return to natal streams to spawn. This occurs during summer and fall and as late as December in the southern part of the range. The female selects a site, usually with gravel bottom, and digs a nest. During nest building, the female is attended by a dominant male and a few subordinate males. At this stage, females tend to be aggressive toward other females and subordinate males; males are aggressive toward other males. Between digging acts, the female will rest over the pit while the dominant male courts her. Once the nest is completed, the female enters the nest, followed immediately by the dominant male who comes close beside her. Their mouths gape, and the pair vibrates to release eggs and sperm. One or more subordinate males may come to the other side of the female and join in the spawning. The female then moves to the upstream edge of the nest and digs again, covering the old nest, at the same time creating a new one just upstream from the previous one. A female normally needs 3 to 5 days to deposit all her eggs and utilizes 3 to 5 nests for this purpose. She may spawn with several dominant males. A male may breed with several females. All adult sockeye die after spawning . Reproductive strategy: synchronous ovarian organization, determinate fecundity .
+Spawning occurs mainly in Jan, Feb, Jul, Aug, Sep, Oct, Nov, Dec. Fecundity ranges from 300-4,300 eggs.
+Its diet consists mainly of Amphipods, Bony fish, Cladocerans, Copepods, Euphausiids, Insects, Ostracods and squids/cuttlefish.
+It may be targeted by predators such as Anotopterus pharao, Coregonus clupeaformis, Lethenteron camtschaticum, Oncorhynchus clarki, Oncorhynchus kisutch, Oncorhynchus mykiss, Phoca vitulina, Salvelinus alpinus, Salvelinus malma malma and unidentified squawfish.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

@@ -23,6 +23,12 @@ DATA_DIR = ROOT / "encyclopedia" / "data"
 OUT_DIR = ROOT / "encyclopedia" / "out"
 TEMPLATE_DIR = ROOT / "encyclopedia" / "templates"
 
+# Make `encyclopedia` importable as a package for sibling modules
+# (encyclopedia/ has no __init__.py, so prepend its parent).
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from encyclopedia.import_species import months_list  # noqa: E402
+
 
 def parse_frontmatter(text):
     """Parse YAML frontmatter and markdown body from a file."""
@@ -42,35 +48,156 @@ def render_markdown(md_text):
     return md.render(md_text)
 
 
-def build_stats(meta):
-    """Build a single line of key stats for the template."""
-    parts = []
+def build_fact_sheet(meta):
+    """Build the compact label:value fact-sheet shown under the hero image."""
+    tax = meta.get("taxonomy", {})
     phys = meta.get("physical", {})
-    if phys.get("typical_length_cm"):
-        s = f"{phys['typical_length_cm']} cm"
-        if phys.get("max_length_cm"):
-            s += f" (max {phys['max_length_cm']})"
-        parts.append(s)
-    if phys.get("typical_weight_kg"):
-        s = f"{phys['typical_weight_kg']} kg"
-        if phys.get("max_weight_kg"):
-            s += f" (max {phys['max_weight_kg']})"
-        parts.append(s)
-    if phys.get("lifespan_years"):
-        parts.append(f"{phys['lifespan_years']} years")
-
-    angling = meta.get("angling", {})
-    if angling.get("difficulty"):
-        parts.append(angling["difficulty"])
-    if angling.get("fight_rating"):
-        parts.append(f"Fight {angling['fight_rating']}/10")
-
     hab = meta.get("habitat", {})
-    temp = hab.get("temperature", {})
-    if temp.get("optimal_celsius"):
-        parts.append(f"{temp['optimal_celsius']}°C")
+    rows = []
 
-    return " <span class='sep'>·</span> ".join(parts) if parts else None
+    def add(label, value):
+        if value:
+            rows.append({"label": label, "value": value})
+
+    add("Scientific name", (tax.get("scientific_name") or "").strip())
+    add("Family", (tax.get("family") or "").strip())
+
+    water = hab.get("water_types") or []
+    if water:
+        add("Water", ", ".join(w.title() for w in water))
+
+    typ = phys.get("typical_length_cm")
+    mx = phys.get("max_length_cm")
+    if mx:
+        add("Typical/max length", f"{typ} cm (max {mx})" if typ else f"max {mx} cm")
+    elif typ:
+        add("Typical/max length", f"{typ} cm")
+
+    if phys.get("max_weight_kg"):
+        add("Weight", f"{phys['max_weight_kg']} kg")
+
+    if phys.get("lifespan_years"):
+        add("Lifespan", f"{phys['lifespan_years']} years")
+
+    if hab.get("depth_range_m"):
+        add("Depth range", f"{hab['depth_range_m']} m")
+
+    status = meta.get("conservation", {}).get("status")
+    if status:
+        add("IUCN status", status)
+
+    return rows
+
+
+def build_distribution_blurb(meta):
+    """Short prose blurb for the Distribution block.
+
+    Combines the water types and a quick geographic scope from the available
+    distribution points (so a wide-spread species reads as "across the Northern
+    Hemisphere", not just "inhabits saltwater waters").
+    """
+    hab = meta.get("habitat", {})
+    tax = meta.get("taxonomy", {})
+    dist = meta.get("distribution", {})
+    common = (tax.get("common_name") or "").strip() or "This species"
+    water = hab.get("water_types") or []
+    parts = []
+    if water:
+        parts.append(f"{common} inhabits {', '.join(w.title() for w in water)} waters.")
+    pts = dist.get("points") or []
+    if len(pts) >= 20:
+        lats = [p[0] for p in pts]
+        lons = [p[1] for p in pts]
+        lat_range = max(lats) - min(lats)
+        lon_range = max(lons) - min(lons)
+        if lat_range > 120 and lon_range > 120:
+            parts.append("Records span multiple continents.")
+        elif lat_range > 60 and lon_range > 60:
+            parts.append("Records span a broad geographic range.")
+    if dist.get("source"):
+        parts.append(f"Map shows {dist['source'].lower()}.")
+    return " ".join(parts).strip() if parts else None
+
+
+def split_markdown_sections(md_body):
+    """Split markdown into {heading: [lines]} by `## ` headings.
+
+    Content before the first heading is discarded (used to carry the lead in
+    older files). Returns an ordered dict heading -> html string.
+    """
+    sections = {}
+    current = None
+    buffer = []
+    for raw in md_body.splitlines():
+        if raw.startswith("## "):
+            if current is not None:
+                sections[current] = "\n".join(buffer).strip()
+            current = raw[3:].strip()
+            buffer = []
+        else:
+            buffer.append(raw)
+    if current is not None:
+        sections[current] = "\n".join(buffer).strip()
+    return sections
+
+
+def build_prose_sections(meta, body_sections):
+    """Build the fixed-order prose sections, dropping any that are empty.
+
+    Returns a list of {key, title, html} in page order. Description and Biology
+    come from the markdown body; Size/Weight/Age/Seasonality/Conservation are
+    rendered from frontmatter.
+    """
+    phys = meta.get("physical", {})
+    bio = meta.get("biology", {})
+    angling = meta.get("angling", {})
+
+    sections = []
+
+    def add(key, title, markdown):
+        html = render_markdown(markdown) if markdown and markdown.strip() else ""
+        if html and html.strip():
+            sections.append({"key": key, "title": title, "html": html})
+
+    add("description", "Description", body_sections.get("Description", meta.get("description", "")))
+
+    size = []
+    typ = phys.get("typical_length_cm")
+    mx = phys.get("max_length_cm")
+    if typ and mx:
+        size.append(f"Typical length is {typ} cm, with a maximum recorded length of {mx} cm.")
+    elif mx:
+        size.append(f"Maximum recorded length is {mx} cm.")
+    elif typ:
+        size.append(f"Typical length is {typ} cm.")
+    add("size", "Size", "\n\n".join(size))
+
+    weight = []
+    if phys.get("max_weight_kg"):
+        weight.append(f"Maximum recorded weight is {phys['max_weight_kg']} kg.")
+    add("weight", "Weight", "\n\n".join(weight))
+
+    age = []
+    if phys.get("lifespan_years"):
+        age.append(f"Lifespan is around {phys['lifespan_years']} years.")
+    if bio.get("age_maturity"):
+        age.append(f"Sexual maturity is reached at about {bio['age_maturity']} of age.")
+    add("age", "Age", "\n\n".join(age))
+
+    add("biology", "Biology", body_sections.get("Biology", "") or "")
+
+    months = angling.get("season_months") or []
+    if months:
+        add("seasonality", "Seasonality",
+            f"Its most productive fishing months in the Northern Hemisphere are typically {months_list(months)}, though exact timing depends on local climate and water temperature.")
+    elif angling.get("best_months"):
+        add("seasonality", "Seasonality", f"Best fishing months: {angling['best_months']}.")
+
+    status = meta.get("conservation", {}).get("status")
+    if status:
+        add("conservation", "Conservation", f"IUCN conservation status: **{status}**.")
+
+    return sections
 
 
 def get_distribution_for_template(meta):
@@ -95,17 +222,7 @@ def get_distribution_for_template(meta):
     return result
 
 
-def get_taxonomy_breadcrumb(meta):
-    """Build taxonomy breadcrumb from taxonomy fields."""
-    tax = meta.get("taxonomy", {})
-    parts = []
-    for key in ["class", "order", "family", "genus"]:
-        if tax.get(key):
-            parts.append(tax[key])
-    return " > ".join(parts) if parts else None
-
-
-def build_html(meta, body_html, source_file):
+def build_html(meta, body_md, source_file):
     """Render the complete HTML page from metadata and body."""
     from jinja2 import Environment, FileSystemLoader
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
@@ -114,14 +231,16 @@ def build_html(meta, body_html, source_file):
     tax = meta.get("taxonomy", {})
     title = tax.get("common_name") or meta.get("id", "").replace("-", " ").title()
     scientific = tax.get("scientific_name")
+    body_sections = split_markdown_sections(body_md)
 
     context = {
         "title": title,
         "scientific_name": scientific,
         "image": meta.get("image"),
-        "stats": build_stats(meta),
+        "fact_sheet": build_fact_sheet(meta),
         "distribution": get_distribution_for_template(meta),
-        "body_html": body_html,
+        "distribution_blurb": build_distribution_blurb(meta),
+        "prose_sections": build_prose_sections(meta, body_sections),
         "source_file": source_file,
         "source_path": f"encyclopedia/data/{source_file}",
     }
@@ -133,13 +252,12 @@ def process_file(md_path):
     """Process a single markdown file into HTML."""
     text = md_path.read_text(encoding="utf-8")
     meta, body = parse_frontmatter(text)
-    body_html = render_markdown(body)
 
     slug = meta.get("slug", md_path.stem)
     rel_path = md_path.relative_to(DATA_DIR)
     source_file = str(rel_path)
 
-    html = build_html(meta, body_html, source_file)
+    html = build_html(meta, body, source_file)
 
     out_file = OUT_DIR / f"{slug}.html"
     out_file.write_text(html, encoding="utf-8")

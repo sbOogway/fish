@@ -35,6 +35,70 @@ habitat:
   water_types:
   - freshwater
   - brackish
+biology:
+  reproduction: Spawn in marginal, shallow, weed-infested areas. A polytypic plastic species with a marked
+    tendency to produce `varieties' and `races' in response to selective breeding and environmental influences.
+    Carp is polygamous. A spawning female is usually followed by several males. Under tropical conditions
+    carp breeds throughout the year. It is a seasonal spawner in temperate waters . Females are known
+    to lay more than a million eggs in a season; breeds at a temperature range of 15° C to 20°C; eggs
+    hatch in 4 days . Obligatory plant spawners . "Adults often make considerable spawning migrations
+    to suitable backwaters and flooded meadows. Individual females spawn with a few males in dense vegetation.
+    The sticky eggs are attached to water plants or other submerged objects. Reproductive success is restricted
+    to years when the water level starts rising in May and when high temperatures and flooding of terrestrial
+    vegetation last for a long period during May and June" .
+  repro_mode: dioecism
+  fertilization: external
+  parental_care: none
+  spawning_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  fecundity: 38,750-1,000,000 eggs
+  age_maturity: 2.5 years
+  diet:
+  - Amphipods
+  - Benthic algae/weeds
+  - Bivalves
+  - Cladocerans
+  - Copepods
+  - Debris
+  - Fish eggs & larvae
+  - Gastropods
+  - Insects
+  - Non-annelids
+  - Ostracods
+  - Terrestrial plants
+  predators:
+  - Amia calva
+  - Aorichthys seenghala
+  - Argyrosomus hololepidotus
+  - Channa striata
+  - Chitala chitala
+  - Esox lucius
+  - Hydromys sp.
+  - Ictalurus punctatus
+  - Lates calcarifer
+  - Maccullochella peelii peelii
+  - Macquaria ambigua
+  - Micropterus salmoides
+  - Morone saxatilis
+  - Oncorhynchus mykiss
+  - Perca fluviatilis
+  - Petromyzon marinus
+  - Ptychocheilus oregonensis
+  - Silurus glanis
+  - Siniperca chuatsi
+  - Wallago attu
+  - unidentified spider
 angling:
   best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
   season_months:
@@ -323,6 +387,12 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+description: The common carp, also known as European carp, Eurasian carp, or simply carp, is a widespread
+  freshwater fish of eutrophic waters in lakes and large rivers in Europe and Asia. The native wild populations
+  are considered vulnerable to extinction by the International Union for Conservation of Nature (IUCN),
+  but the species has also been domesticated and introduced into environments worldwide, and is often
+  considered an invasive species, being included in the list of the world's 100 worst invasive species.
+  It gives its name to the carp family, Cyprinidae.
 image:
   url: https://upload.wikimedia.org/wikipedia/commons/3/3b/Cyprinus_carpio_2008_G1_%28cropped%29.jpg
   alt: Common Carp (Cyprinus carpio)
@@ -330,12 +400,13 @@ image:
   credit_url: https://en.wikipedia.org/wiki/Common_carp
 ---
 
+## Description
 The common carp, also known as European carp, Eurasian carp, or simply carp, is a widespread freshwater fish of eutrophic waters in lakes and large rivers in Europe and Asia. The native wild populations are considered vulnerable to extinction by the International Union for Conservation of Nature (IUCN), but the species has also been domesticated and introduced into environments worldwide, and is often considered an invasive species, being included in the list of the world's 100 worst invasive species. It gives its name to the carp family, Cyprinidae.
 
-## Habitat
-Common Carp is a freshwater, brackish species. Typically found at depths of 0-29 metres.
-
-## Seasonality
-Its most productive fishing months in the Northern Hemisphere are typically Apr, May, Jun, Jul, Aug, Sep, Oct, though exact timing depends on local climate and water temperature.
+## Biology
+Spawn in marginal, shallow, weed-infested areas. A polytypic plastic species with a marked tendency to produce `varieties' and `races' in response to selective breeding and environmental influences. Carp is polygamous. A spawning female is usually followed by several males. Under tropical conditions carp breeds throughout the year. It is a seasonal spawner in temperate waters . Females are known to lay more than a million eggs in a season; breeds at a temperature range of 15° C to 20°C; eggs hatch in 4 days . Obligatory plant spawners . "Adults often make considerable spawning migrations to suitable backwaters and flooded meadows. Individual females spawn with a few males in dense vegetation. The sticky eggs are attached to water plants or other submerged objects. Reproductive success is restricted to years when the water level starts rising in May and when high temperatures and flooding of terrestrial vegetation last for a long period during May and June" .
+Spawning occurs mainly in Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec. Fecundity ranges from 38,750-1,000,000 eggs.
+Its diet consists mainly of Amphipods, Benthic algae/weeds, Bivalves, Cladocerans, Copepods, Debris, Fish eggs & larvae, Gastropods, Insects, Non-annelids, Ostracods and terrestrial plants.
+It may be targeted by predators such as Amia calva, Aorichthys seenghala, Argyrosomus hololepidotus, Channa striata, Chitala chitala, Esox lucius, Hydromys sp., Ictalurus punctatus, Lates calcarifer, Maccullochella peelii peelii, Macquaria ambigua, Micropterus salmoides, Morone saxatilis, Oncorhynchus mykiss, Perca fluviatilis, Petromyzon marinus, Ptychocheilus oregonensis, Silurus glanis, Siniperca chuatsi, Wallago attu and unidentified spider.
 
 <!-- generated by import_species.py from FishRadar + Wikipedia/Wikidata + FishBase -->

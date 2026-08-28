@@ -1,16 +1,23 @@
-# Fish Profile Schema
+# Fish Profile Schema (v2)
 
 Canonical YAML frontmatter format for `encyclopedia/data/fish/{family}/{genus}/{species}.md`.
+
+> v2 (2026-08-28): the redesign locks the fact-sheet as the single source of
+> truth for label:value data, so a new top-level `facts` block holds
+> `season_months`, `lifespan_years`, and `age_maturity`. Prose sections
+> exist only for Description, Distribution, Biology, and Behavior. The
+> v1 structured `behavior` block (schooling / shoaling / solitary booleans
+> from FishBase `ecology`) is removed — see issue #13.
 
 ## Schema
 
 ```yaml
 ---
 # === IDENTITY (required) ===
-id: zander                          # kebab-case slug (from FishRadar or generated)
-slug: zander                        # URL slug
+id: pike-perch-zander                # kebab-case slug (from FishRadar)
+slug: pike-perch-zander              # URL slug
 
-# === TAXONOMY (from FishBase/FishFYI) ===
+# === TAXONOMY (from FishBase/Wikidata) ===
 taxonomy:
   class: Actinopterygii
   order: Perciformes
@@ -18,52 +25,62 @@ taxonomy:
   genus: Sander
   species: lucioperca
   scientific_name: "Sander lucioperca"
-  common_name: Zander
-  aliases: ["Pike-perch", "Sander"] # from FishRadar
+  common_name: Pike-perch
+  aliases: ["Zander", "Sandre", "Sudak"]  # from FishRadar
 
 # === SOURCES (required) ===
 sources:
-  fishbase_id: 360                  # cross-reference IDs
-  fishfyi_slug: zander
+  fishbase_id: 360
+  fishradar_id: pike-perch-zander
   wikidata_id: Q146641
-  worms_id: 151308
 
-# === DESCRIPTION (from Wikipedia lead) ===
+# === DESCRIPTION (from Wikipedia lead, required) ===
+# The Wikipedia REST `page/summary` `extract` field. Drives the
+# "Description" prose section on the page.
 description: "The zander, sander or pikeperch, is a species of ray-finned fish..."
 
-# === BIOLOGY (from FishBase `reproduc`/`spawning`/`fecundity`/`maturity`/`fooditems`/`predats`) ===
-# All keys optional; absent = no data for that facet. Non-fish species have
-# no FishBase record and therefore no `biology` block at all.
+# === FACTS (the fact-sheet's source of truth) ===
+# Every key in this block corresponds to one fact-sheet row. Empty values
+# mean the row is not rendered (hidden-when-empty). The fact-sheet row
+# order is locked in issue #11; see the table below.
+facts:
+  season_months: [4, 5, 6, 9, 10, 11]    # 1-12, Northern Hemisphere
+  lifespan_years: "17"                  # e.g. "15-20"
+  age_maturity: "4 years"               # e.g. "3.5 years"
+
+# === BIOLOGY (the Biology prose section) ===
+# Free-form + structured keys, all optional. Drives the "Biology" prose
+# section, which is a merged narrative (reproduction + spawning months +
+# fecundity + diet + predators). Non-fish species have no FishBase
+# record and therefore no `biology` block.
 biology:
-  reproduction: "The spawning places are over gravel in moving water..."  # AddInfos narrative, (Ref. N) stripped
+  reproduction: "The spawning places are over gravel in moving water..."  # AddInfos, (Ref. N) stripped
   repro_mode: dioecism
   fertilization: external
   parental_care: paternal
-  spawning_months: [3, 4, 5, 6]     # dominant spawning season (1-12)
-  fecundity: "54,300-1,307,436 eggs"
-  age_maturity: "4 years"
-  diet: ["Bony fish", "Insects", "Copepods"]
-  predators: ["Esox lucius", "Perca fluviatilis"]
+  spawning_months: [3, 4, 5, 6]     # 1-12; distinct from facts.season_months (angling vs spawning)
+  fecundity: "10,000-2,957,400 eggs"
+  diet: ["Bony fish", "Cladocerans", "Copepods", "Fish eggs & larvae", "Insects", "Mysids"]
+  predators: ["Esox lucius", "Perca fluviatilis", "Silurus glanis"]
 
-# === BEHAVIOR (from FishBase `ecology`) ===
-# All keys optional; absent = no FishBase ecology data for the species. Empty
-# block is hidden from the page.
-behavior:
-  schooling: true
-  schooling_frequency: "always"        # e.g. always / usually / sometimes
-  schooling_lifestage: "juveniles and adults"
-  shoaling: false
-  shoaling_frequency: "usually"
-  shoaling_lifestage: "juveniles"
-  solitary: true
+# === BEHAVIOR (the Behavior prose section) ===
+# A sentence-filtered subset of FishBase `species.Comments` (issue #12).
+# The importer applies a keep/drop keyword filter and produces one
+# paragraph per species. Empty when the filter rejects every sentence
+# (24% of catalog species); the Behavior H2 is hidden in that case.
+# This is *not* a list of fields — it's a free-text string the generator
+# renders as-is.
+behavior: "Undertake short spawning migrations. Spawn in pairs at dawn or night."
 
-# === PHYSICAL (from FishBase + FishFYI) ===
+# === PHYSICAL (fact-sheet length/weight rows + hand-curated features) ===
+# `max_length_cm`, `typical_length_cm`, and `max_weight_kg` are read
+# into the fact-sheet's "Typical/max length" and "Weight" rows. The
+# other keys (color, body_shape, distinguishing_features) are
+# hand-curated display fields, not currently rendered.
 physical:
-  max_length_cm: 130
-  typical_length_cm: "50-70"
-  max_weight_kg: 20
-  typical_weight_kg: "2-5"
-  lifespan_years: "15-20"
+  max_length_cm: 100
+  typical_length_cm: "50"
+  max_weight_kg: 20.0
   color: "Greenish-gray to olive, 8-10 dark bars"
   body_shape: "Elongated, perch-like"
   distinguishing_features:
@@ -71,10 +88,12 @@ physical:
     - "Large canine teeth"
     - "Glass-like eyes (tapetum lucidum)"
 
-# === HABITAT (from FishBase + FishFYI) ===
+# === HABITAT (water types for the fact-sheet) ===
+# Only `water_types` is read by the v2 page (fact-sheet "Water" row).
+# The other keys are kept in the schema as hand-curated display fields,
+# not currently rendered.
 habitat:
   water_types: [freshwater, brackish]
-  depth_range_m: "2-30"
   preferred_depth_m: "5-15"
   substrate: [sand, gravel, muddy]
   temperature:
@@ -84,68 +103,92 @@ habitat:
   clarity_preference: "Murky to moderate"
   geographic_range: "Native to northern/central Europe and western Asia"
 
-# === DISTRIBUTION (from FishBase occurrence records — real points for Leaflet) ===
-# Auto-generated pages embed real observation/museum coordinates as a density
-# scatter. An empty/absent `points` means the map is omitted (no fabricated map).
+# === DISTRIBUTION (Leaflet map data) ===
+# Real observation/museum coordinates as a density scatter. An empty/absent
+# `points` means the map is omitted (no fabricated map). The
+# `source` string is rendered as a 1-line geographic-scope caption
+# under the map; see issue #8's "Distribution blurb" decision.
 distribution:
   native: true
   source: "FishBase occurrence records"
   points:
-    - [52.1, -3.1]   # [lat, lng] pairs, downsampled to <=220
-    - [54.3, -0.9]
+    - [41.435, 26.602]   # [lat, lng] pairs, downsampled to <=220
+    - [60.150, 18.622]
 
-# === BEHAVIOR (from FishBase) ===
-behavior:
-  feeding:
-    type: Carnivore
-    diet: ["small fish", "crustaceans", "invertebrates"]
-    peak_times: [dawn, dusk, night]
-    hunting_style: "Ambush predator"
-  schooling: "Solitary or small groups"
-  spawning:
-    season: "March-May"
-    temperature_celsius: "8-12"
-    behavior: "Male builds nest, guards eggs"
-
-# === ANGLING (from FishFYI + FishRadar) ===
+# === ANGLING (hand-curated angler fields) ===
+# Reduced from v1: `best_months` and `season_months` moved to
+# `facts.season_months`. The remaining keys are for future use (fight
+# rating, difficulty, best bait) — the page does not currently render
+# them, but the schema keeps the block so future tickets can fill it.
+# The destination of "encyclopedia for anglers" is satisfied by the
+# Behavior section + the new fact-sheet rows; the structured angler
+# fields are deferred.
 angling:
-  fight_rating: 6                   # 1-10 from FishFYI
+  fight_rating: 6
   difficulty: Intermediate
   best_bait: ["soft plastics", "jigs", "live baitfish"]
-  techniques: [spinning, ledgering, float_fishing, trolling]  # curated
-  best_months: "April-November"
+  techniques: [spinning, ledgering, float_fishing, trolling]
   peak_periods:
     - "Pre-spawn (March-April)"
     - "Autumn (September-November)"
-  season_months: [4,5,6,7,8,9,10,11]  # from FishRadar
 
-# === IMAGE ===
+# === IMAGE (required) ===
 image:
-  url: "https://upload.wikimedia.org/..."  # from FishFYI (Wikimedia Commons)
-  credit: "Wikimedia Commons — CC BY-SA"
-  credit_url: "https://commons.wikimedia.org/wiki/..."
+  url: "https://upload.wikimedia.org/wikipedia/commons/6/63/Sander_lucioperca_1.jpg"
+  credit: "Wikipedia — Zander"
+  credit_url: "https://en.wikipedia.org/wiki/Zander"
 
-# === CONSERVATION ===
+# === CONSERVATION (fact-sheet "IUCN status" row) ===
 conservation:
-  status: LC                        # IUCN status from FishFYI
+  status: LC
 ---
 ```
+
+## Fact-sheet row order (locked, issue #11)
+
+The generator reads the following fields and renders them in this order. Each row is hidden when its value is empty.
+
+| # | Row label | Reads from |
+|---|---|---|
+| 1 | Scientific name | `taxonomy.scientific_name` |
+| 2 | Family | `taxonomy.family` |
+| 3 | Water | `habitat.water_types` |
+| 4 | Season months | `facts.season_months` |
+| 5 | Typical/max length | `physical.typical_length_cm`, `physical.max_length_cm` |
+| 6 | Weight | `physical.max_weight_kg` |
+| 7 | Lifespan | `facts.lifespan_years` |
+| 8 | Age at maturity | `facts.age_maturity` |
+| 9 | IUCN status | `conservation.status` |
+
+The order groups by reader question: *What is it?* → *Where do I find it?* → *What does it look like?* → *How long does it live?* → *Can I keep it?*
+
+## Page anatomy (locked, issue #8 + redesign Rounds 1–2)
+
+1. **Header** — nav, common name, scientific name.
+2. **Hero image** — Wikimedia Commons.
+3. **Fact-sheet block** — rows in the order above, hidden when empty.
+4. **Distribution block** — Leaflet map + 1-line geographic-scope caption (reads `distribution.source`).
+5. **Prose sections** (fixed order, hidden when empty):
+   1. Description — reads `description` (Wikipedia lead).
+   2. Biology — free-form + structured, reads `biology` block.
+   3. Behavior — reads `behavior` (sentence-filtered Comments paragraph).
+6. **Footer** — link back to source `.md` + attribution.
 
 ## Source Authority
 
 | Field group | Authoritative source | Fallback |
 |-------------|---------------------|----------|
 | Taxonomy | FishBase / Wikidata | FishRadar |
-| Description | Wikipedia | — |
+| Description | Wikipedia REST `page/summary` | — |
+| Facts (season_months, lifespan_years, age_maturity) | FishRadar (`seasonMonths`) for season_months; FishBase (`maturity`, `species.LongevityWild`) for the other two | — |
 | Physical | FishBase (`species` table) | — |
 | Biology | FishBase (`reproduc`/`spawning`/`fecundity`/`maturity`/`fooditems`/`predats`) | — |
-| Behavior | FishBase (`ecology`) | — |
-| Habitat | FishBase (`species` table) | FishRadar (`environment`) |
+| Behavior | FishBase `species.Comments`, sentence-filtered (see issue #12) | — |
+| Habitat (water_types) | FishBase (`species.Fresh`/`Brack`/`Saltwater`) | FishRadar `environment` |
 | Distribution points | FishBase (`occurrence` table) | None (map omitted) |
-| Angling | Manually curated | FishRadar (`seasonMonths`) |
-| Seasonality | FishRadar | — |
+| Angling | Manually curated | — |
 | Image | Wikipedia (Wikimedia Commons URL) | — |
-| Conservation | FishRadar | — |
+| Conservation | FishRadar (mapping table) | — |
 
 > Note: fishbase.org's API is Cloudflare-challenged; FishBase data is pulled from
 > the Source Cooperative parquet mirror (see `docs/adr/0002-species-data-pipeline.md`
@@ -153,6 +196,19 @@ conservation:
 
 ## Required vs Optional
 
-- **Required**: `id`, `taxonomy`, `sources`, `image`, `description`
-- **Recommended**: `physical`, `biology`, `behavior`, `habitat`, `distribution`, `angling`
-- **Optional**: `conservation`
+- **Required**: `id`, `taxonomy.scientific_name`, `taxonomy.family`, `taxonomy.common_name`, `sources.fishbase_id` (or absent for non-fish), `description`, `image`
+- **Recommended**: `facts`, `physical`, `biology`, `habitat.water_types`, `distribution`, `conservation`
+- **Optional**: `behavior` (the importer writes it whenever the filter produces a non-empty paragraph; 76% of the 177 catalog species), `angling.*`, `habitat.*` (the non-water-types keys), `taxonomy.aliases`
+- **Forbidden (v2)**: the v1 `behavior` block (schooling / shoaling / solitary booleans). The v2 importer does not read FishBase `ecology` for behavior.
+
+## Delta from v1
+
+| v1 key | v2 status |
+|---|---|
+| `angling.best_months` | **removed** — derived from `facts.season_months` on render |
+| `angling.season_months` | **moved** to `facts.season_months` |
+| `biology.age_maturity` | **moved** to `facts.age_maturity` |
+| `physical.lifespan_years` | **moved** to `facts.lifespan_years` |
+| `habitat.depth_range_m` | **removed** — 30% coverage, not worth a fact-sheet row |
+| `behavior` (schooling / shoaling / solitary) | **removed** — replaced by free-text `behavior` from sentence-filtered `species.Comments` |
+| `facts` (new) | **added** — home for the three lifecycle/phenology rows |

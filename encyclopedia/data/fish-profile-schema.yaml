@@ -45,6 +45,18 @@ biology:
   diet: ["Bony fish", "Insects", "Copepods"]
   predators: ["Esox lucius", "Perca fluviatilis"]
 
+# === BEHAVIOR (from FishBase `ecology`) ===
+# All keys optional; absent = no FishBase ecology data for the species. Empty
+# block is hidden from the page.
+behavior:
+  schooling: true
+  schooling_frequency: "always"        # e.g. always / usually / sometimes
+  schooling_lifestage: "juveniles and adults"
+  shoaling: false
+  shoaling_frequency: "usually"
+  shoaling_lifestage: "juveniles"
+  solitary: true
+
 # === PHYSICAL (from FishBase + FishFYI) ===
 physical:
   max_length_cm: 130
@@ -127,9 +139,9 @@ conservation:
 | Description | Wikipedia | — |
 | Physical | FishBase (`species` table) | — |
 | Biology | FishBase (`reproduc`/`spawning`/`fecundity`/`maturity`/`fooditems`/`predats`) | — |
+| Behavior | FishBase (`ecology`) | — |
 | Habitat | FishBase (`species` table) | FishRadar (`environment`) |
 | Distribution points | FishBase (`occurrence` table) | None (map omitted) |
-| Behavior | FishBase | — |
 | Angling | Manually curated | FishRadar (`seasonMonths`) |
 | Seasonality | FishRadar | — |
 | Image | Wikipedia (Wikimedia Commons URL) | — |
@@ -142,5 +154,5 @@ conservation:
 ## Required vs Optional
 
 - **Required**: `id`, `taxonomy`, `sources`, `image`, `description`
-- **Recommended**: `physical`, `biology`, `habitat`, `distribution`, `angling`
+- **Recommended**: `physical`, `biology`, `behavior`, `habitat`, `distribution`, `angling`
 - **Optional**: `conservation`

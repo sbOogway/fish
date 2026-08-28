@@ -102,6 +102,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
 description: Acanthurus coeruleus is a species of marine ray-finned fish belonging to the family Acanthuridae,
   the surgeonfishes, unicornfishes and tangs, found in the Atlantic Ocean. It can grow up to 39 centimetres
   (15 in) long. Common names include Atlantic blue tang, blue barber, blue doctor, blue doctorfish, blue

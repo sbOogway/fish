@@ -305,6 +305,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
 description: The European pilchard is a species of ray-finned fish in the monotypic genus Sardina. The
   young of the species are among the many fish that are sometimes called sardines. This common species
   is found in the northeast Atlantic, the Mediterranean, and the Black Sea at depths of 10–100 m (33–328 ft).

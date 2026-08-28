@@ -317,6 +317,9 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
+  solitary: true
 description: The greater amberjack, also known as the allied kingfish, great amberfish, greater yellowtail,
   jenny lind, sea donkey, purplish amberjack, reef donkey, rock salmon, sailors choice, yellowtail, and
   yellow trevally, is a species of predatory ray-finned fish in the family Carangidae, the jacks and pompanos.

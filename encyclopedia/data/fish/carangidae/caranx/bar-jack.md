@@ -92,6 +92,9 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
+  solitary: true
 description: The bar jack, also known as the carbonero, cojinúa, red jack, blue-striped cavalla or passing
   jack, is a common species of inshore marine fish classified in the jack family, Carangidae. The bar
   jack is distributed through the western Atlantic Ocean from New Jersey and Bermuda in the north to Venezuela

@@ -336,6 +336,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  solitary: true
 description: The wahoo is a scombrid fish found worldwide in tropical and subtropical seas. In Hawaii,
   the wahoo is known as ono. The species is sometimes called hoo in the United States. It is best known
   to sports fishermen, as its speed and high quality makes it a prized and valued game fish.

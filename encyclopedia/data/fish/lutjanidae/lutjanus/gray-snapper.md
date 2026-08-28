@@ -159,6 +159,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
 description: The mangrove snapper or gray snapper is a species of snapper native to the western Atlantic
   Ocean from Massachusetts to Brazil, the Gulf of Mexico, Bermuda, and the Caribbean Sea. The species
   can be found in a wide variety of habitats, including brackish and fresh waters. It is commercially

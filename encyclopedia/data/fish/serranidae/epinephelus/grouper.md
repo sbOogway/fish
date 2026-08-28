@@ -252,6 +252,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: VU
+behavior:
+  solitary: true
 description: Epinephelus marginatus, the dusky grouper, yellowbelly rock cod, or yellowbelly grouper,
   is a species of fish in the grouper family, Epinephelidae. It is found in coastal waters, primarily
   at the edges of the Atlantic Ocean – off western Africa and eastern South America – and also in the

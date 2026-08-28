@@ -213,6 +213,10 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
+  schooling_frequency: sometimes
+  solitary: true
 description: The Indo-Pacific sailfish is a sailfish native to the Indian and Pacific Oceans and is naturalized
   in the Atlantic where it has entered the Mediterranean Sea via the Suez Canal as a Lessepsian migrant.
   It is dark blue on top, brown-blue laterally, silvery white underbelly; upper jaw elongated in the form

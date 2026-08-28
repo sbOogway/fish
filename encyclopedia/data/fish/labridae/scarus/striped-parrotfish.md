@@ -56,6 +56,8 @@ distribution:
   points: []
 conservation:
   status: LC
+behavior:
+  schooling: true
 description: Scarus iseri is a species of fish of the family Scaridae. Its common names include striped
   parrotfish. The species was described by Bloch in 1789.
 image:

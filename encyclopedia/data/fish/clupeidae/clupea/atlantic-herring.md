@@ -586,6 +586,10 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
+  schooling_frequency: always
+  schooling_lifestage: juveniles and adults
 description: Atlantic herring is a herring in the family Clupeidae. It is one of the most abundant fish
   species in the world. Atlantic herrings can be found on both sides of the northern Atlantic Ocean, congregating
   in large schools. They can grow up to 45 centimetres (18 in) in length and weigh up to 1.1 kilograms

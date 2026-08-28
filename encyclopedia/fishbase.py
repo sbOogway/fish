@@ -24,6 +24,7 @@ Several tables are used here, all keyed (where relevant) by `SpecCode`
   - maturity.parquet     -> age/length at maturity.
   - fooditems.parquet    -> recorded diet/prey items.
   - predats.parquet      -> recorded predators.
+  - ecology.parquet      -> schooling/shoaling/solitary behaviour records.
 
 Biology tables are keyed by `SpecCode` (== `sources.fishbase_id`), so this
 module exposes lookups both by scientific name and by SpecCode.
@@ -170,6 +171,7 @@ class FishBase:
             "maturity": "Speccode",
             "fooditems": "SpecCode",
             "predats": "SpecCode",
+            "ecology": "SpecCode",
         }
         for table, code_col in specs.items():
             data = table_rows(table, code_col)
@@ -392,3 +394,57 @@ def build_biology(fb: FishBase, spec_code: int | None) -> dict:
         out["predators"] = preds
 
     return out
+
+
+def _mode_or_none(values):
+    if not values:
+        return None
+    return max(set(values), key=values.count)
+
+
+def _aggregated_behavior(records):
+    """Reduce multiple ecology rows into a single behaviour summary.
+
+    FishBase stores one ecology row per StockCode; a SpecCode may have several.
+    We OR the boolean flags across rows and pick the mode of frequency /
+    lifestage (restricted to rows where the matching flag is yes). Frequency
+    codes in FishBase use -1 for "yes" and 0 for "no" (NULL is "unknown").
+    """
+    out = {}
+    # trait -> (frontmatter key prefix, FishBase column prefix)
+    traits = [("schooling", "Schooling"), ("shoaling", "Shoaling")]
+
+    def is_yes(v):
+        return v in (-1, 1, True)
+
+    for trait, col in traits:
+        truthy_rows = [r for r in records if is_yes(r.get(col))]
+        if not truthy_rows:
+            continue
+        out[trait] = True
+        freq = _mode_or_none([r.get(f"{col}Frequency") for r in truthy_rows])
+        stage = _mode_or_none([r.get(f"{col}Lifestage") for r in truthy_rows])
+        if freq:
+            out[f"{trait}_frequency"] = freq
+        if stage:
+            out[f"{trait}_lifestage"] = stage
+
+    if any(is_yes(r.get("Solitary")) for r in records):
+        out["solitary"] = True
+
+    return out
+
+
+def build_behavior(fb: FishBase, spec_code: int | None) -> dict:
+    """Build the `behavior` enrichment block from the FishBase ecology table.
+
+    Returns a dict with optional boolean keys (`schooling`, `shoaling`,
+    `solitary`) and their `*_frequency` / `*_lifestage` qualifiers. Empty dict
+    when no ecology records exist.
+    """
+    if not spec_code:
+        return {}
+    records = fb.code_tables(spec_code).get("ecology", [])
+    if not records:
+        return {}
+    return _aggregated_behavior(records)

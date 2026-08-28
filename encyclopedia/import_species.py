@@ -29,7 +29,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from encyclopedia.fishbase import FishBase, build_fishbase_enrichment, build_biology
+from encyclopedia.fishbase import FishBase, build_fishbase_enrichment, build_biology, build_behavior
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "encyclopedia" / "data"
@@ -173,11 +173,13 @@ def build_profile(species, summary, tax, fb):
     fish_class = "Cephalopoda" if family in CEPHALOPOD_FAMILIES else (tax.get("class") or "Actinopterygii")
     conservation = CONSERVATION.get(species.get("conservationStatus"), "LC")
 
-    # FishBase enrichment (physical, habitat, biology, real distribution points).
+    # FishBase enrichment (physical, habitat, biology, behavior, real
+    # distribution points).
     fbname = FISHBASE_ALIASES.get(sci.lower(), sci)
     fb_enc = build_fishbase_enrichment(fb, fbname)
     spec_code = (fb.species_row(fbname) or {}).get("SpecCode")
     biology = build_biology(fb, spec_code)
+    behavior = build_behavior(fb, spec_code)
 
     water_types = (fb_enc["habitat"].get("water_types")
                    or (["saltwater"] if water == "saltwater" else ["freshwater"]))
@@ -223,6 +225,8 @@ def build_profile(species, summary, tax, fb):
         "distribution": distribution,
         "conservation": {"status": conservation},
     }
+    if behavior:
+        meta["behavior"] = behavior
 
     extract = (summary or {}).get("extract") or ""
     meta["description"] = extract.strip()

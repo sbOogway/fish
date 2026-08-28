@@ -343,6 +343,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
 description: The bluefish is the only extant species of the family Pomatomidae. It is a marine pelagic
   fish found around the world in temperate and subtropical waters, except for the northern Pacific Ocean.
   Bluefish are known as tailor in Australia and New Zealand, elf and shad in South Africa. It is a popular

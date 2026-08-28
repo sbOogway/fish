@@ -146,6 +146,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
 description: Rhabdosargus sarba, also known as the goldlined seabream, silver bream, tarwhine, or yellowfin
   bream, is a species of marine ray-finned fish belonging to the family Sparidae, which includes the seabreams
   and porgies. This fish has a wide Indo-Pacific distribution.

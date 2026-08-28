@@ -578,6 +578,10 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
+  schooling_frequency: sometimes
+  schooling_lifestage: juveniles and adults
 description: The Atlantic cod is a fish of the family Gadidae, widely consumed by humans. It is also commercially
   known as cod or codling.
 image:

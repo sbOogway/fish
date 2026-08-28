@@ -308,6 +308,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  shoaling: true
 description: The mahi-mahi, common dolphinfish, dolphinfish, dolphin or  dorado is a surface-dwelling
   ray-finned fish found in off-shore temperate, tropical, and subtropical waters worldwide. It is also
   widely called dorado and dolphin. It is one of two members of the family Coryphaenidae, the other being

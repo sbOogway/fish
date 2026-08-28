@@ -122,6 +122,13 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
+  schooling_frequency: sometimes
+  schooling_lifestage: juveniles and adults
+  shoaling: true
+  shoaling_frequency: sometimes
+  shoaling_lifestage: juveniles and adults
 description: The Greenland halibut or Greenland turbot belongs to the family Pleuronectidae, and is the
   only species of the genus Reinhardtius. It is a predatory fish that mostly ranges at depths between
   500 and 1,000 m (1,600–3,300 ft), and is found in the cold northern Atlantic, northern Pacific, and

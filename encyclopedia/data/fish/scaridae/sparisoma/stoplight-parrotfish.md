@@ -72,6 +72,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  solitary: true
 description: The stoplight parrotfish is a species of marine ray-finned fish, a parrotfish from the family
   Scaridae, inhabiting coral reefs in Florida, Caribbean Sea, Gulf of Mexico, Bermuda and as far south
   as Brazil. It mainly feeds on algae by scraping and excavating it with its teeth. Like most parrotfish,

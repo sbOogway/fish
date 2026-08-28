@@ -59,6 +59,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  solitary: true
 description: The smooth trunkfish is a species of marine ray-finned fish in the boxfish family Ostraciidae.
   It is found in the western Atlantic Ocean.
 image:

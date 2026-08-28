@@ -151,6 +151,11 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
+  schooling_frequency: sometimes
+  schooling_lifestage: only adults
+  solitary: true
 description: The Atlantic wolffish, also known as the seawolf, Atlantic catfish, ocean catfish, devil
   fish, wolf eel, woof or sea cat, is a marine fish of the wolffish family Anarhichadidae, native to the
   North Atlantic Ocean. The numbers of the Atlantic wolffish in US waters are rapidly being depleted,

@@ -239,6 +239,13 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
+  schooling_frequency: always
+  schooling_lifestage: juveniles and adults
+  shoaling: true
+  shoaling_frequency: sometimes
+  shoaling_lifestage: juveniles and adults
 description: Boreogadus saida, known as the polar cod or as the Arctic cod, is a fish of the cod family
   Gadidae, related to the true cod. Another fish species for which both the common names Arctic cod and
   polar cod are used is Arctogadus glacialis.

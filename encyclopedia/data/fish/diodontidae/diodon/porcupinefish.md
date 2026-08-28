@@ -293,6 +293,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  solitary: true
 description: The spot-fin porcupinefish, also known as the spotted porcupinefish, black-spotted porcupinefish
   or simply porcupinefish, is a member of the family Diodontidae.
 image:

@@ -212,6 +212,9 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  shoaling: true
+  solitary: true
 description: Sphyraena barracuda, commonly known as the great barracuda, is a species of barracuda, a
   genus of 27 species of large ray-finned fish found in subtropical oceans worldwide.
 image:

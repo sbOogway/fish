@@ -119,6 +119,33 @@ def build_distribution_blurb(meta):
     return " ".join(parts).strip() if parts else None
 
 
+def _behavior_markdown(behavior):
+    """Render the `behavior` frontmatter block as a short prose paragraph.
+
+    Empty/None behavior yields "" so the section is dropped from the page.
+    """
+    if not behavior:
+        return ""
+    parts = []
+
+    def qual(freq, lifestage):
+        bits = []
+        if freq:
+            bits.append(str(freq))
+        if lifestage:
+            bits.append(f"as {lifestage}")
+        return f" ({', '.join(bits)})" if bits else ""
+
+    if behavior.get("schooling"):
+        parts.append(f"Forms schools{qual(behavior.get('schooling_frequency'), behavior.get('schooling_lifestage'))}.")
+    if behavior.get("shoaling"):
+        parts.append(f"Forms loose shoals{qual(behavior.get('shoaling_frequency'), behavior.get('shoaling_lifestage'))}.")
+    if behavior.get("solitary"):
+        parts.append("Often solitary")
+
+    return "\n\n".join(parts)
+
+
 def split_markdown_sections(md_body):
     """Split markdown into {heading: [lines]} by `## ` headings.
 
@@ -185,6 +212,10 @@ def build_prose_sections(meta, body_sections):
     add("age", "Age", "\n\n".join(age))
 
     add("biology", "Biology", body_sections.get("Biology", "") or "")
+
+    behavior_md = _behavior_markdown(meta.get("behavior") or {})
+    if behavior_md:
+        add("behavior", "Behavior", behavior_md)
 
     months = angling.get("season_months") or []
     if months:

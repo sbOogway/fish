@@ -536,6 +536,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  shoaling: true
 description: The skipjack tuna is a perciform fish in the tuna family, Scombridae, and is the only member
   of the genus Katsuwonus. It is a cosmopolitan pelagic fish found in tropical and warm-temperate waters.
   Skipjack tuna can grow up to 1.1 m in length, and is a very important species for fisheries.

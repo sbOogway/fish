@@ -138,6 +138,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
 description: The Atlantic tarpon is a ray-finned fish that inhabits coastal waters, estuaries, lagoons,
   and rivers. It is also known as the silver king. It is found in the Atlantic Ocean, typically in tropical
   and subtropical regions, though it has been reported as far north as Nova Scotia and the Atlantic coast

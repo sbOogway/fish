@@ -80,6 +80,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  solitary: true
 description: The foureye butterflyfish or four-eyed butterflyfish is a species of marine ray-finned fish
   in the butterflyfish family Chaetodontidae. This species is found in the Western Atlantic, from New
   England through Bermuda and the West Indies to northern South America.

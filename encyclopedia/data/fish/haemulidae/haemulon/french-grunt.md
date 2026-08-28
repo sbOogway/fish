@@ -89,6 +89,8 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+behavior:
+  schooling: true
 description: Haemulon flavolineatum, the French grunt, banana grunt, gold laced grunt, open-mouthed grunt,
   redmouth grunt, or yellow grunt, is a species of marine ray-finned fish, a grunt belonging to the family
   Haemulidae. It inhabits tropical through warm-temperate regions between the southern Caribbean and the

@@ -21,7 +21,6 @@ physical:
   max_length_cm: 47
   typical_length_cm: '20'
 habitat:
-  depth_range_m: 0-50
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -32,8 +31,19 @@ biology:
   predators:
   - Coryphaena hippurus
   - Rachycentron canadum
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points:
+  - - 12.114
+    - -68.971
+  - - 18.483
+    - -65.167
+  - - 32.2
+    - -64.6
+  source: FishBase occurrence records
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -47,20 +57,7 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points:
-  - - 12.114
-    - -68.971
-  - - 18.483
-    - -65.167
-  - - 32.2
-    - -64.6
-  source: FishBase occurrence records
-conservation:
-  status: LC
-behavior:
-  solitary: true
+behavior: Solitary or in small groups .
 description: The smooth trunkfish is a species of marine ray-finned fish in the boxfish family Ostraciidae.
   It is found in the western Atlantic Ocean.
 image:

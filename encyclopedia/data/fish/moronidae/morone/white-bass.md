@@ -20,9 +20,7 @@ physical:
   max_length_cm: 45
   typical_length_cm: '32'
   max_weight_kg: 3.1
-  lifespan_years: '9'
 habitat:
-  depth_range_m: 0-13
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -32,22 +30,12 @@ biology:
   fertilization: external
   parental_care: none
   fecundity: 61,700-1,000,000 eggs
-  age_maturity: 3 years
   diet:
   - Bony fish
   - Insects
   predators:
   - Morone americana
   - Morone chrysops
-angling:
-  best_months: Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -88,6 +76,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '9'
+  age_maturity: 3 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
+behavior: Adults are piscivorous, consuming shad, silversides, and occasional young sunfish . Spawns near
+  the surface .
 description: The white bass, silver bass, or sand bass is a freshwater fish of the temperate bass family
   Moronidae, and is commonly around 12–15 inches long. The species' main color is silver-white to pale
   green. Its back is dark, with white sides and belly, and with narrow dark stripes running lengthwise

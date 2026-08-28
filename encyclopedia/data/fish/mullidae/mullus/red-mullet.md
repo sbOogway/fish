@@ -25,7 +25,6 @@ physical:
   typical_length_cm: '20'
   max_weight_kg: 0.7
 habitat:
-  depth_range_m: 10-328
   body_ecology: demersal
   water_types:
   - saltwater
@@ -38,7 +37,6 @@ biology:
   - 5
   - 6
   fecundity: 7,030-76,000 eggs
-  age_maturity: 2 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -67,16 +65,6 @@ biology:
   - Sarda sarda
   - Saurida lessepsianus
   - Serranus cabrilla
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -383,6 +371,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 2 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 description: Mullus barbatus is a species of goatfish found in the Mediterranean Sea, Sea of Marmara,
   the Black Sea and the eastern North Atlantic Ocean, where its range extends from Scandinavia to Senegal.
   They are fished, mostly by trawling, with the flesh being well regarded. The International Union for

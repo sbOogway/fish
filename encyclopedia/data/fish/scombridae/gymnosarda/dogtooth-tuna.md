@@ -23,7 +23,6 @@ physical:
   typical_length_cm: '190'
   max_weight_kg: 131.0
 habitat:
-  depth_range_m: 0-250
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -39,21 +38,6 @@ biology:
   diet:
   - Bony fish
   - Squids/cuttlefish
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -106,6 +90,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Adults may be ciguatoxic .
 description: The dogtooth tuna, also known as white tuna, is a species of pelagic marine fish which belongs
   to the family Scombridae. Despite the name "tuna", it is not actually a tuna. Instead, it is a bonito.
 image:

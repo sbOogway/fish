@@ -20,9 +20,7 @@ sources:
 physical:
   max_length_cm: 152
   max_weight_kg: 59.1
-  lifespan_years: '25'
 habitat:
-  depth_range_m: 0-475
   body_ecology: demersal
   water_types:
   - saltwater
@@ -36,7 +34,6 @@ biology:
   - 3
   - 12
   fecundity: 60,000-500,000 eggs
-  age_maturity: 4 years
   diet:
   - Benth. copepods
   - Bony fish
@@ -49,14 +46,6 @@ biology:
   - Orcinus orca
   - Phoca vitulina
   - Sebastes caurinus
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -231,6 +220,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '25'
+  age_maturity: 4 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Adults are found near rocks, inshore and to 427 m . Young occur on sand or mud bottom of bays
+  and inshore areas . Adults feed mostly on other fishes but also take crustaceans, octopi and squid .
 description: The lingcod or ling cod is a fish of the greenling family Hexagrammidae. Despite its name,
   the lingcod is neither a cod nor a ling. It is also known as the buffalo cod, cultus cod, or Buckethead.
   It is the only extant member of the genus Ophiodon. A slightly larger, extinct species, Ophiodon ozymandias,

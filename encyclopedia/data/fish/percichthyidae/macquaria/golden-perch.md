@@ -22,9 +22,7 @@ physical:
   max_length_cm: 76
   typical_length_cm: '45'
   max_weight_kg: 24.0
-  lifespan_years: '20'
 habitat:
-  depth_range_m: 10-10
   body_ecology: demersal
   water_types:
   - freshwater
@@ -46,7 +44,6 @@ biology:
   - 11
   - 12
   fecundity: 500,000 eggs
-  age_maturity: 4.5 years
   diet:
   - Bony fish
   - Insects
@@ -56,8 +53,14 @@ biology:
   - Maccullochella peelii peelii
   - Perca fluviatilis
   - Phalacrocorax sp.
-angling:
-  best_months: Jan, Feb, Mar, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  lifespan_years: '20'
+  age_maturity: 4.5 years
   season_months:
   - 10
   - 11
@@ -65,11 +68,10 @@ angling:
   - 1
   - 2
   - 3
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Solitary species . Spawn from early spring to late autumn. Spawn in flooded backwaters near
+  the surface at night after heavy spring and summer rains. Usually a long upstream spawning migration
+  is undertaken (movements of 2000 kilometers by tagged fish have been documented). Eggs float near the
+  surface and hatch in 24-36 hours.
 description: The golden perch is a medium-sized, yellow or gold-coloured species of Australian freshwater
   fish found primarily in the Murray-Darling River system. A subspecies is found in the Lake Eyre-Cooper
   Creek system, and another subspecies, suspected to be ancestral to all other populations, is found in

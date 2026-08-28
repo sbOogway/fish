@@ -26,9 +26,7 @@ physical:
   max_length_cm: 458
   typical_length_cm: '200'
   max_weight_kg: 684.0
-  lifespan_years: '32'
 habitat:
-  depth_range_m: 0-985
   body_ecology: pelagic-oceanic
   water_types:
   - brackish
@@ -54,7 +52,6 @@ biology:
   spawning_months:
   - 6
   fecundity: 1,170,000-60,300,000 eggs
-  age_maturity: 4.5 years
   diet:
   - Amphipods
   - Bony fish
@@ -81,15 +78,6 @@ biology:
   - Prionace glauca
   - Sterna fuscata
   - blackfish
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -536,6 +524,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: PERMIT-REQUIRED
+facts:
+  lifespan_years: '32'
+  age_maturity: 4.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: They school by size, sometimes together with albacore, yellowfin, bigeye, skipjack etc. Eggs
+  and larvae are pelagic . Juvenile growth is rapid (about 30 cm / year) but slower than in other tuna
+  and billfish species .
 description: The Atlantic bluefin tuna is a species of tuna in the family Scombridae. It is variously
   known as the northern bluefin tuna, giant bluefin tuna, and formerly as the tunny.
 image:

@@ -20,7 +20,6 @@ sources:
 physical:
   max_length_cm: 50
   max_weight_kg: 7.8
-  lifespan_years: '12'
 habitat:
   body_ecology: benthopelagic
   water_types:
@@ -39,8 +38,13 @@ biology:
   - Debris
   - Gastropods
   - Insects
-angling:
-  best_months: Jan, Feb, Mar, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  lifespan_years: '12'
   season_months:
   - 9
   - 10
@@ -49,11 +53,7 @@ angling:
   - 1
   - 2
   - 3
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: An omnivorous bottom feeder. Migrates upstream to spawn over suitable gravel beds .
 description: The smallmouth yellowfish is a species of ray-finned fish in the genus Labeobarbus. It has
   become an invasive species in rivers of the Eastern Cape, South Africa, such as the Mbhashe River.
 image:

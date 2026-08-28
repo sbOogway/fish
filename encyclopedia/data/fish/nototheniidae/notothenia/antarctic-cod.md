@@ -20,9 +20,7 @@ physical:
   max_length_cm: 92
   typical_length_cm: '50'
   max_weight_kg: 10.0
-  lifespan_years: '16'
 habitat:
-  depth_range_m: 5-350
   body_ecology: demersal
   water_types:
   - saltwater
@@ -34,7 +32,6 @@ biology:
   - 5
   - 6
   fecundity: 19,271-109,710 eggs
-  age_maturity: 6 years
   diet:
   - Amphipods
   - Ascidians
@@ -46,8 +43,21 @@ biology:
   - Shrimps & prawns
   predators:
   - Diomedea melanophrys
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points:
+  - - -61.1
+    - -56.067
+  - - -60.467
+    - -46.733
+  - - -54.85
+    - -35.267
+  source: FishBase occurrence records
+conservation:
+  status: LC
+facts:
+  lifespan_years: '16'
+  age_maturity: 6 years
   season_months:
   - 1
   - 2
@@ -61,18 +71,8 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points:
-  - - -61.1
-    - -56.067
-  - - -60.467
-    - -46.733
-  - - -54.85
-    - -35.267
-  source: FishBase occurrence records
-conservation:
-  status: LC
+behavior: Immature and mature fish are benthic but stay in shallower depths (10-20 m). Spawn once a year
+  .
 description: The marbled rockcod is a species of marine ray-finned fish, belonging to the family Nototheniidae,
   the notothens or cod icefishes. It is native to the Southern Ocean, where it can be found at depths
   from 5 to 350 m. This is a commercially important species.

@@ -25,9 +25,7 @@ physical:
   max_length_cm: 140
   typical_length_cm: '45'
   max_weight_kg: 15.0
-  lifespan_years: '20'
 habitat:
-  depth_range_m: 18-1075
   body_ecology: demersal
   water_types:
   - saltwater
@@ -47,7 +45,6 @@ biology:
   - 11
   - 12
   fecundity: 25,238-7,000,000 eggs
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Benthic algae/weeds
@@ -84,15 +81,6 @@ biology:
   - Tursiops truncatus
   - Uranoscopus scaber
   - Xiphias gladius
-angling:
-  best_months: Jan, Feb, Mar, Oct, Nov, Dec
-  season_months:
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -539,6 +527,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '20'
+  age_maturity: 3 years
+  season_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: Adults live close to the bottom during day-time, but move off-bottom at night.
 description: Merluccius merluccius or the European hake is a merluccid hake of the genus Merluccius. Other
   vernacular names include Cornish salmon and herring hake. It is a predatory species, which was often
   netted alongside one of its favoured prey, the Atlantic herring, hence the latter common name. It is

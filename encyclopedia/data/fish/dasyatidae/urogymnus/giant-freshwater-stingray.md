@@ -31,8 +31,12 @@ biology:
     are born at about 30 cm disc width .
   repro_mode: dioecism
   fertilization: internal (oviduct)
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -46,11 +50,8 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Caught occasionally by demersal gillnet and longline fisheries operating in riverine and estuarine
+  areas.
 description: The giant freshwater stingray is a species of stingray in the family Dasyatidae. It is found
   in large rivers and estuaries in Southeast Asia and Borneo, though historically it may have been more
   widely distributed in South and Southeast Asia. The widest freshwater fish in the world, this species

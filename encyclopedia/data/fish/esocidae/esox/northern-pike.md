@@ -24,9 +24,7 @@ physical:
   max_length_cm: 137
   typical_length_cm: '40'
   max_weight_kg: 28.4
-  lifespan_years: '30'
 habitat:
-  depth_range_m: 0-30
   body_ecology: pelagic
   water_types:
   - freshwater
@@ -50,7 +48,6 @@ biology:
   - 4
   - 5
   fecundity: 2,657-125,000 eggs
-  age_maturity: 3 years
   diet:
   - Bony fish
   - Cladocerans
@@ -69,15 +66,6 @@ biology:
   - Silurus glanis
   - unidentified minnow
   - unidentified perch
-angling:
-  best_months: Mar, Apr, Sep, Oct, Nov, Dec
-  season_months:
-  - 3
-  - 4
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -524,6 +512,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '30'
+  age_maturity: 3 years
+  season_months:
+  - 3
+  - 4
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Usually solitary and highly territorial. Eggs and young are preyed upon by fishes, aquatic insect
+  larvae, birds, and aquatic mammals .
 description: The northern pike, also known as jack, northern or simply pike, is a species of carnivorous
   fish of the genus Esox (pikes). It is commonly found in fresh waters of the Northern Hemisphere.
 image:

@@ -22,9 +22,7 @@ physical:
   max_length_cm: 130
   typical_length_cm: '40'
   max_weight_kg: 20.0
-  lifespan_years: '54'
 habitat:
-  depth_range_m: 0-200
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -47,7 +45,6 @@ biology:
   - 11
   - 12
   fecundity: 150,000-1,800,000 eggs
-  age_maturity: 4 years
   diet:
   - Amphipods
   - Bivalves
@@ -60,17 +57,6 @@ biology:
   - Sea stars/brittle stars
   - Sea urchins
   - Shrimps & prawns
-angling:
-  best_months: Jan, Feb, Mar, Apr, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -251,6 +237,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '54'
+  age_maturity: 4 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Adults often live near reefs, but are also found over mud and sand substrates . They are relatively
+  sedentary. It is parasitised by the monogenean <i>Anoplodiscus cirrusspiralis</i> on the fins and body
+  surface .
 description: The Australasian snapper or silver seabream is a species of porgie found in coastal waters
   of Australia, Philippines, Indonesia, mainland China, Taiwan, Japan and New Zealand. Its distribution
   areas in the Northern and Southern Hemispheres are disjunct. Although it is almost universally known

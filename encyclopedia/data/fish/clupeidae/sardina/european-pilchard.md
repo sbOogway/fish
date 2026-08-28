@@ -23,9 +23,7 @@ sources:
 physical:
   max_length_cm: 28
   typical_length_cm: '20'
-  lifespan_years: '15'
 habitat:
-  depth_range_m: 10-100
   body_ecology: pelagic-neritic
   water_types:
   - freshwater
@@ -45,7 +43,6 @@ biology:
   - 11
   - 12
   fecundity: 14,578-82,660 eggs
-  age_maturity: 2 years
   diet:
   - Benth. copepods
   - Benthic algae/weeds
@@ -83,16 +80,6 @@ biology:
   - Uranoscopus scaber
   - Xiphias gladius
   - Zeus faber
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -305,8 +292,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
+facts:
+  lifespan_years: '15'
+  age_maturity: 2 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Form schools, usually at depths of 25 to 55 or even 100 m by day, rising to 10 to 35 m at night.
+  Spawn in batches , in the open sea or near the coast, producing 50,000-60,000 eggs with a mean diameter
+  of 1.
 description: The European pilchard is a species of ray-finned fish in the monotypic genus Sardina. The
   young of the species are among the many fish that are sometimes called sardines. This common species
   is found in the northeast Atlantic, the Mediterranean, and the Black Sea at depths of 10–100 m (33–328 ft).

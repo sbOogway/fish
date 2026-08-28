@@ -24,9 +24,7 @@ physical:
   max_length_cm: 150
   typical_length_cm: '50'
   max_weight_kg: 32.6
-  lifespan_years: '50'
 habitat:
-  depth_range_m: 3-61
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -51,7 +49,6 @@ biology:
   - 11
   - 12
   fecundity: 5,000-17,000 eggs
-  age_maturity: 8 years
   diet:
   - Amphipods
   - Benthic algae/weeds
@@ -69,17 +66,6 @@ biology:
   - Lota lota
   - Petromyzon marinus
   - Prosopium cylindraceum
-angling:
-  best_months: Jan, Feb, Mar, Apr, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -328,6 +314,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '50'
+  age_maturity: 8 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: A solitary wanderer, the extent of their movements apparently limited by the size of the lake
+  and individual .
 description: The lake trout is a freshwater char living mainly in lakes in Northern North America. Other
   names for it include mackinaw, namaycush, lake char (or charr), touladi, togue, laker, and grey trout.
   In Lake Superior, it can also be variously known as siscowet, paperbelly and lean. The lake trout is

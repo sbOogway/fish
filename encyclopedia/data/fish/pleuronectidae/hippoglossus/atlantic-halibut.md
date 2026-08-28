@@ -22,9 +22,7 @@ sources:
 physical:
   max_length_cm: 470
   max_weight_kg: 320.0
-  lifespan_years: '50'
 habitat:
-  depth_range_m: 50-2000
   body_ecology: demersal
   water_types:
   - saltwater
@@ -39,7 +37,6 @@ biology:
   - 3
   - 4
   fecundity: 1,300,000-3,500,000 eggs
-  age_maturity: 10.5 years
   diet:
   - Bony fish
   - Crabs
@@ -49,14 +46,6 @@ biology:
   - Squids/cuttlefish
   predators:
   - Squalus acanthias
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -77,6 +66,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '50'
+  age_maturity: 10.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Adults are benthic but occasionally pelagic .
 description: The Atlantic halibut is a flatfish of the family Pleuronectidae. They are demersal fish living
   on or near sand, gravel or clay bottoms at depths of between 50 and 2,000 m. The halibut is among the
   largest teleost (bony) fish in the world, and is a threatened species owing to a slow rate of growth

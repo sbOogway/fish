@@ -20,7 +20,6 @@ physical:
   max_length_cm: 35
   max_weight_kg: 0.1
 habitat:
-  depth_range_m: 1-15
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -32,21 +31,6 @@ biology:
   predators:
   - Carangoides ruber
   - Epinephelus striatus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -109,6 +93,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: The slippery dick is a species of wrasse native to shallow, tropical waters of the western
   Atlantic Ocean.
 image:

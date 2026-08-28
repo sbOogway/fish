@@ -24,9 +24,7 @@ physical:
   max_length_cm: 50
   typical_length_cm: '25'
   max_weight_kg: 1.8
-  lifespan_years: '14'
 habitat:
-  depth_range_m: 15-15
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -43,7 +41,6 @@ biology:
   - 5
   - 6
   fecundity: 4,282-95,387 eggs
-  age_maturity: 3.5 years
   diet:
   - Benth. copepods
   - Benthic algae/weeds
@@ -67,16 +64,6 @@ biology:
   - Salmo trutta trutta
   - Sander lucioperca
   - Silurus glanis
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -523,6 +510,23 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '14'
+  age_maturity: 3.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Preys predominantly on benthic invertebrates, zooplankton, plant material and detritus. May
+  shift from littoral to pelagic habitats and between benthic food and zooplankton when abundance of a
+  specific food item is high or for avoidance of predation and/or competition. Breeds among dense submerged
+  vegetation in backwaters or lakes, flooded meadows or in shallow, fast-flowing river habitats on plant
+  or gravel bottom. Undertakes short spawning migrations. Pale yellow eggs are found attached to vegetation
+  and tree roots .
 description: The roach, or rutilus roach, also known as the common roach, is a fresh- and brackish-water
   fish of the family Cyprinidae, native to most of Europe and western Asia. Fish called roach can be any
   species of the genera Rutilus, Leucos and Hesperoleucus, depending on locality. The plural of the term

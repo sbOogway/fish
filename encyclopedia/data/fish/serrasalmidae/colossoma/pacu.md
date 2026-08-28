@@ -23,7 +23,6 @@ physical:
   typical_length_cm: '70'
   max_weight_kg: 40.0
 habitat:
-  depth_range_m: 5-5
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -50,21 +49,6 @@ biology:
   - Electrophorus
   - Hoplias
   - Serrasalmus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -79,6 +63,22 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: This species is usually solitary. Adults stay in flooded forests during first 5 months of flooding
+  and consume but fruits and grains.
 description: The tambaqui is a large species of freshwater fish in the family Serrasalmidae. It is native
   to tropical South America, but kept in aquaculture and introduced elsewhere. It is also known by the
   names black pacu, black-finned pacu, giant pacu, cachama, gamitana, and sometimes as pacu.

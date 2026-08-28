@@ -25,9 +25,7 @@ physical:
   max_length_cm: 110
   typical_length_cm: '80'
   max_weight_kg: 34.5
-  lifespan_years: '12'
 habitat:
-  depth_range_m: 0-260
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -50,7 +48,6 @@ biology:
   - 11
   - 12
   fecundity: 80,000-2,000,000 eggs
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Bony fish
@@ -75,21 +72,6 @@ biology:
   - Thunnus obesus
   - billfishes
   - whaler sharks
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -536,8 +518,26 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  shoaling: true
+facts:
+  lifespan_years: '12'
+  age_maturity: 3 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Exhibit a strong tendency to school in surface waters with birds, drifting objects, sharks,
+  whales and may show a characteristic behavior like jumping, feeding, foaming, etc. Spawn throughout
+  the year in the tropics, eggs released in several portions . Eggs and larvae are pelagic . Preyed upon
+  by large pelagic fishes .
 description: The skipjack tuna is a perciform fish in the tuna family, Scombridae, and is the only member
   of the genus Katsuwonus. It is a cosmopolitan pelagic fish found in tropical and warm-temperate waters.
   Skipjack tuna can grow up to 1.1 m in length, and is a very important species for fisheries.

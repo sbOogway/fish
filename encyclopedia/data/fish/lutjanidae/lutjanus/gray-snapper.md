@@ -21,9 +21,7 @@ physical:
   max_length_cm: 89
   typical_length_cm: '40'
   max_weight_kg: 20.0
-  lifespan_years: '21'
 habitat:
-  depth_range_m: 5-180
   body_ecology: reef-associated
   water_types:
   - freshwater
@@ -40,7 +38,6 @@ biology:
   - 8
   - 9
   - 10
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Bivalves
@@ -58,21 +55,6 @@ biology:
   - Gymnothorax funebris
   - Gymnothorax moringa
   - Sphyraena barracuda
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -159,8 +141,24 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
+facts:
+  lifespan_years: '21'
+  age_maturity: 3 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Feed mainly at night on small fishes, shrimps, crabs, gastropods, cephalopods and some planktonic
+  items.
 description: The mangrove snapper or gray snapper is a species of snapper native to the western Atlantic
   Ocean from Massachusetts to Brazil, the Gulf of Mexico, Bermuda, and the Caribbean Sea. The species
   can be found in a wide variety of habitats, including brackish and fresh waters. It is commercially

@@ -24,9 +24,7 @@ physical:
   max_length_cm: 107
   typical_length_cm: '40'
   max_weight_kg: 15.0
-  lifespan_years: '40'
 habitat:
-  depth_range_m: 0-70
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -52,7 +50,6 @@ biology:
   - 10
   - 11
   fecundity: 600-6,000 eggs
-  age_maturity: 7 years
   diet:
   - Amphipods
   - Benthic algae/weeds
@@ -71,13 +68,6 @@ biology:
   predators:
   - Delphinapterus leucas
   - Lethenteron camtschaticum
-angling:
-  best_months: Jun, Jul, Aug, Sep
-  season_months:
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -524,6 +514,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '40'
+  age_maturity: 7 years
+  season_months:
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Nerito-pelagic . Spawning usually takes place on pebble to stone bottom in lakes. Riverine stocks
+  spawn in rivers with slow current (02.-0.8 m/s), but there are some riverine anadromous stocks (in Norway)
+  which spawn yearly in fast-flowing waters of riffles .
 description: The Arctic char or Arctic charr is a cold-water fish in the family Salmonidae, native to
   alpine lakes, as well as Arctic and subarctic coastal waters in the Holarctic. It is the world's most
   northerly freshwater fish. Some populations are anadromous.

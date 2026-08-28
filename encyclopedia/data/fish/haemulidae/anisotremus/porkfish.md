@@ -21,7 +21,6 @@ physical:
   typical_length_cm: '25'
   max_weight_kg: 0.9
 habitat:
-  depth_range_m: 2-70
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -33,21 +32,6 @@ biology:
   spawning_months:
   - 8
   - 9
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -82,6 +66,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Feeds at night on mollusks, echinoderms, annelids, and crustaceans .
 description: Anisotremus virginicus, the porkfish, also known as the Atlantic porkfish, sweetlips, dogfish,
   or paragrate grunt, is a species of marine ray-finned fish, a grunt belonging to the family Haemulidae.
   It is native to the western Atlantic Ocean.

@@ -21,7 +21,6 @@ sources:
 physical:
   max_length_cm: 200
   max_weight_kg: 105.0
-  lifespan_years: '55'
 habitat:
   body_ecology: benthopelagic
   water_types:
@@ -35,24 +34,32 @@ biology:
   - 5
   - 6
   fecundity: 44,000 eggs
-  age_maturity: 6.5 years
   diet:
   - Bony fish
   - Sea birds
   - Toads/frogs
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  lifespan_years: '55'
+  age_maturity: 6.5 years
   season_months:
   - 5
   - 6
   - 7
   - 8
   - 9
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Both juveniles and adults are territorial. Adults frequently occur within their own restricted
+  territory (deep holes below rapids and waterfalls, confluence of small tributaries, below bridge pillar
+  or large rocks, bank excavations), which they abandon only foraging and spawning. They breed in shallow
+  places with fast current on pebble bottom, immediately downstream of large deep pools, often in small
+  river tributaries. Usually undertake upriver migration for spawning in the upper reaches of tributaries.
+  Can overcome quite high obstacles while migrating to spawning sites. Eggs, 5-6 mm in diameter, hatch
+  after 28-38 days. Alevins stay in gravel until yolk sac is absorbed after 10-15 days while young first
+  remain near spawning site, then move downstream.
 description: Siberian taimen, also known as the common taimen, Siberian giant trout or Siberian salmon,
   is a species of salmon-like ray-finned fish from the genus Hucho in the family Salmonidae. These fish
   are found in rivers in Siberia and adjacent regions, and are harvested throughout the year.

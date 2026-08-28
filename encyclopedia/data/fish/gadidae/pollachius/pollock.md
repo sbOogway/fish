@@ -25,9 +25,7 @@ physical:
   max_length_cm: 130
   typical_length_cm: '75'
   max_weight_kg: 18.1
-  lifespan_years: '8'
 habitat:
-  depth_range_m: 40-200
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -42,7 +40,6 @@ biology:
   - 3
   - 4
   - 5
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -58,16 +55,6 @@ biology:
   - Squids/cuttlefish
   predators:
   - Myxine glutinosa
-angling:
-  best_months: Jan, Feb, Mar, Apr, Oct, Nov, Dec
-  season_months:
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
-  - 4
 distribution:
   native: true
   points:
@@ -180,6 +167,22 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '8'
+  age_maturity: 3 years
+  season_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+  - 4
+behavior: Juveniles are pelagic, spending 2-3 years near the coast including rocky areas, kelp beds, sandy
+  shores and estuaries . Juveniles may form schools with saithe (<i>Pollachius virens</i>) , and have
+  also been found solitary and defending their feeding territory . Adults occur singly or in small dispersed
+  shoals but is known to form dense shoals on spawning grounds . Suggested to undertake spawning migrations
+  .
 description: Pollachius pollachius is a species of marine fish in the family Gadidae. FAO uses the English
   name pollack for this species, whereas in American English it is known as European pollock. Other vernacular
   names include lythe, and in the Isle of Man, callig.

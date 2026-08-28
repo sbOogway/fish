@@ -24,7 +24,6 @@ physical:
   typical_length_cm: '50'
   max_weight_kg: 20.0
 habitat:
-  depth_range_m: 100-100
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -36,8 +35,12 @@ biology:
   - 12
   diet:
   - Bony fish
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -51,11 +54,6 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: Channa micropeltes, giant snakehead, giant mudfish or toman harimau, is among the largest
   species in the family Channidae, capable of growing to 1.8 m (5.9 ft) in length and a weight of 30 kg
   (66 lb). It is native to the fresh waters of Southeast Asia, but has also been introduced elsewhere

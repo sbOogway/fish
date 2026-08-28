@@ -20,9 +20,7 @@ physical:
   max_length_cm: 53
   typical_length_cm: '30'
   max_weight_kg: 4.4
-  lifespan_years: '13'
 habitat:
-  depth_range_m: 3-40
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -44,15 +42,20 @@ biology:
   - 11
   - 12
   fecundity: 64,000-312,000 eggs
-  age_maturity: 2 years
   diet:
   - Bony fish
   - Gastropods
   - Sea urchins
   predators:
   - Lutjanus jocu
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  lifespan_years: '13'
+  age_maturity: 2 years
   season_months:
   - 1
   - 2
@@ -66,11 +69,8 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Frequently exhibits a territorial 'kissing' display in which two contenders push each other
+  on the lips with their mouths wide open .
 description: Haemulon plumierii, the white grunt or common grunt, is a species of ray-finned fish in the
   family Haemulidae native to the western Atlantic Ocean. It grows to a length of about 30 cm (12 in)
   and is a silvery-cream color, with narrow yellow and blue longitudinal stripes, but can modify its color

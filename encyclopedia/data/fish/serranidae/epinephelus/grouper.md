@@ -25,9 +25,7 @@ sources:
 physical:
   max_length_cm: 150
   max_weight_kg: 60.0
-  lifespan_years: '60'
 habitat:
-  depth_range_m: 8-300
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -46,7 +44,6 @@ biology:
   - 8
   - 9
   fecundity: 65,424-7,984,835 eggs
-  age_maturity: 6.5 years
   diet:
   - Bony fish
   - Crabs
@@ -57,15 +54,6 @@ biology:
   - Ostracods
   - Shrimps & prawns
   - Squids/cuttlefish
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -252,8 +240,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: VU
-behavior:
-  solitary: true
+facts:
+  lifespan_years: '60'
+  age_maturity: 6.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Adults prefer rocky bottoms , are solitary and territorial . Mature individuals form spawning
+  aggregations .
 description: Epinephelus marginatus, the dusky grouper, yellowbelly rock cod, or yellowbelly grouper,
   is a species of fish in the grouper family, Epinephelidae. It is found in coastal waters, primarily
   at the edges of the Atlantic Ocean – off western Africa and eastern South America – and also in the

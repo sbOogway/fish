@@ -21,7 +21,6 @@ physical:
   max_length_cm: 39
   typical_length_cm: '25'
 habitat:
-  depth_range_m: 2-50
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -37,21 +36,6 @@ biology:
   - Caranx ruber
   - Mycteroperca tigris
   - Thunnus albacares
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -102,8 +86,22 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Mainly diurnal. Diurnal species . It forms resident spawning aggregations in late afternoon
+  after high tide .
 description: Acanthurus coeruleus is a species of marine ray-finned fish belonging to the family Acanthuridae,
   the surgeonfishes, unicornfishes and tangs, found in the Atlantic Ocean. It can grow up to 39 centimetres
   (15 in) long. Common names include Atlantic blue tang, blue barber, blue doctor, blue doctorfish, blue

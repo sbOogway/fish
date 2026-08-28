@@ -23,9 +23,7 @@ physical:
   max_length_cm: 120
   typical_length_cm: '31'
   max_weight_kg: 40.1
-  lifespan_years: '38'
 habitat:
-  depth_range_m: 0-29
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -58,7 +56,6 @@ biology:
   - 11
   - 12
   fecundity: 38,750-1,000,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Benthic algae/weeds
@@ -94,16 +91,6 @@ biology:
   - Siniperca chuatsi
   - Wallago attu
   - unidentified spider
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -382,6 +369,22 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '38'
+  age_maturity: 2.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Hardy and tolerant of a wide variety of conditions but generally favor large water bodies with
+  slow flowing or standing water and soft bottom sediments. Most active at dusk and dawn. Adults often
+  undertake considerable spawning migration to suitable backwaters and flooded meadows. Larvae survive
+  only in very warm water among shallow submerged vegetation . Occurs at depths of <30m and found sucking
+  in floating insects at the surface .
 description: The common carp, also known as European carp, Eurasian carp, or simply carp, is a widespread
   freshwater fish of eutrophic waters in lakes and large rivers in Europe and Asia. The native wild populations
   are considered vulnerable to extinction by the International Union for Conservation of Nature (IUCN),

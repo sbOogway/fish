@@ -20,9 +20,7 @@ physical:
   max_length_cm: 239
   typical_length_cm: '150'
   max_weight_kg: 200.0
-  lifespan_years: '9'
 habitat:
-  depth_range_m: 1-1602
   body_ecology: pelagic-oceanic
   water_types:
   - brackish
@@ -44,7 +42,6 @@ biology:
   - 8
   - 9
   fecundity: 200,000-8,026,026 eggs
-  age_maturity: 1 years
   diet:
   - Amphipods
   - Bony fish
@@ -61,21 +58,6 @@ biology:
   - Isistius brasiliensis
   - Orcinus orca
   - Thunnus albacares
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -522,6 +504,26 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '9'
+  age_maturity: 1 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Pelagic in open water , but rarely seen near reefs . They school primarily by size, either in
+  monospecific or multi-species groups. Larger fish frequently school with porpoises, also associated
+  with floating debris and other objects. Peak spawning occurs during the summer, in batches . Eggs and
+  larvae are pelagic . Encircling nets are employed to catch schools near the surface .
 description: The yellowfin tuna is a species of tuna found in pelagic waters of tropical and subtropical
   oceans worldwide.
 image:

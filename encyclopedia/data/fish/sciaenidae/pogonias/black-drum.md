@@ -21,9 +21,7 @@ physical:
   max_length_cm: 170
   typical_length_cm: '50'
   max_weight_kg: 51.3
-  lifespan_years: '43'
 habitat:
-  depth_range_m: 10-10
   body_ecology: demersal
   water_types:
   - brackish
@@ -44,22 +42,12 @@ biology:
   - 11
   - 12
   fecundity: 90,000-3,800,000 eggs
-  age_maturity: 3 years
   diet:
   - Bivalves
   - Bony fish
   - Crabs
   predators:
   - Stenella frontalis
-angling:
-  best_months: Mar, Apr, May, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -152,6 +140,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '43'
+  age_maturity: 3 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 9
+  - 10
+  - 11
 description: The black drum, also known as the drum or drummer, is a species of marine ray-finned fish
   belonging to the family Sciaenidae, the drums and croakers. It is found in the western Atlantic Ocean
   off the eastern coast of North and South America. Though most specimens are generally found in the 5-30 lb

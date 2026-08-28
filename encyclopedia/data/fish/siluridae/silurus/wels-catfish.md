@@ -25,9 +25,7 @@ sources:
 physical:
   max_length_cm: 273
   max_weight_kg: 130.0
-  lifespan_years: '80'
 habitat:
-  depth_range_m: 0-30
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -46,7 +44,6 @@ biology:
   - 5
   - 6
   fecundity: 9,033-340,461 eggs
-  age_maturity: 3.5 years
   diet:
   - Bony fish
   - Fish eggs & larvae
@@ -54,14 +51,6 @@ biology:
   - Mysids
   predators:
   - Esox lucius
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -102,6 +91,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '80'
+  age_maturity: 3.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: A nocturnal predator, foraging near bottom and in water column. Larvae and juveniles are benthic,
+  feeding on a wide variety of invertebrates and fish.
 description: The wels catfish, also called sheatfish or just wels, is a large species of catfish native
   to wide areas of central, southern, and eastern Europe, in the basins of the Baltic, Black and Caspian
   Seas. It has been introduced to several countries in Western Europe, Mediterranean and Asia as a prized

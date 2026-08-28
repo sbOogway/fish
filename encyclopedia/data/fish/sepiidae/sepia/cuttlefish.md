@@ -26,8 +26,12 @@ habitat:
   water_types:
   - saltwater
 biology: {}
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 4
   - 5
@@ -36,11 +40,6 @@ angling:
   - 8
   - 9
   - 10
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: The common cuttlefish or European common cuttlefish is one of the largest and best-known
   cuttlefish species. They are a migratory species that spend the summer and spring inshore for spawning
   and then move to depths of 100–200 metres (330–660 ft) during autumn and winter. They grow to 49 centimetres

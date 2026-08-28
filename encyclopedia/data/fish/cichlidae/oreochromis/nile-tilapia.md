@@ -22,9 +22,7 @@ sources:
 physical:
   max_length_cm: 60
   max_weight_kg: 4.3
-  lifespan_years: '9'
 habitat:
-  depth_range_m: 0-20
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -57,7 +55,6 @@ biology:
   - 11
   - 12
   fecundity: 22-1,500 eggs
-  age_maturity: 1.5 years
   diet:
   - Benthic algae/weeds
   - Blue-green algae
@@ -86,21 +83,6 @@ biology:
   - Lates niloticus
   - Pelecanus onocrotalus
   - Pelecanus rufescens
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -269,6 +251,24 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '9'
+  age_maturity: 1.5 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Mainly diurnal. Additionally, insect larvae are of some importance, as are aufwuchs and detritus;
+  juveniles tend to be more omnivorous than adults .
 description: The Nile tilapia is a species of tilapia, a cichlid occurring naturally in parts of Africa
   and the Levant, though numerous introduced populations exist outside its natural range. This current
   wide range is caused by its high commercial value as a food fish, where it is marketed as mango fish,

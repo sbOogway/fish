@@ -20,9 +20,7 @@ sources:
 physical:
   max_length_cm: 94
   max_weight_kg: 12.0
-  lifespan_years: '9'
 habitat:
-  depth_range_m: 10-183
   body_ecology: demersal
   water_types:
   - brackish
@@ -53,15 +51,6 @@ biology:
   - Pomatomus saltator
   - Prionotus carolinus
   - Squalus acanthias
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -204,6 +193,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '9'
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Adults usually prefer hard sandy substrate where they can burrow; can exploit a broad range
+  of lower and mid-estuary habitats including salt marsh creeks and seagrass beds, which usually have
+  muddy or silty substrates , as well as sand flats .
 description: The summer flounder or fluke is a marine flatfish that is found in the Atlantic Ocean off
   the East Coast of the United States and Canada. It is especially abundant in waters from North Carolina
   to Massachusetts.

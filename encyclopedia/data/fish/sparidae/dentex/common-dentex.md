@@ -25,7 +25,6 @@ physical:
   typical_length_cm: '50'
   max_weight_kg: 14.2
 habitat:
-  depth_range_m: 0-200
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -40,19 +39,10 @@ biology:
   - 3
   - 4
   - 5
-  age_maturity: 2.5 years
   diet:
   - Bony fish
   predators:
   - Seriola demerili
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -87,6 +77,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 2.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Adults solitary; young gregarious . A spear-fisherman cites a specimen caught in Greece (Corfu)
+  with an overnight bottom-line about 1.
 description: The common dentex is a species of marine ray-finned fish belonging to the family Sparidae,
   which includes the seabreams and porgies. This species is found in the northeastern Atlantic Ocean and
   the Mediterranean Sea. It is a highly valued food fish and is an important target species for fisheries

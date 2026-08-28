@@ -22,9 +22,7 @@ physical:
   max_length_cm: 250
   typical_length_cm: '80'
   max_weight_kg: 96.8
-  lifespan_years: '12'
 habitat:
-  depth_range_m: 3-825
   body_ecology: benthopelagic
   water_types:
   - brackish
@@ -40,20 +38,9 @@ biology:
   - 7
   - 10
   - 11
-  age_maturity: 2 years
   diet:
   - Bony fish
   - Squids/cuttlefish
-angling:
-  best_months: Jan, Feb, Mar, Apr, Oct, Nov, Dec
-  season_months:
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
-  - 4
 distribution:
   native: true
   points:
@@ -316,6 +303,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '12'
+  age_maturity: 2 years
+  season_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+  - 4
+behavior: Adults are benthopelagic in coastal and oceanic waters, off kelp beds and rocky areas , sometimes
+  entering estuaries . They are solitary or in small groups and can be found near rocky shores, reefs
+  and islands .
 description: The yellowtail amberjack, yellowtail kingfish, hiramasa or great amberjack is a large fish
   found in the oceans of the Southern Hemisphere. Although previously thought to be found in all oceans
   and seas, recent genetic analysis restricts S. lalandi proper to the Southern Hemisphere waters. However,

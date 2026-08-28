@@ -20,7 +20,6 @@ physical:
   max_length_cm: 41
   typical_length_cm: '19'
   max_weight_kg: 2.1
-  lifespan_years: '10'
 habitat:
   body_ecology: benthopelagic
   water_types:
@@ -54,16 +53,6 @@ biology:
   - Micropterus salmoides
   - Morone saxatilis
   - Salmo trutta trutta
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -178,6 +167,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '10'
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Active mainly during dusk and dawn.
 description: The bluegill, sometimes referred to as "bream", "brim", "sunny", or, in Texas, "copper nose",
   is a species of North American freshwater fish, native to and commonly found in streams, rivers, lakes,
   ponds and wetlands east of the Rocky Mountains. It is from the family Centrarchidae in the order Centrarchiformes.

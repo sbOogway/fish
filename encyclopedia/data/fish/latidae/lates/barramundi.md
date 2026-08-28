@@ -25,9 +25,7 @@ physical:
   max_length_cm: 200
   typical_length_cm: '150'
   max_weight_kg: 60.0
-  lifespan_years: '35'
 habitat:
-  depth_range_m: 10-40
   body_ecology: demersal
   water_types:
   - freshwater
@@ -62,7 +60,6 @@ biology:
   - 9
   - 12
   fecundity: 15,300,000-47,700,000 eggs
-  age_maturity: 4 years
   diet:
   - Bony fish
   - Fish eggs & larvae
@@ -71,21 +68,6 @@ biology:
   - Acrochordus arafurae
   - Lates calcarifer
   - Pelecanus conspicillatus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -120,6 +102,22 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '35'
+  age_maturity: 4 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: The barramundi, Asian sea bass, Asian sea lates, giant sea lates, or giant sea perch is a
   species of catadromous fish in the family Latidae of the order Carangiformes. The species is widely
   distributed in the Indo-West Pacific, spanning the waters of the Middle East, South Asia, Southeast

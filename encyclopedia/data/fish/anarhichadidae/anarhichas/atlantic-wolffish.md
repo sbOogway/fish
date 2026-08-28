@@ -25,7 +25,6 @@ physical:
   max_length_cm: 150
   max_weight_kg: 23.6
 habitat:
-  depth_range_m: 1-600
   body_ecology: demersal
   water_types:
   - saltwater
@@ -42,7 +41,6 @@ biology:
   - 11
   - 12
   fecundity: 12,740-25,000 eggs
-  age_maturity: 6.5 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -63,14 +61,6 @@ biology:
   - Merlangius merlangus
   - Phocoena phocoena
   - Somniosus microcephalus
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -151,11 +141,15 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
-  schooling_frequency: sometimes
-  schooling_lifestage: only adults
-  solitary: true
+facts:
+  age_maturity: 6.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Benthic . Solitary in habit .
 description: The Atlantic wolffish, also known as the seawolf, Atlantic catfish, ocean catfish, devil
   fish, wolf eel, woof or sea cat, is a marine fish of the wolffish family Anarhichadidae, native to the
   North Atlantic Ocean. The numbers of the Atlantic wolffish in US waters are rapidly being depleted,

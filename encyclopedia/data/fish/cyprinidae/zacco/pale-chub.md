@@ -30,18 +30,6 @@ biology:
   - Benthic algae/weeds
   - Bony fish
   - Debris
-angling:
-  best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -66,6 +54,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+behavior: Adults are common in streams and rivers with rapid water flow, but not deep or stagnant waters.
 description: 'The pale chub, also known as pale bleak or fresh-water sprat, is one of the most extensively
   distributed Asiatic cyprinids and is found in Korea, Japan, Taiwan, and most of Southeast China. This
   species of fish is native to freshwater rivers and mountainous streams from northern China and Korea

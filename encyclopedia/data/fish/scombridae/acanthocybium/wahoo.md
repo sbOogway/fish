@@ -24,7 +24,6 @@ physical:
   typical_length_cm: '170'
   max_weight_kg: 83.0
 habitat:
-  depth_range_m: 0-20
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -42,24 +41,12 @@ biology:
   - 9
   - 10
   fecundity: 6,000,000 eggs
-  age_maturity: 2 years
   diet:
   - Benthic algae/weeds
   - Bony fish
   - Squids/cuttlefish
   predators:
   - Carcharhinus albimarginatus
-angling:
-  best_months: Jan, Feb, Mar, Apr, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -336,8 +323,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  solitary: true
+facts:
+  age_maturity: 2 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: An oceanic, epipelagic species frequently solitary or forming small loose aggregations rather
+  than compact schools. Eggs and larvae are pelagic .
 description: The wahoo is a scombrid fish found worldwide in tropical and subtropical seas. In Hawaii,
   the wahoo is known as ono. The species is sometimes called hoo in the United States. It is best known
   to sports fishermen, as its speed and high quality makes it a prized and valued game fish.

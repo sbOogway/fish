@@ -23,9 +23,7 @@ physical:
   max_length_cm: 100
   typical_length_cm: '58'
   max_weight_kg: 18.1
-  lifespan_years: '7'
 habitat:
-  depth_range_m: 0-250
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -54,7 +52,6 @@ biology:
   - 10
   - 11
   fecundity: 2,400-3,100 eggs
-  age_maturity: 3.5 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -85,13 +82,6 @@ biology:
   - Salvelinus malma malma
   - Tribolodon hakonensis
   - unidentified squawfish
-angling:
-  best_months: Jun, Jul, Aug, Sep
-  season_months:
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -360,6 +350,15 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '7'
+  age_maturity: 3.5 years
+  season_months:
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Adults cease feeding in freshwater . Males and females die after spawning.
 description: The chum salmon, also known as dog salmon or keta salmon, is a species of anadromous salmonid
   fish from the genus Oncorhynchus native to the coastal rivers of the North Pacific and the Beringian
   Arctic. The English name "chum salmon" comes from the Chinook Jargon term tsəm, meaning "spotted" or

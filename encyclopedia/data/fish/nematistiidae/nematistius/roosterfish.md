@@ -29,21 +29,6 @@ habitat:
 biology:
   diet:
   - Bony fish
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -154,6 +139,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: The roosterfish is a unique species of marine carangiform fish found in the warmer shallow
   waters of the southeastern Pacific Ocean, from Baja California south to Peru. Roosterfish are a popular
   sport fish for being strong fighters. They are also important targets of local artisanal and subsistence

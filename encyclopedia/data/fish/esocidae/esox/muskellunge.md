@@ -21,7 +21,6 @@ physical:
   max_length_cm: 183
   typical_length_cm: '95'
   max_weight_kg: 31.8
-  lifespan_years: '30'
 habitat:
   body_ecology: demersal
   water_types:
@@ -40,18 +39,9 @@ biology:
   - 4
   - 5
   fecundity: 3,000,000 eggs
-  age_maturity: 5 years
   diet:
   - Bony fish
   - Toads/frogs
-angling:
-  best_months: May, Jun, Sep, Oct, Nov
-  season_months:
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -132,6 +122,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '30'
+  age_maturity: 5 years
+  season_months:
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
+behavior: Solitary, lurking hunter on other fishes as well as on ducklings, muskrats, and snakes. Oviparous,
+  spawn in spring as the ice melts .
 description: The muskellunge, often shortened to muskie, musky, ski, or lunge, is a species of large freshwater
   predatory fish native to North America. It is the largest member of the pike family, Esocidae.
 image:

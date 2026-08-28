@@ -25,7 +25,6 @@ physical:
   typical_length_cm: '25'
   max_weight_kg: 3.2
 habitat:
-  depth_range_m: 0-300
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -49,7 +48,6 @@ biology:
   - 11
   - 12
   fecundity: 22,200-151,000 eggs
-  age_maturity: 2 years
   diet:
   - Amphipods
   - Bivalves
@@ -69,15 +67,6 @@ biology:
   predators:
   - Mustelus mustelus
   - Seriola dumerili
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -290,6 +279,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 2 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Found on inshore waters, on various bottom (rock, gravel, sand and mud) to 200 m (Mediterranean)
+  or 300 m (Atlantic) and move to deeper waters during winter.
 description: The common pandora, also known as king of the breams, pandora, red pandora or Spanish seabream,
   is a species of marine ray-finned fish belonging to the family Sparidae, which includes the seabreams
   and porgies. This fish is found in the eastern Atlantic Ocean and the Mediterranean Sea. It is an esteemed

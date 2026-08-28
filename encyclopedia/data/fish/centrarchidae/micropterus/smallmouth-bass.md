@@ -22,9 +22,7 @@ physical:
   max_length_cm: 69
   typical_length_cm: '8'
   max_weight_kg: 5.4
-  lifespan_years: '26'
 habitat:
-  depth_range_m: 1-7
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -43,7 +41,6 @@ biology:
   - 4
   - 5
   fecundity: 5,000-14,000 eggs
-  age_maturity: 5.5 years
   diet:
   - Bony fish
   - Insects
@@ -58,14 +55,6 @@ biology:
   - unidentified catfishes
   - unidentified suckers
   - unidentified sunfishes
-angling:
-  best_months: Apr, May, Jun, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -202,6 +191,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '26'
+  age_maturity: 5.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+behavior: Builds nest, usually at three or four feet deep .
 description: The smallmouth bass is a species of freshwater fish in the sunfish family (Centrarchidae)
   of the order Centrarchiformes. It is the type species of its genus Micropterus, and is a popular game
   fish sought by anglers throughout the temperate zones of North America, and has been spread by stocking

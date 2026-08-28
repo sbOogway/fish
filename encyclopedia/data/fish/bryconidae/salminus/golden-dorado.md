@@ -21,7 +21,6 @@ sources:
 physical:
   max_length_cm: 100
   max_weight_kg: 31.4
-  lifespan_years: '9'
 habitat:
   body_ecology: benthopelagic
   water_types:
@@ -44,22 +43,10 @@ biology:
   - 11
   - 12
   fecundity: 237,797-816,023 eggs
-  age_maturity: 2 years
   diet:
   - Bony fish
   - Insects
   - Shore birds
-angling:
-  best_months: Jan, Feb, Mar, Apr, Sep, Oct, Nov, Dec
-  season_months:
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
-  - 4
 distribution:
   native: true
   points:
@@ -72,6 +59,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '9'
+  age_maturity: 2 years
+  season_months:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+  - 4
 description: Salminus brasiliensis, also known as the  golden dorado, dorado, river tiger,  dourado, or
   jaw characin, is a large, predatory characiform freshwater fish found in central and east-central South
   America. Despite having Salminus in its name, the dorado is not related to any species of salmon, nor

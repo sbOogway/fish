@@ -26,9 +26,7 @@ physical:
   max_length_cm: 190
   typical_length_cm: '100'
   max_weight_kg: 80.6
-  lifespan_years: '15'
 habitat:
-  depth_range_m: 1-385
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -43,7 +41,6 @@ biology:
   - 4
   - 5
   fecundity: 18,271,000-59,032,000 eggs
-  age_maturity: 4 years
   diet:
   - Benth. copepods
   - Bony fish
@@ -54,15 +51,6 @@ biology:
   - Anous stolidus
   - Sterna fuscata
   - Thunnus albacares
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -317,9 +305,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
-  solitary: true
+facts:
+  lifespan_years: '15'
+  age_maturity: 4 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Juveniles form small schools or solitary . Eggs are pelagic .
 description: The greater amberjack, also known as the allied kingfish, great amberfish, greater yellowtail,
   jenny lind, sea donkey, purplish amberjack, reef donkey, rock salmon, sailors choice, yellowtail, and
   yellow trevally, is a species of predatory ray-finned fish in the family Carangidae, the jacks and pompanos.

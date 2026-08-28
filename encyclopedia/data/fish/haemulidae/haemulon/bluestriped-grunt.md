@@ -20,9 +20,7 @@ physical:
   max_length_cm: 46
   typical_length_cm: '25'
   max_weight_kg: 0.8
-  lifespan_years: '12'
 habitat:
-  depth_range_m: 0-30
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -40,15 +38,27 @@ biology:
   - 11
   - 12
   fecundity: 47,000-250,000 eggs
-  age_maturity: 2 years
   diet:
   - Bivalves
   - Crabs
   - Gastropods
   - Sea urchins
   - Shrimps & prawns
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points:
+  - - 9.358
+    - -79.948
+  - - 9.556
+    - -78.896
+  - - 32.2
+    - -64.6
+  source: FishBase occurrence records
+conservation:
+  status: LC
+facts:
+  lifespan_years: '12'
+  age_maturity: 2 years
   season_months:
   - 1
   - 2
@@ -62,18 +72,6 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points:
-  - - 9.358
-    - -79.948
-  - - 9.556
-    - -78.896
-  - - 32.2
-    - -64.6
-  source: FishBase occurrence records
-conservation:
-  status: LC
 description: The bluestriped grunt, also known as the boar grunt, golden grunt, humpback grunt, redmouth
   grunt, or yellow grunt, is a species of marine ray-finned fish, a grunt belonging to the family Haemulidae.
   It is found in the western Atlantic Ocean.

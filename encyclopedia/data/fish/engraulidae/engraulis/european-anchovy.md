@@ -23,9 +23,7 @@ sources:
 physical:
   max_length_cm: 20
   typical_length_cm: '14'
-  lifespan_years: '5'
 habitat:
-  depth_range_m: 0-400
   body_ecology: pelagic-neritic
   water_types:
   - brackish
@@ -45,7 +43,6 @@ biology:
   - 7
   - 8
   fecundity: 3,417-110,000 eggs
-  age_maturity: 1 years
   diet:
   - Amphipods
   - Cladocerans
@@ -78,14 +75,6 @@ biology:
   - Trachurus mediterraneus
   - Uranoscopus scaber
   - Xiphias gladius
-angling:
-  best_months: Jan, Feb, Mar, Nov, Dec
-  season_months:
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -330,6 +319,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '5'
+  age_maturity: 1 years
+  season_months:
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: Tolerates salinities of 5-41 ppt and in some areas, enters lagoons, estuaries and lakes, especially
+  during spawning. Tends to move further north and into surface waters in summer, retreating and descending
+  in winter. Eggs are ellipsoidal to oval, floating in the upper 50 m and hatching in 24-65 hours.
 description: The European anchovy is a forage fish somewhat related to the herring. It is a type of anchovy;
   anchovies are placed in the family Engraulidae. It lives off the coasts of Europe and Africa, including
   in the Mediterranean Sea, the Black Sea, and the Sea of Azov. It is fished by humans throughout much

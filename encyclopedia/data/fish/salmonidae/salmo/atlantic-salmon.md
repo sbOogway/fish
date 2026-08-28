@@ -24,9 +24,7 @@ physical:
   max_length_cm: 150
   typical_length_cm: '38'
   max_weight_kg: 46.8
-  lifespan_years: '13'
 habitat:
-  depth_range_m: 0-210
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -74,7 +72,6 @@ biology:
   - 11
   - 12
   fecundity: 6,419-14,499 eggs
-  age_maturity: 4.5 years
   diet:
   - Amphipods
   - Bony fish
@@ -103,15 +100,6 @@ biology:
   - Thymallus thymallus
   - Tursiops truncatus
   - Uria aalge
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -558,6 +546,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: NO-RETENTION
+facts:
+  lifespan_years: '13'
+  age_maturity: 4.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Young remain in freshwater for 1 to 6 years, then migrate to coastal marine waters or even to
+  open oceans where they remain for 1 to 4 years before returning to freshwater for spawning .
 description: The Atlantic salmon is a species of ray-finned fish in the family Salmonidae. It is the third
   largest of the Salmonidae, behind Siberian taimen and Pacific Chinook salmon, growing up to 1 m (3.3 ft)
   in length. Atlantic salmon are found in the northern Atlantic Ocean and in rivers that flow into it.

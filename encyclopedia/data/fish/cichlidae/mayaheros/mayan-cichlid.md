@@ -21,7 +21,6 @@ physical:
   max_length_cm: 39
   max_weight_kg: 1.1
 habitat:
-  depth_range_m: 2-2
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -45,8 +44,12 @@ biology:
   - Bony fish
   predators:
   - Noctilio leporinus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -60,11 +63,8 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Adults prefer coastal lagoons and rivers and will tolerate marine conditions. Spawn on the bottom
+  in both fresh and brackish water .
 description: Mayaheros urophthalmus, also known as the Mayan cichlid or Mexican mojarra, is a species
   of cichlid.
 image:

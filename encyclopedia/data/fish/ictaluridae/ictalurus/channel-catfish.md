@@ -24,9 +24,7 @@ physical:
   max_length_cm: 132
   typical_length_cm: '57'
   max_weight_kg: 26.3
-  lifespan_years: '24'
 habitat:
-  depth_range_m: 0-15
   body_ecology: demersal
   water_types:
   - freshwater
@@ -45,7 +43,6 @@ biology:
   - 6
   - 7
   fecundity: 2,000-70,000 eggs
-  age_maturity: 5 years
   diet:
   - Amphipods
   - Benthic algae/weeds
@@ -58,15 +55,6 @@ biology:
   - Dolomedes triton
   - Ichthyomyzon castaneus
   - Pylodictis olivaris
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -213,6 +201,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '24'
+  age_maturity: 5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
 description: The channel catfish, known informally as the "channel cat", is a species of catfish native
   to North America. They are North America's most abundant catfish species, and the official state fish
   of Kansas, Missouri, Nebraska and Tennessee. The channel catfish is the most fished species of catfish

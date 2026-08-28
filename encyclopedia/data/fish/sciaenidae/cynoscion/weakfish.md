@@ -22,7 +22,6 @@ physical:
   typical_length_cm: '50'
   max_weight_kg: 8.8
 habitat:
-  depth_range_m: 10-26
   body_ecology: demersal
   water_types:
   - brackish
@@ -38,7 +37,6 @@ biology:
   - 8
   - 9
   fecundity: 44,880-1,725,920 eggs
-  age_maturity: 0-1 years
   diet:
   - Amphipods
   - Bivalves
@@ -57,16 +55,6 @@ biology:
   - Petromyzon marinus
   - Pomatomus saltatrix
   - Raja eglanteria
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -179,6 +167,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 0-1 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 description: Cynoscion regalis, the weakfish, is a marine ray-finned fish of the family Sciaenidae, the
   drums and croakers.
 image:

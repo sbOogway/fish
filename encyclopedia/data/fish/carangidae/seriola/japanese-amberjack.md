@@ -23,7 +23,6 @@ physical:
   max_length_cm: 150
   max_weight_kg: 40.0
 habitat:
-  depth_range_m: 0-100
   body_ecology: demersal
   water_types:
   - saltwater
@@ -33,15 +32,6 @@ biology:
   parental_care: none
   diet:
   - Bony fish
-angling:
-  best_months: Jan, Feb, Mar, Oct, Nov, Dec
-  season_months:
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -58,6 +48,15 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: Adults exhibit shoaling habit .
 description: The Japanese amberjack or yellowtail, Seriola quinqueradiata, is a species of jack fish in
   the family Carangidae, native to the northwest Pacific Ocean. It is known as shiyu (鰤魚) in China, bang'eo
   (방어) in Korea, and buri or hamachi in Japan.

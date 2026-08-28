@@ -28,8 +28,12 @@ habitat:
 biology:
   predators:
   - Mustelus antarcticus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -43,11 +47,6 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: The smooth toadfish is a species of fish in the pufferfish family Tetraodontidae. It is native
   to shallow coastal and estuarine waters of southeastern Australia, where it is widespread and abundant.
   French naturalist Christophe-Paulin de La Poix de Fréminville described the species in 1813, though

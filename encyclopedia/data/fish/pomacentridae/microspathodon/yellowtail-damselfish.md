@@ -20,7 +20,6 @@ physical:
   max_length_cm: 21
   typical_length_cm: '15'
 habitat:
-  depth_range_m: 0-120
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -47,21 +46,6 @@ biology:
   - Benthic algae/weeds
   predators:
   - Epinephelus striatus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -92,6 +76,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Eggs are demersal and adhere to the substrate . Males guard and aerate the eggs .
 description: The yellowtail damselfish is a species of damselfish native to tropical areas such as the
   Caribbean coast of Panama. Damselfish are abundant in coral reef environments. The International Union
   for Conservation of Nature lists this fish as being of "least concern". The species is exploited on

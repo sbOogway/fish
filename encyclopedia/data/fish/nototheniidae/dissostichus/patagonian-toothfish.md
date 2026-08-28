@@ -21,9 +21,7 @@ physical:
   max_length_cm: 215
   typical_length_cm: '70'
   max_weight_kg: 9.6
-  lifespan_years: '31'
 habitat:
-  depth_range_m: 0-2144
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -37,7 +35,6 @@ biology:
   - 8
   - 9
   fecundity: 238,314-545,665 eggs
-  age_maturity: 7 years
   diet:
   - Amphipods
   - Bony fish
@@ -55,21 +52,6 @@ biology:
   - Diomedea melanophrys
   - Dissostichus eleginoides
   - Salilota australis
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -516,6 +498,24 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '31'
+  age_maturity: 7 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: At 12-15 cm TL, semi-pelagic juveniles become demersal at 150-400 m depth . Adults migrate to
+  deeper habitats at depths greater than 1,000 m .
 description: The Patagonian toothfish, also known as Chilean sea bass and mero, is a species of notothen
   found in cold waters between depths of 45 and 3,850 m in the southern Atlantic, Pacific, and Indian
   Oceans and Southern Ocean on seamounts and continental shelves around most Subantarctic islands.

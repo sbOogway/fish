@@ -22,9 +22,7 @@ physical:
   max_length_cm: 86
   typical_length_cm: '40'
   max_weight_kg: 4.1
-  lifespan_years: '14'
 habitat:
-  depth_range_m: 0-180
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -44,7 +42,6 @@ biology:
   - 10
   - 11
   fecundity: 14,102-164,756 eggs
-  age_maturity: 2 years
   diet:
   - Bony fish
   - Gastropods
@@ -56,21 +53,6 @@ biology:
   - Epinephelus striatus
   - Scomberomorus cavalla
   - Sphyraena barracuda
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -137,6 +119,24 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '14'
+  age_maturity: 2 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Usually seen well above the bottom, frequently in aggregations. Spawning occurs throughout the
+  year, with peaks at different times in different areas .
 description: The yellowtail snapper is an abundant species of snapper native to the western Atlantic Ocean
   including the Gulf of Mexico and the Caribbean Sea. Although they have been found as far north as Massachusetts,
   their normal range is along Florida south to the West Indies and Brazil. This species is mostly found

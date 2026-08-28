@@ -23,9 +23,7 @@ physical:
   max_length_cm: 45
   typical_length_cm: '30'
   max_weight_kg: 1.1
-  lifespan_years: '25'
 habitat:
-  depth_range_m: 0-364
   body_ecology: benthopelagic
   water_types:
   - brackish
@@ -56,7 +54,6 @@ biology:
   - 10
   - 11
   fecundity: 10,000-65,403 eggs
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Bivalves
@@ -130,16 +127,6 @@ biology:
   - Trisopterus minutus
   - Xiphias gladius
   - tunas
-angling:
-  best_months: Jan, Feb, Mar, Sep, Oct, Nov, Dec
-  season_months:
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -586,10 +573,24 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
-  schooling_frequency: always
-  schooling_lifestage: juveniles and adults
+facts:
+  lifespan_years: '25'
+  age_maturity: 3 years
+  season_months:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: Herring schools move between spawning and wintering grounds in coastal areas and feeding grounds
+  in open water by following migration patterns learned from earlier year classes . Juveniles (up to 2
+  years) shoal close inshore, while adults are found more offshore . Adults spend the day in deeper water,
+  but rise to shallower water at night . Schooling, silvery sides, excellent hearing (capable of detecting
+  frequencies between 30-4,000 Hz , Refs. 89391, 89564, 89566), and very fast escape response act as anti-predator
+  devices . The most important races in the East Atlantic are the winter-spawning Norwegian and Icelandic
+  herring, the autumn spawning Icelandic and North Sea herring and the Baltic Sea herring.
 description: Atlantic herring is a herring in the family Clupeidae. It is one of the most abundant fish
   species in the world. Atlantic herrings can be found on both sides of the northern Atlantic Ocean, congregating
   in large schools. They can grow up to 45 centimetres (18 in) in length and weigh up to 1.1 kilograms

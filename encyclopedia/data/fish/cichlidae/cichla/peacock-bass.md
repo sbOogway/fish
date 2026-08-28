@@ -27,7 +27,6 @@ physical:
   max_length_cm: 74
   max_weight_kg: 6.8
 habitat:
-  depth_range_m: 5-5
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -53,21 +52,6 @@ biology:
   fecundity: 9,000-15,000 eggs
   diet:
   - Bony fish
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -186,6 +170,22 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: About 9,000 to 15,000 eggs per kg are released during spawning. Spawning takes place every two
+  months on a flat stone in shallow water. The sticky eggs, measuring 1.
 description: Cichla ocellaris, sometimes known as the butterfly peacock bass, is a very large species
   of cichlid from South America, and a prized game fish. It reaches 74 cm (29 in) in length. It is native
   to the Marowijne and Essequibo drainages in the Guianas, and the Branco River in Brazil. It has also

@@ -20,9 +20,7 @@ sources:
 physical:
   max_length_cm: 72
   max_weight_kg: 7.0
-  lifespan_years: '34'
 habitat:
-  depth_range_m: 1-61
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -38,21 +36,10 @@ biology:
   - 7
   - 8
   fecundity: 2,560,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Bony fish
   - Ostracods
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -97,6 +84,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '34'
+  age_maturity: 2.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Found throughout water column. Pelagic spawners .
 description: Paralabrax clathratus, the kelp bass, bull bass or calico bass, is a species of marine ray-finned
   fish, from the subfamily Serraninae, classified as part of the family Serranidae which includes the
   groupers and anthias. It is found in the eastern North Pacific Ocean where it is an important species

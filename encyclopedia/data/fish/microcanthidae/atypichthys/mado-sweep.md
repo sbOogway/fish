@@ -26,8 +26,12 @@ habitat:
   - brackish
   - saltwater
 biology: {}
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -41,11 +45,6 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: Atypichthys strigatus, commonly known as the mado, is a species of ray-finned fish in the
   family Microcanthidae. This fish is endemic to Eastern Australia.
 image:

@@ -22,9 +22,7 @@ physical:
   max_length_cm: 200
   typical_length_cm: '75'
   max_weight_kg: 6.0
-  lifespan_years: '10'
 habitat:
-  depth_range_m: 0-550
   body_ecology: benthopelagic
   water_types:
   - brackish
@@ -48,7 +46,6 @@ biology:
   - 10
   - 11
   - 12
-  age_maturity: 3 years
   diet:
   - Bony fish
   - Euphausiids
@@ -67,15 +64,6 @@ biology:
   - Raja wallacei
   - Thyrsites atun
   - Xiphias gladius
-angling:
-  best_months: Jun, Jul, Aug, Sep, Oct, Nov
-  season_months:
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -94,6 +82,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '10'
+  age_maturity: 3 years
+  season_months:
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+behavior: Form schools near the bottom or midwater; sometimes even at the surface at night . Commonly
+  called as Baracoutta and because it is a fast predator, several English vessels were named after it.
 description: Leionura atun, known as the snoek in South Africa and as the barracouta in Australasia, is
   a long, thin species of snake mackerel found in the seas of the Southern Hemisphere, and a common food
   fish in South Africa, particularly along the west and southwest coast. Despite its Australasian name,

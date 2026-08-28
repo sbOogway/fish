@@ -23,8 +23,12 @@ habitat:
   water_types:
   - saltwater
 biology: {}
-angling:
-  best_months: Jan, Feb, Mar, Apr, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 11
   - 12
@@ -32,11 +36,6 @@ angling:
   - 2
   - 3
   - 4
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: Chionoecetes opilio, a species of snow crab, also known as opilio crab or opies, is a predominantly
   epifaunal crustacean native to shelf depths in the northwest Atlantic Ocean and north Pacific Ocean.
   It is a well-known commercial species of Chionoecetes, often caught with traps or by trawling. Seven

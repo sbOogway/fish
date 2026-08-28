@@ -25,7 +25,6 @@ physical:
   typical_length_cm: '100'
   max_weight_kg: 200.0
 habitat:
-  depth_range_m: 10-60
   body_ecology: demersal
   water_types:
   - freshwater
@@ -44,7 +43,6 @@ biology:
   - 9
   - 10
   - 11
-  age_maturity: 2.5 years
   diet:
   - Benth. copepods
   - Benthic algae/weeds
@@ -53,21 +51,6 @@ biology:
   - Gastropods
   - Insects
   - Shrimps & prawns
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -104,6 +87,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 2.5 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: The Nile perch, also known as the African snook, Goliath perch, Nile lates, African lates,
   Goliath lates, Victoria lates, African barramundi, Goliath barramundi, Giant lates or the Victoria perch,
   is a species of freshwater fish in the family Latidae of the order Carangiformes. It is widespread throughout

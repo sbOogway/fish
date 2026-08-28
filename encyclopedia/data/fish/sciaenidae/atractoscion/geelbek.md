@@ -22,7 +22,6 @@ physical:
   typical_length_cm: '90'
   max_weight_kg: 25.0
 habitat:
-  depth_range_m: 15-200
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -30,20 +29,8 @@ biology:
   repro_mode: dioecism
   fertilization: external
   parental_care: none
-  age_maturity: 5 years
   diet:
   - Bony fish
-angling:
-  best_months: Jan, Feb, Mar, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -182,6 +169,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 5 years
+  season_months:
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
 description: The geelbeck croaker, also known as the African weakfish or Cape salmon, is a species of
   marine ray-finned fish belonging to the family Sciaenidae, the drums and croakers. This species is found
   in the southwestern Indian Ocean off southeastern Africa.

@@ -22,7 +22,6 @@ physical:
   max_length_cm: 104
   max_weight_kg: 10.0
 habitat:
-  depth_range_m: 0-84
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -42,27 +41,11 @@ biology:
   - 11
   - 12
   fecundity: 400,000-1,700,000 eggs
-  age_maturity: 3.5 years
   diet:
   - Bony fish
   - Gastropods
   - Shrimps & prawns
   - Squids/cuttlefish
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -365,6 +348,23 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 3.5 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Often in schools, except large individuals which are solitary . Dorsal fin may show above surface
+  .
 description: The bonefish or bananafish is the type species of the bonefish family (Albulidae), the only
   family in order Albuliformes.
 image:

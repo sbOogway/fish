@@ -22,9 +22,7 @@ physical:
   max_length_cm: 122
   typical_length_cm: '94'
   max_weight_kg: 36.0
-  lifespan_years: '23'
 habitat:
-  depth_range_m: 0-36
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -39,24 +37,12 @@ biology:
   - 7
   - 8
   - 12
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Crabs
   - Gastropods
   - Sea urchins
   - Shrimps & prawns
-angling:
-  best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -285,6 +271,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '23'
+  age_maturity: 3 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Adults frequently in channels or holes, over sandy flats, around reefs, and at times over mud
+  bottoms; usually solitary or in small schools; smaller fish tolerate brackish water. Spawn offshore
+  .
 description: The permit is a game fish of the western Atlantic Ocean belonging to the family Trachinotidae.
   Adults feed on crabs, shrimp, and smaller fish.
 image:

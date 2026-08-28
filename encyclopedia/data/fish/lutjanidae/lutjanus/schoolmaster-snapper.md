@@ -21,9 +21,7 @@ physical:
   max_length_cm: 79
   typical_length_cm: '35'
   max_weight_kg: 10.8
-  lifespan_years: '42'
 habitat:
-  depth_range_m: 2-63
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -46,21 +44,6 @@ biology:
   - Non-annelids
   - Shrimps & prawns
   - Squids/cuttlefish
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -111,6 +94,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '42'
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: The schoolmaster snapper, is a species of marine ray-finned fish; a snapper belonging to
   the family Lutjanidae. It is found in the western Atlantic Ocean, and like other snapper species, it
   is a popular food fish.

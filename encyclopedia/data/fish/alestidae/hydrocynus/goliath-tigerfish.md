@@ -26,21 +26,6 @@ habitat:
   water_types:
   - freshwater
 biology: {}
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -103,6 +88,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: Hydrocynus goliath, commonly known as the goliath tigerfish, giant tigerfish, or mbenga,
   is a large species of African predatory freshwater fish in the family Alestidae. It is native to the
   Congo River Basin and Lake Tanganyika in Africa.

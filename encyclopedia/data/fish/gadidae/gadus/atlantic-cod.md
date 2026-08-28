@@ -25,9 +25,7 @@ physical:
   max_length_cm: 200
   typical_length_cm: '100'
   max_weight_kg: 96.0
-  lifespan_years: '25'
 habitat:
-  depth_range_m: 0-600
   body_ecology: benthopelagic
   water_types:
   - brackish
@@ -53,7 +51,6 @@ biology:
   - 4
   - 5
   fecundity: 285,000-9,000,000 eggs
-  age_maturity: 6 years
   diet:
   - Amphipods
   - Ascidians
@@ -123,15 +120,6 @@ biology:
   - Thunnus thynnus
   - Tursiops truncatus
   - Xiphias gladius
-angling:
-  best_months: Jan, Feb, Mar, Oct, Nov, Dec
-  season_months:
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -578,10 +566,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
-  schooling_frequency: sometimes
-  schooling_lifestage: juveniles and adults
+facts:
+  lifespan_years: '25'
+  age_maturity: 6 years
+  season_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: During the day, form schools and swim about 30-80 m above the bottom, dispersing at night to
+  feed . Omnivorous; feed at dawn or dusk on invertebrates and fish, including young cod. Migrate between
+  spawning, feeding and overwintering areas, mostly within the boundaries of the respective stocks.
 description: The Atlantic cod is a fish of the family Gadidae, widely consumed by humans. It is also commercially
   known as cod or codling.
 image:

@@ -22,9 +22,7 @@ physical:
   max_length_cm: 76
   typical_length_cm: '34'
   max_weight_kg: 3.8
-  lifespan_years: '18'
 habitat:
-  depth_range_m: 30-30
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -43,17 +41,9 @@ biology:
   - 5
   - 6
   fecundity: 416-12,946 eggs
-  age_maturity: 4 years
   diet:
   - Fish eggs & larvae
   - Insects
-angling:
-  best_months: Jun, Jul, Aug, Sep
-  season_months:
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -298,6 +288,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '18'
+  age_maturity: 4 years
+  season_months:
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Enters rocky creeks to spawn . Spawns in montane streams with heavy current on shallows with
+  rock-gravel bottom .
 description: The Arctic grayling is a species of freshwater fish in the salmon family Salmonidae. T. arcticus
   is widespread throughout the Arctic and Pacific drainages in Canada, Alaska, and Siberia, as well as
   the upper Missouri River drainage in Montana. In the U.S. state of Arizona, an introduced population

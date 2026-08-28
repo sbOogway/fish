@@ -21,7 +21,6 @@ physical:
   max_length_cm: 80
   max_weight_kg: 6.5
 habitat:
-  depth_range_m: 10-10
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -39,8 +38,12 @@ biology:
   diet:
   - Amphipods
   - Bivalves
-angling:
-  best_months: Jan, Feb, Mar, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 8
   - 9
@@ -50,11 +53,6 @@ angling:
   - 1
   - 2
   - 3
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: The galjoen, black bream, or blackfish is a species of marine fish found only along the coast
   of South Africa, Namibia and Angola. Galjoen is the national fish of South Africa.
 image:

@@ -24,9 +24,7 @@ physical:
   max_length_cm: 97
   typical_length_cm: '40'
   max_weight_kg: 10.1
-  lifespan_years: '23'
 habitat:
-  depth_range_m: 0-6
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -45,7 +43,6 @@ biology:
   - 6
   - 7
   fecundity: 4,550-54,732 eggs
-  age_maturity: 3.5 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -70,15 +67,6 @@ biology:
   - Perca flavescens
   - Ptychocheilus oregonensis
   - Sander vitreus
-angling:
-  best_months: Mar, Apr, May, Jun, Sep, Oct
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -419,6 +407,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '23'
+  age_maturity: 3.5 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+behavior: They don't feed during spawning; as well as when the water temperature is below 5°C and above
+  37°C . Builds nest at 25 mm-203 mm deep .
 description: The largemouth bass is a carnivorous, freshwater, ray-finned fish in the Centrarchidae (sunfish)
   family, native to the eastern and central United States, southeastern Canada and northern Mexico. It
   is known by a variety of regional names, such as the widemouth bass, bigmouth bass, black bass, largie,

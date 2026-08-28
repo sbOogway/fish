@@ -23,9 +23,7 @@ physical:
   max_length_cm: 86
   typical_length_cm: '26'
   max_weight_kg: 8.0
-  lifespan_years: '24'
 habitat:
-  depth_range_m: 15-27
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -48,7 +46,6 @@ biology:
   - 10
   - 11
   fecundity: 88-5,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Bivalves
@@ -62,15 +59,6 @@ biology:
   predators:
   - Delphinapterus leucas
   - Ichthyomyzon castaneus
-angling:
-  best_months: Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -517,6 +505,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '24'
+  age_maturity: 2.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
+behavior: Nerito-pelagic .
 description: The brook trout is a species of freshwater fish in the char genus Salvelinus of the salmon
   family Salmonidae native to Eastern North America in the United States and Canada. Two ecological forms
   of brook trout have been recognized by the US Forest Service. One ecological form is long-lived potamodromous

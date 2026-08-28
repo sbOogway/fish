@@ -23,7 +23,6 @@ physical:
   typical_length_cm: '200'
   max_weight_kg: 137.0
 habitat:
-  depth_range_m: 0-0
   body_ecology: demersal
   water_types:
   - freshwater
@@ -36,16 +35,6 @@ biology:
   - 4
   - 5
   - 6
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -78,6 +67,15 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 description: The alligator gar is a euryhaline ray-finned fish in the clade Ginglymodi of the infraclass
   Holostei, being most closely related to the bowfins. It is the largest species in the gar family (Lepisosteidae),
   and is among the largest freshwater fishes in North America. The fossil record traces its group's existence

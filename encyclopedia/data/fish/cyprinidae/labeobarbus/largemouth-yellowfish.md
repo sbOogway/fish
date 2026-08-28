@@ -27,20 +27,9 @@ biology:
   repro_mode: dioecism
   fertilization: external
   parental_care: none
-  age_maturity: 9 years
   diet:
   - Bony fish
   - Insects
-angling:
-  best_months: Jan, Feb, Mar, Sep, Oct, Nov, Dec
-  season_months:
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -49,6 +38,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 9 years
+  season_months:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: Adults prefer flowing water in deep channels or below rapids, but the species does well in dams.
+  Mainly a predator, initially taking insects and small crustaceans but piscivore above 30 cm FL.
 description: The largemouth yellowfish or Vaal-Orange largemouth yellowfish is a ray-finned fish species
   in the family Cyprinidae. This large freshwater barb is found in southern Africa. It is listed as a
   near threatened species.

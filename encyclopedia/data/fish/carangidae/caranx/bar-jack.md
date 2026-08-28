@@ -21,7 +21,6 @@ physical:
   typical_length_cm: '50'
   max_weight_kg: 8.2
 habitat:
-  depth_range_m: 0-35
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -36,7 +35,6 @@ biology:
   - 7
   - 8
   fecundity: 800,000-1,000,000 eggs
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -59,21 +57,6 @@ biology:
   - Scomberomorus regalis
   - Seriola dumerili
   - Sterna fuscata
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -92,9 +75,22 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
-  solitary: true
+facts:
+  age_maturity: 3 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Usually in schools which may be spawning groups; occasionally solitary.
 description: The bar jack, also known as the carbonero, cojinúa, red jack, blue-striped cavalla or passing
   jack, is a common species of inshore marine fish classified in the jack family, Carangidae. The bar
   jack is distributed through the western Atlantic Ocean from New Jersey and Bermuda in the north to Venezuela

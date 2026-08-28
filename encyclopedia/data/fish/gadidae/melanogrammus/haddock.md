@@ -23,9 +23,7 @@ physical:
   max_length_cm: 112
   typical_length_cm: '35'
   max_weight_kg: 16.8
-  lifespan_years: '20'
 habitat:
-  depth_range_m: 10-450
   body_ecology: demersal
   water_types:
   - saltwater
@@ -41,7 +39,6 @@ biology:
   - 5
   - 6
   fecundity: 59,900-1,841,000 eggs
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Ascidians
@@ -101,16 +98,6 @@ biology:
   - Tursiops truncatus
   - Urophycis chuss
   - Xiphias gladius
-angling:
-  best_months: Mar, Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -179,6 +166,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '20'
+  age_maturity: 3 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
+behavior: Adults are found more commonly from 80 to 200 m, over rock, sand, gravel or shells, usually
+  at temperatures between 4° and 10°C.
 description: The haddock is a saltwater ray-finned fish from the family Gadidae, the true cods. It is
   the only species in the monotypic genus Melanogrammus. It is found in the North Atlantic Ocean and associated
   seas, where it is an important species for fisheries, especially in northern Europe, where it is marketed

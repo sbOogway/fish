@@ -19,9 +19,7 @@ sources:
 physical:
   max_length_cm: 41
   typical_length_cm: '28'
-  lifespan_years: '27'
 habitat:
-  depth_range_m: 3-100
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -49,21 +47,6 @@ biology:
   - Bony fish
   - Green algae
   - Sponges
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -106,6 +89,23 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '27'
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Spawning pairs are strongly territorial, with usually both members vigorously defending their
+  areas against neighboring pairs .
 description: Pomacanthus paru, also known by its common name the French angelfish, is a slow growing coral
   reef fish from the Caribbean. The species is of the family Pomacanthidae, which contains other species
   of marine angelfish. Its closest relative is the grey angelfish.

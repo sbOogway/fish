@@ -20,7 +20,6 @@ sources:
 physical:
   max_length_cm: 66
   max_weight_kg: 4.5
-  lifespan_years: '14'
 habitat:
   body_ecology: demersal
   water_types:
@@ -41,7 +40,6 @@ biology:
   - 7
   - 8
   fecundity: 300,000-3,000,000 eggs
-  age_maturity: 3 years
   diet:
   - Benthic algae/weeds
   - Bivalves
@@ -50,16 +48,6 @@ biology:
   - Debris
   - Insects
   - Shrimps & prawns
-angling:
-  best_months: Jan, Feb, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
 distribution:
   native: true
   points:
@@ -68,6 +56,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '14'
+  age_maturity: 3 years
+  season_months:
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+behavior: They migrate from their feeding to their spawning grounds; they spawn mainly during winter in
+  the vicinity of river entrances; eggs are planktonic and hatch after 2. A portion of the population
+  changes sex from male to female after spawning. spari</i> on the fins and body surface .
 description: Acanthopagrus australis, the yellowfin bream, also known as sea bream, surf bream, silver
   bream or eastern black bream, is a species of marine and freshwater fish of the porgy family, Sparidae.
   It is a deep-bodied fish, occasionally confused with Acanthopagrus butcheri, but is generally distinguished

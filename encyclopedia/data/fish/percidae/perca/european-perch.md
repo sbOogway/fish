@@ -26,9 +26,7 @@ physical:
   max_length_cm: 60
   typical_length_cm: '25'
   max_weight_kg: 4.8
-  lifespan_years: '22'
 habitat:
-  depth_range_m: 1-30
   body_ecology: demersal
   water_types:
   - freshwater
@@ -53,7 +51,6 @@ biology:
   - 5
   - 6
   fecundity: 1,698-47,580 eggs
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Bony fish
@@ -75,16 +72,6 @@ biology:
   - Salmo trutta trutta
   - Sander lucioperca
   - Silurus glanis
-angling:
-  best_months: Mar, Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -531,6 +518,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '22'
+  age_maturity: 2.5 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
+behavior: This is an opportunistic diurnal feeder which preys mainly during sunrise and sunset, using
+  all available prey. May undertake short spawning migrations. Eggs grouped in long white ribbons (up
+  to 1 m) are found over submerged objects .
 description: The European perch, also known as the common perch, redfin perch, big-scaled redfin, English
   perch, Euro perch, Eurasian perch, Eurasian river perch, Hatch, poor man's rockfish or in Anglophone
   parts of Europe, simply the perch, is a predatory freshwater fish native to Europe and North Asia. It

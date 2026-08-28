@@ -23,9 +23,7 @@ physical:
   max_length_cm: 122
   typical_length_cm: '35'
   max_weight_kg: 6.6
-  lifespan_years: '23'
 habitat:
-  depth_range_m: 0-700
   body_ecology: demersal
   water_types:
   - freshwater
@@ -45,7 +43,6 @@ biology:
   - 4
   - 5
   fecundity: 2,000,000-3,000,000 eggs
-  age_maturity: 11 years
   diet:
   - Amphipods
   - Bivalves
@@ -75,15 +72,6 @@ biology:
   - gulls
   - pikes
   - unidentified herons
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -530,6 +518,27 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: CITES-II
+facts:
+  lifespan_years: '23'
+  age_maturity: 11 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Territorial and solitary species; 'schools' of young eels which are observed from time to time
+  are a mass response to outward conditions and not of active assembling . Migrates to the depths of the
+  Sargasso Sea to spawn . Eel larvae (leptocephali) are transparent ribbon-like. They enter the estuaries
+  and colonize rivers and lakes ; some individuals remain in estuaries and coastal waters to grow into
+  adults . Yellow and silver eels are benthic, found under stones, buried in the mud or in crevices .
+  At the end of their growth period, they become sexually mature, migrate to the sea and cover great distances
+  during their spawning migration (5,000-6,000 km); with extensive daily vertical migrations between 200
+  m at night and 600 m during day time, possibly for predator avoidance . Gametogenesis occurs entirely
+  during spawning migration. Their high fat content and benthic feeding habits in continental waters make
+  them vulnerable to the bioaccumulation of pollutants, such as heavy metals and organic contaminants,
+  that may result in organ damage and impaired migration capability and lowered genetic variability .
 description: The European eel is a species of eel. Their life history was a mystery for thousands of years,
   and mating in the wild has not yet been observed. The five stages of their development were originally
   thought to be different species. They are critically endangered due to hydroelectric dams, overfishing

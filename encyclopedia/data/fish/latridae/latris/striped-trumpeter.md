@@ -20,9 +20,7 @@ sources:
 physical:
   max_length_cm: 120
   max_weight_kg: 25.0
-  lifespan_years: '43'
 habitat:
-  depth_range_m: 5-400
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -37,17 +35,6 @@ biology:
   - 10
   - 11
   fecundity: 205,054-2,351,029 eggs
-  age_maturity: 7 years
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -56,6 +43,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '43'
+  age_maturity: 7 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Adults apparently prefer broken rocky reefs, rich in 'coral' and other invertebrate life. May
+  spawn closer to shore but probably in areas of deeper waters, otherwise they seem to migrate offshore
+  to spawn . Collected by bottom trawls, dropline, and rod and line . In Australia, adults are found over
+  rocky reefs at depths from 5 to 300 m .
 description: Latris lineata, the striped trumpeter, common trumpeter, copper moki, Hobart-town trumpeter,
   kokikohi, real trumpeter, Tasmanian striped trumpeter or Tasmanian trumpeter, is a species of marine
   ray-finned fish belonging to the family Latridae, the trumpeters. It is native to rocky reefs in the

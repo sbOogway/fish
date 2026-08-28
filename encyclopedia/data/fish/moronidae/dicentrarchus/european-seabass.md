@@ -26,9 +26,7 @@ physical:
   max_length_cm: 103
   typical_length_cm: '50'
   max_weight_kg: 12.0
-  lifespan_years: '30'
 habitat:
-  depth_range_m: 10-100
   body_ecology: demersal
   water_types:
   - freshwater
@@ -51,7 +49,6 @@ biology:
   - 4
   - 12
   fecundity: 231,875-808,581 eggs
-  age_maturity: 4 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -66,15 +63,6 @@ biology:
   predators:
   - Dicentrarchus labrax
   - Phalacrocorax carbo
-angling:
-  best_months: Mar, Apr, May, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -117,6 +105,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '30'
+  age_maturity: 4 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 9
+  - 10
+  - 11
+behavior: Young fish form school, but adults appear to be less gregarious . Adults piscivorous . Spawn
+  in batches . Spawning takes place in the spring near the British Isles, and earlier in its southern
+  range. Eggs are pelagic .
 description: European seabass, also known as branzino, European bass, sea bass, common bass, white bass,
   capemouth, white salmon, white mullet, sea dace, levrek or loup de mer, is a primarily ocean-going fish
   native to the waters off Europe's western and southern and Africa's northern coasts, though it can also

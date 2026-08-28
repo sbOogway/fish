@@ -20,9 +20,7 @@ sources:
 physical:
   max_length_cm: 60
   typical_length_cm: '30'
-  lifespan_years: '7'
 habitat:
-  depth_range_m: 5-110
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -57,16 +55,6 @@ biology:
   - Non-annelids
   - Ostracods
   - Polychaetes
-angling:
-  best_months: Mar, Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -85,6 +73,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '7'
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
+behavior: Western populations spawn from late winter through the summer with peaks from April to June.
 description: Pampus argenteus, the silver pomfret or white pomfret is a species of butterfish that lives
   in the Indo-West Pacific, spanning the coastal waters of the Middle East, Eastern Africa, South Asia,
   Southeast Asia, and East Asia. The species has been reported only twice, one hundred years apart, from

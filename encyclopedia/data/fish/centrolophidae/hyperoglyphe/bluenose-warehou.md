@@ -22,9 +22,7 @@ physical:
   max_length_cm: 140
   typical_length_cm: '60'
   max_weight_kg: 63.0
-  lifespan_years: '15'
 habitat:
-  depth_range_m: 40-1500
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -39,22 +37,12 @@ biology:
   - 4
   - 5
   fecundity: 1,300,000-11,000,000 eggs
-  age_maturity: 6.5 years
   diet:
   - Ascidians
   - Bony fish
   - Squids/cuttlefish
   predators:
   - Orcinus orca
-angling:
-  best_months: Jan, Feb, Mar, Apr, Nov, Dec
-  season_months:
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
-  - 4
 distribution:
   native: true
   points:
@@ -81,6 +69,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '15'
+  age_maturity: 6.5 years
+  season_months:
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+  - 4
+behavior: Generally, blue eye remain close to the sea bed during the day and move up in the water column
+  at night, following concentrations of food . Feed primarily on the pelagic tunicate <i>Pyrosoma atlantica</i>
+  which is found near the sea bed during the day but dispersed throughout the water column at night .
+  Juveniles consume small planktonic and sedentary organisms .
 description: Hyperoglyphe antarctica, the Antarctic butterfish, bluenose warehou, deepsea trevally, blue
   eye trevalla, blue-eye cod, bluenose sea bass, or deep sea trevalla, is a medusafish of the family Centrolophidae
   found in all the southern oceans, at depths of between 40 and 1,500 m. Its length is up to about 140 cm,

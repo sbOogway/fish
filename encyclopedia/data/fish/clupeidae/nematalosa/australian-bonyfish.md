@@ -20,7 +20,6 @@ sources:
 physical:
   max_length_cm: 48
 habitat:
-  depth_range_m: 0-3
   body_ecology: pelagic
   water_types:
   - freshwater
@@ -38,7 +37,6 @@ biology:
   - 11
   - 12
   fecundity: 33,000-880,000 eggs
-  age_maturity: 2 years
   diet:
   - Benthic algae/weeds
   - Debris
@@ -54,8 +52,16 @@ biology:
   - Pelecanus conspicillatus
   - Perca fluviatilis
   - Phalacrocorax sp.
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points:
+  - - -24.2
+    - 132.833
+  source: FishBase occurrence records
+conservation:
+  status: LC
+facts:
+  age_maturity: 2 years
   season_months:
   - 1
   - 2
@@ -69,14 +75,8 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points:
-  - - -24.2
-    - 132.833
-  source: FishBase occurrence records
-conservation:
-  status: LC
+behavior: Spawning may occur repeatedly in the north with a peak during the wet season; probably annual
+  in the south .
 description: Bony bream Nematalosa erebi are a widespread and common, small to medium-sized Australian
   freshwater fish often found in large shoals throughout much of northern and central Australia, and the
   Murray-Darling basin.

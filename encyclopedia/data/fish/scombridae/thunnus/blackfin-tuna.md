@@ -23,7 +23,6 @@ physical:
   typical_length_cm: '72'
   max_weight_kg: 20.6
 habitat:
-  depth_range_m: 0-50
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -41,7 +40,6 @@ biology:
   - 9
   - 10
   - 11
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Bony fish
@@ -55,21 +53,6 @@ biology:
   - Makaira nigricans
   - Sterna fuscata
   - Thunnus atlanticus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -112,6 +95,22 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 3 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Its spawning grounds are located well offshore.
 description: The blackfin tuna is a species of tuna in the family Scombridae. It is occasionally referred
   to as the Bermuda tuna, blackfinned albacore, or deep bodied tunny. They are the smallest tuna species
   in the genus Thunnus, generally growing to a maximum of 100 cm (39 in) in length and weighing 21 kg

@@ -38,7 +38,6 @@ biology:
   - 11
   - 12
   fecundity: 4,203-131,418 eggs
-  age_maturity: 3 years
   diet:
   - Cladocerans
   - Copepods
@@ -55,16 +54,6 @@ biology:
   - Phryganea sp.
   - Salmo trutta trutta
   - Sander lucioperca
-angling:
-  best_months: Jan, Feb, Mar, Sep, Oct, Nov, Dec
-  season_months:
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -511,6 +500,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 3 years
+  season_months:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: Movement in water column as a function of zooplankton repartition .
 description: Coregonus lavaretus is a species of freshwater whitefish, in the family Salmonidae. It is
   the type species of its genus Coregonus.
 image:

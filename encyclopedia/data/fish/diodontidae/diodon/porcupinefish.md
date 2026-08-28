@@ -22,7 +22,6 @@ physical:
   typical_length_cm: '40'
   max_weight_kg: 2.8
 habitat:
-  depth_range_m: 2-50
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -44,21 +43,6 @@ biology:
   - Istiophorus albicans
   - Makaira nigricans
   - Tetrapturus albidus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -293,8 +277,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  solitary: true
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Juveniles to about 20 cm are pelagic. Adults benthic .
 description: The spot-fin porcupinefish, also known as the spotted porcupinefish, black-spotted porcupinefish
   or simply porcupinefish, is a member of the family Diodontidae.
 image:

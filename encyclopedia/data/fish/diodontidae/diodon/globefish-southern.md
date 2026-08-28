@@ -19,7 +19,6 @@ sources:
 physical:
   max_length_cm: 40
 habitat:
-  depth_range_m: 1-70
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -27,8 +26,12 @@ biology:
   repro_mode: dioecism
   fertilization: external
   parental_care: none
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -42,11 +45,7 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Nocturnal.
 description: The slender-spined porcupine fish or globefish is a porcupinefish of the family Diodontidae,
   found in the waters of southern Australia, as far north as Port Jackson to Geraldton, Western Australia.
   It is most common in Port Phillip Bay and the coastal waters of Tasmania in shallow coastal waters and

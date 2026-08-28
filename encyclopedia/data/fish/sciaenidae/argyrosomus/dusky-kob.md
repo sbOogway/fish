@@ -39,7 +39,6 @@ biology:
   - 11
   - 12
   fecundity: 900,000-1,042,000 eggs
-  age_maturity: 6 years
   diet:
   - Bony fish
   - Crabs
@@ -53,8 +52,13 @@ biology:
   - Carcharhinus obscurus
   - Crocodylus niloticus
   - Sphyrna zygaena
-angling:
-  best_months: Jan, Feb, Mar, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  age_maturity: 6 years
   season_months:
   - 8
   - 9
@@ -64,11 +68,7 @@ angling:
   - 1
   - 2
   - 3
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Adult fish found mainly near shore beyond the surf zone, occasionally going inshore.
 description: Argyrosomus japonicus is a silvery to bronze-green colored saltwater fish of the family Sciaenidae,
   which may grow up to 2 m in length and weigh up to 82 kg (181 lb). It is known as Dusky Kob, dusky salmon,
   salmon, Kob and kabeljou' in South Africa, Japanese meagre (FAO), mulloway or jewfish in the eastern

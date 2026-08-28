@@ -23,9 +23,7 @@ physical:
   max_length_cm: 200
   typical_length_cm: '140'
   max_weight_kg: 50.0
-  lifespan_years: '18'
 habitat:
-  depth_range_m: 0-100
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -37,27 +35,11 @@ biology:
   spawning_months:
   - 1
   - 2
-  age_maturity: 1-4 years
   diet:
   - Bony fish
   - Squids/cuttlefish
   predators:
   - Coryphaena hippurus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -212,9 +194,23 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  shoaling: true
-  solitary: true
+facts:
+  lifespan_years: '18'
+  age_maturity: 1-4 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Found predominantly at or near the surface .
 description: Sphyraena barracuda, commonly known as the great barracuda, is a species of barracuda, a
   genus of 27 species of large ray-finned fish found in subtropical oceans worldwide.
 image:

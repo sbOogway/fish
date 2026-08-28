@@ -26,9 +26,7 @@ physical:
   max_length_cm: 100
   typical_length_cm: '50'
   max_weight_kg: 20.0
-  lifespan_years: '17'
 habitat:
-  depth_range_m: 2-30
   body_ecology: pelagic
   water_types:
   - freshwater
@@ -52,7 +50,6 @@ biology:
   - 5
   - 6
   fecundity: 54,300-1,307,436 eggs
-  age_maturity: 4 years
   diet:
   - Bony fish
   - Cladocerans
@@ -68,15 +65,6 @@ biology:
   - Perca fluviatilis
   - Sander lucioperca
   - Silurus glanis
-angling:
-  best_months: Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -523,6 +511,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '17'
+  age_maturity: 4 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
+behavior: Undertake short spawning migrations. Spawn in pairs at dawn or night.
 description: The zander, sander or pikeperch, is a species of ray-finned fish from the family Percidae.
   It is found in freshwater and brackish habitats in western Eurasia. As a popular game fish, it has been
   introduced to a variety of localities outside its native range. It is the type species of the genus

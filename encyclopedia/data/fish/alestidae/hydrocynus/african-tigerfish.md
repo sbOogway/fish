@@ -21,7 +21,6 @@ sources:
 physical:
   max_length_cm: 105
   max_weight_kg: 28.0
-  lifespan_years: '8'
 habitat:
   body_ecology: demersal
   water_types:
@@ -38,17 +37,6 @@ biology:
   - Bony fish
   - Insects
   - Shrimps & prawns
-angling:
-  best_months: Jan, Feb, Mar, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -399,6 +387,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '8'
+  season_months:
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
 description: Hydrocynus vittatus, the African tigerfish, tiervis or ngwesh is a freshwater fish distributed
   throughout much of Africa. This predatory fish is generally a piscivore but it has been observed leaping
   out of the water and catching barn swallows in flight.

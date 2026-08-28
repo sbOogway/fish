@@ -44,7 +44,6 @@ biology:
   - 11
   - 12
   fecundity: 47,000 eggs
-  age_maturity: 6 years
   diet:
   - Bony fish
   predators:
@@ -54,21 +53,6 @@ biology:
   - Erythrinus erythrinus
   - Phalacrocorax
   - Serrasalmus sp.
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -83,6 +67,24 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 6 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Builds a nest of about 15 cm depth and 50 cm width in sandy bottoms. Spawns in April and May
+  and guards the eggs and the young. The fish rises to the surface of the water and inspires air in a
+  noisy, distinctive gulp, which is reported to carry for long distances .
 description: Arapaima gigas, also known simply as Arapaima, pirarucu, or paiche, is a species of arapaima
   native to the basin of the Amazon River. Once believed to be the sole species in the genus, it is among
   the largest freshwater fish. It is the best-known species of Arapaimas.

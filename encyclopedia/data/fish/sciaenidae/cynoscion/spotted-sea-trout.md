@@ -21,9 +21,7 @@ physical:
   max_length_cm: 100
   typical_length_cm: '36'
   max_weight_kg: 7.9
-  lifespan_years: '18'
 habitat:
-  depth_range_m: 10-10
   body_ecology: demersal
   water_types:
   - brackish
@@ -40,20 +38,9 @@ biology:
   - 8
   - 9
   fecundity: 102,369-3,286,328 eggs
-  age_maturity: 1 years
   diet:
   - Bony fish
   - Crabs
-angling:
-  best_months: Mar, Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -194,6 +181,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '18'
+  age_maturity: 1 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
 description: Spotted seatrout, also known as speckled trout, is a common estuarine fish found in the southern
   United States along coasts of Gulf of Mexico and the coastal Atlantic Ocean from Maryland to Florida.
   While most of these fish are caught on shallow, grassy flats, spotted seatrout reside in virtually any

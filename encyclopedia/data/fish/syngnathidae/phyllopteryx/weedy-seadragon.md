@@ -19,7 +19,6 @@ sources:
 physical:
   max_length_cm: 46
 habitat:
-  depth_range_m: 0-50
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -40,9 +39,13 @@ biology:
   - 10
   - 11
   - 12
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   age_maturity: 1.5 years
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
   season_months:
   - 1
   - 2
@@ -56,11 +59,7 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: The male carries the eggs in a brood pouch which is found under the tail .
 description: The common seadragon or weedy seadragon is a marine fish of the order Syngnathiformes, which
   also includes the similar pipefishes, seahorses, and trumpetfishes among other species. Adult common
   seadragons are a reddish colour, with yellow and purple striped markings; they have small, leaf-like

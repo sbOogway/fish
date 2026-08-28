@@ -21,9 +21,7 @@ sources:
 physical:
   max_length_cm: 91
   max_weight_kg: 5.9
-  lifespan_years: '5'
 habitat:
-  depth_range_m: 10-35
   body_ecology: pelagic-neritic
   water_types:
   - saltwater
@@ -41,7 +39,6 @@ biology:
   - 11
   - 12
   fecundity: 129,000-1,491,000 eggs
-  age_maturity: 3 years
   diet:
   - Bony fish
   - Shrimps & prawns
@@ -50,16 +47,6 @@ biology:
   - Cynoscion regalis
   - Morone saxatilis
   - Pomatomus saltator
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -186,6 +173,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '5'
+  age_maturity: 3 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 description: The Atlantic Spanish mackerel is a migratory species of mackerel that swims to the northern
   Gulf of Mexico in spring, and returns to southern Florida in the eastern Gulf, and to Mexico in the
   western Gulf in the fall.

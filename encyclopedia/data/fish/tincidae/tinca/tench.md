@@ -25,7 +25,6 @@ physical:
   typical_length_cm: '20'
   max_weight_kg: 7.5
 habitat:
-  depth_range_m: 1-1
   body_ecology: demersal
   water_types:
   - freshwater
@@ -44,7 +43,6 @@ biology:
   - 6
   - 7
   fecundity: 29,200-800,000 eggs
-  age_maturity: 4 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -63,14 +61,6 @@ biology:
   - Esox lucius
   - Sander lucioperca
   - Silurus glanis
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -517,6 +507,15 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 4 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Larvae and juveniles confined to dense vegetation . Adult often prey mainly on molluscs.
 description: The tench or doctor fish is a fresh- and brackish-water fish of the order Cypriniformes found
   throughout Eurasia from Western Europe including Britain and Ireland east into Asia as far as the Ob
   and Yenisei Rivers. It is also found in Lake Baikal. It normally inhabits slow-moving freshwater habitats,

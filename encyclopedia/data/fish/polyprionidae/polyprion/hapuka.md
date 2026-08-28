@@ -22,9 +22,7 @@ physical:
   max_length_cm: 160
   typical_length_cm: '100'
   max_weight_kg: 100.0
-  lifespan_years: '60'
 habitat:
-  depth_range_m: 50-854
   body_ecology: demersal
   water_types:
   - saltwater
@@ -38,7 +36,6 @@ biology:
   - 8
   - 9
   fecundity: 1,500,000-5,800,000 eggs
-  age_maturity: 11.5 years
   diet:
   - Bony fish
   - Lobsters
@@ -46,8 +43,14 @@ biology:
   - Stomatopods
   predators:
   - Sperm whale
-angling:
-  best_months: Jan, Feb, Mar, Apr, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  lifespan_years: '60'
+  age_maturity: 11.5 years
   season_months:
   - 11
   - 12
@@ -55,11 +58,8 @@ angling:
   - 2
   - 3
   - 4
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Adults occur generally over rough ground from the central shelf (about 100 m) to the shelf edge
+  and down to the upper slope.
 description: The hāpuku, hapuka or whapuku, also known as groper, is a wreckfish of the family Polyprionidae,
   found around southern Australia, southern South America, South Africa, Tristan da Cunha and New Zealand
   at depths between 30 and 800 m. Its length is between 60 and 180 cm, and it can weigh up to 100 kg.

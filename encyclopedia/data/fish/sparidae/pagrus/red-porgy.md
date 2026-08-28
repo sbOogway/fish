@@ -24,9 +24,7 @@ physical:
   max_length_cm: 91
   typical_length_cm: '35'
   max_weight_kg: 7.7
-  lifespan_years: '26'
 habitat:
-  depth_range_m: 0-250
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -45,7 +43,6 @@ biology:
   - 7
   - 8
   fecundity: 48,660-488,600 eggs
-  age_maturity: 2 years
   diet:
   - Amphipods
   - Bony fish
@@ -57,14 +54,6 @@ biology:
   - Delphinus delphis
   - Galeorhinus galeus
   - Seriola dumerili
-angling:
-  best_months: Apr, May, Jun, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -511,6 +500,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '26'
+  age_maturity: 2 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+behavior: It is parasitised by the monogeneans <i>Anoplodiscus longivaginatus</i> and <i>Anoplodiscus
+  richiardii</i> (species inquirenda) on the fins and body surface .
 description: The red porgy, also known as the common seabream or Couch's bream, is a species of marine
   ray-finned fish in the family Sparidae. It is found in shallow waters on either side of the Atlantic
   Ocean, being present on the western coast of Europe and the Mediterranean Sea as well as the eastern

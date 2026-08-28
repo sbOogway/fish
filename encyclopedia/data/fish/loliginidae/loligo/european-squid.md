@@ -26,8 +26,12 @@ habitat:
   water_types:
   - saltwater
 biology: {}
-angling:
-  best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 3
   - 4
@@ -38,11 +42,6 @@ angling:
   - 9
   - 10
   - 11
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: The European squid or common squid is a large squid belonging to the family Loliginidae.
   It occurs abundantly in coastal waters from the North Sea to at least the west coast of Africa. This
   species lives from sea level to depths of 500 m (1,600 ft). Its mantle is up to 40 cm (16 in) long.

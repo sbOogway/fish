@@ -23,9 +23,7 @@ physical:
   max_length_cm: 250
   typical_length_cm: '180'
   max_weight_kg: 210.0
-  lifespan_years: '11'
 habitat:
-  depth_range_m: 0-1500
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -49,7 +47,6 @@ biology:
   - 11
   - 12
   fecundity: 2,900,000-10,365,317 eggs
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Bony fish
@@ -65,21 +62,6 @@ biology:
   - Orcinus orca
   - billfishes
   - toothed whales
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -526,6 +508,26 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '11'
+  age_maturity: 3 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Variation in occurrence is closely related to seasonal and climatic changes in surface temperature
+  and thermocline. Juveniles and small adults school at the surface in mono-species groups or mixed with
+  other tunas, may be associated with floating objects. Adults stay in deeper waters . Eggs and larvae
+  are pelagic .
 description: The bigeye tuna is a species of true tuna of the genus Thunnus, belonging to the wider mackerel
   family Scombridae. Bigeye tuna are found in the open waters of all tropical and temperate oceans, but
   not in the Mediterranean Sea.

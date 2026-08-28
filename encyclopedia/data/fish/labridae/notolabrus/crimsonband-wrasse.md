@@ -19,7 +19,6 @@ sources:
 physical:
   max_length_cm: 23
 habitat:
-  depth_range_m: 5-40
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -27,8 +26,15 @@ biology:
   reproduction: Oviparous, distinct pairing during breeding .
   repro_mode: dioecism
   fertilization: external
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points:
+  - - -34.067
+    - 151.133
+  source: FishBase occurrence records
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -42,14 +48,6 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points:
-  - - -34.067
-    - 151.133
-  source: FishBase occurrence records
-conservation:
-  status: LC
 description: Notolabrus gymnogenis, commonly known as the crimson banded wrasse, is a species of fish
   in the family Labridae. This colourful fish is endemic to Eastern Australia.
 image:

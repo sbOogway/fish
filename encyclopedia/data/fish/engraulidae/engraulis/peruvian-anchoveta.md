@@ -21,9 +21,7 @@ sources:
 physical:
   max_length_cm: 20
   typical_length_cm: '14'
-  lifespan_years: '3'
 habitat:
-  depth_range_m: 3-80
   body_ecology: pelagic-neritic
   water_types:
   - saltwater
@@ -46,7 +44,6 @@ biology:
   - 11
   - 12
   fecundity: 12,701-18,495 eggs
-  age_maturity: 1 years
   diet:
   - Amphipods
   - Ascidians
@@ -84,8 +81,14 @@ biology:
   - Sula variegata
   - Trachurus murphyi
   - Trachurus symmetricus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  lifespan_years: '3'
+  age_maturity: 1 years
   season_months:
   - 11
   - 12
@@ -94,11 +97,7 @@ angling:
   - 3
   - 4
   - 5
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Adults occur mainly within 80 km of coast, forming huge schools, chiefly in surface waters.
 description: The Peruvian anchoveta is a species of fish of the anchovy family, Engraulidae, from the
   Southeast Pacific Ocean. It is one of the most commercially important fish species in the world, with
   annual harvests varying between 3.14 and 8.32 million tonnes from 2010 to 2021.

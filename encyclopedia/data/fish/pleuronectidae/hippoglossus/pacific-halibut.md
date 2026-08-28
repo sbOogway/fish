@@ -22,9 +22,7 @@ sources:
 physical:
   max_length_cm: 258
   max_weight_kg: 363.0
-  lifespan_years: '55'
 habitat:
-  depth_range_m: 0-1200
   body_ecology: demersal
   water_types:
   - saltwater
@@ -36,7 +34,6 @@ biology:
   - 1
   - 11
   - 12
-  age_maturity: 13 years
   diet:
   - Amphipods
   - Ascidians
@@ -55,14 +52,6 @@ biology:
   - Gadus macrocephalus
   - Orcinus orca
   - Somniosus pacificus
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -245,6 +234,15 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '55'
+  age_maturity: 13 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
 description: Hippoglossus stenolepis, the Pacific halibut, is a species of righteye flounder. This very
   large species of flatfish is native to the North Pacific and is fished by commercial fisheries, sport
   fishers, and subsistence fishers.

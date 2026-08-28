@@ -25,9 +25,7 @@ physical:
   max_length_cm: 348
   typical_length_cm: '270'
   max_weight_kg: 100.2
-  lifespan_years: '13'
 habitat:
-  depth_range_m: 0-200
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -61,16 +59,6 @@ biology:
   - Squids/cuttlefish
   predators:
   - Orcinus orca
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -213,10 +201,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
-  schooling_frequency: sometimes
-  solitary: true
+facts:
+  lifespan_years: '13'
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 11
+  - 12
+behavior: Undergoes spawning migrations in the Pacific.
 description: The Indo-Pacific sailfish is a sailfish native to the Indian and Pacific Oceans and is naturalized
   in the Atlantic where it has entered the Mediterranean Sea via the Suez Canal as a Lessepsian migrant.
   It is dark blue on top, brown-blue laterally, silvery white underbelly; upper jaw elongated in the form

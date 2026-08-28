@@ -21,9 +21,7 @@ physical:
   max_length_cm: 84
   typical_length_cm: '45'
   max_weight_kg: 7.7
-  lifespan_years: '8'
 habitat:
-  depth_range_m: 0-250
   body_ecology: pelagic-oceanic
   water_types:
   - freshwater
@@ -56,7 +54,6 @@ biology:
   - 11
   - 12
   fecundity: 300-4,300 eggs
-  age_maturity: 2 years
   diet:
   - Amphipods
   - Bony fish
@@ -77,14 +74,6 @@ biology:
   - Salvelinus alpinus
   - Salvelinus malma malma
   - unidentified squawfish
-angling:
-  best_months: Jul, Aug, Sep, Oct, Nov
-  season_months:
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -429,6 +418,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '8'
+  age_maturity: 2 years
+  season_months:
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+behavior: Upon emergence from gravel, fry at first tends to avoid light, hiding during the day and emerging
+  at night . Once in the lake, the young spend a few weeks inshore, feeding largely on ostracods, cladocerans
+  and insect larvae.
 description: The sockeye salmon, also called red salmon, kokanee salmon, blueback salmon, or simply sockeye,
   is an anadromous species of salmon found in the Northern Pacific Ocean and rivers discharging into it.
   This species is a Pacific salmon that is primarily red in hue during spawning. They can grow up to 84 cm

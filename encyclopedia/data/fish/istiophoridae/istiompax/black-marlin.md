@@ -24,7 +24,6 @@ physical:
   typical_length_cm: '380'
   max_weight_kg: 750.0
 habitat:
-  depth_range_m: 0-915
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -55,16 +54,6 @@ biology:
   - mackerels
   - tunas
   - unidentified shark
-angling:
-  best_months: Jan, Feb, Mar, Sep, Oct, Nov, Dec
-  season_months:
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -115,6 +104,15 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
 description: The black marlin is a species of marlin found in tropical and subtropical areas of the Indian
   and Pacific Oceans approximately between 40 degrees North and 45 degrees South, while in some instances
   venturing into more temperate waters. Reaching lengths of over 4.5 m (15 ft), it is one of the largest

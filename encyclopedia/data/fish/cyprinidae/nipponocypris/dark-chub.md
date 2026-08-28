@@ -37,8 +37,12 @@ biology:
   - Bony fish
   - Insects
   - Terrestrial plants
-angling:
-  best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 3
   - 4
@@ -49,11 +53,6 @@ angling:
   - 9
   - 10
   - 11
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: Nipponocypris temminckii, the dark chub, is a species of freshwater ray-finned fish belonging
   to the family Xenocyprididae, the East Asian minnows or sharpbellies. It inhabits China, Japan and Korea
   and has a maximum length of 15.0 centimetres (5.9 in).

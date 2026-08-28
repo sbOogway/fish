@@ -26,9 +26,7 @@ physical:
   max_length_cm: 70
   typical_length_cm: '35'
   max_weight_kg: 17.2
-  lifespan_years: '11'
 habitat:
-  depth_range_m: 1-150
   body_ecology: demersal
   water_types:
   - brackish
@@ -46,7 +44,6 @@ biology:
   spawning_months:
   - 11
   - 12
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Ascidians
@@ -70,14 +67,6 @@ biology:
   predators:
   - Lagocephalus sceleratus
   - Phalacrocorax carbo
-angling:
-  best_months: Apr, May, Jun, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -90,6 +79,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '11'
+  age_maturity: 2.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+behavior: A sedentary fish, either solitary or in small aggregations.
 description: The gilt-head bream, also known as the gilthead, dourade, gilt-head seabream, European seabream
   or silver seabream, is a species of marine ray-finned fish belonging to the family Sparidae, the seabreams
   or porgies. This fish is found in the Eastern Atlantic and the Mediterranean. It is a highly esteemed

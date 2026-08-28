@@ -26,9 +26,7 @@ physical:
   max_length_cm: 210
   typical_length_cm: '100'
   max_weight_kg: 40.0
-  lifespan_years: '4'
 habitat:
-  depth_range_m: 0-85
   body_ecology: pelagic-neritic
   water_types:
   - brackish
@@ -54,7 +52,6 @@ biology:
   - 11
   - 12
   fecundity: 58,000-1,500,000 eggs
-  age_maturity: 0.5 years
   diet:
   - Amphipods
   - Benthic algae/weeds
@@ -86,16 +83,6 @@ biology:
   - Thunnus albacares
   - Xiphias gladius
   - unidentified whales
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -308,8 +295,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  shoaling: true
+facts:
+  lifespan_years: '4'
+  age_maturity: 0.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Spawn in the open sea and probably approximate to the coast when water temperature rises . Eggs
+  and larvae are pelagic .
 description: The mahi-mahi, common dolphinfish, dolphinfish, dolphin or  dorado is a surface-dwelling
   ray-finned fish found in off-shore temperate, tropical, and subtropical waters worldwide. It is also
   widely called dorado and dolphin. It is one of two members of the family Coryphaenidae, the other being

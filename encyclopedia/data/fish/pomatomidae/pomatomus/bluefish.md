@@ -25,9 +25,7 @@ physical:
   max_length_cm: 130
   typical_length_cm: '60'
   max_weight_kg: 14.4
-  lifespan_years: '14'
 habitat:
-  depth_range_m: 0-200
   body_ecology: pelagic-oceanic
   water_types:
   - brackish
@@ -52,7 +50,6 @@ biology:
   - 11
   - 12
   fecundity: 114,513-1,000,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Bony fish
@@ -84,13 +81,6 @@ biology:
   - Thunnus thynnus
   - Triakis megalopterus
   - Xiphias gladius
-angling:
-  best_months: Sep, Oct, Nov, Dec
-  season_months:
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -343,8 +333,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
+facts:
+  lifespan_years: '14'
+  age_maturity: 2.5 years
+  season_months:
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Adults are in loose groups, often attacking shoals of mullets or other fishes and destroying
+  numbers apparently far in excess of feeding requirements .
 description: The bluefish is the only extant species of the family Pomatomidae. It is a marine pelagic
   fish found around the world in temperate and subtropical waters, except for the northern Pacific Ocean.
   Bluefish are known as tailor in Australia and New Zealand, elf and shad in South Africa. It is a popular

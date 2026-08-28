@@ -22,9 +22,7 @@ physical:
   max_length_cm: 155
   typical_length_cm: '100'
   max_weight_kg: 45.0
-  lifespan_years: '50'
 habitat:
-  depth_range_m: 10-10
   body_ecology: demersal
   water_types:
   - brackish
@@ -39,18 +37,8 @@ biology:
   - 10
   - 11
   fecundity: 3,500,000 eggs
-  age_maturity: 4.5 years
   diet:
   - Bony fish
-angling:
-  best_months: Mar, Apr, May, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -161,6 +149,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '50'
+  age_maturity: 4.5 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 9
+  - 10
+  - 11
 description: The red drum, also known as redfish, channel bass, puppy drum, spottail bass, or simply red,
   is a game fish found in the Atlantic Ocean from Massachusetts to Florida and in the Gulf of Mexico from
   Florida to northern Mexico. It is the only species in the genus Sciaenops.

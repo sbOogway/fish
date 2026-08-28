@@ -20,7 +20,6 @@ sources:
 physical:
   max_length_cm: 50
 habitat:
-  depth_range_m: 0-90
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -36,8 +35,12 @@ biology:
   - 9
   - 10
   - 11
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -51,11 +54,7 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Found either in large schools, in pairs or as solitary individuals .
 description: Enoplosus armatus, commonly referred to as the old wife, is a species of centrarchiform ray-finned
   fish endemic to the temperate coastal waters of Australia. It is the only genus and species in the family
   Enoplosidae.

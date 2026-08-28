@@ -25,9 +25,7 @@ sources:
 physical:
   max_length_cm: 100
   typical_length_cm: '50'
-  lifespan_years: '16'
 habitat:
-  depth_range_m: 0-120
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -52,7 +50,6 @@ biology:
   - 11
   - 12
   fecundity: 700,000-5,000,000 eggs
-  age_maturity: 3.5 years
   diet:
   - Amphipods
   - Benthic algae/weeds
@@ -85,15 +82,6 @@ biology:
   - Phalacrocorax sp.
   - Phalacrocorax sulcirostris
   - Pomatomus saltatrix
-angling:
-  best_months: Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -410,6 +398,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '16'
+  age_maturity: 3.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
+behavior: They are usually in schools over sand or mud bottom , between 0 and 10 m, occurring equally
+  in tropical, subtropical and temperate waters (Project MUGIL). They are mainly diurnal, feeding on detritus,
+  micro-algae and benthic organisms . Adults form schools and migrate offshore to spawn and developing
+  larvae migrate back inshore . Females spawn 0. 6 million eggs which develop at sea (Ref. 74912, Chen
+  & Su 1986).
 description: The striped mullet is an important food fish species in the mullet family Mugilidae. It is
   found in coastal temperate, tropical and subtropical waters worldwide. Its length is typically 30 to
   75 centimetres. It is known with numerous English names, including the flathead mullet, flathead grey

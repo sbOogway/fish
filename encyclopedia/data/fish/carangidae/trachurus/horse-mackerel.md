@@ -25,7 +25,6 @@ physical:
   typical_length_cm: '22'
   max_weight_kg: 2.0
 habitat:
-  depth_range_m: 0-1050
   body_ecology: pelagic-neritic
   water_types:
   - saltwater
@@ -39,7 +38,6 @@ biology:
   - 6
   - 7
   fecundity: 19,225-740,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Ascidians
@@ -76,14 +74,6 @@ biology:
   - Squalus acanthias
   - Uranoscopus scaber
   - Zeus faber
-angling:
-  best_months: Jan, Sep, Oct, Nov, Dec
-  season_months:
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
 distribution:
   native: true
   points:
@@ -528,6 +518,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 2.5 years
+  season_months:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+behavior: Adults form large schools in coastal areas with sandy substrate. Females lay 140,000 eggs, which
+  hatch into 5mm long larvae . Eggs are pelagic .
 description: The Atlantic horse mackerel, also known as the European horse mackerel or common scad, is
   a species of jack mackerel in the family Carangidae, which includes the jacks, pompanos and trevallies.
   It is found in the eastern Atlantic Ocean off Europe and Africa and into the south-eastern Indian Ocean.

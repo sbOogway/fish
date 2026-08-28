@@ -25,8 +25,12 @@ habitat:
   - freshwater
   - brackish
 biology: {}
-angling:
-  best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 3
   - 4
@@ -37,11 +41,6 @@ angling:
   - 9
   - 10
   - 11
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: Cyprinus rubrofuscus, or the Amur carp, is a species of freshwater fish belonging to the
   Cyprinidae family. It is the ancestral form of some domesticated koi fish, which are well known for
   their striking colors as an ornamental species. Often mistaken for the common carp, the species originated

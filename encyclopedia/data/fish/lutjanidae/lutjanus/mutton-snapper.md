@@ -23,9 +23,7 @@ physical:
   max_length_cm: 94
   typical_length_cm: '50'
   max_weight_kg: 15.6
-  lifespan_years: '29'
 habitat:
-  depth_range_m: 25-95
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -44,27 +42,11 @@ biology:
   - 7
   - 8
   - 9
-  age_maturity: 5.5 years
   diet:
   - Crabs
   - Gastropods
   - Shrimps & prawns
   - Squids/cuttlefish
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -145,6 +127,25 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '29'
+  age_maturity: 5.5 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Large adults usually among rocks and coral while juveniles occur over sandy, vegetated (usually
+  <i>Thalassia</i>) bottoms . They form small aggregations which disband during the night . Feed both
+  day and night on fishes, shrimps, crabs, cephalopods, and gastropods .
 description: The mutton snapper is a species of marine ray-finned fish, a snapper belonging to the family
   Lutjanidae. It is found in the Western Atlantic Ocean.
 image:

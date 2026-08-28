@@ -24,9 +24,7 @@ physical:
   max_length_cm: 140
   typical_length_cm: '72'
   max_weight_kg: 50.0
-  lifespan_years: '38'
 habitat:
-  depth_range_m: 0-28
   body_ecology: pelagic-neritic
   water_types:
   - freshwater
@@ -46,7 +44,6 @@ biology:
   - 11
   - 12
   fecundity: 147-5,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Bony fish
@@ -64,15 +61,6 @@ biology:
   - Lutra lutra
   - Petromyzon marinus
   - Phoca vitulina
-angling:
-  best_months: Mar, Apr, May, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -519,6 +507,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '38'
+  age_maturity: 2.5 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 9
+  - 10
+  - 11
+behavior: Lacustrine populations undertake migration to tributaries and lake outlets to spawn, rarely
+  spawning on stone, wave-washed lake shores. Spawning takes place normally more than one time . Life
+  history and spawning behavior is similar to the salmon <i>Salmo salar</i> . 000 eggs (Ref. 35388, Ref.
+  51442). Mainly diurnal . Sea and lake trouts forage in pelagic and littoral habitats, while sea trouts
+  mainly close to coast, not very far from estuary of natal river .
 description: The brown trout is a species of carnivorous ray-finned fish and the most widely distributed
   species of the salmonid genus Salmo, endemic to most of Europe, West Asia and parts of North Africa,
   and has been widely introduced globally as a game fish, even becoming one of the world's worst invasive

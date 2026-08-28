@@ -23,9 +23,7 @@ physical:
   max_length_cm: 200
   typical_length_cm: '120'
   max_weight_kg: 57.0
-  lifespan_years: '30'
 habitat:
-  depth_range_m: 30-30
   body_ecology: demersal
   water_types:
   - freshwater
@@ -62,16 +60,6 @@ biology:
   - Petromyzon marinus
   - Pomatomus saltator
   - unidentified tomcods and cods
-angling:
-  best_months: Apr, May, Jun, Jul, Sep, Oct, Nov
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -242,6 +230,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '30'
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 9
+  - 10
+  - 11
+behavior: Voracious and opportunistic feeder . Feeding ceases shortly before spawning .
 description: The striped bass, also called the Atlantic striped bass, striper, linesider, rock, or rockfish,
   is an anadromous perciform fish of the family Moronidae found primarily along the Atlantic coast of
   North America. It has also been widely introduced into inland recreational fisheries across the United

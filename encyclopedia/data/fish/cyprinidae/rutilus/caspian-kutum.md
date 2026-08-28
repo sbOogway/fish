@@ -21,9 +21,7 @@ physical:
   max_length_cm: 70
   typical_length_cm: '60'
   max_weight_kg: 8.0
-  lifespan_years: '12'
 habitat:
-  depth_range_m: 50-50
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -39,26 +37,30 @@ biology:
   - 3
   - 4
   - 5
-  age_maturity: 4.5 years
   diet:
   - Bivalves
   - Crabs
   - Insects
   predators:
   - Esox lucius
-angling:
-  best_months: Mar, Apr, May, Oct, Nov
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  lifespan_years: '12'
+  age_maturity: 4.5 years
   season_months:
   - 3
   - 4
   - 5
   - 10
   - 11
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Feeding ceases while migrating, spawning and overwintering. Breeds in small rivers or streams
+  with heavy current on gravel bottom. When rivers are covered with ice, spawning migration stops and
+  continues when ice breaks up or even under ice in February-April. Adults migrate back to estuaries to
+  forage immediately after spawning.
 description: Rutilus frisii, the Black Sea roach or kutum, is a species of freshwater and brackish water
   ray-finned fish belonging to the family Leuciscidae, which includes the daces, Eurasian minnows and
   related fishes. This fish is found in the Black Sea basin in Eastern Europe and Western Asia.

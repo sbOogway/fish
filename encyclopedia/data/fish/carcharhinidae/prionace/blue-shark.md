@@ -22,9 +22,7 @@ physical:
   max_length_cm: 400
   typical_length_cm: '335'
   max_weight_kg: 205.9
-  lifespan_years: '20'
 habitat:
-  depth_range_m: 0-1082
   body_ecology: pelagic-oceanic
   water_types:
   - brackish
@@ -42,7 +40,6 @@ biology:
   - 5
   - 6
   fecundity: 4-135 eggs
-  age_maturity: 6 years
   diet:
   - Benthic algae/weeds
   - Bony fish
@@ -62,15 +59,6 @@ biology:
   - Isurus oxyrinchus
   - Orcinus orca
   - Zalophus californianus
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -481,6 +469,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '20'
+  age_maturity: 6 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 description: The blue shark, also known as the great blue shark, is a species of requiem shark in the
   family Carcharhinidae which inhabits deep waters in the world's temperate and tropical oceans. It is
   the only living species of genus Prionace. An extinct species, P. clarki, is known from teeth from California

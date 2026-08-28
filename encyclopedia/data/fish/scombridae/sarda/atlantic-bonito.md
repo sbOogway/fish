@@ -23,9 +23,7 @@ physical:
   max_length_cm: 91
   typical_length_cm: '50'
   max_weight_kg: 11.0
-  lifespan_years: '5'
 habitat:
-  depth_range_m: 80-200
   body_ecology: pelagic-neritic
   water_types:
   - brackish
@@ -42,7 +40,6 @@ biology:
   - 6
   - 7
   fecundity: 44,620-446,530 eggs
-  age_maturity: 1 years
   diet:
   - Amphipods
   - Bony fish
@@ -53,13 +50,6 @@ biology:
   - Acanthocybium solandri
   - Coryphaena hippurus
   - Sarda sarda
-angling:
-  best_months: Sep, Oct, Nov, Dec
-  season_months:
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -254,6 +244,15 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '5'
+  age_maturity: 1 years
+  season_months:
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Eggs and larvae pelagic .
 description: The Atlantic bonito is a large mackerel-like fish of the family Scombridae. It is common
   in shallow waters of the Atlantic Ocean, the Mediterranean Sea, and the Black Sea, where it is an important
   commercial and game fish.

@@ -23,8 +23,12 @@ habitat:
   water_types:
   - saltwater
 biology: {}
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 10
   - 11
@@ -34,11 +38,6 @@ angling:
   - 3
   - 4
   - 5
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: The red king crab, also called Kamchatka crab or Alaskan king crab, is a species of king
   crab native to cold waters in the North Pacific Ocean and adjacent seas, but also introduced to the
   Barents Sea. It grows to a leg span of 1.8 m (5.9 ft), and is heavily targeted by fisheries.

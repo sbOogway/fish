@@ -20,9 +20,7 @@ sources:
 physical:
   max_length_cm: 40
   typical_length_cm: '25'
-  lifespan_years: '7'
 habitat:
-  depth_range_m: 0-1383
   body_ecology: demersal
   water_types:
   - brackish
@@ -41,7 +39,6 @@ biology:
   - 11
   - 12
   fecundity: 9,000-67,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Ascidians
@@ -78,21 +75,6 @@ biology:
   - Uria aalge
   - Uria lomvia
   - narwhals
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -239,13 +221,24 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
-  schooling_frequency: always
-  schooling_lifestage: juveniles and adults
-  shoaling: true
-  shoaling_frequency: sometimes
-  shoaling_lifestage: juveniles and adults
+facts:
+  lifespan_years: '7'
+  age_maturity: 2.5 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Cryopelagic or epontic, from surface down to 1383 m . Onshore-offshore movements are associated
+  with spawning and movements of the ice .
 description: Boreogadus saida, known as the polar cod or as the Arctic cod, is a fish of the cod family
   Gadidae, related to the true cod. Another fish species for which both the common names Arctic cod and
   polar cod are used is Arctogadus glacialis.

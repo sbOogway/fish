@@ -49,10 +49,18 @@ def render_markdown(md_text):
 
 
 def build_fact_sheet(meta):
-    """Build the compact label:value fact-sheet shown under the hero image."""
+    """Build the compact label:value fact-sheet shown under the hero image.
+
+    Row order and labels are locked by issue #11 (T11). Each row is hidden
+    when its source value is empty. The `facts` block (top-level in the v2
+    schema) holds season_months / lifespan_years / age_maturity; the other
+    rows read from `taxonomy` / `habitat.water_types` / `physical` /
+    `conservation.status`.
+    """
     tax = meta.get("taxonomy", {})
     phys = meta.get("physical", {})
     hab = meta.get("habitat", {})
+    facts = meta.get("facts", {}) or {}
     rows = []
 
     def add(label, value):
@@ -66,6 +74,10 @@ def build_fact_sheet(meta):
     if water:
         add("Water", ", ".join(w.title() for w in water))
 
+    season = facts.get("season_months") or []
+    if season:
+        add("Season months", months_list(season))
+
     typ = phys.get("typical_length_cm")
     mx = phys.get("max_length_cm")
     if mx:
@@ -76,11 +88,11 @@ def build_fact_sheet(meta):
     if phys.get("max_weight_kg"):
         add("Weight", f"{phys['max_weight_kg']} kg")
 
-    if phys.get("lifespan_years"):
-        add("Lifespan", f"{phys['lifespan_years']} years")
+    if facts.get("lifespan_years"):
+        add("Lifespan", f"{facts['lifespan_years']} years")
 
-    if hab.get("depth_range_m"):
-        add("Depth range", f"{hab['depth_range_m']} m")
+    if facts.get("age_maturity"):
+        add("Age at maturity", f"{facts['age_maturity']}")
 
     status = meta.get("conservation", {}).get("status")
     if status:
@@ -90,60 +102,46 @@ def build_fact_sheet(meta):
 
 
 def build_distribution_blurb(meta):
-    """Short prose blurb for the Distribution block.
+    """Short prose caption for the Distribution block.
 
-    Combines the water types and a quick geographic scope from the available
-    distribution points (so a wide-spread species reads as "across the Northern
-    Hemisphere", not just "inhabits saltwater waters").
+    v2 (per the redesign): the water-types half is gone (water types are
+    in the fact-sheet now). The caption is just the geographic-scope hint
+    derived from the lat/lon spread of the distribution points, plus the
+    source string. Only emitted for species with ≥20 points so "local"
+    species don't get a one-liner.
     """
-    hab = meta.get("habitat", {})
-    tax = meta.get("taxonomy", {})
     dist = meta.get("distribution", {})
-    common = (tax.get("common_name") or "").strip() or "This species"
-    water = hab.get("water_types") or []
-    parts = []
-    if water:
-        parts.append(f"{common} inhabits {', '.join(w.title() for w in water)} waters.")
     pts = dist.get("points") or []
-    if len(pts) >= 20:
-        lats = [p[0] for p in pts]
-        lons = [p[1] for p in pts]
-        lat_range = max(lats) - min(lats)
-        lon_range = max(lons) - min(lons)
-        if lat_range > 120 and lon_range > 120:
-            parts.append("Records span multiple continents.")
-        elif lat_range > 60 and lon_range > 60:
-            parts.append("Records span a broad geographic range.")
-    if dist.get("source"):
-        parts.append(f"Map shows {dist['source'].lower()}.")
-    return " ".join(parts).strip() if parts else None
+    if len(pts) < 20:
+        return None
+    lats = [p[0] for p in pts]
+    lons = [p[1] for p in pts]
+    lat_range = max(lats) - min(lats)
+    lon_range = max(lons) - min(lons)
+    if lat_range > 120 and lon_range > 120:
+        scope = "Records span multiple continents."
+    elif lat_range > 60 and lon_range > 60:
+        scope = "Records span a broad geographic range."
+    else:
+        return None
+    source = dist.get("source")
+    if source:
+        return f"{scope} Map shows {source.lower()}."
+    return scope
 
 
 def _behavior_markdown(behavior):
-    """Render the `behavior` frontmatter block as a short prose paragraph.
+    """Render the v2 `behavior` frontmatter key as prose.
 
-    Empty/None behavior yields "" so the section is dropped from the page.
+    In v2 the `behavior` key holds a free-text paragraph produced by
+    `build_behavior_text()` in the importer (sentence-filtered FishBase
+    `species.Comments`, see issue #12). The v1 structured shape
+    (`{schooling, shoaling, solitary}`) is gone. Empty/None yields "".
     """
     if not behavior:
         return ""
-    parts = []
-
-    def qual(freq, lifestage):
-        bits = []
-        if freq:
-            bits.append(str(freq))
-        if lifestage:
-            bits.append(f"as {lifestage}")
-        return f" ({', '.join(bits)})" if bits else ""
-
-    if behavior.get("schooling"):
-        parts.append(f"Forms schools{qual(behavior.get('schooling_frequency'), behavior.get('schooling_lifestage'))}.")
-    if behavior.get("shoaling"):
-        parts.append(f"Forms loose shoals{qual(behavior.get('shoaling_frequency'), behavior.get('shoaling_lifestage'))}.")
-    if behavior.get("solitary"):
-        parts.append("Often solitary")
-
-    return "\n\n".join(parts)
+    text = behavior.strip() if isinstance(behavior, str) else ""
+    return text
 
 
 def split_markdown_sections(md_body):
@@ -171,14 +169,15 @@ def split_markdown_sections(md_body):
 def build_prose_sections(meta, body_sections):
     """Build the fixed-order prose sections, dropping any that are empty.
 
-    Returns a list of {key, title, html} in page order. Description and Biology
-    come from the markdown body; Size/Weight/Age/Seasonality/Conservation are
-    rendered from frontmatter.
-    """
-    phys = meta.get("physical", {})
-    bio = meta.get("biology", {})
-    angling = meta.get("angling", {})
+    Returns a list of {key, title, html} in page order. v2 (per the redesign)
+    keeps only three prose sections: Description, Biology, Behavior. The
+    fact-sheet carries Size / Weight / Age / Lifespan / Age at maturity /
+    Season months / IUCN status, so those are no longer prose sections.
 
+    Description and Biology are pulled from the markdown body (when present)
+    with the frontmatter as fallback; Behavior is a free-text string in
+    `meta.behavior` produced by the importer's sentence filter.
+    """
     sections = []
 
     def add(key, title, markdown):
@@ -187,46 +186,11 @@ def build_prose_sections(meta, body_sections):
             sections.append({"key": key, "title": title, "html": html})
 
     add("description", "Description", body_sections.get("Description", meta.get("description", "")))
-
-    size = []
-    typ = phys.get("typical_length_cm")
-    mx = phys.get("max_length_cm")
-    if typ and mx:
-        size.append(f"Typical length is {typ} cm, with a maximum recorded length of {mx} cm.")
-    elif mx:
-        size.append(f"Maximum recorded length is {mx} cm.")
-    elif typ:
-        size.append(f"Typical length is {typ} cm.")
-    add("size", "Size", "\n\n".join(size))
-
-    weight = []
-    if phys.get("max_weight_kg"):
-        weight.append(f"Maximum recorded weight is {phys['max_weight_kg']} kg.")
-    add("weight", "Weight", "\n\n".join(weight))
-
-    age = []
-    if phys.get("lifespan_years"):
-        age.append(f"Lifespan is around {phys['lifespan_years']} years.")
-    if bio.get("age_maturity"):
-        age.append(f"Sexual maturity is reached at about {bio['age_maturity']} of age.")
-    add("age", "Age", "\n\n".join(age))
-
     add("biology", "Biology", body_sections.get("Biology", "") or "")
 
-    behavior_md = _behavior_markdown(meta.get("behavior") or {})
-    if behavior_md:
-        add("behavior", "Behavior", behavior_md)
-
-    months = angling.get("season_months") or []
-    if months:
-        add("seasonality", "Seasonality",
-            f"Its most productive fishing months in the Northern Hemisphere are typically {months_list(months)}, though exact timing depends on local climate and water temperature.")
-    elif angling.get("best_months"):
-        add("seasonality", "Seasonality", f"Best fishing months: {angling['best_months']}.")
-
-    status = meta.get("conservation", {}).get("status")
-    if status:
-        add("conservation", "Conservation", f"IUCN conservation status: **{status}**.")
+    behavior_text = _behavior_markdown(meta.get("behavior"))
+    if behavior_text:
+        add("behavior", "Behavior", behavior_text)
 
     return sections
 

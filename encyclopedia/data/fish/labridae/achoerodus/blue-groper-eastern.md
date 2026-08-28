@@ -20,7 +20,6 @@ sources:
 physical:
   max_length_cm: 83
 habitat:
-  depth_range_m: 1-40
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -30,11 +29,15 @@ biology:
   repro_mode: protogyny
   fertilization: external
   parental_care: none
-  age_maturity: 8 years
   predators:
   - Carcharodon carcharias
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  age_maturity: 8 years
   season_months:
   - 1
   - 2
@@ -48,11 +51,6 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: The eastern blue groper is a species of wrasse native to southeastern Australia from Hervey
   Bay in southern Queensland to Wilsons Promontory in Victoria. They occur in coastal waters, preferring
   rocky areas at a depth of about 40 m (130 ft). Juveniles inhabit beds of seagrass in estuaries. The

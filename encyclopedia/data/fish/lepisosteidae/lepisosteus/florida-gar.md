@@ -37,17 +37,6 @@ biology:
   - 10
   diet:
   - Insects
-angling:
-  best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -86,6 +75,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 description: The Florida gar is a species of gar found in the US from the Savannah River and Ochlockonee
   River watersheds of Georgia and throughout peninsular Florida. Florida gar can reach a length over 3 ft
   (91 cm). The young feed on zooplankton and insect larvae, as well as small fish. Adults mainly eat fish,

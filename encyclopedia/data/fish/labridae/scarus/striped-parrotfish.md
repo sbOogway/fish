@@ -20,7 +20,6 @@ physical:
   max_length_cm: 35
   typical_length_cm: '18'
 habitat:
-  depth_range_m: 3-25
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -36,8 +35,12 @@ biology:
   - Lutjanus griseus
   - Mycteroperca interstitialis
   - Mycteroperca venenosa
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -51,13 +54,8 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
-behavior:
-  schooling: true
+behavior: Super males spawn individually with striped females, while sexually mature males in the striped
+  phase spawn in aggregation.
 description: Scarus iseri is a species of fish of the family Scaridae. Its common names include striped
   parrotfish. The species was described by Bloch in 1789.
 image:

@@ -22,9 +22,7 @@ physical:
   max_length_cm: 166
   typical_length_cm: '100'
   max_weight_kg: 41.0
-  lifespan_years: '20'
 habitat:
-  depth_range_m: 0-122
   body_ecology: demersal
   water_types:
   - saltwater
@@ -42,22 +40,10 @@ biology:
   - 8
   - 9
   - 10
-  age_maturity: 4 years
   diet:
   - Bony fish
   - Mysids
   - Squids/cuttlefish
-angling:
-  best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -100,6 +86,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '20'
+  age_maturity: 4 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Often in schools over rocky bottom and in kelp beds . Pelagic spawners .
 description: The white seabass or white weakfish, Atractoscion nobilis, is a species of croaker occurring
   from Magdalena Bay, Baja California Sur, to Juneau, Alaska. They usually travel in schools over deep
   rocky bottoms and in and out of kelp beds.

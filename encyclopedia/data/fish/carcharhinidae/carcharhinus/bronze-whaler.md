@@ -21,9 +21,7 @@ sources:
 physical:
   max_length_cm: 325
   max_weight_kg: 304.6
-  lifespan_years: '30'
 habitat:
-  depth_range_m: 0-360
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -39,20 +37,9 @@ biology:
   - 2
   - 12
   fecundity: 11-20 eggs
-  age_maturity: 16 years
   diet:
   - Bony fish
   - Squids/cuttlefish
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -75,6 +62,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '30'
+  age_maturity: 16 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Occasionally found near the bottom .
 description: The copper shark, bronze whaler, or narrowtooth shark is a species of requiem shark found
   mostly in temperate latitudes. It is distributed in a number of separate populations in the northeastern
   and southwestern Atlantic, off southern Africa, in the northwestern and eastern Pacific, and around

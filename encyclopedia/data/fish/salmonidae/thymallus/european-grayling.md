@@ -24,9 +24,7 @@ physical:
   max_length_cm: 60
   typical_length_cm: '30'
   max_weight_kg: 6.7
-  lifespan_years: '14'
 habitat:
-  depth_range_m: 15-15
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -41,7 +39,6 @@ biology:
   - 4
   - 5
   fecundity: 600-15,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Benthic algae/weeds
   - Bivalves
@@ -56,14 +53,6 @@ biology:
   - Shrimps & prawns
   predators:
   - Hucho hucho
-angling:
-  best_months: Apr, May, Jun, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -510,6 +499,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '14'
+  age_maturity: 2.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+behavior: 5 m/s and clean gravel bottom . Can be captured with natural bait (insect larvae) or with artificial
+  fly.
 description: Thymallus thymallus, harjus, the grayling or European grayling, is a species of freshwater
   fish in the salmon family Salmonidae. It is the only species of the genus Thymallus native to Europe,
   where it is widespread from the United Kingdom and France to the Ural Mountains in Russia, and Balkans

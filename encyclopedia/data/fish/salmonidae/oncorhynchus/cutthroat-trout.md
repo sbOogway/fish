@@ -19,9 +19,7 @@ sources:
 physical:
   max_length_cm: 99
   max_weight_kg: 18.6
-  lifespan_years: '13'
 habitat:
-  depth_range_m: 0-200
   body_ecology: demersal
   water_types:
   - freshwater
@@ -46,7 +44,6 @@ biology:
   - 5
   - 6
   fecundity: 226-6,500 eggs
-  age_maturity: 3.5 years
   diet:
   - Amphipods
   - Bony fish
@@ -60,8 +57,14 @@ biology:
   - Oncorhynchus mykiss
   - Phoca vitulina
   - unidentified squawfish
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  lifespan_years: '13'
+  age_maturity: 3.5 years
   season_months:
   - 5
   - 6
@@ -69,11 +72,7 @@ angling:
   - 8
   - 9
   - 10
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Spawning adults migrate from the sea into streams to spawn .
 description: The cutthroat trout is a clade of four fish species of the family Salmonidae native to cold-water
   tributaries of the Pacific Ocean, Rocky Mountains, and Great Basin in North America. These four species
   are the Coastal, Westslope, Lahontan, and the Rocky Mountain. As a member of the genus Oncorhynchus,

@@ -23,9 +23,7 @@ physical:
   max_length_cm: 200
   typical_length_cm: '18'
   max_weight_kg: 9.0
-  lifespan_years: '10'
 habitat:
-  depth_range_m: 15-15
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -48,15 +46,6 @@ biology:
   - Insects
   - Ostracods
   - Terrestrial plants
-angling:
-  best_months: Jan, Feb, Mar, Oct, Nov, Dec
-  season_months:
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -73,6 +62,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '10'
+  season_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: Grow better in a river with a rocky bottom. Spawn from March to September, over stones and gravel
+  .
 description: Tor tor, commonly known as the tor mahseer, tor barb, or red-finned mahseer, is a species
   of cyprinid fish found in fast-flowing rivers and streams with rocky bottoms in India, Bangladesh, Bhutan,
   Nepal, and Pakistan. It is a commercially important food and game fish.

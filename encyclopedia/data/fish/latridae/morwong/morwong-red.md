@@ -19,7 +19,6 @@ sources:
 physical:
   max_length_cm: 65
 habitat:
-  depth_range_m: 0-30
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -29,8 +28,12 @@ biology:
   parental_care: none
   diet:
   - Benthic algae/weeds
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -44,11 +47,8 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Adults found on exposed rocky reefs down to about 30 m; juveniles on coastal reefs, amongst
+  algae.
 description: The red morwong, also known as the sea carp, is a species of marine ray finned fish traditionally
   regarded as belonging to the family Cheilodactylidae, the members of which are commonly known as morwongs.
   It is found off southeast Australia and the North Island of New Zealand from shallow depths to at least

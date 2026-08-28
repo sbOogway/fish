@@ -26,7 +26,6 @@ physical:
   typical_length_cm: '300'
   max_weight_kg: 650.0
 habitat:
-  depth_range_m: 0-2878
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -57,7 +56,6 @@ biology:
   - 11
   - 12
   fecundity: 1,000,000-29,000,000 eggs
-  age_maturity: 5.5 years
   diet:
   - Bony fish
   - Jellyfish/hydroids
@@ -79,14 +77,6 @@ biology:
   - Tetrapturus audax
   - Thunnus albacares
   - Thunnus obesus
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -533,6 +523,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 5.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Larvae are frequently encountered at temperatures above 24 °C . Adults are opportunistic feeders,
+  known to forage for their food from the surface to the bottom over a wide depth range .
 description: The swordfish, also known as the broadbill in some countries, are large, highly migratory
   predatory fish characterized by a long, flat, sword-like, pointed bill. They are the sole member of
   the family Xiphiidae. They are a popular sport fish of the billfish category. Swordfish are elongated,

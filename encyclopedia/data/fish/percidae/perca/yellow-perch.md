@@ -21,9 +21,7 @@ physical:
   max_length_cm: 50
   typical_length_cm: '19'
   max_weight_kg: 1.9
-  lifespan_years: '11'
 habitat:
-  depth_range_m: 0-56
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -38,7 +36,6 @@ biology:
   - 4
   - 5
   fecundity: 3,035-109,000 eggs
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Bony fish
@@ -67,15 +64,6 @@ biology:
   - unidentified basses
   - unidentified crappies
   - unidentified sunfishes
-angling:
-  best_months: Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -192,6 +180,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '11'
+  age_maturity: 3 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
 description: The yellow perch, commonly referred to as perch, striped perch, American perch or preacher
   is a freshwater ray-finned fish from the perch family Percidae, native to much of central North America,
   particularly the Great Lakes–St. Lawrence River basin and the Upper Mississippi River catchment. It

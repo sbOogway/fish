@@ -20,9 +20,7 @@ physical:
   max_length_cm: 140
   typical_length_cm: '100'
   max_weight_kg: 60.3
-  lifespan_years: '9'
 habitat:
-  depth_range_m: 0-600
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -42,7 +40,6 @@ biology:
   - 11
   - 12
   fecundity: 260,000-3,000,000 eggs
-  age_maturity: 5 years
   diet:
   - Amphipods
   - Bony fish
@@ -56,15 +53,6 @@ biology:
   - Thunnus obesus
   - billfishes
   - unidentified shark
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -511,6 +499,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '9'
+  age_maturity: 5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: An epipelagic and mesopelagic, oceanic species, abundant in surface waters of 15. Eggs and larvae
+  are pelagic .
 description: The albacore, known also as the albicore or longfin tuna, is a species of tuna of the order
   Scombriformes. It lives in temperate and tropical waters across the globe in the epipelagic and mesopelagic
   zones. There are six distinct stocks known globally in the Atlantic, Pacific, and Indian oceans, as

@@ -25,7 +25,6 @@ physical:
   typical_length_cm: '22'
   max_weight_kg: 1.3
 habitat:
-  depth_range_m: 0-160
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -42,7 +41,6 @@ biology:
   - 11
   - 12
   fecundity: 10,727-316,750 eggs
-  age_maturity: 1 years
   diet:
   - Amphipods
   - Ascidians
@@ -63,16 +61,6 @@ biology:
   - Squids/cuttlefish
   predators:
   - Fistularia commersoni
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -181,6 +169,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 1 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 description: Diplodus vulgaris, the common two-banded sea bream, is a species of marine ray-finned fish
   belonging to the family Sparidae, which includes the seabreams and porgies. This species is found in
   the northeastern Atlantic Ocean and the Mediterranean. It is an important species for fisheries and

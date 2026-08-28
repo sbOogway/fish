@@ -22,9 +22,7 @@ physical:
   max_length_cm: 170
   typical_length_cm: '90'
   max_weight_kg: 60.0
-  lifespan_years: '15'
 habitat:
-  depth_range_m: 0-80
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -52,7 +50,6 @@ biology:
   - 11
   - 12
   fecundity: 5,000-336,157 eggs
-  age_maturity: 2 years
   diet:
   - Benthic algae/weeds
   - Bivalves
@@ -79,21 +76,6 @@ biology:
   - Hydrocynus vittatus
   - Hydroprogne tschegrava
   - Notonecta sp.
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -540,6 +522,31 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '15'
+  age_maturity: 2 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Adults occur mainly in quiet waters, (vegetated fringes of) rivers and lakes, (isolated) pools
+  , irrigation and sewage effluent canals , and prefer rather shallow and swampy areas with a soft muddy
+  substrate and calmer water . Can leave the water at night using its strong pectoral fins and spines
+  in search of land-based food or can move into the breeding areas through very shallow pathways . Omnivorous
+  bottom feeders which occasionally feed at the surface , but essentially a predator feeding on crustaceans,
+  insects and fish . Feed at night on a wide variety of prey like insects, plankton, invertebrates and
+  fish but also take in young birds, rotting flesh and plants . Migrate to rivers and temporary streams
+  to spawn , and a major floodplain migrant, spawning throughout the flood season, in the Sudd (Sudan)
+  .
 description: Clarias gariepinus or African sharptooth catfish is a species of catfish of the family Clariidae,
   the airbreathing catfishes.
 image:

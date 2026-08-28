@@ -22,7 +22,6 @@ physical:
   typical_length_cm: '60'
   max_weight_kg: 3.6
 habitat:
-  depth_range_m: 0-100
   body_ecology: pelagic-neritic
   water_types:
   - saltwater
@@ -37,15 +36,6 @@ biology:
   - Bony fish
   predators:
   - Merluccius merluccius
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -78,6 +68,14 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 description: Sphyraena sphyraena, also known as the European barracuda or Mediterranean barracuda, is
   a ray-finned predatory fish of the Mediterranean basin and the warmer waters of the Atlantic Ocean.
 ---

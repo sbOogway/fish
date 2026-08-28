@@ -23,9 +23,7 @@ physical:
   max_length_cm: 150
   typical_length_cm: '70'
   max_weight_kg: 61.4
-  lifespan_years: '9'
 habitat:
-  depth_range_m: 0-375
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -56,7 +54,6 @@ biology:
   - 10
   - 11
   fecundity: 4,242-13,619 eggs
-  age_maturity: 4 years
   diet:
   - Amphipods
   - Bony fish
@@ -78,14 +75,6 @@ biology:
   - Salvelinus malma malma
   - Sander vitreus
   - Somniosus pacificus
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -436,6 +425,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '9'
+  age_maturity: 4 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Adults return to natal streams from the sea to spawn . Young are preyed upon by fishes and birds
+  (such as mergansers and kingfishers); adults are prey of large mammals and large birds .
 description: The Chinook salmon is the largest and most valuable species of Pacific salmon. Its common
   name is derived from the Chinookan peoples. Other vernacular names for the species include king salmon,
   quinnat salmon, tsumen, spring salmon, blackmouth, and tyee salmon. The scientific species name is based

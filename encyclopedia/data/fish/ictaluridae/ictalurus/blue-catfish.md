@@ -23,9 +23,7 @@ sources:
 physical:
   max_length_cm: 165
   max_weight_kg: 68.0
-  lifespan_years: '21'
 habitat:
-  depth_range_m: 0-50
   body_ecology: demersal
   water_types:
   - freshwater
@@ -36,15 +34,6 @@ biology:
   - Bony fish
   - Debris
   - Insects
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -123,6 +112,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '21'
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Stays on the bottom during the day in deep areas and moves into swifter water at night to feed
+  . Deposits eggs in nests under under logs, brush, or riverbank . Males build nest often in pools or
+  backwaters .
 description: The blue catfish is a large species of North American catfish, reaching a length of 65 in
   (170 cm) and a weight of 143 lb (65 kg). The continent's largest catfish, it can live to 20 years, with
   a typical fish being between 25–46 in (64–117 cm) and 30–70 lb (14–32 kg). Native distribution is primarily

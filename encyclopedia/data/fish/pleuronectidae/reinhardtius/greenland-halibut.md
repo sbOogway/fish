@@ -21,9 +21,7 @@ physical:
   max_length_cm: 110
   typical_length_cm: '56'
   max_weight_kg: 7.0
-  lifespan_years: '36'
 habitat:
-  depth_range_m: 1-2200
   body_ecology: benthopelagic
   water_types:
   - saltwater
@@ -44,7 +42,6 @@ biology:
   - 11
   - 12
   fecundity: 6,800-158,000 eggs
-  age_maturity: 9.5 years
   diet:
   - Amphipods
   - Bony fish
@@ -67,15 +64,6 @@ biology:
   - Reinhardtius hippoglossoides
   - Somniosus microcephalus
   - Theragra chalcogramma
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -122,13 +110,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
-  schooling_frequency: sometimes
-  schooling_lifestage: juveniles and adults
-  shoaling: true
-  shoaling_frequency: sometimes
-  shoaling_lifestage: juveniles and adults
+facts:
+  lifespan_years: '36'
+  age_maturity: 9.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Adults prefer bottom temperatures of -0.
 description: The Greenland halibut or Greenland turbot belongs to the family Pleuronectidae, and is the
   only species of the genus Reinhardtius. It is a predatory fish that mostly ranges at depths between
   500 and 1,000 m (1,600–3,300 ft), and is found in the cold northern Atlantic, northern Pacific, and

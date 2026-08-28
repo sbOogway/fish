@@ -24,9 +24,7 @@ physical:
   max_length_cm: 500
   typical_length_cm: '290'
   max_weight_kg: 636.0
-  lifespan_years: '20'
 habitat:
-  depth_range_m: 0-1000
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -44,16 +42,6 @@ biology:
   diet:
   - Bony fish
   - Squids/cuttlefish
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -500,6 +488,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '20'
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Feeding takes place during daytime.
 description: The Atlantic blue marlin is a species of marlin endemic to the Atlantic Ocean. It is closely
   related to, and usually considered conspecific with, the Indo-Pacific blue marlin, then simply called
   blue marlin. Some authorities consider both species distinct. Blue marlin are distributed throughout

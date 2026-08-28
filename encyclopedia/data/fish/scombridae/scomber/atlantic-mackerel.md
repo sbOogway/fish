@@ -25,9 +25,7 @@ physical:
   max_length_cm: 60
   typical_length_cm: '30'
   max_weight_kg: 3.4
-  lifespan_years: '17'
 habitat:
-  depth_range_m: 0-1000
   body_ecology: pelagic-neritic
   water_types:
   - brackish
@@ -42,7 +40,6 @@ biology:
   - 6
   - 7
   fecundity: 144,500-1,548,400 eggs
-  age_maturity: 2 years
   diet:
   - Amphipods
   - Ascidians
@@ -104,15 +101,6 @@ biology:
   - Trachurus mediterraneus
   - Urophycis chuss
   - Xiphias gladius
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -253,6 +241,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '17'
+  age_maturity: 2 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Abundant in cold and temperate shelf areas, forms large schools near the surface. Eggs and larvae
+  are pelagic . After spawning, the adult feed very actively moving around in small shoals .
 description: The Atlantic mackerel, also known as Boston mackerel, Norwegian mackerel, Scottish mackerel
   or just mackerel, is a species of mackerel found in the temperate waters of the Mediterranean Sea, the
   Black Sea, and the northern Atlantic Ocean, where it is extremely common and occurs in huge shoals in

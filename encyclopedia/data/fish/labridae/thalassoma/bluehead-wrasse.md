@@ -19,9 +19,7 @@ sources:
   wikidata_id: Q1971551
 physical:
   max_length_cm: 25
-  lifespan_years: '3'
 habitat:
-  depth_range_m: 0-40
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -47,21 +45,6 @@ biology:
   - Epinephelus guttatus
   - Mycteroperca venenosa
   - Rypticus saponaceus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -96,6 +79,22 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '3'
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Spawn at midday throughout the year .
 description: Thalassoma bifasciatum, the bluehead, bluehead wrasse or blue-headed wrasse, is a species
   of marine ray-finned fish, a wrasse from the family Labridae. It is native to the coral reefs of the
   tropical waters of the western Atlantic Ocean. Individuals are small and rarely live longer than two

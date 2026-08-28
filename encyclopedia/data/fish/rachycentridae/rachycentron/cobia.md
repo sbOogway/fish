@@ -23,9 +23,7 @@ physical:
   max_length_cm: 200
   typical_length_cm: '110'
   max_weight_kg: 68.0
-  lifespan_years: '15'
 habitat:
-  depth_range_m: 0-1200
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -45,7 +43,6 @@ biology:
   - 9
   - 10
   fecundity: 1,935,000-5,439,000 eggs
-  age_maturity: 2 years
   diet:
   - Bivalves
   - Bony fish
@@ -55,16 +52,6 @@ biology:
   - Stomatopods
   predators:
   - Coryphaena hippurus
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -369,6 +356,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '15'
+  age_maturity: 2 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Form small groups and may pursue small pelagic inshore . Form spawning aggregations during the
+  warm months in the western Atlantic; eggs and larvae planktonic . Caught in small quantities due to
+  its solitary behavior .
 description: The cobia is a species of marine carangiform ray-finned fish, the only extant representative
   of the genus Rachycentron and the family Rachycentridae. Its other common names include black kingfish,
   black salmon, ling, lemonfish, crabeater, prodigal son, codfish, and black bonito.

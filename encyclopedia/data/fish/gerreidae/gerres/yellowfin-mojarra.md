@@ -21,7 +21,6 @@ physical:
   typical_length_cm: '30'
   max_weight_kg: 0.5
 habitat:
-  depth_range_m: 1-15
   body_ecology: reef-associated
   water_types:
   - freshwater
@@ -41,26 +40,10 @@ biology:
   - 10
   - 11
   - 12
-  age_maturity: 1.5 years
   diet:
   - Bivalves
   predators:
   - Epinephelus striatus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -169,6 +152,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 1.5 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: The yellowfin mojarra is a species mojarra in the family Gerreidae. The species was originally
   described by Johann Julius Walbaum in 1792, as part the mullet genus Mugil. They mainly inhabit salt
   and brackish waters, but will enter fresh water. The species displays an ability akin to gyroscopic

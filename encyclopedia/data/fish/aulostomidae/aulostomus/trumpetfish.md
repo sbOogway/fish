@@ -21,7 +21,6 @@ physical:
   max_length_cm: 100
   typical_length_cm: '60'
 habitat:
-  depth_range_m: 2-25
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -39,21 +38,6 @@ biology:
   - Lutjanus apodus
   - Lutjanus jocu
   - Mycteroperca venenosa
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -72,6 +56,23 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: A solitary ambusher of small fishes and crustaceans that lurk among branching coral or gorgonians.
+  Often swims behind large herbivorous fishes to sneak up on prey. Mouth opens to diameter of body to
+  suck in prey .
 description: Aulostomus maculatus, the West Atlantic trumpetfish, is a long-bodied fish with an upturned
   mouth. It often swims vertically while trying to blend with vertical coral, such as sea rods, sea pens,
   and pipe sponges.

@@ -23,9 +23,7 @@ physical:
   max_length_cm: 250
   typical_length_cm: '130'
   max_weight_kg: 161.0
-  lifespan_years: '55'
 habitat:
-  depth_range_m: 0-40
   body_ecology: reef-associated
   water_types:
   - freshwater
@@ -46,7 +44,6 @@ biology:
   - 7
   - 8
   fecundity: 12,000,000 eggs
-  age_maturity: 10 years
   diet:
   - Benthic algae/weeds
   - Bony fish
@@ -54,16 +51,6 @@ biology:
   - Crabs
   - Insects
   - Shrimps & prawns
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -138,8 +125,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
+facts:
+  lifespan_years: '55'
+  age_maturity: 10 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Has high fecundity, a 203 cm female is estimated to produce over 12 million eggs . Spawn in
+  waters which can be temporarily isolated from the open sea . Transparent leptocephalus larvae migrate
+  into estuaries .
 description: The Atlantic tarpon is a ray-finned fish that inhabits coastal waters, estuaries, lagoons,
   and rivers. It is also known as the silver king. It is found in the Atlantic Ocean, typically in tropical
   and subtropical regions, though it has been reported as far north as Nova Scotia and the Atlantic coast

@@ -22,9 +22,7 @@ physical:
   max_length_cm: 140
   typical_length_cm: '72'
   max_weight_kg: 50.0
-  lifespan_years: '38'
 habitat:
-  depth_range_m: 0-28
   body_ecology: pelagic-neritic
   water_types:
   - freshwater
@@ -44,7 +42,6 @@ biology:
   - 11
   - 12
   fecundity: 147-5,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Amphipods
   - Bony fish
@@ -62,15 +59,6 @@ biology:
   - Lutra lutra
   - Petromyzon marinus
   - Phoca vitulina
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -517,6 +505,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '38'
+  age_maturity: 2.5 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Lacustrine populations undertake migration to tributaries and lake outlets to spawn, rarely
+  spawning on stone, wave-washed lake shores. Spawning takes place normally more than one time . Life
+  history and spawning behavior is similar to the salmon <i>Salmo salar</i> . 000 eggs (Ref. 35388, Ref.
+  51442). Mainly diurnal . Sea and lake trouts forage in pelagic and littoral habitats, while sea trouts
+  mainly close to coast, not very far from estuary of natal river .
 description: Sea trout is the common name usually applied to anadromous (sea-run) forms of brown trout,
   and is often referred to as Salmo trutta morpha trutta. Other names for anadromous brown trout are bull
   trout, sewin (Wales), peel or peal, mort, finnock (Scotland), white trout (Ireland) and salmon trout

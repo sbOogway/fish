@@ -20,9 +20,7 @@ physical:
   max_length_cm: 122
   typical_length_cm: '60'
   max_weight_kg: 25.9
-  lifespan_years: '11'
 habitat:
-  depth_range_m: 0-200
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -56,7 +54,6 @@ biology:
   - 11
   - 12
   fecundity: 200-12,749 eggs
-  age_maturity: 4 years
   diet:
   - Amphipods
   - Benthic algae/weeds
@@ -81,16 +78,6 @@ biology:
   - Phoca vitulina
   - Ptychocheilus grandis
   - Ptychocheilus oregonensis
-angling:
-  best_months: Jan, Feb, Mar, Sep, Oct, Nov, Dec
-  season_months:
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -449,6 +436,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '11'
+  age_maturity: 4 years
+  season_months:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: Mature individuals undertake short spawning migrations. Anadromous and lake forms may migrate
+  long distances to spawning streams .
 description: The rainbow trout is a species of trout native to cold-water tributaries of the Pacific Ocean
   in North America and Asia. The steelhead is an anadromous (sea-run) form of the coastal rainbow trout
   (O. m. irideus) or Columbia River redband trout (O. m. gairdneri) that usually returns to freshwater

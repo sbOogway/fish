@@ -23,7 +23,6 @@ physical:
   typical_length_cm: '90'
   max_weight_kg: 16.0
 habitat:
-  depth_range_m: 0-50
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -33,20 +32,9 @@ biology:
   fertilization: external
   parental_care: none
   fecundity: 259,488-2,859,935 eggs
-  age_maturity: 4.5 years
   diet:
   - Bony fish
   - Shrimps & prawns
-angling:
-  best_months: Jan, Feb, Mar, Apr, Oct, Nov, Dec
-  season_months:
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
-  - 4
 distribution:
   native: true
   points:
@@ -59,6 +47,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 4.5 years
+  season_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+  - 4
 description: Scomberoides commersonnianus, the Talang queenfish, also known as giant dart, giant leatherskin,
   giant queenfish, largemouth queenfish, leatherjacket, leatherskin, and Talang leatherskin, is a species
   of ray-finned fish in the family Trachinotidae from the western Indo-Pacific. It is a large species

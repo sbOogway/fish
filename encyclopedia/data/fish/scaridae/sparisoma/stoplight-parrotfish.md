@@ -21,7 +21,6 @@ physical:
   typical_length_cm: '38'
   max_weight_kg: 1.6
 habitat:
-  depth_range_m: 3-50
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -47,8 +46,17 @@ biology:
   predators:
   - Caranx ruber
   - Lutjanus jocu
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points:
+  - - 9.583
+    - -78.75
+  - - 32.2
+    - -64.6
+  source: FishBase occurrence records
+conservation:
+  status: LC
+facts:
   season_months:
   - 1
   - 2
@@ -62,18 +70,7 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points:
-  - - 9.583
-    - -78.75
-  - - 32.2
-    - -64.6
-  source: FishBase occurrence records
-conservation:
-  status: LC
-behavior:
-  solitary: true
+behavior: Protogynous; strictly diurnal, spends the night sleeping on the bottom .
 description: The stoplight parrotfish is a species of marine ray-finned fish, a parrotfish from the family
   Scaridae, inhabiting coral reefs in Florida, Caribbean Sea, Gulf of Mexico, Bermuda and as far south
   as Brazil. It mainly feeds on algae by scraping and excavating it with its teeth. Like most parrotfish,

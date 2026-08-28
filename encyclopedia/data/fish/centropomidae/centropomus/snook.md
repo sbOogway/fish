@@ -23,9 +23,7 @@ physical:
   max_length_cm: 140
   typical_length_cm: '50'
   max_weight_kg: 24.3
-  lifespan_years: '7'
 habitat:
-  depth_range_m: 0-22
   body_ecology: reef-associated
   water_types:
   - freshwater
@@ -47,22 +45,10 @@ biology:
   - 11
   - 12
   fecundity: 3,000,000-4,000,000 eggs
-  age_maturity: 4 years
   diet:
   - Bony fish
   - Crabs
   - Shrimps & prawns
-angling:
-  best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -227,6 +213,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '7'
+  age_maturity: 4 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Mature individuals congregate at mouths of passes and rivers during the spawning season, May
+  through September .
 description: The common snook is a species of marine fish in the family Centropomidae of the order Carangiformes.
   The common snook is also known as the sergeant fish or robalo. It was originally assigned to the sciaenid
   genus Sciaena; Sciaena undecimradiatus and Centropomus undecimradiatus are obsolete synonyms for the

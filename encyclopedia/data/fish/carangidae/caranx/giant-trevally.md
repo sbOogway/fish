@@ -25,7 +25,6 @@ physical:
   typical_length_cm: '100'
   max_weight_kg: 80.0
 habitat:
-  depth_range_m: 10-188
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -44,7 +43,6 @@ biology:
   - 9
   - 10
   - 11
-  age_maturity: 3.5 years
   diet:
   - Bony fish
   - Lobsters
@@ -52,21 +50,6 @@ biology:
   - Squids/cuttlefish
   predators:
   - Carcharhinus limbatus
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -139,6 +122,23 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  age_maturity: 3.5 years
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Adults are pelagic over sand and rock . Spawning occurs on shallow seaward reefs and offshore
+  banks .
 description: The giant trevally, also known as the lowly trevally, barrier trevally, giant kingfish, or
   ulua, is a species of large marine fish classified in the jack family, Carangidae. The giant trevally
   is distributed throughout the tropical waters of the Indo-Pacific region, with a range stretching from

@@ -27,13 +27,6 @@ habitat:
 biology:
   repro_mode: dioecism
   fertilization: external
-angling:
-  best_months: Apr, May, Jun, Jul
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
 distribution:
   native: true
   points:
@@ -42,6 +35,13 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+behavior: Enters rivers for spawning in spring .
 description: 'Alburnus tarichi, known as the tarek, pearl mullet, Van fish or Van shah kuli, is a species
   of ray-finned fish belonging to the family Leuciscidae. This species is restricted to Turkey, where
   it is endemic to the Lake Van basin. The local names are the following: Turkish: İnci kefalı / İnci

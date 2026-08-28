@@ -22,9 +22,7 @@ physical:
   max_length_cm: 180
   typical_length_cm: '60'
   max_weight_kg: 113.5
-  lifespan_years: '48'
 habitat:
-  depth_range_m: 0-5
   body_ecology: demersal
   water_types:
   - freshwater
@@ -40,7 +38,6 @@ biology:
   - 11
   - 12
   fecundity: 10,000-90,000 eggs
-  age_maturity: 4.5 years
   diet:
   - Bivalves
   - Bony fish
@@ -55,8 +52,14 @@ biology:
   predators:
   - Perca fluviatilis
   - Phalacrocorax sp.
-angling:
-  best_months: Jan, Feb, Mar, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
+  lifespan_years: '48'
+  age_maturity: 4.5 years
   season_months:
   - 9
   - 10
@@ -65,11 +68,8 @@ angling:
   - 1
   - 2
   - 3
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
+behavior: Spawning takes place from spring to early summer. Murray cod are territorial, their 'territory'
+  associated with a specific hole, snag (large woody debris) or area of a river or lake .
 description: The Murray cod is a large Australian predatory freshwater fish of the genus Maccullochella
   in the family Percichthyidae. Although the species is called a cod in the vernacular, it is not related
   to the Northern Hemisphere marine cod (Gadus) species. The Murray cod is an important part of Australia's

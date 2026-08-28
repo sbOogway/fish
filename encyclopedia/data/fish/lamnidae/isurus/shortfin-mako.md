@@ -23,9 +23,7 @@ physical:
   max_length_cm: 445
   typical_length_cm: '270'
   max_weight_kg: 505.8
-  lifespan_years: '32'
 habitat:
-  depth_range_m: 0-888
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -38,22 +36,12 @@ biology:
   fertilization: internal (oviduct)
   parental_care: maternal
   fecundity: 4-16 eggs
-  age_maturity: 18 years
   diet:
   - Bony fish
   - Debris
   - Pinnipeds
   - Squids/cuttlefish
   - Turtles
-angling:
-  best_months: May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -88,6 +76,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: NO-RETENTION
+facts:
+  lifespan_years: '32'
+  age_maturity: 18 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Usually in surface waters , down to about 150 m . Isotope analysis has shown that shortfin mako
+  is the highest level fish predator in oceanic waters off eastern Australia . Gestation period lasts
+  15-18 months, spawning cycle is every 3 years.
 description: The shortfin mako shark, also known as the shortfin mako, blue pointer, or bonito shark,
   is a species of large mackerel shark. It is commonly referred to as the mako shark, as is the longfin
   mako shark. The fastest known shark species, able to reach speeds of 74 km/h (46 mph) in bursts, the

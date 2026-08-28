@@ -19,7 +19,6 @@ sources:
 physical:
   max_length_cm: 15
 habitat:
-  depth_range_m: 2-20
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -29,21 +28,6 @@ biology:
   repro_mode: dioecism
   fertilization: external
   parental_care: none
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -80,8 +64,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  solitary: true
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: The foureye butterflyfish or four-eyed butterflyfish is a species of marine ray-finned fish
   in the butterflyfish family Chaetodontidae. This species is found in the Western Atlantic, from New
   England through Bermuda and the West Indies to northern South America.

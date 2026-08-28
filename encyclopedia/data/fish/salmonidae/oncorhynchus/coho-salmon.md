@@ -23,9 +23,7 @@ physical:
   max_length_cm: 108
   typical_length_cm: '71'
   max_weight_kg: 15.2
-  lifespan_years: '5'
 habitat:
-  depth_range_m: 0-250
   body_ecology: pelagic-neritic
   water_types:
   - freshwater
@@ -51,7 +49,6 @@ biology:
   - 10
   - 11
   fecundity: 1,440-5,700 eggs
-  age_maturity: 3 years
   diet:
   - Bony fish
   - Insects
@@ -67,14 +64,6 @@ biology:
   - Salvelinus malma
   - unidentified sculpin
   - unidentified squawfish
-angling:
-  best_months: May, Jun, Jul, Aug, Sep
-  season_months:
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -521,6 +510,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '5'
+  age_maturity: 3 years
+  season_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: The fish that stay more than two years in fresh water and become sexually ripe without ever
+  going to sea, are called residuals; they never spawn . Young fish in lakes and rivers eat mainly insects;
+  they stay almost entirely in deep parts of the river and soon become strongly territorial . As they
+  grow, they migrate farther out into the sea and hunt larger organisms such as jellyfish, squids and
+  fishes .
 description: The coho salmon is a species of anadromous fish in the salmon family and one of the six Pacific
   salmon species. Coho salmon are also known as silver salmon and is often sold as medium red salmon.
   "Coho" was borrowed into English from the word k̓ʷə́xʷəθ, the species' name in the downriver dialect

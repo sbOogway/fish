@@ -22,7 +22,6 @@ physical:
   typical_length_cm: '15'
   max_weight_kg: 0.2
 habitat:
-  depth_range_m: 0-20
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -54,21 +53,6 @@ biology:
   - Plectropomus leopardus
   - Rachycentron canadum
   - Thalassoma bifasciatum
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -225,6 +209,24 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Juveniles are common in tide pools while adults are found over shallow reef tops. Adults frequently
+  form large feeding aggregations of up to several hundred individuals. Food items include algae, small
+  crustaceans and fish, and various invertebrate larvae . Adult males adopt a bluish ground color when
+  guarding eggs. Eggs are demersal and adhere to the substrate .
 description: The sergeant major or píntano is a species of damselfish. It grows to a maximum length of
   about 22.9 cm (9.0 in).
 image:

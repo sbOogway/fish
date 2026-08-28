@@ -22,9 +22,7 @@ physical:
   max_length_cm: 107
   typical_length_cm: '54'
   max_weight_kg: 11.3
-  lifespan_years: '29'
 habitat:
-  depth_range_m: 0-27
   body_ecology: benthopelagic
   water_types:
   - freshwater
@@ -42,7 +40,6 @@ biology:
   - 5
   - 6
   fecundity: 41,061-612,000 eggs
-  age_maturity: 4.5 years
   diet:
   - Benth. copepods
   - Bony fish
@@ -57,15 +54,6 @@ biology:
   - Stizostedion canadense
   - Stizostedion vitreum
   - unidentifed  perch
-angling:
-  best_months: Apr, May, Jun, Sep, Oct, Nov
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -160,6 +148,16 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '29'
+  age_maturity: 4.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
+  - 11
 description: The walleye, also called the walleyed pike, yellow pike, yellow pikeperch or yellow pickerel,
   is a freshwater perciform fish native to most of Canada and to the Northern United States. It is a North
   American close relative of the European zander, also known as the pikeperch. The walleye is sometimes

@@ -20,9 +20,7 @@ sources:
 physical:
   max_length_cm: 46
   max_weight_kg: 1.4
-  lifespan_years: '10'
 habitat:
-  depth_range_m: 2-55
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -34,21 +32,6 @@ biology:
   - Bony fish
   - Crabs
   - Shrimps & prawns
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -73,6 +56,25 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '10'
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Often solitary, they hide in unexposed places at daytime often with head down and practically
+  immobile. Pelagic juveniles expatriate over great distances and the reason for their broad geographical
+  range . Hunt small fishes, shrimps, and crabs at night, using its widespread pectorals trapping prey
+  into a corner, stunning it and then swallowing it in one sweep.
 description: The red lionfish is a venomous coral reef fish in the family Scorpaenidae, order Scorpaeniformes.
   It is mainly native to the Indo-Pacific region, but has become an invasive species in the Caribbean
   Sea, as well as along the East Coast of the United States and East Mediterranean and also found in Brazil

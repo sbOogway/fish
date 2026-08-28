@@ -20,7 +20,6 @@ physical:
   max_length_cm: 35
   typical_length_cm: '18'
 habitat:
-  depth_range_m: 0-104
   body_ecology: demersal
   water_types:
   - brackish
@@ -48,7 +47,6 @@ biology:
   - 11
   - 12
   fecundity: 100-1,116 eggs
-  age_maturity: 1 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -60,8 +58,18 @@ biology:
   - Mysids
   - Polychaetes
   - Shrimps & prawns
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+distribution:
+  native: true
+  points:
+  - - -46.0
+    - 171.5
+  - - -41.291
+    - 174.803
+  source: FishBase occurrence records
+conservation:
+  status: LC
+facts:
+  age_maturity: 1 years
   season_months:
   - 1
   - 2
@@ -75,16 +83,8 @@ angling:
   - 10
   - 11
   - 12
-distribution:
-  native: true
-  points:
-  - - -46.0
-    - 171.5
-  - - -41.291
-    - 174.803
-  source: FishBase occurrence records
-conservation:
-  status: LC
+behavior: Juveniles are pelagic or attached to drifting seaweeds . Nocturnal . The male carries the eggs
+  in a brood pouch which is found under the tail . Seen in groups at night.
 description: The big-belly seahorse or pot-bellied seahorse is one of the largest seahorse species in
   the world, with a length of up to 35 cm (14 in), and is the largest in Australia. Seahorses are members
   of the family Syngnathidae, and are teleost fishes. They are found in south-eastern Australia and New

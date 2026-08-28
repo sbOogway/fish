@@ -21,9 +21,7 @@ sources:
 physical:
   max_length_cm: 119
   max_weight_kg: 22.7
-  lifespan_years: '25'
 habitat:
-  depth_range_m: 10-1280
   body_ecology: demersal
   water_types:
   - brackish
@@ -39,7 +37,6 @@ biology:
   - 2
   - 3
   fecundity: 860,000-4,000,000 eggs
-  age_maturity: 5.5 years
   diet:
   - Amphipods
   - Benthic algae/weeds
@@ -68,16 +65,6 @@ biology:
   - Phoca vitulina
   - Reinhardtius stomias
   - Theragra chalcogramma
-angling:
-  best_months: Jan, Feb, Mar, Apr, Oct, Nov, Dec
-  season_months:
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
-  - 4
 distribution:
   native: true
   points:
@@ -328,6 +315,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '25'
+  age_maturity: 5.5 years
+  season_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+  - 4
 description: The Pacific cod is a species of ray-finned fish in the family Gadidae. It is a bottom-dwelling
   fish found in the northern Pacific Ocean, mainly on the continental shelf and upper slopes, to depths
   of about 900 m (3,000 ft). It can grow to a length of a meter or so and is found in large schools. They

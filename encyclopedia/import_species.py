@@ -19,6 +19,7 @@ through the same pipeline. A small JSON cache avoids re-hitting the external
 APIs on rerun.
 """
 import json
+import re
 import sys
 import time
 import urllib.request
@@ -29,7 +30,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from encyclopedia.fishbase import FishBase, build_fishbase_enrichment, build_biology, build_behavior
+from encyclopedia.fishbase import FishBase, build_fishbase_enrichment, build_biology, strip_citations
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "encyclopedia" / "data"
@@ -173,13 +174,14 @@ def build_profile(species, summary, tax, fb):
     fish_class = "Cephalopoda" if family in CEPHALOPOD_FAMILIES else (tax.get("class") or "Actinopterygii")
     conservation = CONSERVATION.get(species.get("conservationStatus"), "LC")
 
-    # FishBase enrichment (physical, habitat, biology, behavior, real
-    # distribution points).
+    # FishBase enrichment (physical, habitat, biology, distribution points)
+    # + Comments for the v2 Behavior prose section.
     fbname = FISHBASE_ALIASES.get(sci.lower(), sci)
     fb_enc = build_fishbase_enrichment(fb, fbname)
     spec_code = (fb.species_row(fbname) or {}).get("SpecCode")
     biology = build_biology(fb, spec_code)
-    behavior = build_behavior(fb, spec_code)
+    comments = fb.species_comments(fbname)
+    behavior_text = build_behavior_text(comments)
 
     water_types = (fb_enc["habitat"].get("water_types")
                    or (["saltwater"] if water == "saltwater" else ["freshwater"]))
@@ -196,6 +198,18 @@ def build_profile(species, summary, tax, fb):
         # No FishBase records (non-fish, or data gap): omit the map rather than
         # render a meaningless two-point band.
         distribution["points"] = []
+
+    # v2 `facts` block: relocate the three lifecycle/phenology numbers from
+    # their v1 homes (`physical.lifespan_years`, `biology.age_maturity`,
+    # `angling.season_months`) into a single top-level block.
+    physical = dict(fb_enc["physical"])
+    facts = {}
+    if "lifespan_years" in physical:
+        facts["lifespan_years"] = physical.pop("lifespan_years")
+    if "age_maturity" in biology:
+        facts["age_maturity"] = biology.pop("age_maturity")
+    if season:
+        facts["season_months"] = season
 
     meta = {
         "id": slug,
@@ -215,18 +229,16 @@ def build_profile(species, summary, tax, fb):
             "fishradar_id": slug,
             "wikidata_id": summary.get("wikibase_item") if summary else None,
         },
-        "physical": dict(fb_enc["physical"]),
+        "physical": physical,
         "habitat": habitat,
         "biology": biology,
-        "angling": {
-            "best_months": months_list(season),
-            "season_months": season,
-        },
         "distribution": distribution,
         "conservation": {"status": conservation},
     }
-    if behavior:
-        meta["behavior"] = behavior
+    if facts:
+        meta["facts"] = facts
+    if behavior_text:
+        meta["behavior"] = behavior_text
 
     extract = (summary or {}).get("extract") or ""
     meta["description"] = extract.strip()
@@ -251,6 +263,100 @@ def build_profile(species, summary, tax, fb):
 def months_list(months):
     names = ", ".join(MONTH_NAMES[m - 1] for m in sorted(months) if 1 <= m <= 12)
     return names or "year-round"
+
+
+# --- Behavior filter (T12 resolution) ----------------------------------------
+
+# Keep-keyword groups: a sentence matches if it contains any of these words.
+# Each entry is a tuple of (label, regex). A sentence is "behavioral" if any
+# of the six group regexes matches.
+_BEHAVIOR_KEEP_GROUPS = {
+    "temporal":     r"\b(nocturnal|diurnal|crepuscular|dawn|dusk|night\b|daytime)\b",
+    "position":     r"\b(benthic|demersal|pelagic|benthopelagic|bottom|water column|surface|midwater)\b",
+    "movement":     r"\b(migrat|school|shoal|solitary|territorial|wandering|sedentary)\b",
+    "foraging":     r"\b(predator|prey|forag|hunt|ambush|carnivore|herbivore|planktivore|opportunistic)\b",
+    "ontogeny":     r"\b(larvae|juvenile|adults?\b|ontogen|ontogenetic)\b",
+    "reproduction": r"\b(spawn|spawning|nest|eggs|guard|parental)\b",
+}
+_BEHAVIOR_KEEP_RE = re.compile("|".join(_BEHAVIOR_KEEP_GROUPS.values()), re.IGNORECASE)
+
+# Drop-keyword patterns: even if a sentence has a keep-keyword, drop it if
+# any of these match. The sentence is actually a habitat / diet / age / length
+# / human-use / conservation / parasites fact that already lives elsewhere.
+_BEHAVIOR_DROP_PARTS = [
+    r"\binhabit(?:s|ed|ing)?\b",
+    r"\bfound in\b",
+    r"\blives? in\b",
+    r"\boccurs? in\b",
+    r"\bendemic to\b",
+    r"\bfeeds? (mainly )?on\b",
+    r"\bdiets? of\b",
+    r"\bpreys? on\b",
+    r"\battain(?:s|ed|ing)? (first )?sexual maturity\b",
+    r"\bsexual maturity\b",
+    r"\bmaximum (?:length|weight|recorded)\b",
+    r"\brecorded maxima\b",
+    r"\bmaximum length of\b",
+    r"\bmaximum weight of\b",
+    r"\bpopularly fished\b",
+    r"\bcommercially\b",
+    r"\bgame fish\b",
+    r"\butilized\b",
+    r"\bmarketed\b",
+    r"\beat(?:en|ing)\b",
+    r"\battracts? no\b",
+    r"\bharmless\b",
+    r"\bdangerous\b",
+    r"\blocally threatened\b",
+    r"\blocally impacted\b",
+    r"\bthreatened due\b",
+    r"\bparasite\b",
+    r"\bintermediate host\b",
+]
+_BEHAVIOR_DROP_RE = re.compile("|".join(_BEHAVIOR_DROP_PARTS), re.IGNORECASE)
+
+
+def _behavior_split_sentences(text):
+    """Split on . ! ? followed by whitespace, but not inside parentheses."""
+    out, buf, depth = [], [], 0
+    for ch in text:
+        if ch == "(":
+            depth += 1
+            buf.append(ch)
+        elif ch == ")":
+            depth -= 1
+            buf.append(ch)
+        elif ch in ".!?" and depth == 0:
+            buf.append(ch)
+            s = "".join(buf).strip()
+            if s:
+                out.append(s)
+            buf = []
+        else:
+            buf.append(ch)
+    tail = "".join(buf).strip()
+    if tail:
+        out.append(tail)
+    return out
+
+
+def build_behavior_text(comments):
+    """Sentence-filter the FishBase `species.Comments` paragraph.
+
+    Returns the joined kept sentences (citation-stripped), or "" if no
+    sentence passes the keep/drop filter. Locked by issue #12.
+    """
+    if not comments:
+        return ""
+    text = strip_citations(comments)
+    kept = []
+    for s in _behavior_split_sentences(text):
+        s = s.strip()
+        if not s:
+            continue
+        if _BEHAVIOR_KEEP_RE.search(s) and not _BEHAVIOR_DROP_RE.search(s):
+            kept.append(s)
+    return " ".join(kept).strip()
 
 
 def build_body(common, sci, extract, biology):

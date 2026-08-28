@@ -20,7 +20,6 @@ physical:
   max_length_cm: 30
   typical_length_cm: '17'
 habitat:
-  depth_range_m: 0-60
   body_ecology: reef-associated
   water_types:
   - saltwater
@@ -38,21 +37,6 @@ biology:
   - Mycteroperca bonaci
   - Mycteroperca tigris
   - Mycteroperca venenosa
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -89,8 +73,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: Haemulon flavolineatum, the French grunt, banana grunt, gold laced grunt, open-mouthed grunt,
   redmouth grunt, or yellow grunt, is a species of marine ray-finned fish, a grunt belonging to the family
   Haemulidae. It inhabits tropical through warm-temperate regions between the southern Caribbean and the

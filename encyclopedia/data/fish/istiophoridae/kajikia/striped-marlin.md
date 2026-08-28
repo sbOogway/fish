@@ -23,9 +23,7 @@ physical:
   max_length_cm: 420
   typical_length_cm: '290'
   max_weight_kg: 440.0
-  lifespan_years: '9'
 habitat:
-  depth_range_m: 0-200
   body_ecology: pelagic-oceanic
   water_types:
   - saltwater
@@ -44,7 +42,6 @@ biology:
   - 11
   - 12
   fecundity: 3,122,503-29,000,000 eggs
-  age_maturity: 2.5 years
   diet:
   - Bony fish
   - Squids/cuttlefish
@@ -52,16 +49,6 @@ biology:
   - Coryphaena hippurus
   - Thunnus albacares
   - toothed whales
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -130,6 +117,18 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '9'
+  age_maturity: 2.5 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+behavior: Mostly solitary, but form small schools by size during the spawning season .
 description: The striped marlin is a species of marlin found globally in tropical to temperate oceans
   not far from the surface. It is a desirable commercial and game fish, although conservation measures
   are in place to restrict its commercial landings. An epipelagic predator, it hunts during the day in

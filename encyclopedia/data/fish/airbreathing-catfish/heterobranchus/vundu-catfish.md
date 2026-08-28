@@ -20,7 +20,6 @@ physical:
   max_length_cm: 150
   max_weight_kg: 55.0
 habitat:
-  depth_range_m: 10-10
   body_ecology: demersal
   water_types:
   - freshwater
@@ -44,21 +43,6 @@ biology:
   - Shore birds
   predators:
   - Bufo regularis
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -251,6 +235,23 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+behavior: Most active at night, feeding on any available food, including invertebrates and insects when
+  small, fish and other small vertebrates when large; scavenges off large carcasses and offal from riverside
+  villages; live for 12 or more years .
 description: The vundu is a species of large airbreathing catfish found widely in rivers and other freshwater
   habitats of sub-Saharan Africa, as well as the Nile. It is also called the sampa, cur, lenda, or certa.
 image:

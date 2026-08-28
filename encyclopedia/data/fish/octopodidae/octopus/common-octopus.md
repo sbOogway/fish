@@ -26,8 +26,12 @@ habitat:
   water_types:
   - saltwater
 biology: {}
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct, Nov
+distribution:
+  native: true
+  points: []
+conservation:
+  status: LC
+facts:
   season_months:
   - 4
   - 5
@@ -37,11 +41,6 @@ angling:
   - 9
   - 10
   - 11
-distribution:
-  native: true
-  points: []
-conservation:
-  status: LC
 description: The common octopus is a mollusk belonging to the class Cephalopoda. Octopus vulgaris is one
   of the most studied of all the octopus species, and also one of the most intelligent. It ranges from
   the eastern Atlantic, extends from the Mediterranean Sea, Black sea and the southern coast of England,

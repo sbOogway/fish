@@ -24,9 +24,7 @@ physical:
   max_length_cm: 184
   typical_length_cm: '70'
   max_weight_kg: 45.0
-  lifespan_years: '26'
 habitat:
-  depth_range_m: 5-140
   body_ecology: pelagic-neritic
   water_types:
   - saltwater
@@ -45,7 +43,6 @@ biology:
   - 9
   - 10
   fecundity: 160,722-8,070,585 eggs
-  age_maturity: 2 years
   diet:
   - Bony fish
   - Shrimps & prawns
@@ -53,18 +50,6 @@ biology:
   predators:
   - Acanthocybium solandri
   - Coryphaena hippurus
-angling:
-  best_months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
 distribution:
   native: true
   points:
@@ -163,6 +148,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '26'
+  age_maturity: 2 years
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+behavior: Larvae are encountered in surface waters of 26.
 description: The king mackerel, kingfish or carite lucio is a migratory species of mackerel of the western
   Atlantic Ocean and Gulf of Mexico. It is an important species to both the commercial and recreational
   fishing industries.

@@ -21,9 +21,7 @@ physical:
   max_length_cm: 800
   typical_length_cm: '215'
   max_weight_kg: 3200.0
-  lifespan_years: '118'
 habitat:
-  depth_range_m: 70-180
   body_ecology: pelagic-neritic
   water_types:
   - freshwater
@@ -41,7 +39,6 @@ biology:
   - 5
   - 6
   fecundity: 360,000-7,700,000 eggs
-  age_maturity: 17 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -51,19 +48,25 @@ biology:
   - Insects
   - Mysids
   - Polychaetes
-angling:
-  best_months: Apr, May, Jun, Sep, Oct
+distribution:
+  native: true
+  points: []
+conservation:
+  status: CITES-II
+facts:
+  lifespan_years: '118'
+  age_maturity: 17 years
   season_months:
   - 4
   - 5
   - 6
   - 9
   - 10
-distribution:
-  native: true
-  points: []
-conservation:
-  status: CITES-II
+behavior: Pelagic at the sea, following its prey. Undertakes upriver migration to spawn. Spawns in the
+  main course of large and deep rivers with strong current and on stone or gravel bottom . Feeds mostly
+  on sea fishes (Black Sea whiting, anchovies, flatfishes, gobies, fry of bottom-living fishes), also
+  crustaceans, mollusks, mysids and amphipods. Bester, a hybrid of female <i>Huso huso</i> and male sterlet
+  <i>Acipenser ruthenus</i>, has been successfully cultivated for its high quality eggs .
 description: The beluga, also known as the beluga sturgeon or great sturgeon, is a species of sturgeon,
   which are anadromous fish of the family Acipenseridae of the order Acipenseriformes. It is found primarily
   in the Caspian and Black Sea basins, and formerly in the Adriatic Sea. Based on maximum size, it is

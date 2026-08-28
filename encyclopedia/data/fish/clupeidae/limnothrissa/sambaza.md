@@ -23,7 +23,6 @@ physical:
   typical_length_cm: '10'
   max_weight_kg: 0.0
 habitat:
-  depth_range_m: 10-60
   body_ecology: pelagic
   water_types:
   - freshwater
@@ -69,21 +68,6 @@ biology:
   - Lates stappersii
   - Schilbe mystus
   - Synodontis zambesensis
-angling:
-  best_months: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -188,6 +172,20 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  season_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
 description: The Lake Tanganyika sardine is a species of freshwater ray-finned fish in the family Dorosomatidae
   which was endemic to Lake Tanganyika but which has now been introduced to other lakes in Africa as a
   food source. It is one of two species within the genus Limnothrissa, the other being the Lake Mweru

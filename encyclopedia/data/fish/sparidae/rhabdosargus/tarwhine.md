@@ -22,7 +22,6 @@ physical:
   typical_length_cm: '45'
   max_weight_kg: 12.0
 habitat:
-  depth_range_m: 0-60
   body_ecology: reef-associated
   water_types:
   - brackish
@@ -46,7 +45,6 @@ biology:
   - 10
   - 11
   - 12
-  age_maturity: 2 years
   diet:
   - Benthic algae/weeds
   predators:
@@ -54,16 +52,6 @@ biology:
   - Ceryle rudis
   - Hydroprogne tschegrava
   - Phalacrocorax carbo
-angling:
-  best_months: Jan, Feb, Aug, Sep, Oct, Nov, Dec
-  season_months:
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
 distribution:
   native: true
   points:
@@ -146,8 +134,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
-behavior:
-  schooling: true
+facts:
+  age_maturity: 2 years
+  season_months:
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+behavior: Larger, solitary fish sometimes enter brackish mangrove areas .
 description: Rhabdosargus sarba, also known as the goldlined seabream, silver bream, tarwhine, or yellowfin
   bream, is a species of marine ray-finned fish belonging to the family Sparidae, which includes the seabreams
   and porgies. This fish has a wide Indo-Pacific distribution.

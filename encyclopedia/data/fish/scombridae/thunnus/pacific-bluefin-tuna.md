@@ -21,9 +21,7 @@ physical:
   max_length_cm: 300
   typical_length_cm: '200'
   max_weight_kg: 450.0
-  lifespan_years: '15'
 habitat:
-  depth_range_m: 1-550
   body_ecology: pelagic-oceanic
   water_types:
   - brackish
@@ -39,17 +37,6 @@ biology:
   - 7
   - 8
   fecundity: 5,000,000-25,000,000 eggs
-  age_maturity: 4 years
-angling:
-  best_months: Apr, May, Jun, Jul, Aug, Sep, Oct
-  season_months:
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
 distribution:
   native: true
   points:
@@ -496,6 +483,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '15'
+  age_maturity: 4 years
+  season_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 description: The Pacific bluefin tuna is a predatory species of tuna found widely in the northern Pacific
   Ocean, but it is migratory and also recorded as a visitor to the south Pacific.
 image:

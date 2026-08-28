@@ -23,9 +23,7 @@ physical:
   max_length_cm: 100
   typical_length_cm: '30'
   max_weight_kg: 9.7
-  lifespan_years: '26'
 habitat:
-  depth_range_m: 10-200
   body_ecology: demersal
   water_types:
   - saltwater
@@ -52,15 +50,6 @@ biology:
   - Non-annelids
   - Ostracods
   - Polychaetes
-angling:
-  best_months: Mar, Apr, May, Oct, Nov, Dec
-  season_months:
-  - 3
-  - 4
-  - 5
-  - 10
-  - 11
-  - 12
 distribution:
   native: true
   points:
@@ -99,6 +88,17 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '26'
+  season_months:
+  - 3
+  - 4
+  - 5
+  - 10
+  - 11
+  - 12
+behavior: Adults migrate into shallower parts of their depth range to spawn in late spring and summer;
+  juveniles occur mainly in the shallower areas.
 description: Pagrus major, the red seabream, red pargo, red porgy or silver seabream, is a species of
   marine ray-finned fish in the family Sparidae, which includes the seabreams and porgies. This species
   is found in the Western Pacific Ocean. The fish has high culinary and cultural importance in Japan,

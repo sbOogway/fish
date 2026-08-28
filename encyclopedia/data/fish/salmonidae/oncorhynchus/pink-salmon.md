@@ -23,9 +23,7 @@ physical:
   max_length_cm: 76
   typical_length_cm: '50'
   max_weight_kg: 7.0
-  lifespan_years: '3'
 habitat:
-  depth_range_m: 0-250
   body_ecology: demersal
   water_types:
   - freshwater
@@ -56,7 +54,6 @@ biology:
   - 10
   - 11
   fecundity: 57-1,800 eggs
-  age_maturity: 2 years
   diet:
   - Amphipods
   - Benth. copepods
@@ -90,13 +87,6 @@ biology:
   - Salvelinus malma malma
   - Unidentified squawfish.
   - unidentified mergansers
-angling:
-  best_months: Jun, Jul, Aug, Sep
-  season_months:
-  - 6
-  - 7
-  - 8
-  - 9
 distribution:
   native: true
   points:
@@ -299,6 +289,19 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '3'
+  age_maturity: 2 years
+  season_months:
+  - 6
+  - 7
+  - 8
+  - 9
+behavior: Pelagic at the sea. Spends 18 months at sea after which spawning migration to the natal river
+  or stream occurs; but because the species is less certain of its homing and there is a certain degree
+  of wandering, streams as much as 640 km from natal streams may be used . Other food include ostracods,
+  decapod larvae, cirripeds, tunicates, dipterous insects . Fry may be preyed upon by birds and mammals
+  while adults by marine mammals and large fish .
 description: Pink salmon or humpback salmon is a species of euryhaline ray-finned fish in the family Salmonidae.
   It is the type species of the genus Oncorhynchus, and is the smallest and most abundant of the seven
   officially recognized species of salmon. The species' scientific name is based on the Russian common

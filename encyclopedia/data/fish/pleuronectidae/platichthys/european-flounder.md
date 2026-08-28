@@ -24,9 +24,7 @@ physical:
   max_length_cm: 60
   typical_length_cm: '50'
   max_weight_kg: 2.9
-  lifespan_years: '15'
 habitat:
-  depth_range_m: 1-100
   body_ecology: demersal
   water_types:
   - freshwater
@@ -44,7 +42,6 @@ biology:
   - 4
   - 5
   fecundity: 248,948-2,088,414 eggs
-  age_maturity: 3 years
   diet:
   - Amphipods
   - Bivalves
@@ -65,15 +62,6 @@ biology:
   - Phocoena phocoena
   - Pleurobrachia pileus
   - Sander lucioperca
-angling:
-  best_months: Jan, Feb, Mar, Oct, Nov, Dec
-  season_months:
-  - 10
-  - 11
-  - 12
-  - 1
-  - 2
-  - 3
 distribution:
   native: true
   points:
@@ -520,6 +508,21 @@ distribution:
   source: FishBase occurrence records
 conservation:
   status: LC
+facts:
+  lifespan_years: '15'
+  age_maturity: 3 years
+  season_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+behavior: Adults occur on mud and sand bottom in shallow water, at sea and brackish; often entering freshwaters
+  . During winter, adults retreat to deeper, warmer waters, where they spawn in spring . The growing larvae
+  are moving to the coast . Larvae and early juveniles use selective tidal transport to migrate upstream
+  rivers using a range of triggers such as salinity, prey density and water temperature . Nocturnal and
+  burrowing .
 description: The European flounder is a flatfish of European coastal waters from the White Sea in the
   north to the Mediterranean and the Black Sea in the south. It has been introduced into the United States
   and Canada accidentally through transport in ballast water. It is caught and used for human consumption.
